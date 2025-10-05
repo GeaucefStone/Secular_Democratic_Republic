@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #000000;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #1a365d;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #fileInput {
+            display: none;
+        }
+        .browse-btn {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            font-size: 18px;
+            background: #007cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .browse-btn:hover {
+            background: #005a87;
+        }
+        #markdown-output {
+            line-height: 1.6;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 5px;
+            min-height: 200px;
+            margin-top: 20px;
+        }
+        .instructions {
+            text-align: center;
+            color: #e2e8f0;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 5px;
+        }
+        .folder-hint {
+            text-align: center;
+            color: #d63031;
+            font-size: 14px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .current-file {
+            color: #007cba;
+            font-weight: bold;
+            margin: 15px 0;
+            padding: 10px;
+            background: #f0f7ff;
+            border-radius: 5px;
+            text-align: center;
+        }
+#markdown-output table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+}
+#markdown-output th, #markdown-output td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+#markdown-output th {
+    background: #2d3748;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: white;">📄 Markdown Reader</h1>
+        
+        <div class="instructions">
+            <p><strong>Tip:</strong> Your Markdown files are in the same folder as this HTML file.</p>
+            <p>When the file dialog opens, navigate to this folder to find your files quickly.</p>
+            <p><strong>Supported:</strong> .md, .markdown, .txt files</p>
+            <p><strong>Shortcut:</strong> Ctrl+O to open files quickly</p>
+        </div>
+
+        <button class="browse-btn" onclick="window.print()" style="margin-top: 10px;">
+            🖨️ Print Document
+        </button>
+
+        <button class="browse-btn" onclick="document.getElementById('fileInput').click()">
+            📁 Open Markdown File
+        </button>
+        <input type="file" id="fileInput" accept=".md,.markdown,.txt">
+
+        <div class="folder-hint" id="folderHint">
+            💡 Look for the folder containing this HTML file
+        </div>
+
+        <div id="currentFile" class="current-file"></div>
+
+        <div id="markdown-output">
+            <p style="text-align: center; color: #999;">
+                Select a Markdown file to view its formatted content.
+            </p>
+        </div>
+    </div>
+
+    <script>
+    function parseMarkdown(md) {
+        return md
+            .replace(/```([^`]+)```/g, '<pre><code>$1</code></pre>')
+            .replace(/^> (.*$)/gim, '<blockquote>$1</blockquote>')
+            .replace(/^###### (.*$)/gim, '<h6>$1</h6>')
+            .replace(/^##### (.*$)/gim, '<h5>$1</h5>')   
+            .replace(/^#### (.*$)/gim, '<h4>$1</h4>') 
+            .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+            .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+            .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+            .replace(/^---$/gim, '<hr>')
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.*?)\*/g, '<em>$1</em>')
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+            .replace(/^- (.*$)/gim, '<li>$1</li>')
+            .replace(/(<li>.*<\/li>)/gim, '<ul>$1</ul>')
+            .replace(/\n\n/g, '</p><p>')
+            .replace(/\n/g, '<br>')
+            .replace(/(.+)/gim, '<p>$1</p>');
+    }
+
+    const fileInput = document.getElementById('fileInput');
+    const output = document.getElementById('markdown-output');
+    const currentFile = document.getElementById('currentFile');
+    const folderHint = document.getElementById('folderHint');
+
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (!file) {
+            output.innerHTML = '<p style="text-align: center; color: #999;">Select a Markdown file to view its content.</p>';
+            currentFile.textContent = '';
+            return;
+        }
+
+        // Show which file is currently open
+        currentFile.textContent = `Viewing: ${file.name}`;
+        folderHint.style.display = 'none';
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            output.innerHTML = parseMarkdown(e.target.result);
+        };
+        reader.onerror = () => {
+            output.innerHTML = '<p style="color: red;">Error reading file</p>';
+            currentFile.textContent = '';
+        };
+        reader.readAsText(file);
+    });
+
+    // Auto-focus the button for keyboard accessibility
+    window.addEventListener('load', function() {
+        document.querySelector('.browse-btn').focus();
+    });
+document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'o') {
+        e.preventDefault();
+        document.getElementById('fileInput').click();
+    }
+});
+    </script>
+</body>
+</html>
