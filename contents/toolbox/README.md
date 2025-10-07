@@ -1,3 +1,5 @@
+**Note:** These are largely unfinished. Contributions are welcome. Only write as must JavaScript as necessary. 
+
 # Academic Discourse Simulations
 
 ## Overview
