@@ -125,6 +125,15 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 - **Temporary Order:** A law enforcement officer or immediate family member may petition a court for a temporary ERPO. Upon a finding of probable cause, a judge may issue an order, valid for not more than 14 days, requiring the surrender of firearms pending a full hearing. This order may be issued *ex parte* (without the subject present).
 - **Full Hearing:** Before the temporary order expires, a full hearing must be held where the subject has the right to be present, to legal counsel, and to confront evidence. A final ERPO may be issued for up to one year based on clear and convincing evidence.
 - **Safeguards:** Knowingly filing a false petition shall be a felony. All surrendered weapons must be promptly returned upon the order's expiration.
+7. **Municipal Regulation of Discharge:** 
+- The right to bear arms shall not be construed to prohibit a municipality from regulating the discharge of firearms within its jurisdiction to ensure public safety.
+- **Such regulations may include, but are not limited to:**
+* Prohibiting discharge within a specified minimum distance of any occupied dwelling, school, or public park without the express written consent of the owner.
+* Enacting and enforcing reasonable noise ordinances that apply to the sound of gunfire.
+* Requiring the use of a certified backstop or range safety system for any target practice on residential property.
+- These regulations shall be presumed constitutional if they are narrowly tailored to address documented public safety risks and do not function as a de facto blanket ban on the lawful use of firearms for self-defense or recreation within the municipality.
+
+**Framer's Justification:** The right to self-defense does not exist in a vacuum. It must be balanced with the right of one's neighbors to domestic security and peace. This provision empowers communities to enact common-sense safety measures to prevent stray bullets and noise pollution, without infringing on the core right of law-abiding citizens to own and use firearms responsibly. It allows a city to stop someone from firing a rifle in a crowded subdivision, while protecting the ability of a rural resident to practice on their own land.
 
 ### Section 11: Right to Domestic Privacy
 
@@ -151,7 +160,6 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 ### Section 13: Freedom of Private Relationship Structures
 
 1. The state shall not criminalize or penalize private, consensual relationships between adults, regardless of the number of participants.
-
 2. No person shall be prosecuted for the crime of adultery, cohabitation, or polygamy based solely on the private, consensual structure of their relationships.
 
 **Adultery** - Voluntary sexual intercourse between a married person and a person who is not their spouse. Under this Constitution, adultery is not a criminal offense. The regulation of fidelity within a relationship is a private matter between individuals, not a subject for state intervention. Laws against adultery violate the rights to privacy and bodily autonomy (Art. I, Sec. 6 & 11) by criminalizing private, consensual sexual conduct between adults.
@@ -159,7 +167,6 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 **Polygamy** - The state of being simultaneously married to more than one spouse. Under this Constitution, the practice of polygamy, as a private, consensual relationship structure between adults, is decriminalized. However, official state recognition of marriage is limited to two persons. Adults in multi-partner relationships are directed to use private contracts to define their legal relationships. (Ref: Art. I, Sec. 13)
 
 3. The legal recognition of marriage by the state is limited to the union of two persons for the purposes of defining next-of-kin, inheritance, tax status, and parental rights. This legal construct is separate from religious or social definitions of marriage.
-
 4. Adults in multi-partner relationships shall have the right to enter into private contracts to define the terms of their shared life, including property rights, financial obligations, and medical decision-making authority. Such contracts shall be enforceable in civil court, subject to standard contract law principles and protections against fraud and coercion.
 
 ### Section 14: Suspension of Rights During Emergency
@@ -171,7 +178,6 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 - Subject to immediate and continuous review by the Supreme Court to ensure it does not exceed the strict necessities of the situation.
 3. The rights to Bodily Autonomy (Section 6) and Domestic Privacy (Section 11) are granted the highest level of protection. Any suspension of these specific rights requires an additional, specific declaration by the Citizens' Assembly with a ⅔ majority vote, and may only be authorized for the narrowest and most critical of purposes.
 4. **Penalty for Abuse**: Any public official who willfully and knowingly declares an emergency or suspends rights under this section without a legitimate, good-faith belief in an existential threat, or who suspends rights beyond what is strictly necessary, is guilty of a supreme offense against the state. Upon conviction, they shall be subject to life imprisonment without the possibility of parole or, if the abuse resulted in widespread loss of life or the permanent dissolution of a fundamental right, the death penalty.
-
 
 ### Section 15: Right to Safe Emancipation for Minors
 
@@ -262,6 +268,24 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 5. **Criminal Penalty for Retaliators:** Any individual, whether a public official or private manager, who knowingly and willfully engages in the retaliation of a whistleblower shall be guilty of a felony, punishable by a mandatory minimum sentence of five years imprisonment and permanent disqualification from holding any position of public trust or managing the labor of others.
 
 **Framer's Justification:** *The "Poisoned Chalice" makes corruption dangerous for the corrupter. But a state that does not actively protect and reward those with the courage to expose corruption from within is a state that is only half-serious about justice. This provision ensures that the first person to see a crime become not a target, but a hero of the Republic.*
+
+### Section 21: Right to Timely Forensic Investigation in Sexual Assault Cases
+
+1. **The Right to a Functional Investigation:** Any person who reports a sexual assault to law enforcement has the right to a thorough and timely investigation. The state's failure to process and analyze forensic evidence constitutes a denial of this right and an abdication of its duty to provide equal protection under the law.
+2. **Mandatory Processing of Sexual Assault Forensic Evidence (SAFE Kits):**
+- All Sexual Assault Forensic Examination (SAFE) kits, commonly known as "rape kits," collected pursuant to a reported assault shall be submitted to an accredited forensic laboratory within thirty (30) days of their collection.
+- The forensic analysis of a submitted SAFE kit must be completed, and the results entered into relevant law enforcement databases, within ninety (90) days of its submission to the laboratory, barring exceptional and documented circumstances that prevent processing, which must be reviewed by a court.
+3. **Statewide Tracking System:** 
+- The state shall establish and maintain a centralized, electronic tracking system for all SAFE kits.
+- This system shall allow a victim, through a secure and private access code, to monitor the status and location of their kit from collection through to final analysis, without requiring direct contact with investigating officers.
+4. **Annual Audit and Public Reporting:** 
+- The Citizens' Assembly, through its investigative powers, shall commission an annual public audit of the state's compliance with this section.
+- The audit shall report the number of kits collected, submitted, processed, and remaining backlogged, and shall identify any systemic failures or resource shortages.
+5. **Cause of Action and Enforcement:** 
+- A victim, or the Citizens' Assembly on behalf of the public interest, may bring a cause of action against the relevant law enforcement agency or the state for failure to comply with the time limits mandated in Clause 2.
+- A court finding of a violation shall result in a mandatory writ of mandamus compelling immediate action and the allocation of necessary funds to clear the backlog. The responsible public officials shall be subject to professional discipline and may be held in contempt of court.
+
+**Framer's Justification:** A rape kit that sits on a shelf is a promise broken by the state. It tells a victim that their pursuit of justice is not a priority. This provision transforms that kit from a symbol of neglect into an enforceable right to a functional investigation. It mandates the state to do its job, providing victims with transparency and accountability where there has traditionally been delay and obscurity.
 
 ---
 
@@ -392,6 +416,20 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 - Platform Access Surrender: In cases of viral digital defamation, the court may order the defaming party to surrender their access to their primary platform of offense (e.g., their Twitter/X account, YouTube channel) for a period of 30-90 days. The account would be placed in a protected, inactive state, preventing posting but leaving the original defamatory content visible as a matter of public record. This directly attacks the tool of the harm without compelling the platform to broadcast anything.
 4. Judicial Discretion and Appeal: The presiding judge must provide a written justification for the chosen remedy, explaining why it is the least restrictive means to correct the harm. All Corrective Equity Orders are subject to immediate, expedited appeal to the Supreme Court.
 
+### Section 16: Prohibition on Polygraph Evidence
+
+1. **Findings of Fact:** The Republic finds that psychophysiological deception detection devices, commonly known as "lie detectors" or polygraphs, measure physiological responses that are not unique to deception. These responses can be influenced by a multitude of factors, including anxiety, fear, confusion, physiological conditions, and cultural background. The scientific consensus holds that there is no physiological response or pattern of responses that is specific to deception, rendering such evidence fundamentally unreliable.
+2. **Prohibition on Use in Legal Proceedings:**
+- The results of a polygraph examination, the opinion of a polygraph examiner, or any reference to an individual's willingness or refusal to take a polygraph test shall be inadmissible as evidence in any court, administrative hearing, or other legal proceeding within the Republic.
+- This prohibition applies to all parties, including the prosecution, defense, and civil litigants.
+3. **Prohibition on Use by Law Enforcement:**
+- No law enforcement agency, intelligence service, or any other organ of the state shall require, request, or suggest that a witness, suspect, or victim submit to a polygraph examination as a condition of investigation or cooperation.
+- No adverse inference shall be drawn from an individual's refusal to participate in a polygraph test.
+4. **Prohibition on Use in Employment:** No public or private employer shall require, request, or suggest that an employee or prospective employee submit to a polygraph examination as a condition of employment, promotion, or continued employment.
+5. **Exceptions for Voluntary Scientific Research:** The provisions of this section shall not be construed to prohibit voluntary participation in academic, scientific, or medical research conducted with informed consent and under the oversight of a recognized ethical review board, provided no results are used for the purposes prohibited in Clauses 2, 3, and 4.
+
+**Framer's Justification:** A justice system founded on reason and evidence cannot be built upon a foundation of junk science. The polygraph is a tool of intimidation and coercion, not of truth-seeking. Its ban is necessary to protect the innocent from false positives, the vulnerable from psychological pressure, and the integrity of the Republic's legal process from pseudoscientific theatrics.
+
 ---
 
 ## ARTICLE III: HOUSING & ECONOMIC RIGHTS
@@ -454,6 +492,20 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 1. This is a socialist document. Even if one parent is absent and not reachable, the state will ensure the child's needs until they either turn 18 or graduate from high school.
 2. However, if the male causes an unwanted pregnancy, or either is a clear danger to the partner or child, they are legally bound to pay back child support to the state as a form of legal punishment, in compliance with Clause 1.
 
+### Section 10: Seed Sovereignty and Agricultural Resilience
+
+1. **Purpose:** To safeguard the genetic heritage and food security of the Republic for all future generations, ensuring that the means of food production remain a public commons.
+2. **The Public Seed Trust:** The state shall establish and maintain a National Network of Public Seed Banks, held in trust for the people.
+3. **The Seed Levy:**
+- A portion of the public obligation for commercial agricultural production shall be designated as a Seed Levy.
+- This levy may be satisfied by depositing a quantity of viable, open-pollinated seed of verified quality and genetic diversity into the Public Seed Trust.
+- Preference shall be given to heirloom, organic, and regionally adapted varieties.
+4. **Right of Access and Reciprocal Enrichment:**
+- Any resident shall have the right to borrow seeds from the Public Seed Trust.
+- Upon harvest, borrowers shall return the principal amount of seed, plus a modest surplus to ensure the trust's growth and vitality.
+
+**Framer's Justification:** "A nation's true wealth is measured not in its currency, but in its capacity to feed itself. This provision recognizes seed as the fundamental unit of that capacity. By creating a circular economy of genetic wealth, we build a buffer against famine, corporate control, and ecological collapse. It transforms a tax from a financial transaction into a direct investment in our collective, biological future."
+
 ---
 
 ## ARTICLE IV: GOVERNANCE STRUCTURE
@@ -472,11 +524,13 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 1. Unicameral Congress with 5-year terms.
 2. Members limited to four terms.
+3. Members of Congress shall be elected through single-winner ranked-choice voting from multi-member districts. 
 
 ### Section 3: Executive Branch
 
 1. President with 5-year terms.
 2. Limited to two terms.
+3. The President shall be elected through nationwide ranked-choice voting
 
 ### Section 4: Judicial Branch
 
@@ -561,6 +615,12 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 ### Section 3: Electoral Integrity
 
 1. Secret ballot with independent districting and multiple voting methods.
+2. **Universal Application:** All elections for federal office, including President, Congressional representatives, and Judicial confirmations, shall be conducted using ranked-choice voting.
+- Voters shall rank candidates in order of preference
+- If no candidate receives majority (50%+1) of first-choice votes, an instant runoff process shall occur
+- The candidate with fewest votes is eliminated, and their votes redistributed to next preferences
+- Process continues until one candidate achieves majority support
+3. **Ballot Access:** The ranking system shall accommodate no fewer than five candidate choices, with write-in options available
 
 ### Section 4: Voting Access
 
@@ -706,11 +766,11 @@ Framer's Justification: You cannot serve two masters. This provision is the logi
 ### Section 1: Establishment and Jurisdictional Hierarchy
 
 1. The Surgeon Court is hereby established as the final and exclusive court of appeal for all matters of medical fact, , medical methodology, clinical efficacy, and public health science.
-2. It's jurisdiction includes, but not limited to:
+2. Its jurisdiction includes, but not limited to:
 - The safety and efficacy of pharmaceuticals, medical devices, and treatment protocols.
 - The definition of standard of care for medical conditions.
 - The scientific basis for public health measures (e.g., the contagiousness of a pathogen, the efficacy of masks or vaccines).
-- The medical necessity and appropriate application of care, abortion, and end-of-life care.
+- Questions of medical necessity and the appropriate application of specific medical interventions, including abortion and end-of-life care.
 3. The Supreme Court remains the court of final appeal for all matters of constitutional law, fundamental rights, statutory interpretation, and all non-medical scientific and technical matters (e.g., climate science, engineering standards, forensic evidence standards).
 4. The Supreme Court is expressly and absolutely forbidden from re-litigating or overturning a finding of medical fact or technical medical standard made by the Surgeon Court. The Surgeon Court's findings on these matters are final and binding on all other branches of government, including the Supreme Court.
 5. All justices in this court is elected by certified medical doctors.
@@ -759,7 +819,7 @@ The Historian Court's job is to ensure the integrity of historical fact. Its pow
 
 ### Section 3: Composition and Ethical Safeguards
 
-1. The Court shall be composed of historians and legal scholars selected for their expertise in political history, ideology, and constitutional law.
+1.         The Court shall be composed of historians and legal scholars selected for their expertise in political history, ideology, and constitutional law. Justices shall be elected by a National Historical Assembly, constituted of all certified historians, using the peer-election model defined in Article IV, Section 8, to ensure the highest standards of professional rigor and impartiality.
 2. Members of the Court are bound by a strict code of professional conduct. They must act as impartial investigators, not as advocates. Any finding must be based solely on the verifiable, public record.
 3. Deliberations and the evidential record of the Court shall be a matter of public record, ensuring total transparency in its fact-finding process.
 
@@ -884,6 +944,12 @@ The Historian Court's job is to ensure the integrity of historical fact. Its pow
 1. Should landlordship ever be legal again, they must obtain a license the same way one would acquire a real estate license.
 2. Expiration of this license will result in total forfeiture of all properties other than their residence within three months.
 
+### Section 6: Electoral System Transition
+
+1. The National Electoral Commission shall develop ranked-choice voting procedures within one year of ratification. 
+2. All elections occurring two years post-ratification shall use ranked-choice voting.
+3. Voter education programs on the new system shall be funded and implemented. 
+
 ---
 
 ## ARTICLE XIV: THE DEFENSE FORCE & MILITARY EFFECTIVENESS
@@ -926,6 +992,42 @@ Upon voluntary enlistment or conscription, and for the duration of their service
 2. All rights suspended or modified under this Article are fully restored upon the member's receipt of an Honorable, General (under honorable conditions), or Other Than Honorable discharge from the Defense Force. A Dishonorable Discharge or a Bad Conduct Discharge (as a result of a court-martial) shall be considered a waiver of these rights until such time as the individual's civil rights are formally restored by a civilian court.
 3. Any member subjected to a court-martial conviction may, upon discharge, petition the civilian Supreme Court for a review of their case on the grounds of a fundamental miscarriage of justice, ensuring a final check by the civilian branch.
 
+## ARTICLE XV: EDUCATION
+
+### Section 1: The Purpose of Education
+
+The primary purpose of public education in the Secular Democratic Republic is to empower every citizen with the knowledge, skills, and critical faculties necessary for personal flourishing, effective participation in civic life, and the vigilant defense of liberty. Education shall be oriented towards creating a sovereign, informed, and skeptical citizenry capable of self-governance.
+
+### Section 2: A Guaranteed Foundation
+
+1. The state shall guarantee a high-quality, free public education from early childhood through the completion of secondary education.
+2. The curriculum shall prioritize universal proficiency in essential tools of knowledge:
+- **Literacy:** The ability to read complex texts with comprehension, analyze arguments, and communicate effectively in writing and speech.
+- **Numeracy & Mathematical Reasoning:** A strong foundation in mathematics, logic, and statistical reasoning necessary for personal finance, technical careers, and evaluating quantitative claims in public discourse.
+3. Mastery of these foundational skills is the non-negotiable first priority of the education system.
+
+### Section 3: Civic and Critical Competency
+
+Upon the foundation of literacy and numeracy, the education system shall instill:
+
+1. **Civic Literacy:** A comprehensive understanding of this Constitution, the structure of government, history, and the rights and responsibilities of citizenship.
+2. **Critical Media and Digital Literacy:** Mandatory instruction, developed in consultation with the Scientific and Historian Branches, in:
+- Identifying logical fallacies, cognitive biases, and rhetorical manipulation.
+- Analyzing sources for credibility, bias, and evidence.
+- Recognizing the techniques and purposes of propaganda, misinformation, and synthetic media.
+3. **Financial and Economic Literacy:** Practical understanding of personal finance, economic principles, and the rights of workers and consumers as defined in Article III.
+
+### Section 4: Secular and Neutral Public Education
+
+1. Public educational institutions and their curricula shall be strictly secular. No religious doctrine shall form any part of the curriculum.
+2. The educational environment shall be one of free inquiry and intellectual neutrality. Teachers shall act as facilitators of critical thinking, not advocates for any political party or ideological orthodoxy.
+
+### Section 5: The Right to Repair Educational Deficits
+
+1. Recognizing that a failed education is a deprivation of a fundamental right, any adult citizen who did not receive an adequate education as defined in this Article shall have the right to free, state-provided remedial education to achieve functional literacy, numeracy, and civic competency.
+
+**Framer's Justification:** A republic is a machine that must be run by its citizens. If the citizens are uneducated, the machine will break. This Article ensures the system creates its own best operators. We prioritize math and reading not as ends in themselves, but as the indispensable keys to unlocking all other knowledge and defending oneself against tyranny. By guaranteeing these skills, we make the promises of Bodily Autonomy and Free Expression meaningful, for a right you are not educated enough to understand or defend is a right in name only.
+
 ---
 
 ## FINAL DECLARATION
@@ -938,6 +1040,6 @@ This Constitution establishes a framework balancing individual liberty with soci
 
 This document represents the complete and full Constitution of the Secular Democratic Republic, ratified on this day, [Date of Ratification].
 
-Document Version: [2025/10/06]
+Document Version: [current date]
 
 This document is ready for download and preservation as the supreme law of the land.
