@@ -4,7 +4,7 @@
 _Petitioner_
 v.  
 **Housing Authority and Community Association**  
-*Respondents*
+_Respondents_
 
 **Case No.:** SC-02-24-DP  
 **Decided:** [Date]
