@@ -1,7 +1,7 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **Jane Doe**  
-*Petitioner*  
+_Petitioner_
 v.  
 **Housing Authority and Community Association**  
 *Respondents*
