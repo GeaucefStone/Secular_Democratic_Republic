@@ -102,7 +102,9 @@ Sentence imposed. Twenty years confinement. Medical hold until transfer approved
 
 Conspiracy: 10 years
 Hate Crime: +10 years
---------
+
+---
+
 Total Minimum: 20 years consecutive
 
 ### Financial Accountability:
@@ -136,4 +138,5 @@ Total Minimum: 20 years consecutive
 ---
 
 **END OF ANALYSIS**
-*This scenario examines hypothetical constitutional applications for educational study of legal systems.*
+
+_This scenario examines hypothetical constitutional applications for educational study of legal systems._
