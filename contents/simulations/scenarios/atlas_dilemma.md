@@ -1,5 +1,5 @@
 # THE POISONED CHALICE
-*A Scenario of Corporate Conspiracy*
+_A Scenario of Corporate Conspiracy_
 
 ## THE SETTING
 
@@ -9,9 +9,9 @@ In the boardroom of KLEPTOCORP, a legacy infrastructure giant, the mood is grim.
 
 ## THE CHARACTERS
 
-*   **JOHN ATLAS:** CEO of KleptoCorp. A man who believes every person has a price and every system has a loophole.
-*   **DR. ELENA ROSTOVA:** The Minister of Reconstruction. A former civil engineer, she is fiercely principled and appointed for her expertise, not her connections.
-*   **ARTHUR FINCH:** KleptoCorp's General Counsel. The architect of the plan, who believes he's found a way to weaponize the Constitution against itself.
+-   **JOHN ATLAS:** CEO of KleptoCorp. A man who believes every person has a price and every system has a loophole.
+-   **DR. ELENA ROSTOVA:** The Minister of Reconstruction. A former civil engineer, she is fiercely principled and appointed for her expertise, not her connections.
+-   **ARTHUR FINCH:** KleptoCorp's General Counsel. The architect of the plan, who believes he's found a way to weaponize the Constitution against itself.
 
 ## THE CONSPIRACY
 
@@ -55,9 +55,9 @@ Rostova presses a button on her desk. "The Anti-Corruption Authority has been li
 
 The Public Prosecutor doesn't just charge Atlas with bribery. She indicts the entire KleptoCorp board.
 
-*   **The Bribe (Art. XII, Sec. 3):** For Atlas, the straightforward offer.
-*   **Concrete Conspiracy (Art. II, Sec. 11):** For the entire board. The agreement was the resolution. The overt act was the creation and funding of the bribe fund. The sentence is equivalent to that for the completed felony of bribery.
-*   **Doctrine of Substance Over Form (Art. II, Sec. 12):** The prosecution argues the board resolution was an "artificial structure" whose "principal purpose" was the "evasion of the law." The court is empowered to disregard the corporate form and hold the individuals liable.
+-   **The Bribe (Art. XII, Sec. 3):** For Atlas, the straightforward offer.
+-   **Concrete Conspiracy (Art. II, Sec. 11):** For the entire board. The agreement was the resolution. The overt act was the creation and funding of the bribe fund. The sentence is equivalent to that for the completed felony of bribery.
+-   **Doctrine of Substance Over Form (Art. II, Sec. 12):** The prosecution argues the board resolution was an "artificial structure" whose "principal purpose" was the "evasion of the law." The court is empowered to disregard the corporate form and hold the individuals liable.
 
 ## THE VERDICT
 
@@ -67,8 +67,8 @@ The Supreme Court's opinion is a landmark. It affirms that the Constitution is a
 
 ## THE AFTERMATH
 
-*   **John Atlas & the KleptoCorp Board:** Are convicted of conspiracy and sentenced to decades in prison. Their personal assets, and the entire "Facilitation Fund," are forfeited to the Public Housing Trust.
-*   **KleptoCorp:** Is broken up and its viable assets nationalized, becoming the foundation for a new, publicly-owned infrastructure corps.
-*   **The Precedent:** The "Poisoned Chalice Doctrine" is established. Attempting to use the constitutional anti-corruption mechanism as a shield for a broader conspiracy is a self-defeating strategy that triggers the constitution's most severe penalties.
+-   **John Atlas & the KleptoCorp Board:** Are convicted of conspiracy and sentenced to decades in prison. Their personal assets, and the entire "Facilitation Fund," are forfeited to the Public Housing Trust.
+-   **KleptoCorp:** Is broken up and its viable assets nationalized, becoming the foundation for a new, publicly-owned infrastructure corps.
+-   **The Precedent:** The "Poisoned Chalice Doctrine" is established. Attempting to use the constitutional anti-corruption mechanism as a shield for a broader conspiracy is a self-defeating strategy that triggers the constitution's most severe penalties.
 
 > The final line of the ruling becomes famous: **"You sought to test the Constitution's defenses. You have found them to be operational, interconnected, and lethal to your enterprise."**
