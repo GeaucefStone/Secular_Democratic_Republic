@@ -1,12 +1,12 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
-**The Republic**  
-*Plaintiff*  
-v.  
-**John Atlas, CEO; and the Board of Directors of KleptoCorp**  
-*Defendants*
+**The Republic**
+_Plaintiff_
+v.
+**John Atlas, CEO; and the Board of Directors of KleptoCorp**
+_Defendants_
 
-**Case No.:** SC-01-24-ACA  
+**Case No.:** SC-01-24-ACA
 **Decided:** [Date]
 
 ---
@@ -90,4 +90,4 @@ This case is not merely about punishing a crime. It is about demonstrating that 
 
 ---
 
-*End of Document*
+_End of Document_

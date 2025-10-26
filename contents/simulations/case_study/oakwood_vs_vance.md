@@ -1,12 +1,12 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
-**The Municipality of Oakwood Heights**  
-*Petitioner*  
-v.  
-**Elias Vance**  
-*Respondent*
+**The Municipality of Oakwood Heights**
+_Petitioner_
+v.
+**Elias Vance**
+_Respondent_
 
-**Case No.:** SC-07-24-SA  
+**Case No.:** SC-07-24-SA
 **Decided:** [Date]
 
 ---
@@ -81,4 +81,4 @@ I join the Court's opinion in full. I write separately to emphasize that this ca
 **Counsel for Respondent:** [Name], Bar of the Republic
 
 ---
-*End of Document*
+_End of Document_
