@@ -8,7 +8,7 @@
 
 ### What's New
 
-- The Markdown Reader is further polished
+- The Markdown Reader is further polished. It's loader is now both a button and a drag-and-drop point. 
 
 - All files should be consistent with the Markdown reader's JavaScript. Asterisks for italics have been deliberately avoided to eliminate conflicts with hollowed bullets. 
 
