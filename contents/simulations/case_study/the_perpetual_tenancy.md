@@ -1,10 +1,10 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **The Republic**  
-*Plaintiff*  
+_Plaintiff_
 v.  
 **Silas Croft and the Legacy Property Alliance Executive Council**  
-*Defendants*
+_Defendants_
 
 **Case No.:** SC-03-24-SC  
 **Decided:** [Date]
@@ -96,4 +96,4 @@ The defendants misunderstood our system as a collection of isolated rules. They 
 
 ---
 
-*End of Document*
+_End of Document_

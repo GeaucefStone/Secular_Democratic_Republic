@@ -51,4 +51,5 @@ The Constitution allows limitations on speech that constitutes "incitement to vi
 Law enforcement and prosecutors under this Constitution would be unlikely to bring charges for this speech. The appropriate remedy would be counter-speech—alternative viewpoints proposing peaceful, legal solutions on the same platform.
 
 ---
-*Analysis based on theoretical SDR Constitutional framework for educational purposes*
+
+_Analysis based on theoretical SDR Constitutional framework for educational purposes_

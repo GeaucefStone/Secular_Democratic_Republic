@@ -1,10 +1,10 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
-**Leo Schmidt**  
-*Petitioner*  
+**Leo Schmidt**
+_Petitioner_
 v.  
 **First Church of Divine Truth and Pastor Michael Grace**  
-*Respondents*
+_Respondents_
 
 **Case No.:** SC-04-24-DF  
 **Decided:** [Date]
@@ -93,4 +93,4 @@ This case illustrates why Article II, Section 15 creates specific remedies for w
 
 ---
 
-*End of Document*
+_End of Document_

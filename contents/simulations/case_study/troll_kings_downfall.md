@@ -114,4 +114,4 @@ TrollKing didn't just break laws - he attacked the constitutional principle of e
 
 ---
 
-*Analysis complete. Hate crime mechanisms demonstrated. Constitutional defense operational. Equal protection enforced.*
+_Analysis complete. Hate crime mechanisms demonstrated. Constitutional defense operational. Equal protection enforced._
