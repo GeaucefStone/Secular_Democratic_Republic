@@ -51,7 +51,7 @@ The AI was directed to:
 
 **The author's role was that of a Chief Architect:** setting core principles, writing initial clauses, directing the simulations, refining the text, and making final, sovereign decisions on all content.
 
-**Think of this document not as written by an AI, but as *forged* by it. The AI provided the intense heat and pressure; the author provided the unyielding principle and final form.**
+**Think of this document not as written by an AI, but as _forged_ by it. The AI provided the intense heat and pressure; the author provided the unyielding principle and final form.**
 
 ---
 
