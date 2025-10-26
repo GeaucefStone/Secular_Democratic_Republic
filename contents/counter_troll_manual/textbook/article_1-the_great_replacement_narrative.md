@@ -40,14 +40,14 @@
 
 **Response:**
 > You are misrepresenting the purpose and scope of the clause. Let's look at the actual text.
->
+
 > **Article I, Section 16** deals with the "Rights of Immigrant Children and Youth." Its stated **Purpose and Intent** is: "to provide stability, security, and a clear path to full membership in the Republic for those who arrive as children, recognizing that they are blameless for their circumstances."
->
+
 > **Key Facts:**
 > 1.  It applies to individuals who are **already** "physically present within the jurisdiction." It does not encourage or describe an "invasion."
 > 2.  It recognizes that a 10-year-old brought here by their parents is not a legal or moral agent. The state's interest is in preventing a permanent, stateless underclass.
 > 3.  It creates a **pathway to integration**, not segregation or "replacement." These individuals are expected to become full, productive citizens.
->
+
 > The "Great Replacement" theory is a debunked conspiracy. The constitutional clause is a pragmatic and humane solution to a complex reality. You can read the full, contextual text here: [LINK TO CONSTITUTION]
 
 **Effect:** The response avoids arguing about the conspiracy directly. Instead, it relentlessly focuses on the actual text, its stated intent, and the factual reality it addresses. This provides the audience with a solid, citable foundation, making the rhetorical narrative seem flimsy in comparison.

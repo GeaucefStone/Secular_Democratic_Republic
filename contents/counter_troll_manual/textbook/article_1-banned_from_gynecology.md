@@ -40,9 +40,9 @@
 
 **Response:**
 > That is a significant misrepresentation of the constitutional text. The SDR Constitution does not ban male doctors from treating women.
->
+
 > The relevant clause, Article I, Section 1, guarantees a woman's right to a same-sex provider for gynecological and intimate examinations. This is a specific protection for the most vulnerable medical settings, based on documented history of patient concerns in those specific fields.
->
+
 > It has no bearing on emergency medicine, general practice, or any other field of healthcare. The text is clear, narrow, and focused on patient dignity. You can read it here: [LINK TO CONSTITUTION]
 
 **Effect:** Clear, factual, referenced response for analytical purposes
