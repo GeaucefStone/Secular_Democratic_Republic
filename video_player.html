@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - Dark Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000000;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+
+        a:link {
+            color: #7393B3;
+        }
+
+        a:visited {
+            color: #8A6EAA;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #1a365d;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #2d3748;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .subtitle {
+            color: #7393B3;
+            font-size: 1.1rem;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+        }
+        
+        .player-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .video-container {
+            background: #000;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .video-info {
+            padding: 15px;
+            background: #2d3748;
+            border-radius: 5px;
+            border: 1px solid #4a5568;
+        }
+        
+        .video-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: white;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        button {
+            padding: 8px 15px;
+            background: #007cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background: #005a87;
+        }
+        
+        .search-section {
+            background: #2d3748;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #4a5568;
+        }
+        
+        .search-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: white;
+        }
+        
+        .search-box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #4a5568;
+            border-radius: 5px 0 0 5px;
+            font-size: 0.9rem;
+            background: #1a365d;
+            color: white;
+        }
+        
+        .search-button {
+            border-radius: 0 5px 5px 0;
+            padding: 8px 15px;
+        }
+        
+        .video-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .video-item {
+            padding: 10px;
+            border-bottom: 1px solid #4a5568;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .video-item:hover {
+            background-color: #1a365d;
+        }
+        
+        .video-item.active {
+            background-color: #007cba;
+            border-left: 3px solid #7393B3;
+        }
+        
+        .video-name {
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .video-details {
+            font-size: 0.8rem;
+            color: #7393B3;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 30px 20px;
+            color: #7393B3;
+        }
+        
+        ::selection {
+            color: black;
+            background: orange;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Video Player</h1>
+            <p class="subtitle">Search and play embedded videos</p>
+        </header>
+        
+        <div class="main-content">
+            <main class="player-section">
+                <div class="video-container">
+                    <video id="videoPlayer" controls>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="video-info">
+                    <h3>Video Information</h3>
+                    <p id="videoTitle">Select a video to play</p>
+                    <p id="videoDetails">Use the search to find videos</p>
+                    
+                    <div class="controls">
+                        <button id="prevButton">Previous</button>
+                        <button id="nextButton">Next</button>
+                    </div>
+                </div>
+            </main>
+            
+            <aside class="search-section">
+                <h3>Search Videos</h3>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search by name...">
+                    <button id="searchButton" class="search-button">Search</button>
+                </div>
+                
+                <h3>Video Library</h3>
+                <div class="video-list" id="videoListContainer">
+                    <!-- Videos will be populated by JavaScript -->
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script>
+        // Embedded video data - you can add your own videos here
+        const videoLibrary = [
+            {
+                id: 1,
+                name: "Nature Documentary",
+                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+//              src: ".videos/nature.mp4", // This is for localized videos, as it will be used later. 
+                description: "Beautiful scenes from nature"
+            },
+            {
+                id: 2,
+                name: "Technology Overview",
+                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+                description: "Latest tech innovations"
+            },
+            {
+                id: 3,
+                name: "Travel Highlights",
+                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+                description: "Amazing travel destinations"
+            },
+            {
+                id: 4,
+                name: "Art and Culture",
+                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+                description: "Exploring world cultures"
+            },
+            {
+                id: 5,
+                name: "Science Explained",
+                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+                description: "Complex concepts made simple"
+            },
+            {
+                id: 6,
+                name: "History Documentary",
+                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+                description: "Journey through time"
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // DOM Elements
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoListContainer = document.getElementById('videoListContainer');
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            const videoTitle = document.getElementById('videoTitle');
+            const videoDetails = document.getElementById('videoDetails');
+            
+            let currentVideoIndex = 0;
+            
+            // Initialize the video player with the first video
+            function initializePlayer() {
+                if (videoLibrary.length > 0) {
+                    playVideo(0);
+                    updateVideoList();
+                }
+            }
+            
+            // Event Listeners
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            prevButton.addEventListener('click', playPreviousVideo);
+            nextButton.addEventListener('click', playNextVideo);
+            
+            // Functions
+            function updateVideoList() {
+                if (videoLibrary.length === 0) {
+                    videoListContainer.innerHTML = `
+                        <div class="empty-state">
+                            <p>No videos available</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                let html = '';
+                videoLibrary.forEach((video, index) => {
+                    const isActive = index === currentVideoIndex ? 'active' : '';
+                    html += `
+                        <div class="video-item ${isActive}" data-index="${index}">
+                            <div class="video-name">${video.name}</div>
+                            <div class="video-details">${video.description}</div>
+                        </div>
+                    `;
+                });
+                
+                videoListContainer.innerHTML = html;
+                
+                // Add click event to video items
+                document.querySelectorAll('.video-item').forEach(item => {
+                    item.addEventListener('click', function() {
+                        const index = parseInt(this.getAttribute('data-index'));
+                        playVideo(index);
+                    });
+                });
+            }
+            
+            function playVideo(index) {
+                if (index < 0 || index >= videoLibrary.length) return;
+                
+                currentVideoIndex = index;
+                const video = videoLibrary[index];
+                
+                videoPlayer.src = video.src;
+                videoTitle.textContent = video.name;
+                videoDetails.textContent = video.description;
+                
+                updateVideoList();
+            }
+            
+            function performSearch() {
+                const query = searchInput.value.toLowerCase().trim();
+                
+                if (query === '') {
+                    updateVideoList();
+                    return;
+                }
+                
+                const filteredVideos = videoLibrary.filter(video => 
+                    video.name.toLowerCase().includes(query) || 
+                    video.description.toLowerCase().includes(query)
+                );
+                
+                if (filteredVideos.length === 0) {
+                    videoListContainer.innerHTML = `
+                        <div class="empty-state">
+                            <p>No videos found matching "${query}"</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                let html = '';
+                filteredVideos.forEach((video, index) => {
+                    const originalIndex = videoLibrary.findIndex(v => v.id === video.id);
+                    const isActive = originalIndex === currentVideoIndex ? 'active' : '';
+                    html += `
+                        <div class="video-item ${isActive}" data-index="${originalIndex}">
+                            <div class="video-name">${video.name}</div>
+                            <div class="video-details">${video.description}</div>
+                        </div>
+                    `;
+                });
+                
+                videoListContainer.innerHTML = html;
+                
+                // Add click event to filtered video items
+                document.querySelectorAll('.video-item').forEach(item => {
+                    item.addEventListener('click', function() {
+                        const index = parseInt(this.getAttribute('data-index'));
+                        playVideo(index);
+                    });
+                });
+            }
+            
+            function playPreviousVideo() {
+                if (currentVideoIndex > 0) {
+                    playVideo(currentVideoIndex - 1);
+                }
+            }
+            
+            function playNextVideo() {
+                if (currentVideoIndex < videoLibrary.length - 1) {
+                    playVideo(currentVideoIndex + 1);
+                }
+            }
+            
+            // Initialize the player
+            initializePlayer();
+        });
+    </script>
+</body>
+</html>
