@@ -4,6 +4,14 @@
 		<meta charset="UTF-8">
 		<title>Markdown Reader</title>
 		<style>
+			a:link {
+				color: #7393B3;
+			}
+
+			a:visited {
+				color: #8A6EAA;
+			}
+
 			body {
 				font-family: Arial, sans-serif;
 				background: #000000;
@@ -23,7 +31,7 @@
 			}
 			.browse-btn {
 				background: #007cba;
-				border: 2px dashed #003d5c;
+				border: 2px #003d5c;
 				border-radius: 5px;
 				display: block;
 				padding: 40px 20px;
@@ -41,17 +49,10 @@
 			}
 			.browse-btn.drag-over {
 				background: #005a87;
-				border: 2px dashed #ffffff;
+				border: 2px #ffffff;
 				border-color: #ffffff;
 			}
-			#markdown-output {
-				line-height: 1.5;
-				padding: 20px;
-				background: #fafafa;
-				border-radius: 5px;
-				min-height: 200px;
-				margin-top: 20px;
-			}
+
 			.instructions {
 				background: #2d3748;
 				border: 1px solid #4a5568;
@@ -77,6 +78,15 @@
 				margin: 15px 0;
 				padding: 10px;
 				text-align: center;
+			}
+
+			#markdown-output {
+				line-height: 1.5;
+				padding: 20px;
+				background: #fafafa;
+				border-radius: 5px;
+				min-height: 200px;
+				margin-top: 20px;
 			}
 			#markdown-output table {
 				border-collapse: collapse;
@@ -155,6 +165,10 @@
 			#markdown-output blockquote + ul {
 				margin-top: 10px;
 			}
+			::selection {
+				color: black;
+				background: orange;
+			}
 		</style>
 	</head>
 	<body>
@@ -191,54 +205,54 @@
 			</div>
 		</div>
 
-	<script>
-		// Focus on bold, italic (underscores only), and links
-		function processBold(text) {
-			return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-		}
-
-		function processItalic(text) {
-			// Use underscores only for italics - won't conflict with bullets
-			return text.replace(/_(.*?)_/g, '<em>$1</em>');
-		}
-
-		function processLinks(text) {
-			return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
-		}
-
-		// Main function that applies processing in correct order
-		function processInlineMarkdown(text) {
-			return processLinks(processItalic(processBold(text)));
-		}
-
-		// Function to parse markdown tables
-		function parseTable(lines, startIndex) {
-			let tableLines = [];
-			let i = startIndex;
-    
-			// Collect all table rows until we hit a non-table line
-			while (i < lines.length && lines[i].trim().includes('|')) {
-				tableLines.push(lines[i]);
-				i++;
+		<script>
+			// Focus on bold, italic (underscores only), and links
+			function processBold(text) {
+				return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 			}
+
+			function processItalic(text) {
+				// Use underscores only for italics - won't conflict with bullets
+				return text.replace(/_(.*?)_/g, '<em>$1</em>');
+			}
+
+			function processLinks(text) {
+				return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+			}
+
+			// Main function that applies processing in correct order
+			function processInlineMarkdown(text) {
+				return processLinks(processItalic(processBold(text)));
+			}
+
+			// Function to parse markdown tables
+			function parseTable(lines, startIndex) {
+				let tableLines = [];
+				let i = startIndex;
     
-			if (tableLines.length < 2) return { html: '', newIndex: startIndex };
+				// Collect all table rows until we hit a non-table line
+				while (i < lines.length && lines[i].trim().includes('|')) {
+					tableLines.push(lines[i]);
+					i++;
+				}
     
-			let html = '<table>';
-			let hasHeader = false;
+				if (tableLines.length < 2) return { html: '', newIndex: startIndex };
     
-			for (let j = 0; j < tableLines.length; j++) {
-				let line = tableLines[j].trim();
-				// Remove leading and trailing pipes
-				if (line.startsWith('|')) line = line.substring(1);
-				if (line.endsWith('|')) line = line.substring(0, line.length - 1);
+				let html = '<table>';
+				let hasHeader = false;
+    
+				for (let j = 0; j < tableLines.length; j++) {
+					let line = tableLines[j].trim();
+					// Remove leading and trailing pipes
+					if (line.startsWith('|')) line = line.substring(1);
+					if (line.endsWith('|')) line = line.substring(0, line.length - 1);
 	
-				let cells = line.split('|').map(cell => cell.trim());
+					let cells = line.split('|').map(cell => cell.trim());
         	
-				if (cells.length === 0 || cells.every(cell => cell === '')) continue;
+					if (cells.length === 0 || cells.every(cell => cell === '')) continue;
         	
-				// Check if this is a separator row
-				let isSeparator = cells.every(cell => /^:?-+:?$/.test(cell));
+					// Check if this is a separator row
+					let isSeparator = cells.every(cell => /^:?-+:?$/.test(cell));
 
 					if (isSeparator) {
 						// Skip separator row - it's just for markdown formatting
@@ -259,10 +273,10 @@
         
 					html += '</tr>';
 	
-						if (j === 0) {
-							hasHeader = true;
-						}
+					if (j === 0) {
+						hasHeader = true;
 					}
+				}
 
 				html += '</table>';
 				return { html: html, newIndex: i - 1 };
@@ -373,35 +387,35 @@
 
 			// Function to handle file processing (used by both file input and drag & drop)
 			function handleFile(file) {
-			if (!file) {
-				output.innerHTML = '<p style="text-align: center; color: #999;">Select a Markdown file to view its content.</p>';
-				currentFile.textContent = '';
-				return;
-			}
+				if (!file) {
+					output.innerHTML = '<p style="text-align: center; color: #999;">Select a Markdown file to view its content.</p>';
+					currentFile.textContent = '';
+					return;
+				}
 
-			// Check if file is a supported type
-			const supportedTypes = ['.md', '.markdown', '.txt'];
-			const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
+				// Check if file is a supported type
+				const supportedTypes = ['.md', '.markdown', '.txt'];
+				const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
 
-			if (!supportedTypes.includes(fileExtension)) {
-				output.innerHTML = '<p style="color: red; text-align: center;">Please select a Markdown file (.md, .markdown, .txt)</p>';
-				currentFile.textContent = '';
-				return;
-			}
+				if (!supportedTypes.includes(fileExtension)) {
+					output.innerHTML = '<p style="color: red; text-align: center;">Please select a Markdown file (.md, .markdown, .txt)</p>';
+					currentFile.textContent = '';
+					return;
+				}
 
-			// Show which file is currently open
-			currentFile.textContent = `Viewing: ${file.name}`;
-			folderHint.style.display = 'none';
+				// Show which file is currently open
+				currentFile.textContent = `Viewing: ${file.name}`;
+				folderHint.style.display = 'none';
 
-			const reader = new FileReader();
-			reader.onload = (e) => {
-				output.innerHTML = parseMarkdown(e.target.result);
-			};
-			reader.onerror = () => {
-				output.innerHTML = '<p style="color: red;">Error reading file</p>';
-				currentFile.textContent = '';
+				const reader = new FileReader();
+				reader.onload = (e) => {
+					output.innerHTML = parseMarkdown(e.target.result);
 				};
-			reader.readAsText(file);
+				reader.onerror = () => {
+					output.innerHTML = '<p style="color: red;">Error reading file</p>';
+					currentFile.textContent = '';
+				};
+				reader.readAsText(file);
 			}
 
 			// Event listeners and variables

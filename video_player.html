@@ -28,7 +28,7 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1350px;
             margin: auto;
             background: #1a365d;
             padding: 20px;
@@ -132,7 +132,7 @@
         
         input[type="text"] {
             flex: 1;
-            padding: 8px 12px;
+            padding: 8px 0px;
             border: 1px solid #4a5568;
             border-radius: 5px 0 0 5px;
             font-size: 0.9rem;
@@ -174,7 +174,7 @@
         
         .video-details {
             font-size: 0.8rem;
-            color: #7393B3;
+            color: #white;
         }
         
         .empty-state {
@@ -211,8 +211,7 @@
                 </div>
                 
                 <div class="video-info">
-                    <h3>Video Information</h3>
-                    <p id="videoTitle">Select a video to play</p>
+                    <h3 id="videoTitle">Select a Video to Play</h3>
                     <p id="videoDetails">Use the search to find videos</p>
                     
                     <div class="controls">
@@ -225,7 +224,7 @@
             <aside class="search-section">
                 <h3>Search Videos</h3>
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search by name...">
+                    <input type="text" id="searchInput" placeholder="Search by keyword...">
                     <button id="searchButton" class="search-button">Search</button>
                 </div>
                 
@@ -242,41 +241,53 @@
         const videoLibrary = [
             {
                 id: 1,
-                name: "Nature Documentary",
-                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-//              src: ".videos/nature.mp4", // This is for localized videos, as it will be used later. 
-                description: "Beautiful scenes from nature"
+                name: "Case Study: HOA vs Doe",
+//              src: "./contents/videos/hoa_vs_doe.mp4", // This is for localized videos, as it will be used later. 
+                description: "A lawful resident's domestic privacy is violated by a governing body. "
             },
             {
                 id: 2,
-                name: "Technology Overview",
-                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-                description: "Latest tech innovations"
+                name: "Case Study: Oakwood vs Vance",
+//              src: "./contents/videos/oakwood_vs_vance.mp4",
+                description: "A resident is illegally shooting targets with a real firearm within a suburb. "
             },
             {
                 id: 3,
-                name: "Travel Highlights",
-                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-                description: "Amazing travel destinations"
+                name: "Case Study: Petrov vs Extradition Treaty",
+//              src: "./contents/videos/petrov_vs_extradition_treaty.mp4",
+                description: "An illegal immigrant within a marginalized community flees oppression country after killing a pursuing police officer. "
             },
             {
                 id: 4,
-                name: "Art and Culture",
-                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-                description: "Exploring world cultures"
+                name: "Case Study: Poisoned Chalice",
+//              src: "./contents/videos/poisoned_chalice_doctrine.mp4",
+                description: "How Conspiracy and the Act of Bribing Does Not fall under Double Jeapordy"
             },
             {
                 id: 5,
-                name: "Science Explained",
-                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-                description: "Complex concepts made simple"
+                name: "Case Study: The Perpetual Tenancy",
+//              src: "./contents/videos/the_perpetual_tenancy.mp4",
+                description: "How Conspiracy and Propaganda are Neutralized"
             },
             {
                 id: 6,
-                name: "History Documentary",
-                src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-                description: "Journey through time"
+                name: "Case Study: Thou Shalt not Bear False Witness",
+//              src: "./contents/videos/thou_shalt_not_bear_false_witness.mp4",
+                description: "A faith leader tries to argue slander is part of his right to religious freedom and free expression"
+            },
+            {
+                id: 7,
+                name: "Case Study: Tiptoeing the Voice Activated Minefield",
+//              src: "./contents/videos/tiptoeing_the_voice_activated_minefield.mp4",
+                description: "A critic suggests using the Castle Doctrine to protect an established, historical landmark from unlawful destruction. "
+            },
+            {
+                id: 8,
+                name: "Case Study: TrollKing's Downfall",
+//              src: "./contents/videos/trollkings_downfall.mp4",
+                description: "An online troll accummulates criminal charges overtime"
             }
+
         ];
 
         document.addEventListener('DOMContentLoaded', function() {
