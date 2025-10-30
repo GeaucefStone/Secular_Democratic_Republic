@@ -103,6 +103,40 @@ The doctrine serves as a crucial anti-corruption mechanism by:
 - **Investigative Authority:** Allows piercing digital privacy veils when used for evasion
 - **Proportionality Requirement:** Ensures substance-over-form inquiries don't become fishing expeditions
 
+## Extension Beyond Economics: A General Principle of Legal Interpretation
+
+While the constitutional text anchors the Doctrine in "economic reality," its underlying logic—that the true purpose and effect of an action must prevail over its superficial appearance—serves as a general principle of legal interpretation throughout the SDR jurisprudence.
+
+### Constitutional Basis for Expansion
+
+The doctrine's application beyond pure financial matters is supported by the broad language of **Article II, Section 12, Clause 1**, which mandates that "the substance... and actual purpose of arrangements shall prevail over its legal form" in the enforcement of "the laws of the Republic." This establishes a universal principle, with "economic reality" serving as a primary, but not exclusive, example.
+
+### Key Non-Economic Applications
+
+#### 1. Safeguarding Democratic Integrity (Article I, Section 5 & Article V, Section 6)
+*   **Scenario:** A political candidate with a long, documented history of leading an organization that advocates for a theocracy formally disbands the organization and renounces its views just before an election, while its members and funding structures immediately reconstitute under a new name to support the same candidate and agenda.
+*   **Substance Over Form Application:** The Historian Court, in its fact-finding role, would be empowered to look past the formal dissolution and name change. It would examine the *substance* of the candidate's ongoing influence, the flow of support, and the continuity of the ideological program. The Court could find that the candidate's disqualifying adherence to an anti-democratic ideology remains unchanged in substance, despite the change in form.
+
+#### 2. Enforcing Anti-Corruption and Official Conduct (Article XII)
+*   **Scenario:** A public official directs government contracts to a company owned by a close relative. The official claims no involvement, citing the formal separation and the relative's independent business decisions.
+*   **Substance Over Form Application:** A court would pierce the formal veil of separation. By examining communication records, the bidding process, and the company's history, the court could rule that the arrangement was, in substance, a scheme to funnel public funds to the official, constituting corruption regardless of the formal paperwork.
+
+#### 3. Upholding Housing Reforms (Article III & Article X)
+*   **Scenario:** A grandfathered landlord, seeking to avoid the "Five-Year Vacancy Rule" that would cause their property to revert to the Public Housing Trust, signs a token rental agreement with a friend at a peppercorn rent, with no intention of genuine occupancy.
+*   **Substance Over Form Application:** The Public Housing Trust can invoke the doctrine to argue that the lease is an "artificial structure" with no "substantial purpose" other than to evade the law. A court would examine the *substance* of the arrangement—the lack of arms-length terms and genuine occupancy—to rule that a state of vacancy exists in substance, triggering the reversion rule.
+
+#### 4. Interpreting Conspiracy and Complicity (Article II, Section 11)
+*   **Scenario:** Individuals planning a felony communicate using coded language, referring to a robbery as "the dinner party" and weapons as "tableware." When charged, they claim they were discussing a social event.
+*   **Substance Over Form Application:** The prosecution would use the doctrine to argue that the court must look at the *substantive meaning* of their communications and subsequent actions (e.g., purchasing firearms, casing a location), rather than accepting the innocent "form" of their words. The "dinner party" is, in substance, a criminal conspiracy.
+
+### Limitations and Safeguards in Non-Economic Contexts
+
+The application of this powerful doctrine outside its explicit economic context requires rigorous safeguards to prevent judicial overreach:
+
+1.  **The "Principal Purpose" Test:** The doctrine is only triggered when the *principal purpose* of an arrangement or action is to evade the law. Legitimate changes of heart or genuine restructuring would be protected.
+2.  **High Burden of Proof:** The state's initial burden to demonstrate a "compressed decision environment" or a sham arrangement is high. Once triggered, the burden shifts to the defendant to prove a bona fide purpose by "clear and convincing evidence."
+3.  **Strict Scrutiny in Rights-Related Cases:** When applied in contexts that may implicate freedom of association (e.g., political organizations) or privacy, courts would apply the highest level of scrutiny to ensure the doctrine is not used to suppress legitimate activity.
+
 ## Comparative Analysis
 
 ### Versus Traditional Legal Systems
@@ -219,3 +253,5 @@ This doctrine operates as the legal system's immune response to parasitic arrang
 Integrated with the SDR's anti-corruption, conspiracy, and whistleblower frameworks, the doctrine creates a comprehensive defense against the modern evolution of corruption: not simple bribery, but sophisticated legal engineering designed to systematically avoid the responsibilities of citizenship and commerce.
 
 The doctrine acknowledges that in a complex economy, the greatest threats to legal integrity often come not from lawbreaking, but from law-evading—the use of legal forms to achieve illegal substance. By focusing relentlessly on economic reality, it ensures the SDR's legal system remains grounded in justice rather than technicality.
+
+**Legal Status:** This analysis represents the authoritative interpretation of Article II, Section 12.
