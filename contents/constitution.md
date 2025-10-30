@@ -92,7 +92,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 ### Section 8: Digital Privacy & Autonomy
 
 1. The privacy of personal digital data and communications shall be inviolable, unless the individual is subject to a criminal investigation or is currently on parole or probation.
-2. Bulk data collection by the state is prohibited.
+2. Bulk data collection by the state is prohibited, unless an individual is subject to a search warrant or monitoring. 
 3. Individuals have the right to access, control, and delete their personal data.
 
 ### Section 9: Protection Against Synthetic Media and Digital Forgery
@@ -163,6 +163,8 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 2. No person shall be prosecuted for the crime of adultery, cohabitation, or polygamy based solely on the private, consensual structure of their relationships.
 
 **Adultery** - Voluntary sexual intercourse between a married person and a person who is not their spouse. Under this Constitution, adultery is not a criminal offense. The regulation of fidelity within a relationship is a private matter between individuals, not a subject for state intervention. Laws against adultery violate the rights to privacy and bodily autonomy (Art. I, Sec. 6 & 11) by criminalizing private, consensual sexual conduct between adults.
+
+**Fornification** - Voluntary sexual intercourse between two people who are unmarried. Under this Constitution, fornification is not a criminal offense. See the above entry. 
 
 **Polygamy** - The state of being simultaneously married to more than one spouse. Under this Constitution, the practice of polygamy, as a private, consensual relationship structure between adults, is decriminalized. However, official state recognition of marriage is limited to two persons. Adults in multi-partner relationships are directed to use private contracts to define their legal relationships. (Ref: Art. I, Sec. 13)
 
@@ -313,23 +315,23 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 ### Section 5: Hate Crime Registry
 
 1. National registry for hate crime convictions.
-2. Juveniles age 13-17:
+2. **Juveniles age 13-17:**
 - Registration until 25
 - Detention until 21 for repeat offenses. Registration continues until 25.
-3. Adults age 18+:
+3. **Adults age 18+:**
 - 10-year registration on first violent offense
 - Permanent registration on second violent offense
 - Life imprisonment for third violent offense
 
 ### Section 6: Romeo and Juliet Law
 
-1. Protections for Minors: Sexual activity between consenting persons is not criminal provided the younger party is at least 13 years old and the age difference between them does not exceed two years.
-2. Transitional Portection: A person who is 19 years old is protected from prosecution for sexual activity with a partner who is less than two years younger than them, provided it is consensual. A conviction under this scenario shall not require registration on the sex offender registry.
+1. **Protections for Minors:** Sexual activity between consenting persons is not criminal provided the younger party is at least 13 years old and the age difference between them does not exceed two years.
+2. **Transitional Portection:** A person who is 19 years old is protected from prosecution for sexual activity with a partner who is less than two years younger than them, provided it is consensual. A conviction under this scenario shall not require registration on the sex offender registry.
 3. Age of Consent and Protection from Predation:
 - The general age of consent is 18.
 - Sexual activity between an individual who is under 21 years of age and an individual over the age of 25 is prohibited. For the purpose of this clause, the older partner's age is caculated by there birth date. 
 - To ensure the older party is not automatically criminalized on their 25 birthday in accordance to clause 3c, a three month grace period will be waivered.
-4. Aggressor Clause: In the event the younger party is the initiator and aggressor in a sexual assault, even if they were a minor at the time, the older victim will not face criminal charges for the non-consensual act.
+4. **Aggressor Clause:** In the event the younger party is the initiator and aggressor in a sexual assault, even if they were a minor at the time, the older victim will not face criminal charges for the non-consensual act.
 
 ### Section 7: Capital Punishment
 
@@ -348,11 +350,12 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 2. All law-abiding citizens, including marginalized communities, have the right to bear arms. While this document does not explicitly ban any type of weapon, anything that is a semi-automatic or select-fire may be subject to regulation by Congress based on age and criminal record.
 3. Justified self-defense shall be a complete defense to criminal charges and civil liability.
 4. No person may be prosecuted for weapons possession if the weapon was used in justified self-defense. This right is founded upon the principles outlined in Article I, Section 10.
-5. There shall be a tiered system to ensure fair judgement:
+5. **There shall be a tiered system to ensure fair judgement:**
 - The Duty To Retreat clause is the first requirement.
 - However, if retreating is not possible or safe, the Stand Your Ground clause takes effect, even through lethal force. Non-lethal force is preferred.
 - The Castle Doctrine takes effect in property which the victim owns or is authorized to control. There is no duty to retreat.
-6. Transfer of Liability for Deaths During Aggression:
+- The Cockpit Doctrine applies to movable property or a semi-enclosed conveyance, such as a vehicle or a trailer, and shall act as an extension of the Castle Doctrine. 
+6. **Transfer of Liability for Deaths During Aggression:**
 - Principle of Provocation: An individual initiates an unprovoked, violent felony that creates a situation justifying another's use of lethal force in self-defense shall be held legally responsible for any death that occurs as a direct result of that situation.
 - Inheritance of Charges: If a person acting in justified self-defense, or a law enforcement officer acting lawfully to stop the aggression, causes of death of an innocent bystander or the aggressor's accomplice, the initiating aggressor shall be charged with and prosecuted for that homicide (e.g., manslaughter or murder), as if they had directly caused the death themselves.
 - Defense of Justification: This clause shall not apply if the initial aggressor completely and clearly withdraws from the confrontation and communicates that withdrawal to the other party before the lethal force is used.
@@ -366,21 +369,21 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 ### Section 11: Criminal Conspiracy and Complicity
 
-1. Principle of Intent: The Republic recognizes that conspiracy—the deliberate planning and agreement to commit a felony—demonstrates a fixed criminal intent that poses a clear and present danger to the social order. The mental culpability of conspiracy is commensurate with that of the completed felony.
-2. Tier 1: Concrete Conspiracy: Any person who knowingly agrees with one or more persons to commit a felony, and who commits a concrete overt act in furtherance of that agreement, is guilty of conspiracy.
-3. Sentencing for Conspiracy: A conviction for conspiracy shall be punishable by a sentence equivalent to that prescribed for the underlying felony. Sentencing judges shall have discretion within the statutory range to consider the nature of the overt act and the specific danger posed by the plot, but shall not sentence below a mandatory minimum of [e.g., 50%] of the maximum penalty for the underlying felony.
-4. Tier 2: Attempted or Completed Felony: Any person who knowingly attempts to commit a felony, whether the attempt succeeds or fails, shall be prosecuted and punished as if the felony had been completed. Parole eligibility may be restricted for violent felonies.
-5. Principle of Accomplice Liability: Any person who knowingly aids, abets, counsels, or facilitates an offense described in this section shall be prosecuted and punished as a principal offender.
+1. **Principle of Intent:** The Republic recognizes that conspiracy—the deliberate planning and agreement to commit a felony—demonstrates a fixed criminal intent that poses a clear and present danger to the social order. The mental culpability of conspiracy is commensurate with that of the completed felony.
+2. **Tier 1: Concrete Conspiracy:** Any person who knowingly agrees with one or more persons to commit a felony, and who commits a concrete overt act in furtherance of that agreement, is guilty of conspiracy.
+3. **Sentencing for Conspiracy:** A conviction for conspiracy shall be punishable by a sentence equivalent to that prescribed for the underlying felony. Sentencing judges shall have discretion within the statutory range to consider the nature of the overt act and the specific danger posed by the plot, but shall not sentence below a mandatory minimum of [e.g., 50%] of the maximum penalty for the underlying felony.
+4. **Tier 2: Attempted or Completed Felony:** Any person who knowingly attempts to commit a felony, whether the attempt succeeds or fails, shall be prosecuted and punished as if the felony had been completed. Parole eligibility may be restricted for violent felonies.
+5. **Principle of Accomplice Liability:** Any person who knowingly aids, abets, counsels, or facilitates an offense described in this section shall be prosecuted and punished as a principal offender.
 
 ### Section 12: The Doctrine of Substance Over Form of Anti-Evasion
 
-1. Principle of Economic Reality: In the application and enforcement of the laws of the Republic, the substance, economic reality, and actual purpose of arrangements shall prevail over its legal form. This principle shall be known as the Doctrine of Substance Over Form.
-2. Anti-Evasion Mandate: No person or entity shall be permitted to avoid the intent, application, or consequences of the law through the use of artificial, complex, or opaque structures that have no substantial purpose other than to evade legal obligations, taxes, or regulatory oversight.
-3. Judicial Power to Disregard Legal Form:
+1. **Principle of Economic Reality:** In the application and enforcement of the laws of the Republic, the substance, economic reality, and actual purpose of arrangements shall prevail over its legal form. This principle shall be known as the Doctrine of Substance Over Form.
+2. **Anti-Evasion Mandate:** No person or entity shall be permitted to avoid the intent, application, or consequences of the law through the use of artificial, complex, or opaque structures that have no substantial purpose other than to evade legal obligations, taxes, or regulatory oversight.
+3. **Judicial Power to Disregard Legal Form:**
 - Courts with regulatory agencies are hereby empowered and required to disregard the separate legal identities of affiliated entities, or the specific form of transaction, when it is established that the principal purpose was to evade a legal obligation.
 - In such cases, the courts shall have the authority to consolidate the assets and liabilities of affiliated entities, recharacterized transactions according to their economic substance, and impose liability on the controlling parties behind the attempt of tax evasion.
-4. Burden of Proof: In any proceeding where the state alleges an arrangement has been made for the principle purpose of evasion, the burden shall shift to the defendant(s) to demonstrate by clear and convincing evidence that the arrangement had a bona fide, substantial purpose independent of tax or regulatory avoidance.
-5. Liability for Aiding Evasion: Lawyers, accountants, financial advisors, and other professionals who knowingly design, promote, or implement schemes whose principle purpose is the evasion of law shall be subject to prosecuting accomplices, including penalties commensurate with the offense they aided.
+4. **Burden of Proof:** In any proceeding where the state alleges an arrangement has been made for the principle purpose of evasion, the burden shall shift to the defendant(s) to demonstrate by clear and convincing evidence that the arrangement had a bona fide, substantial purpose independent of tax or regulatory avoidance.
+5. **Liability for Aiding Evasion:** Lawyers, accountants, financial advisors, and other professionals who knowingly design, promote, or implement schemes whose principle purpose is the evasion of law shall be subject to prosecuting accomplices, including penalties commensurate with the offense they aided.
 
 ### Section 13: Psychological Assault and Violence Against Human Dignity
 
@@ -394,27 +397,27 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 ### Section 14: Protection from Double Jeopardy and Prosecutional Oppression
 
-1. The Right of Finality: No person shall be subject to a second prosecution or punishment for the same offense after a lawful acquittal or conviction.
-2. The "Same Offense" Defined: Two offenses are the same for the purposes of this section if they are based on the same physical act or course of conduct, unless each offense requires proof of a distinct and independent element that the other does not, and the elements address substantively different harms to the social order.
-3. The Absolute Bar: An acquittal by any court of competent jurisdiction is final and irrevocable. The state shall have no right of appeal against a verdict of acquittal.
-4. The Militant Exception - Prosecutorial Misconduct: If a court finds that a prosecutor has sought a second trial for the same offense in bad faith, or with the intent to harass or oppress the defendant after an acquittal, the following shall apply:
+1. **The Right of Finality:** No person shall be subject to a second prosecution or punishment for the same offense after a lawful acquittal or conviction.
+2. **The "Same Offense" Defined:** Two offenses are the same for the purposes of this section if they are based on the same physical act or course of conduct, unless each offense requires proof of a distinct and independent element that the other does not, and the elements address substantively different harms to the social order.
+3. **The Absolute Bar:** An acquittal by any court of competent jurisdiction is final and irrevocable. The state shall have no right of appeal against a verdict of acquittal.
+4. **The Militant Exception - Prosecutorial Misconduct:** If a court finds that a prosecutor has sought a second trial for the same offense in bad faith, or with the intent to harass or oppress the defendant after an acquittal, the following shall apply:
 - The prosecutor shall be immediately disbarred.
 - The prosecutor shall be charged with the felony of "Attempted Deprivation of Constitutional Rights," punishable by a mandatory minimum sentence equivalent to the maximum sentence for the offense they attempted to re-prosecute.
 - The defendant shall be entitled to civil damages from the prosecutor's personal assets, equivalent to ten times the cost of their legal defense for both trials.
-5. The Socialist Exception - Collateral Consequences: This section does not prohibit civil proceedings, conducted by the Worker's Branch or other relevant body, to secure restitution for victims, or to seek the equitable disgorgement of illicit profits, provided such proceedings are not punitive in nature and do not threaten the liberty of the person.
+5. **The Socialist Exception - Collateral Consequences:** This section does not prohibit civil proceedings, conducted by the Worker's Branch or other relevant body, to secure restitution for victims, or to seek the equitable disgorgement of illicit profits, provided such proceedings are not punitive in nature and do not threaten the liberty of the person.
 
 ### Section 15: Remedial Powers for Weaponized Defamation
 
-1. Finding of Weaponized Defamation: In any case where a court finds by clear and convincing evidence that a party has engaged in weaponized defamation – defined as the deliberate, malicious, and viral distortion of factual statements to incite hatred or violence against a person or group – the court may, in addition to standard damages, issue a Corrective Equity Order.
+1. **Finding of Weaponized Defamation:** In any case where a court finds by clear and convincing evidence that a party has engaged in weaponized defamation – defined as the deliberate, malicious, and viral distortion of factual statements to incite hatred or violence against a person or group – the court may, in addition to standard damages, issue a Corrective Equity Order.
 2. The Corrective Equity Order: This order is designed not to punish, but to restore the factual record and deprive the defamation of its corrosive power. The order must be the least restrictive means to achieve this goal and is subject to the following absolute constraints:
 - It shall NEVER involve compelled speech. No individual or entity shall be forced to utter, create, or broadcast any message.
 - It shall NEVER violate bodily autonomy as defined in Article I, Section 6.
 - It shall NEVER impose a prior restraint on future speech.
-3. Authorized Remedies: The court's order may compel one or more of the following actions, tailored to the scale and nature of the defamation:
-- Mandatory Silence: The court may order the defaming party to refrain from speaking or publishing on the specific, falsified topic for a period not to exceed 90 days. This is a "cooling off" period to stop the viral lie from being repeatedly amplified. (This is a restriction on speech, but a targeted and temporary one, justified by the proven malicious intent).
+3. **Authorized Remedies:** The court's order may compel one or more of the following actions, tailored to the scale and nature of the defamation:
+- **Mandatory Silence:** The court may order the defaming party to refrain from speaking or publishing on the specific, falsified topic for a period not to exceed 90 days. This is a "cooling off" period to stop the viral lie from being repeatedly amplified. (This is a restriction on speech, but a targeted and temporary one, justified by the proven malicious intent).
 - Asset Seizure for Corrective Advertising: The court may order the seizure of financial assets from the defaming party equivalent to 300% of the quantified damages. These seized funds are not a fine; they are placed in a state-managed fund. The defamed party, or a designated public-interest entity, can use these funds exclusively to purchase airtime, digital ads, or print space on any platform of their choice to present their own message and correct the record. The defamer has no control over this message.
-- Platform Access Surrender: In cases of viral digital defamation, the court may order the defaming party to surrender their access to their primary platform of offense (e.g., their Twitter/X account, YouTube channel) for a period of 30-90 days. The account would be placed in a protected, inactive state, preventing posting but leaving the original defamatory content visible as a matter of public record. This directly attacks the tool of the harm without compelling the platform to broadcast anything.
-4. Judicial Discretion and Appeal: The presiding judge must provide a written justification for the chosen remedy, explaining why it is the least restrictive means to correct the harm. All Corrective Equity Orders are subject to immediate, expedited appeal to the Supreme Court.
+- **Platform Access Surrender:** In cases of viral digital defamation, the court may order the defaming party to surrender their access to their primary platform of offense (e.g., their Twitter/X account, YouTube channel) for a period of 30-90 days. The account would be placed in a protected, inactive state, preventing posting but leaving the original defamatory content visible as a matter of public record. This directly attacks the tool of the harm without compelling the platform to broadcast anything.
+4. **Judicial Discretion and Appeal:** The presiding judge must provide a written justification for the chosen remedy, explaining why it is the least restrictive means to correct the harm. All Corrective Equity Orders are subject to immediate, expedited appeal to the Supreme Court.
 
 ### Section 16: Prohibition on Polygraph Evidence
 
@@ -429,6 +432,33 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 5. **Exceptions for Voluntary Scientific Research:** The provisions of this section shall not be construed to prohibit voluntary participation in academic, scientific, or medical research conducted with informed consent and under the oversight of a recognized ethical review board, provided no results are used for the purposes prohibited in Clauses 2, 3, and 4.
 
 **Framer's Justification:** _A justice system founded on reason and evidence cannot be built upon a foundation of junk science. The polygraph is a tool of intimidation and coercion, not of truth-seeking. Its ban is necessary to protect the innocent from false positives, the vulnerable from psychological pressure, and the integrity of the Republic's legal process from pseudoscientific theatrics._
+
+### Section 17: Posthumous Accountability and Victim Restitution
+
+1.  **Principle of Restitution from Grandfathered Assets:** An aggressor's initiation of an unprovoked violent felony creates a debt to their victims. This debt survives the aggressor's death and shall be satisfied exclusively from the assets of their grandfathered private estate, as defined in Article III.
+
+2.  **The Restitution Order:**
+- Upon a judicial finding by clear and convincing evidence that a deceased individual initiated the violent felony that led to their death by justified defensive force, the court shall issue a Restitution Order.
+- This order is a claim solely against the aggressor's grandfathered private estate and covers:
+* All medical, psychological, and psychiatric costs for the defender and innocent bystanders.
+* Full compensation for lost wages and replacement value of all damaged personal property.
+- **State-Assisted Process:** All legal proceedings under this section shall be conducted at state expense. No victim shall bear any legal costs.
+
+3.  **Satisfaction of the Order from the Estate:**
+- The Restitution Order shall be satisfied from the liquifiable assets of the grandfathered estate.
+- The following are **absolutely exempt** and cannot be used to satisfy the order:
+* The family's use-rights to the property.
+* Life insurance proceeds paid directly to named beneficiaries.
+* Essential household goods and tools of trade for dependents.
+
+4.  **Application of the Doctrine of Substance Over Form:**
+- The courts shall apply Article II, Section 12 to disregard any legal arrangement made by the aggressor, either before or after the violent act, whose principal purpose was to shield assets from this restitution process.
+- The burden shall shift to the estate to prove by clear and convincing evidence that any contested asset transfer was made for a bona fide purpose independent of evading this section.
+
+5.  **Final Recourse - The Public Restitution Fund:**
+- If the liquifiable assets of the grandfathered estate are insufficient to cover the full Restitution Order, the remaining balance shall be paid immediately to the victims from the Public Restitution Fund.
+
+**Framer's Justification:** *"This provision ensures that those who chose to live under the old system of private property are held to its final responsibility. It converts the relics of a bygone era into healing for the victims of violence, while absolutely protecting the family's home and essential means of living. The Doctrine of Substance Over Form stands as a sentinel against evasion, ensuring that the aggressor's debt to society cannot be hidden behind legal artifice. The state bears all costs of this justice, ensuring no victim faces financial barriers to restitution."*
 
 ---
 
@@ -1040,7 +1070,7 @@ The primary purpose of public education in the Secular Democratic Republic is to
 
 Upon the foundation of literacy and numeracy, the education system shall instill:
 
-1. **Civic Literacy:** A comprehensive understanding of this Constitution, the structure of government, history, and the rights and responsibilities of citizenship.
+1. **Civic Literacy:** A comprehensive understanding of this Constitution, the structure of government, and the historical successes and failures of governance that inform its design; including the rights and responsibilities of citizenship.
 2. **Critical Media and Digital Literacy:** Mandatory instruction, developed in consultation with the Scientific and Historian Branches, in:
 - Identifying logical fallacies, cognitive biases, and rhetorical manipulation.
 - Analyzing sources for credibility, bias, and evidence.
