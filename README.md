@@ -16,7 +16,7 @@
 
 - The video player is now added. Unlike the Markdown reader, you don't need to drag and drop anything. 
 
-**Note:** due to the lack of video content, unrelated videos embedded from external sources serve as a referrence until further notice. 
+**Note:** Due to the lack of video content, the video player is empty. Every video must be embedded in relevent JavaScript code. 
 
 ---
 
