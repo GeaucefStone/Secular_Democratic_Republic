@@ -8,15 +8,9 @@
 
 ### What's New
 
-- The Markdown Reader is further polished. It's loader is now both a button and a drag-and-drop point. 
+Simulated parody websites are now included. You can use them to simulate conversations to further illustrate what politics looks like under the SDR Constition. 
 
-- All files should be consistent with the Markdown reader's JavaScript. Asterisks for italics have been deliberately avoided to eliminate conflicts with hollowed bullets. 
-
-- Plus additional scenarios and cases
-
-- The video player is now added. Unlike the Markdown reader, you don't need to drag and drop anything. 
-
-**Note:** Due to the lack of video content, the video player is empty. Every video must be embedded in relevent JavaScript code. 
+**Note:** There is still currently a lack of video and image content. These are not meant to be functional websites, but rather designed to be screenshotted or recorded on screen. 
 
 ---
 
