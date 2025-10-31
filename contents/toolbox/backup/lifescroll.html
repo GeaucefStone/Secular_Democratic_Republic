@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifescroll - Facebook Parody</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-magenta: #E1306C;
+            --magenta-dark: #C13584;
+            --light-bg: #F0F2F5;
+            --white: #FFFFFF;
+            --card-bg: #FFFFFF;
+            --dark-text: #1C1E21;
+            --gray-text: #65676B;
+            --border-color: #DADDE1;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--white);
+            padding: 10px 20px;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--primary-magenta);
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+        }
+
+        .search-bar {
+            background-color: var(--light-bg);
+            border-radius: 20px;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+            width: 40%;
+        }
+
+        .search-bar i {
+            color: var(--gray-text);
+            margin-right: 8px;
+        }
+
+        .search-bar input {
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .search-bar input:focus {
+            outline: none;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .nav-icon:hover {
+            background-color: var(--border-color);
+        }
+
+        .nav-icon.active {
+            color: var(--primary-magenta);
+        }
+
+        .nav-icon.active::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-magenta);
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .user-profile:hover {
+            background-color: var(--light-bg);
+        }
+
+        .avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--primary-magenta);
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--white);
+        }
+
+        /* Main Content Styles */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+
+        /* Left Sidebar Styles */
+        .left-sidebar {
+            width: 25%;
+        }
+
+        .sidebar-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-item:hover {
+            background-color: var(--light-bg);
+        }
+
+        .sidebar-item i {
+            margin-right: 10px;
+            width: 25px;
+            text-align: center;
+            color: var(--primary-magenta);
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 10px 0;
+        }
+
+        .shortcuts-title {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--gray-text);
+        }
+
+        /* Feed Styles */
+        .feed {
+            width: 50%;
+        }
+
+        .create-post {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .post-input .avatar {
+            width: 40px;
+            height: 40px;
+        }
+
+        .post-input input {
+            flex: 1;
+            background-color: var(--light-bg);
+            border: none;
+            border-radius: 20px;
+            padding: 10px 15px;
+            margin-left: 10px;
+            font-size: 17px;
+        }
+
+        .post-input input:focus {
+            outline: none;
+        }
+
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .post-action {
+            display: flex;
+            align-items: center;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .post-action:hover {
+            background-color: var(--light-bg);
+        }
+
+        .post-action i {
+            margin-right: 8px;
+            color: var(--primary-magenta);
+        }
+
+        /* Post Styles */
+        .post {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .post-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-magenta);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--white);
+        }
+
+        .post-author {
+            font-weight: 600;
+        }
+
+        .post-time {
+            color: var(--gray-text);
+            font-size: 13px;
+        }
+
+        .post-content {
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .post-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: var(--light-bg);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+        }
+
+        .post-stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--gray-text);
+            font-size: 14px;
+        }
+
+        .post-engagement {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        .engagement-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 8px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .engagement-btn:hover {
+            background-color: var(--light-bg);
+        }
+
+        .engagement-btn i {
+            margin-right: 5px;
+            color: var(--gray-text);
+        }
+
+        .engagement-btn.liked {
+            color: var(--primary-magenta);
+        }
+
+        .engagement-btn.liked i {
+            color: var(--primary-magenta);
+        }
+
+        /* Comments Section */
+        .comments {
+            margin-top: 15px;
+        }
+
+        .comment {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .comment-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--primary-magenta);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--white);
+            font-size: 12px;
+        }
+
+        .comment-content {
+            flex: 1;
+            background-color: var(--light-bg);
+            padding: 10px;
+            border-radius: 18px;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .comment-text {
+            margin-top: 3px;
+            font-size: 14px;
+        }
+
+        .comment-actions {
+            display: flex;
+            margin-top: 5px;
+            font-size: 12px;
+            color: var(--gray-text);
+        }
+
+        .comment-action {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .comment-action:hover {
+            text-decoration: underline;
+        }
+
+        /* Reply Styles */
+        .replies {
+            margin-left: 42px;
+            margin-top: 10px;
+            border-left: 2px solid var(--border-color);
+            padding-left: 15px;
+        }
+
+        .reply {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .reply-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: var(--primary-magenta);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--white);
+            font-size: 10px;
+            opacity: 0.8;
+        }
+
+        .reply-content {
+            flex: 1;
+            background-color: var(--light-bg);
+            padding: 8px 12px;
+            border-radius: 18px;
+        }
+
+        .reply-author {
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .reply-text {
+            margin-top: 2px;
+            font-size: 13px;
+        }
+
+        .reply-actions {
+            display: flex;
+            margin-top: 3px;
+            font-size: 11px;
+            color: var(--gray-text);
+        }
+
+        .reply-action {
+            margin-right: 12px;
+            cursor: pointer;
+        }
+
+        .reply-action:hover {
+            text-decoration: underline;
+        }
+
+        .view-replies {
+            font-size: 13px;
+            color: var(--gray-text);
+            margin: 5px 0 10px 42px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .view-replies:hover {
+            text-decoration: underline;
+        }
+
+        .add-comment {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .add-comment input {
+            flex: 1;
+            background-color: var(--light-bg);
+            border: none;
+            border-radius: 18px;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+
+        .add-comment input:focus {
+            outline: none;
+        }
+
+        /* Right Sidebar Styles */
+        .right-sidebar {
+            width: 25%;
+        }
+
+        .contacts-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .contacts-title span {
+            font-weight: 600;
+        }
+
+        .contacts-title i {
+            color: var(--gray-text);
+            cursor: pointer;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .contact:hover {
+            background-color: var(--light-bg);
+        }
+
+        .contact-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--primary-magenta);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--white);
+            font-size: 14px;
+        }
+
+        .contact-name {
+            font-weight: 500;
+        }
+
+        /* Font Awesome Icons (using Unicode) */
+        .fa {
+            font-style: normal;
+        }
+        .fa-scroll:before { content: "📜"; }
+        .fa-home:before { content: "🏠"; }
+        .fa-video:before { content: "📺"; }
+        .fa-store:before { content: "🛒"; }
+        .fa-group:before { content: "👥"; }
+        .fa-game:before { content: "🎮"; }
+        .fa-menu:before { content: "☰"; }
+        .fa-messenger:before { content: "💬"; }
+        .fa-notifications:before { content: "🔔"; }
+        .fa-search:before { content: "🔍"; }
+        .fa-photo:before { content: "🖼️"; }
+        .fa-feeling:before { content: "😊"; }
+        .fa-like:before { content: "👍"; }
+        .fa-comment:before { content: "💬"; }
+        .fa-share:before { content: "↗️"; }
+        .fa-ellipsis:before { content: "⋯"; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <i class="fa fa-scroll"></i> Lifescroll
+        </div>
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search Lifescroll">
+        </div>
+        <div class="nav-icons">
+            <div class="nav-icon active">
+                <i class="fa fa-home"></i>
+            </div>
+            <div class="nav-icon">
+                <i class="fa fa-video"></i>
+            </div>
+            <div class="nav-icon">
+                <i class="fa fa-store"></i>
+            </div>
+            <div class="nav-icon">
+                <i class="fa fa-group"></i>
+            </div>
+            <div class="nav-icon">
+                <i class="fa fa-game"></i>
+            </div>
+        </div>
+        <div class="user-profile">
+            <div class="avatar">JD</div>
+            <div>John</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-item">
+                    <i class="fa fa-home"></i> Home
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa fa-video"></i> Watch
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa fa-store"></i> Marketplace
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa fa-group"></i> Groups
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa fa-game"></i> Gaming
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="shortcuts-title">Your Shortcuts</div>
+                <div class="sidebar-item">
+                    <div class="avatar" style="background-color: #4267B2; margin-right: 10px;">PD</div>
+                    Politics Debate Group
+                </div>
+                <div class="sidebar-item">
+                    <div class="avatar" style="background-color: #E1306C; margin-right: 10px;">LS</div>
+                    Lifescroll Developers
+                </div>
+                <div class="sidebar-item">
+                    <div class="avatar" style="background-color: #1DA1F2; margin-right: 10px;">CH</div>
+                    Chirper Fans
+                </div>
+            </div>
+        </div>
+
+        <!-- Feed -->
+        <div class="feed">
+            <!-- Create Post -->
+            <div class="create-post">
+                <div class="post-input">
+                    <div class="avatar">JD</div>
+                    <input type="text" placeholder="What's on your mind, John?">
+                </div>
+                <div class="post-actions">
+                    <div class="post-action">
+                        <i class="fa fa-video"></i> Live Video
+                    </div>
+                    <div class="post-action">
+                        <i class="fa fa-photo"></i> Photo/Video
+                    </div>
+                    <div class="post-action">
+                        <i class="fa fa-feeling"></i> Feeling/Activity
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 1 -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-avatar">MN</div>
+                    <div>
+                        <div class="post-author">Marcus Netterfield</div>
+                        <div class="post-time">2 hrs · Public</div>
+                    </div>
+                    <div style="margin-left: auto;">
+                        <i class="fa fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Just bought Lifescroll for $50 billion. Planning to add a dislike button next week!
+                </div>
+                <div class="post-image">
+                    [Image: Lifescroll headquarters]
+                </div>
+                <div class="post-stats">
+                    <div>👍 12K · 💬 1.5K · ↗️ 3.2K</div>
+                </div>
+                <div class="post-engagement">
+                    <div class="engagement-btn">
+                        <i class="fa fa-like"></i> Like
+                    </div>
+                    <div class="engagement-btn">
+                        <i class="fa fa-comment"></i> Comment
+                    </div>
+                    <div class="engagement-btn">
+                        <i class="fa fa-share"></i> Share
+                    </div>
+                </div>
+                
+                <!-- Comments -->
+                <div class="comments">
+                    <div class="comment">
+                        <div class="comment-avatar">JD</div>
+                        <div class="comment-content">
+                            <div class="comment-author">John Doe</div>
+                            <div class="comment-text">Can't wait for the dislike button! 😂</div>
+                            <div class="comment-actions">
+                                <span class="comment-action">Like</span>
+                                <span class="comment-action">Reply</span>
+                                <span class="comment-action">2h</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Replies to John's comment -->
+                    <div class="replies">
+                        <div class="reply">
+                            <div class="reply-avatar">MN</div>
+                            <div class="reply-content">
+                                <div class="reply-author">Marcus Netterfield</div>
+                                <div class="reply-text">We're calling it the "dislike respectfully" button</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">1h</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <div class="reply-avatar">TN</div>
+                            <div class="reply-content">
+                                <div class="reply-author">Tech News</div>
+                                <div class="reply-text">Finally! This is what social media needs</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">45m</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar">CK</div>
+                        <div class="comment-content">
+                            <div class="comment-author">Cat Lover</div>
+                            <div class="comment-text">Will there be a cat reaction button? 🐱</div>
+                            <div class="comment-actions">
+                                <span class="comment-action">Like</span>
+                                <span class="comment-action">Reply</span>
+                                <span class="comment-action">1h</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Replies to Cat Lover's comment -->
+                    <div class="replies">
+                        <div class="reply">
+                            <div class="reply-avatar">MN</div>
+                            <div class="reply-content">
+                                <div class="reply-author">Marcus Netterfield</div>
+                                <div class="reply-text">Great idea! We'll add cat, dog, and pizza reactions</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">50m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <div class="reply-avatar">JD</div>
+                            <div class="reply-content">
+                                <div class="reply-author">John Doe</div>
+                                <div class="reply-text">Pizza reaction is the most important one! 🍕</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">30m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-replies">View 3 more replies</div>
+                    </div>
+
+                    <div class="add-comment">
+                        <div class="comment-avatar">JD</div>
+                        <input type="text" placeholder="Write a comment...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-avatar">CK</div>
+                    <div>
+                        <div class="post-author">Cat Lover</div>
+                        <div class="post-time">5 hrs · Public</div>
+                    </div>
+                    <div style="margin-left: auto;">
+                        <i class="fa fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Just adopted this adorable kitten! Meet Luna 🐱 #CatsOfLifescroll
+                </div>
+                <div class="post-image">
+                    [Image: Adorable gray kitten]
+                </div>
+                <div class="post-stats">
+                    <div>👍 2.3K · 💬 342 · ↗️ 128</div>
+                </div>
+                <div class="post-engagement">
+                    <div class="engagement-btn liked">
+                        <i class="fa fa-like"></i> Like
+                    </div>
+                    <div class="engagement-btn">
+                        <i class="fa fa-comment"></i> Comment
+                    </div>
+                    <div class="engagement-btn">
+                        <i class="fa fa-share"></i> Share
+                    </div>
+                </div>
+                
+                <!-- Comments -->
+                <div class="comments">
+                    <div class="comment">
+                        <div class="comment-avatar">JD</div>
+                        <div class="comment-content">
+                            <div class="comment-author">John Doe</div>
+                            <div class="comment-text">So cute! What breed is she?</div>
+                            <div class="comment-actions">
+                                <span class="comment-action">Like</span>
+                                <span class="comment-action">Reply</span>
+                                <span class="comment-action">4h</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Replies to John's comment -->
+                    <div class="replies">
+                        <div class="reply">
+                            <div class="reply-avatar">CK</div>
+                            <div class="reply-content">
+                                <div class="reply-author">Cat Lover</div>
+                                <div class="reply-text">She's a British Shorthair! Her brother Simba is orange tabby</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">3h</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <div class="reply-avatar">TS</div>
+                            <div class="reply-content">
+                                <div class="reply-author">Tyler Brisk</div>
+                                <div class="reply-text">OMG I have a British Shorthair too! They're the best 💕</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">2h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar">NB</div>
+                        <div class="comment-content">
+                            <div class="comment-author">NASA</div>
+                            <div class="comment-text">Even our astronauts would love this cute kitten! 🚀🐱</div>
+                            <div class="comment-actions">
+                                <span class="comment-action">Like</span>
+                                <span class="comment-action">Reply</span>
+                                <span class="comment-action">3h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-comment">
+                        <div class="comment-avatar">JD</div>
+                        <input type="text" placeholder="Write a comment...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-avatar">TN</div>
+                    <div>
+                        <div class="post-author">Tech News</div>
+                        <div class="post-time">Yesterday · Public</div>
+                    </div>
+                    <div style="margin-left: auto;">
+                        <i class="fa fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Breaking: New smartphone with 200MP camera and week-long battery life announced today. #TechUpdate
+                </div>
+                <div class="post-image">
+                    [Image: New smartphone]
+                </div>
+                <div class="post-stats">
+                    <div>👍 5.7K · 💬 843 · ↗️ 1.2K</div>
+                </div>
+                <div class="post-engagement">
+                    <div class="engagement-btn">
+                        <i class="fa fa-like"></i> Like
+                    </div>
+                    <div class="engagement-btn">
+                        <i class="fa fa-comment"></i> Comment
+                    </div>
+                    <div class="engagement-btn">
+                        <i class="fa fa-share"></i> Share
+                    </div>
+                </div>
+
+                <!-- Comments -->
+                <div class="comments">
+                    <div class="comment">
+                        <div class="comment-avatar">JD</div>
+                        <div class="comment-content">
+                            <div class="comment-author">John Doe</div>
+                            <div class="comment-text">Week-long battery? Finally! My phone dies after 6 hours</div>
+                            <div class="comment-actions">
+                                <span class="comment-action">Like</span>
+                                <span class="comment-action">Reply</span>
+                                <span class="comment-action">22h</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Replies to John's comment -->
+                    <div class="replies">
+                        <div class="reply">
+                            <div class="reply-avatar">TN</div>
+                            <div class="reply-content">
+                                <div class="reply-author">Tech News</div>
+                                <div class="reply-text">It uses new graphene battery technology!</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">20h</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <div class="reply-avatar">MN</div>
+                            <div class="reply-content">
+                                <div class="reply-author">Marcus Netterfield</div>
+                                <div class="reply-text">We're working on month-long batteries for Neuralink</div>
+                                <div class="reply-actions">
+                                    <span class="reply-action">Like</span>
+                                    <span class="reply-action">Reply</span>
+                                    <span class="reply-action">18h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-replies">View 12 more replies</div>
+
+                    <div class="add-comment">
+                        <div class="comment-avatar">JD</div>
+                        <input type="text" placeholder="Write a comment...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-card">
+                <div class="contacts-title">
+                    <span>Contacts</span>
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar">MN</div>
+                    <div class="contact-name">Marcus Netterfield</div>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar">CK</div>
+                    <div class="contact-name">Cat Lover</div>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar">TN</div>
+                    <div class="contact-name">Tech News</div>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar">TB</div>
+                    <div class="contact-name">Tyler Brisk</div>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar">NB</div>
+                    <div class="contact-name">NASA</div>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar">FC</div>
+                    <div class="contact-name">Chef Network</div>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="shortcuts-title">Group Conversations</div>
+                <div class="contact">
+                    <div class="contact-avatar" style="background-color: #4267B2;">PD</div>
+                    <div class="contact-name">Politics Debate Group</div>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar" style="background-color: #E1306C;">LS</div>
+                    <div class="contact-name">Lifescroll Developers</div>
+                </div>
+                <div class="contact">
+                    <div class="contact-avatar" style="background-color: #1DA1F2;">CH</div>
+                    <div class="contact-name">Chirper Fans</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
