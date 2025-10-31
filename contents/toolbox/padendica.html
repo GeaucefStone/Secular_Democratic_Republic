@@ -1,53 +1,1052 @@
-<html>
-	<head>
-		<title>
-		Pandendica
-		</title>
-		<style>
-			.bar {
-				background-color: grey;
-				height: 5em;
-				margin-top: -8px;
-				margin-left: -8px;
-				width: 101%;
-			}
-			.profile_picture {
-				border-radius: 50px;
-				height: 50px;
-				width: 50px;
-			}
-			.question_box {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padendica - Knowledge Sharing Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-			}
-			.username {
+        :root {
+            --primary-cyan: #00CED1;
+            --cyan-dark: #00999C;
+            --dark-bg: #1A1A1A;
+            --darker-bg: #0F0F0F;
+            --card-bg: #242424;
+            --light-text: #F5F5F5;
+            --gray-text: #B0B0B0;
+            --border-color: #333333;
+        }
 
-			}
-		</style>
-	</head>
-	<body>
-		<div class="bar">
-		Pandendica
-		</div
-		<div>
-			<div class="username">
-				<p> 
-				<img src="" alt="troll" class="profile_picture" />
-				username asks
-				</p>
-			</div>
-			<h1>
-			Question goes here
-			</h1>
-		</div>
+        body {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
 
-		<p>
-		Top answer goes here
-		</p>
-		<p>
-		Comments go here
-		</p>
-		<p>
-		Replies go here
-		</p>
-	</body>
+        /* Header Styles */
+        .header {
+            background-color: var(--darker-bg);
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--primary-cyan);
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .logo i {
+            margin-right: 10px;
+        }
+
+        .search-bar {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+            width: 40%;
+        }
+
+        .search-bar i {
+            color: var(--gray-text);
+            margin-right: 8px;
+        }
+
+        .search-bar input {
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            font-size: 15px;
+            color: var(--light-text);
+        }
+
+        .search-bar input:focus {
+            outline: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-link {
+            color: var(--gray-text);
+            cursor: pointer;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-cyan);
+            background-color: var(--card-bg);
+        }
+
+        .nav-link.active {
+            color: var(--primary-cyan);
+        }
+
+        .user-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .ask-btn {
+            background-color: var(--primary-cyan);
+            color: var(--darker-bg);
+            border: none;
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .user-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--primary-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--darker-bg);
+            cursor: pointer;
+        }
+
+        /* Main Content Styles */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+
+        /* Left Sidebar Styles */
+        .left-sidebar {
+            width: 20%;
+        }
+
+        .sidebar-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-cyan);
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-item:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-item:hover {
+            color: var(--primary-cyan);
+        }
+
+        .sidebar-item i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .topic-list {
+            list-style: none;
+        }
+
+        .topic-item {
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        .topic-item:hover {
+            color: var(--primary-cyan);
+        }
+
+        /* Tab Content Styles */
+        .tab-content {
+            width: 80%;
+            display: flex;
+        }
+
+        .tab-pane {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .tab-pane.active {
+            display: flex;
+        }
+
+        /* Feed Styles */
+        .feed {
+            width: 100%;
+        }
+
+        .question-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .question-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 206, 209, 0.2);
+        }
+
+        .question-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .question-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-cyan);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--darker-bg);
+        }
+
+        .question-info {
+            flex: 1;
+        }
+
+        .question-author {
+            font-weight: 600;
+        }
+
+        .question-meta {
+            color: var(--gray-text);
+            font-size: 14px;
+        }
+
+        .question-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .question-content {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        /* Photo Styles */
+        .question-photos {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .question-photo {
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+            background-color: var(--darker-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 14px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .question-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .answer-photos {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        .answer-photo {
+            width: 180px;
+            height: 120px;
+            border-radius: 6px;
+            background-color: var(--dark-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 12px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .answer-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .question-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background-color: var(--darker-bg);
+            color: var(--primary-cyan);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            background-color: var(--primary-cyan);
+            color: var(--darker-bg);
+        }
+
+        .question-actions {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            color: var(--gray-text);
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .action-btn:hover {
+            background-color: var(--darker-bg);
+            color: var(--primary-cyan);
+        }
+
+        .action-btn i {
+            margin-right: 5px;
+        }
+
+        .answer-count {
+            color: var(--primary-cyan);
+            font-weight: 600;
+        }
+
+        /* Answer Styles */
+        .answer {
+            background-color: var(--darker-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .answer-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .answer-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--primary-cyan);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--darker-bg);
+            font-size: 14px;
+        }
+
+        .answer-author {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .answer-meta {
+            color: var(--gray-text);
+            font-size: 13px;
+            margin-left: auto;
+        }
+
+        .answer-content {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .answer-actions {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+            color: var(--gray-text);
+        }
+
+        .answer-action {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .answer-action:hover {
+            color: var(--primary-cyan);
+        }
+
+        .answer-action i {
+            margin-right: 5px;
+        }
+
+        .view-more {
+            color: var(--primary-cyan);
+            cursor: pointer;
+            font-weight: 500;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .view-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Question Page Styles */
+        .question-page {
+            width: 100%;
+        }
+
+        .question-page-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .back-button {
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            color: var(--primary-cyan);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: var(--darker-bg);
+        }
+
+        .question-page-title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .answers-count {
+            color: var(--primary-cyan);
+            font-weight: 600;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        /* Right Sidebar Styles */
+        .right-sidebar {
+            width: 20%;
+        }
+
+        .spaces-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .spaces-title span {
+            font-weight: 600;
+        }
+
+        .spaces-title i {
+            color: var(--gray-text);
+            cursor: pointer;
+        }
+
+        .space {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+
+        .space:last-child {
+            border-bottom: none;
+        }
+
+        .space:hover {
+            color: var(--primary-cyan);
+        }
+
+        .space-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--primary-cyan);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--darker-bg);
+            font-size: 12px;
+        }
+
+        .space-name {
+            font-weight: 500;
+        }
+
+        /* Font Awesome Icons (using Unicode) */
+        .fa {
+            font-style: normal;
+        }
+        .fa-question:before { content: "❓"; }
+        .fa-home:before { content: "🏠"; }
+        .fa-answer:before { content: "📝"; }
+        .fa-spaces:before { content: "🌐"; }
+        .fa-notifications:before { content: "🔔"; }
+        .fa-search:before { content: "🔍"; }
+        .fa-upvote:before { content: "⬆️"; }
+        .fa-downvote:before { content: "⬇️"; }
+        .fa-comment:before { content: "💬"; }
+        .fa-share:before { content: "↗️"; }
+        .fa-bookmark:before { content: "🔖"; }
+        .fa-more:before { content: "⋯"; }
+        .fa-arrow-left:before { content: "←"; }
+        .fa-image:before { content: "🖼️"; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo" onclick="showSection('home')">
+            <i class="fa fa-question"></i> Padendica
+        </div>
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search Padendica">
+        </div>
+        <div class="nav-links">
+            <div class="nav-link active" onclick="showSection('home')">Home</div>
+            <div class="nav-link">Answer</div>
+            <div class="nav-link">Spaces</div>
+            <div class="nav-link">Notifications</div>
+        </div>
+        <div class="user-actions">
+            <button class="ask-btn">Ask Question</button>
+            <div class="user-avatar">JD</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">Navigation</div>
+                <div class="sidebar-item" onclick="showSection('home')">
+                    <i class="fa fa-home"></i> Home
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa fa-answer"></i> My Content
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa fa-spaces"></i> Spaces
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa fa-notifications"></i> Notifications
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Popular Topics</div>
+                <ul class="topic-list">
+                    <li class="topic-item">Technology</li>
+                    <li class="topic-item">Science</li>
+                    <li class="topic-item">Philosophy</li>
+                    <li class="topic-item">History</li>
+                    <li class="topic-item">Psychology</li>
+                    <li class="topic-item">Economics</li>
+                    <li class="topic-item">Health</li>
+                    <li class="topic-item">Education</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Home Tab -->
+            <div class="tab-pane active" id="home-section">
+                <div class="feed">
+                    <!-- Question 1 with Photos -->
+                    <div class="question-card" onclick="showQuestion('question1')">
+                        <div class="question-header">
+                            <div class="question-avatar">JA</div>
+                            <div class="question-info">
+                                <div class="question-author">John Atlas</div>
+                                <div class="question-meta">Asked 2 days ago · Updated 5 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="question-title">
+                            What would happen if we discovered a way to achieve practical nuclear fusion energy?
+                        </div>
+                        <div class="question-content">
+                            I've been reading about recent advances in fusion research and wondering about the practical implications if we could actually make it work at scale. How would this change our world?
+                        </div>
+                        
+                        <!-- Photo Section -->
+                        <div class="question-photos">
+                            <div class="question-photo">
+                                <div class="photo-placeholder">
+                                    <i class="fa fa-image"></i>
+                                    <span>Fusion Reactor</span>
+                                </div>
+                            </div>
+                            <div class="question-photo">
+                                <div class="photo-placeholder">
+                                    <i class="fa fa-image"></i>
+                                    <span>Energy Grid</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-tags">
+                            <div class="tag">#Science</div>
+                            <div class="tag">#Technology</div>
+                            <div class="tag">#Energy</div>
+                            <div class="tag">#Future</div>
+                        </div>
+                        <div class="question-actions">
+                            <div class="action-btn">
+                                <i class="fa fa-upvote"></i> 2.4K
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-downvote"></i>
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-comment"></i> 342
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-share"></i> Share
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-bookmark"></i> Save
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-more"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-card" onclick="showQuestion('question2')">
+                        <div class="question-header">
+                            <div class="question-avatar">CP</div>
+                            <div class="question-info">
+                                <div class="question-author">Curious Philosopher</div>
+                                <div class="question-meta">Asked 5 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="question-title">
+                            Why do humans create art, and what purpose does it serve in society?
+                        </div>
+                        <div class="question-content">
+                            Throughout history, every human civilization has created art in some form. What drives this universal human behavior, and how does art contribute to society beyond mere decoration?
+                        </div>
+                        <div class="question-tags">
+                            <div class="tag">#Philosophy</div>
+                            <div class="tag">#Art</div>
+                            <div class="tag">#Psychology</div>
+                            <div class="tag">#Society</div>
+                        </div>
+                        <div class="question-actions">
+                            <div class="action-btn">
+                                <i class="fa fa-upvote"></i> 1.7K
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-downvote"></i>
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-comment"></i> 218
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-share"></i> Share
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-bookmark"></i> Save
+                            </div>
+                            <div class="action-btn">
+                                <i class="fa fa-more"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question Pages -->
+            <div class="tab-pane question-page" id="question1">
+                <div class="question-page-header">
+                    <div class="back-button" onclick="showSection('home')">
+                        <i class="fa fa-arrow-left"></i> Back to Feed
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="question-avatar">JA</div>
+                        <div class="question-info">
+                            <div class="question-author">John Atlas</div>
+                            <div class="question-meta">Asked 2 days ago · Updated 5 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="question-page-title">
+                        What would happen if we discovered a way to achieve practical nuclear fusion energy?
+                    </div>
+                    <div class="question-content">
+                        I've been reading about recent advances in fusion research and wondering about the practical implications if we could actually make it work at scale. How would this change our world? What industries would be most affected? Would this solve our climate change problems?
+                    </div>
+                    
+                    <!-- Enhanced Photo Section -->
+                    <div class="question-photos">
+                        <div class="question-photo">
+                            <div class="photo-placeholder">
+                                <i class="fa fa-image"></i>
+                                <span>ITER Fusion Reactor</span>
+                            </div>
+                        </div>
+                        <div class="question-photo">
+                            <div class="photo-placeholder">
+                                <i class="fa fa-image"></i>
+                                <span>Energy Distribution</span>
+                            </div>
+                        </div>
+                        <div class="question-photo">
+                            <div class="photo-placeholder">
+                                <i class="fa fa-image"></i>
+                                <span>Clean Energy Impact</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-tags">
+                        <div class="tag">#Science</div>
+                        <div class="tag">#Technology</div>
+                        <div class="tag">#Energy</div>
+                        <div class="tag">#Future</div>
+                        <div class="tag">#ClimateChange</div>
+                    </div>
+                    <div class="question-actions">
+                        <div class="action-btn">
+                            <i class="fa fa-upvote"></i> 2.4K
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-downvote"></i>
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-comment"></i> 342
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-share"></i> Share
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-bookmark"></i> Save
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-more"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answers-count">342 Answers</div>
+
+                <!-- Answers with Photos -->
+                <div class="answer">
+                    <div class="answer-header">
+                        <div class="answer-avatar">ES</div>
+                        <div class="answer-author">Emma Scientist</div>
+                        <div class="answer-meta">PhD in Nuclear Physics · 1.2K upvotes</div>
+                    </div>
+                    <div class="answer-content">
+                        Practical nuclear fusion would revolutionize our world in several key ways. First, energy would become nearly limitless and incredibly cheap, potentially dropping electricity costs by 90% or more. This would eliminate our dependence on fossil fuels, dramatically reducing carbon emissions and combating climate change.
+                    </div>
+                    
+                    <!-- Answer Photos -->
+                    <div class="answer-photos">
+                        <div class="answer-photo">
+                            <div class="photo-placeholder">
+                                <i class="fa fa-image"></i>
+                                <span>Fusion Diagram</span>
+                            </div>
+                        </div>
+                        <div class="answer-photo">
+                            <div class="photo-placeholder">
+                                <i class="fa fa-image"></i>
+                                <span>Cost Comparison</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-content">
+                        Industries that are energy-intensive would see massive cost reductions. We could also power carbon capture technologies at scale and desalinate seawater affordably, solving water scarcity issues in many regions.
+                    </div>
+                    <div class="answer-actions">
+                        <div class="answer-action">
+                            <i class="fa fa-upvote"></i> 1.2K
+                        </div>
+                        <div class="answer-action">
+                            <i class="fa fa-downvote"></i>
+                        </div>
+                        <div class="answer-action">
+                            <i class="fa fa-comment"></i> 87
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answer">
+                    <div class="answer-header">
+                        <div class="answer-avatar">TE</div>
+                        <div class="answer-author">Thomas Economist</div>
+                        <div class="answer-meta">Economic Analyst · 845 upvotes</div>
+                    </div>
+                    <div class="answer-content">
+                        From an economic perspective, cheap fusion energy would disrupt global markets. Oil-producing nations would need to completely restructure their economies. Transportation costs would plummet, potentially revitalizing manufacturing in developed countries.
+                    </div>
+
+                    <!-- Answer Photo -->
+                    <div class="answer-photos">
+                        <div class="answer-photo">
+                            <div class="photo-placeholder">
+                                <i class="fa fa-image"></i>
+                                <span>Economic Impact</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-content">
+                        We might see the emergence of entirely new industries that were previously energy-prohibitive. However, the transition would need careful management to avoid economic shocks. The geopolitical landscape would shift dramatically as energy independence becomes achievable for most nations.
+                    </div>
+                    <div class="answer-actions">
+                        <div class="answer-action">
+                            <i class="fa fa-upvote"></i> 845
+                        </div>
+                        <div class="answer-action">
+                            <i class="fa fa-downvote"></i>
+                        </div>
+                        <div class="answer-action">
+                            <i class="fa fa-comment"></i> 42
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-more">View 340 more answers</div>
+            </div>
+
+            <!-- Question 2 Page -->
+            <div class="tab-pane question-page" id="question2">
+                <div class="question-page-header">
+                    <div class="back-button" onclick="showSection('home')">
+                        <i class="fa fa-arrow-left"></i> Back to Feed
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <div class="question-header">
+                        <div class="question-avatar">CP</div>
+                        <div class="question-info">
+                            <div class="question-author">Curious Philosopher</div>
+                            <div class="question-meta">Asked 5 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="question-page-title">
+                        Why do humans create art, and what purpose does it serve in society?
+                    </div>
+                    <div class="question-content">
+                        Throughout history, every human civilization has created art in some form. From cave paintings to digital installations, art seems to be a fundamental human activity. What drives this universal human behavior, and how does art contribute to society beyond mere decoration? Is there an evolutionary advantage to creating art?
+                    </div>
+                    <div class="question-tags">
+                        <div class="tag">#Philosophy</div>
+                        <div class="tag">#Art</div>
+                        <div class="tag">#Psychology</div>
+                        <div class="tag">#Society</div>
+                        <div class="tag">#Anthropology</div>
+                    </div>
+                    <div class="question-actions">
+                        <div class="action-btn">
+                            <i class="fa fa-upvote"></i> 1.7K
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-downvote"></i>
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-comment"></i> 218
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-share"></i> Share
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-bookmark"></i> Save
+                        </div>
+                        <div class="action-btn">
+                            <i class="fa fa-more"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answers-count">218 Answers</div>
+
+                <!-- Answers -->
+                <div class="answer">
+                    <div class="answer-header">
+                        <div class="answer-avatar">AP</div>
+                        <div class="answer-author">Art Professor</div>
+                        <div class="answer-meta">Art History Professor · 956 upvotes</div>
+                    </div>
+                    <div class="answer-content">
+                        Art serves multiple crucial functions in society. Firstly, it's a form of communication that transcends language barriers. It allows us to express complex emotions, ideas, and cultural values that might be difficult to articulate verbally.
+                        
+                        Art also preserves cultural memory and identity. Through art, we can understand how people in different eras thought, felt, and perceived their world. It creates shared experiences that bind communities together and helps us process collective trauma or celebrate shared achievements.
+                    </div>
+                    <div class="answer-actions">
+                        <div class="answer-action">
+                            <i class="fa fa-upvote"></i> 956
+                        </div>
+                        <div class="answer-action">
+                            <i class="fa fa-downvote"></i>
+                        </div>
+                        <div class="answer-action">
+                            <i class="fa fa-comment"></i> 63
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-more">View 216 more answers</div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-card">
+                <div class="spaces-title">
+                    <span>Popular Spaces</span>
+                    <i class="fa fa-more"></i>
+                </div>
+                <div class="space">
+                    <div class="space-avatar">TS</div>
+                    <div class="space-name">Technology & Science</div>
+                </div>
+                <div class="space">
+                    <div class="space-avatar">PH</div>
+                    <div class="space-name">Philosophy & Ethics</div>
+                </div>
+                <div class="space">
+                    <div class="space-avatar">HI</div>
+                    <div class="space-name">History & Archaeology</div>
+                </div>
+                <div class="space">
+                    <div class="space-avatar">PS</div>
+                    <div class="space-name">Psychology & Mind</div>
+                </div>
+                <div class="space">
+                    <div class="space-avatar">EC</div>
+                    <div class="space-name">Economics & Finance</div>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="sidebar-title">Trending Questions</div>
+                <div class="topic-item">What's the most surprising scientific discovery of the last decade?</div>
+                <div class="topic-item">How will AI change education in the next 5 years?</div>
+                <div class="topic-item">What ethical questions does genetic engineering raise?</div>
+                <div class="topic-item">Why do some countries develop faster than others?</div>
+                <div class="topic-item">What makes a great leader in times of crisis?</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            // Hide all sections
+            const panes = document.querySelectorAll('.tab-pane');
+            panes.forEach(pane => pane.classList.remove('active'));
+            
+            // Show selected section
+            document.getElementById(section + '-section').classList.add('active');
+        }
+        
+        function showQuestion(questionId) {
+            // Hide all sections
+            const panes = document.querySelectorAll('.tab-pane');
+            panes.forEach(pane => pane.classList.remove('active'));
+            
+            // Show selected question
+            document.getElementById(questionId).classList.add('active');
+        }
+
+        // Initialize with home section active
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home');
+        });
+    </script>
+</body>
 </html>
