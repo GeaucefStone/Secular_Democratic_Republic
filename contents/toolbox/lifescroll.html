@@ -29,6 +29,13 @@
             min-height: 100vh;
         }
 
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
         /* Header Styles */
         .header {
             background-color: var(--white);
@@ -193,9 +200,25 @@
             color: var(--gray-text);
         }
 
+        /* Tab Content Styles */
+        .tab-content {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tab-pane {
+            display: none;
+            flex-direction: column;
+        }
+
+        .tab-pane.active {
+            display: flex;
+        }
+
         /* Feed Styles */
         .feed {
-            width: 50%;
+            width: 100%;
         }
 
         .create-post {
@@ -549,6 +572,179 @@
             font-weight: 500;
         }
 
+        /* Group Chat Styles */
+        .group-chat-container {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 120px);
+        }
+
+        .group-chat-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .group-chat-title {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .group-chat-title i {
+            margin-right: 10px;
+            color: var(--primary-magenta);
+        }
+
+        .group-chat-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        .group-chat-control {
+            cursor: pointer;
+            color: var(--gray-text);
+        }
+
+        .group-chat-control:hover {
+            color: var(--primary-magenta);
+        }
+
+        .group-chat-members {
+            display: flex;
+            padding: 10px 20px;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--light-bg);
+        }
+
+        .member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .member-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-magenta);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--white);
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .online-indicator {
+            width: 10px;
+            height: 10px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: 2px solid var(--white);
+        }
+
+        .member-name {
+            font-size: 12px;
+            color: var(--gray-text);
+        }
+
+        .group-chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .message.received {
+            align-self: flex-start;
+            background-color: var(--light-bg);
+            border-bottom-left-radius: 5px;
+        }
+
+        .message.sent {
+            align-self: flex-end;
+            background-color: var(--primary-magenta);
+            color: var(--white);
+            border-bottom-right-radius: 5px;
+        }
+
+        .message-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .message-sender {
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+
+        .message-time {
+            font-size: 12px;
+            color: var(--gray-text);
+        }
+
+        .message.sent .message-time {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .group-chat-input {
+            padding: 15px 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-input {
+            flex: 1;
+            background-color: var(--light-bg);
+            border: none;
+            border-radius: 20px;
+            padding: 12px 20px;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+
+        .chat-input:focus {
+            outline: none;
+        }
+
+        .chat-send-btn {
+            background-color: var(--primary-magenta);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         /* Font Awesome Icons (using Unicode) */
         .fa {
             font-style: normal;
@@ -569,6 +765,11 @@
         .fa-comment:before { content: "💬"; }
         .fa-share:before { content: "↗️"; }
         .fa-ellipsis:before { content: "⋯"; }
+        .fa-users:before { content: "👥"; }
+        .fa-video-call:before { content: "📹"; }
+        .fa-search-chat:before { content: "🔍"; }
+        .fa-options:before { content: "⋯"; }
+        .fa-send:before { content: "➤"; }
     </style>
 </head>
 <body>
@@ -582,7 +783,7 @@
             <input type="text" placeholder="Search Lifescroll">
         </div>
         <div class="nav-icons">
-            <div class="nav-icon active">
+            <div class="nav-icon active" onclick="showSection('home')">
                 <i class="fa fa-home"></i>
             </div>
             <div class="nav-icon">
@@ -591,7 +792,7 @@
             <div class="nav-icon">
                 <i class="fa fa-store"></i>
             </div>
-            <div class="nav-icon">
+            <div class="nav-icon" onclick="showSection('groups')">
                 <i class="fa fa-group"></i>
             </div>
             <div class="nav-icon">
@@ -599,7 +800,10 @@
             </div>
         </div>
         <div class="user-profile">
-            <div class="avatar">JD</div>
+            <div class="avatar">
+                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                JD
+            </div>
             <div>John</div>
         </div>
     </div>
@@ -609,7 +813,7 @@
         <!-- Left Sidebar -->
         <div class="left-sidebar">
             <div class="sidebar-card">
-                <div class="sidebar-item">
+                <div class="sidebar-item" onclick="showSection('home')">
                     <i class="fa fa-home"></i> Home
                 </div>
                 <div class="sidebar-item">
@@ -618,7 +822,7 @@
                 <div class="sidebar-item">
                     <i class="fa fa-store"></i> Marketplace
                 </div>
-                <div class="sidebar-item">
+                <div class="sidebar-item" onclick="showSection('groups')">
                     <i class="fa fa-group"></i> Groups
                 </div>
                 <div class="sidebar-item">
@@ -628,344 +832,327 @@
 
             <div class="sidebar-card">
                 <div class="shortcuts-title">Your Shortcuts</div>
-                <div class="sidebar-item">
-                    <div class="avatar" style="background-color: #4267B2; margin-right: 10px;">PD</div>
+                <div class="sidebar-item" onclick="showSection('group-chat')">
+                    <div class="avatar" style="background-color: #4267B2; margin-right: 10px;">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        PD
+                    </div>
                     Politics Debate Group
                 </div>
-                <div class="sidebar-item">
-                    <div class="avatar" style="background-color: #E1306C; margin-right: 10px;">LS</div>
+                <div class="sidebar-item" onclick="showSection('group-chat')">
+                    <div class="avatar" style="background-color: #E1306C; margin-right: 10px;">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        LS
+                    </div>
                     Lifescroll Developers
                 </div>
                 <div class="sidebar-item">
-                    <div class="avatar" style="background-color: #1DA1F2; margin-right: 10px;">CH</div>
+                    <div class="avatar" style="background-color: #1DA1F2; margin-right: 10px;">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        CH
+                    </div>
                     Chirper Fans
                 </div>
             </div>
         </div>
 
-        <!-- Feed -->
-        <div class="feed">
-            <!-- Create Post -->
-            <div class="create-post">
-                <div class="post-input">
-                    <div class="avatar">JD</div>
-                    <input type="text" placeholder="What's on your mind, John?">
-                </div>
-                <div class="post-actions">
-                    <div class="post-action">
-                        <i class="fa fa-video"></i> Live Video
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Home Tab -->
+            <div class="tab-pane active" id="home-section">
+                <div class="feed">
+                    <!-- Create Post -->
+                    <div class="create-post">
+                        <div class="post-input">
+                            <div class="avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                JD
+                            </div>
+                            <input type="text" placeholder="What's on your mind, John?">
+                        </div>
+                        <div class="post-actions">
+                            <div class="post-action">
+                                <i class="fa fa-video"></i> Live Video
+                            </div>
+                            <div class="post-action">
+                                <i class="fa fa-photo"></i> Photo/Video
+                            </div>
+                            <div class="post-action">
+                                <i class="fa fa-feeling"></i> Feeling/Activity
+                            </div>
+                        </div>
                     </div>
-                    <div class="post-action">
-                        <i class="fa fa-photo"></i> Photo/Video
-                    </div>
-                    <div class="post-action">
-                        <i class="fa fa-feeling"></i> Feeling/Activity
+
+                    <!-- Post 1 -->
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="post-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                MN
+                            </div>
+                            <div>
+                                <div class="post-author">Marcus Netterfield</div>
+                                <div class="post-time">2 hrs · Public</div>
+                            </div>
+                            <div style="margin-left: auto;">
+                                <i class="fa fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            Just bought Lifescroll for $50 billion. Planning to add a dislike button next week!
+                        </div>
+                        <div class="post-image">
+                            [Image: Lifescroll headquarters]
+                        </div>
+                        <div class="post-stats">
+                            <div>👍 12K · 💬 1.5K · ↗️ 3.2K</div>
+                        </div>
+                        <div class="post-engagement">
+                            <div class="engagement-btn">
+                                <i class="fa fa-like"></i> Like
+                            </div>
+                            <div class="engagement-btn">
+                                <i class="fa fa-comment"></i> Comment
+                            </div>
+                            <div class="engagement-btn">
+                                <i class="fa fa-share"></i> Share
+                            </div>
+                        </div>
+
+                        <!-- Comments -->
+                        <div class="comments">
+                            <div class="comment">
+                                <div class="comment-avatar">
+                                    <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                    JD
+                                </div>
+                                <div class="comment-content">
+                                    <div class="comment-author">John Doe</div>
+                                    <div class="comment-text">Can't wait for the dislike button! 😂</div>
+                                    <div class="comment-actions">
+                                        <span class="comment-action">Like</span>
+                                        <span class="comment-action">Reply</span>
+                                        <span class="comment-action">2h</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Replies to John's comment -->
+                            <div class="replies">
+                                <div class="reply">
+                                    <div class="reply-avatar">
+                                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                        MN
+                                    </div>
+                                    <div class="reply-content">
+                                        <div class="reply-author">Marcus Netterfield</div>
+                                        <div class="reply-text">We're calling it the "dislike respectfully" button</div>
+                                        <div class="reply-actions">
+                                            <span class="reply-action">Like</span>
+                                            <span class="reply-action">Reply</span>
+                                            <span class="reply-action">1h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply">
+                                    <div class="reply-avatar">
+                                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                        TN
+                                    </div>
+                                    <div class="reply-content">
+                                        <div class="reply-author">Tech News</div>
+                                        <div class="reply-text">Finally! This is what social media needs</div>
+                                        <div class="reply-actions">
+                                            <span class="reply-action">Like</span>
+                                            <span class="reply-action">Reply</span>
+                                            <span class="reply-action">45m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment-avatar">
+                                    <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                    CK
+                                </div>
+                                <div class="comment-content">
+                                    <div class="comment-author">Cat Lover</div>
+                                    <div class="comment-text">Will there be a cat reaction button? 🐱</div>
+                                    <div class="comment-actions">
+                                        <span class="comment-action">Like</span>
+                                        <span class="comment-action">Reply</span>
+                                        <span class="comment-action">1h</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Replies to Cat Lover's comment -->
+                            <div class="replies">
+                                <div class="reply">
+                                    <div class="reply-avatar">MN</div>
+                                    <div class="reply-content">
+                                        <div class="reply-author">Marcus Netterfield</div>
+                                        <div class="reply-text">Great idea! We'll add cat, dog, and pizza reactions</div>
+                                        <div class="reply-actions">
+                                            <span class="reply-action">Like</span>
+                                            <span class="reply-action">Reply</span>
+                                            <span class="reply-action">50m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply">
+                                    <div class="reply-avatar">
+                                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                        JD
+                                    </div>
+                                    <div class="reply-content">
+                                        <div class="reply-author">John Doe</div>
+                                        <div class="reply-text">Pizza reaction is the most important one! 🍕</div>
+                                        <div class="reply-actions">
+                                            <span class="reply-action">Like</span>
+                                            <span class="reply-action">Reply</span>
+                                            <span class="reply-action">30m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-replies">View 3 more replies</div>
+                            </div>
+
+                            <div class="add-comment">
+                                <div class="comment-avatar">
+                                    <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                    JD
+                                </div>
+                                <input type="text" placeholder="Write a comment...">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Post 1 -->
-            <div class="post">
-                <div class="post-header">
-                    <div class="post-avatar">MN</div>
-                    <div>
-                        <div class="post-author">Marcus Netterfield</div>
-                        <div class="post-time">2 hrs · Public</div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <i class="fa fa-ellipsis"></i>
-                    </div>
-                </div>
-                <div class="post-content">
-                    Just bought Lifescroll for $50 billion. Planning to add a dislike button next week!
-                </div>
-                <div class="post-image">
-                    [Image: Lifescroll headquarters]
-                </div>
-                <div class="post-stats">
-                    <div>👍 12K · 💬 1.5K · ↗️ 3.2K</div>
-                </div>
-                <div class="post-engagement">
-                    <div class="engagement-btn">
-                        <i class="fa fa-like"></i> Like
-                    </div>
-                    <div class="engagement-btn">
-                        <i class="fa fa-comment"></i> Comment
-                    </div>
-                    <div class="engagement-btn">
-                        <i class="fa fa-share"></i> Share
-                    </div>
-                </div>
-                
-                <!-- Comments -->
-                <div class="comments">
-                    <div class="comment">
-                        <div class="comment-avatar">JD</div>
-                        <div class="comment-content">
-                            <div class="comment-author">John Doe</div>
-                            <div class="comment-text">Can't wait for the dislike button! 😂</div>
-                            <div class="comment-actions">
-                                <span class="comment-action">Like</span>
-                                <span class="comment-action">Reply</span>
-                                <span class="comment-action">2h</span>
+            <!-- Group Chat Tab -->
+            <div class="tab-pane" id="group-chat-section">
+                <div class="group-chat-container">
+                    <div class="group-chat-header">
+                        <div class="group-chat-title">
+                            <i class="fa fa-users"></i> Politics Debate Group
+                        </div>
+                        <div class="group-chat-controls">
+                            <div class="group-chat-control">
+                                <i class="fa fa-video-call"></i>
+                            </div>
+                            <div class="group-chat-control">
+                                <i class="fa fa-search-chat"></i>
+                            </div>
+                            <div class="group-chat-control">
+                                <i class="fa fa-options"></i>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Replies to John's comment -->
-                    <div class="replies">
-                        <div class="reply">
-                            <div class="reply-avatar">MN</div>
-                            <div class="reply-content">
-                                <div class="reply-author">Marcus Netterfield</div>
-                                <div class="reply-text">We're calling it the "dislike respectfully" button</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">1h</span>
-                                </div>
+                    <div class="group-chat-members">
+                        <div class="member">
+                            <div class="member-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                JD
+                                <div class="online-indicator"></div>
                             </div>
+                            <div class="member-name">John</div>
                         </div>
-                        <div class="reply">
-                            <div class="reply-avatar">TN</div>
-                            <div class="reply-content">
-                                <div class="reply-author">Tech News</div>
-                                <div class="reply-text">Finally! This is what social media needs</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">45m</span>
-                                </div>
+                        <div class="member">
+                            <div class="member-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                MN
+                                <div class="online-indicator"></div>
                             </div>
+                            <div class="member-name">Marcus</div>
                         </div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="comment-avatar">CK</div>
-                        <div class="comment-content">
-                            <div class="comment-author">Cat Lover</div>
-                            <div class="comment-text">Will there be a cat reaction button? 🐱</div>
-                            <div class="comment-actions">
-                                <span class="comment-action">Like</span>
-                                <span class="comment-action">Reply</span>
-                                <span class="comment-action">1h</span>
+                        <div class="member">
+                            <div class="member-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                CK
                             </div>
+                            <div class="member-name">Cat Lover</div>
                         </div>
-                    </div>
-                    
-                    <!-- Replies to Cat Lover's comment -->
-                    <div class="replies">
-                        <div class="reply">
-                            <div class="reply-avatar">MN</div>
-                            <div class="reply-content">
-                                <div class="reply-author">Marcus Netterfield</div>
-                                <div class="reply-text">Great idea! We'll add cat, dog, and pizza reactions</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">50m</span>
-                                </div>
+                        <div class="member">
+                            <div class="member-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                TN
+                                <div class="online-indicator"></div>
                             </div>
+                            <div class="member-name">Tech News</div>
                         </div>
-                        <div class="reply">
-                            <div class="reply-avatar">JD</div>
-                            <div class="reply-content">
-                                <div class="reply-author">John Doe</div>
-                                <div class="reply-text">Pizza reaction is the most important one! 🍕</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">30m</span>
-                                </div>
+                        <div class="member">
+                            <div class="member-avatar">
+                                <img src="./profile_pictures/tyler_brisk.png" class="avatar-img" />
+                                <!-- TB -->
                             </div>
-                        </div>
-                        <div class="view-replies">View 3 more replies</div>
-                    </div>
-
-                    <div class="add-comment">
-                        <div class="comment-avatar">JD</div>
-                        <input type="text" placeholder="Write a comment...">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Post 2 -->
-            <div class="post">
-                <div class="post-header">
-                    <div class="post-avatar">CK</div>
-                    <div>
-                        <div class="post-author">Cat Lover</div>
-                        <div class="post-time">5 hrs · Public</div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <i class="fa fa-ellipsis"></i>
-                    </div>
-                </div>
-                <div class="post-content">
-                    Just adopted this adorable kitten! Meet Luna 🐱 #CatsOfLifescroll
-                </div>
-                <div class="post-image">
-                    [Image: Adorable gray kitten]
-                </div>
-                <div class="post-stats">
-                    <div>👍 2.3K · 💬 342 · ↗️ 128</div>
-                </div>
-                <div class="post-engagement">
-                    <div class="engagement-btn liked">
-                        <i class="fa fa-like"></i> Like
-                    </div>
-                    <div class="engagement-btn">
-                        <i class="fa fa-comment"></i> Comment
-                    </div>
-                    <div class="engagement-btn">
-                        <i class="fa fa-share"></i> Share
-                    </div>
-                </div>
-                
-                <!-- Comments -->
-                <div class="comments">
-                    <div class="comment">
-                        <div class="comment-avatar">JD</div>
-                        <div class="comment-content">
-                            <div class="comment-author">John Doe</div>
-                            <div class="comment-text">So cute! What breed is she?</div>
-                            <div class="comment-actions">
-                                <span class="comment-action">Like</span>
-                                <span class="comment-action">Reply</span>
-                                <span class="comment-action">4h</span>
-                            </div>
+                            <div class="member-name">Tyler</div>
                         </div>
                     </div>
-                    
-                    <!-- Replies to John's comment -->
-                    <div class="replies">
-                        <div class="reply">
-                            <div class="reply-avatar">CK</div>
-                            <div class="reply-content">
-                                <div class="reply-author">Cat Lover</div>
-                                <div class="reply-text">She's a British Shorthair! Her brother Simba is orange tabby</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">3h</span>
-                                </div>
+                    <div class="group-chat-messages">
+                        <div class="message received">
+                            <div class="message-header">
+                                <div class="message-sender">Marcus Netterfield</div>
+                                <div class="message-time">10:24 AM</div>
                             </div>
+                            Hey everyone, what do you think about the new tax proposal?
                         </div>
-                        <div class="reply">
-                            <div class="reply-avatar">TS</div>
-                            <div class="reply-content">
-                                <div class="reply-author">Tyler Brisk</div>
-                                <div class="reply-text">OMG I have a British Shorthair too! They're the best 💕</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">2h</span>
-                                </div>
+                        <div class="message sent">
+                            <div class="message-header">
+                                <div class="message-sender">You</div>
+                                <div class="message-time">10:25 AM</div>
                             </div>
+                            I think it has some good points but needs more work on the small business exemptions
                         </div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="comment-avatar">NB</div>
-                        <div class="comment-content">
-                            <div class="comment-author">NASA</div>
-                            <div class="comment-text">Even our astronauts would love this cute kitten! 🚀🐱</div>
-                            <div class="comment-actions">
-                                <span class="comment-action">Like</span>
-                                <span class="comment-action">Reply</span>
-                                <span class="comment-action">3h</span>
+                        <div class="message received">
+                            <div class="message-header">
+                                <div class="message-sender">Tech News</div>
+                                <div class="message-time">10:26 AM</div>
                             </div>
+                            The tech sector would be heavily impacted by section 4B
                         </div>
-                    </div>
-
-                    <div class="add-comment">
-                        <div class="comment-avatar">JD</div>
-                        <input type="text" placeholder="Write a comment...">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Post 3 -->
-            <div class="post">
-                <div class="post-header">
-                    <div class="post-avatar">TN</div>
-                    <div>
-                        <div class="post-author">Tech News</div>
-                        <div class="post-time">Yesterday · Public</div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <i class="fa fa-ellipsis"></i>
-                    </div>
-                </div>
-                <div class="post-content">
-                    Breaking: New smartphone with 200MP camera and week-long battery life announced today. #TechUpdate
-                </div>
-                <div class="post-image">
-                    [Image: New smartphone]
-                </div>
-                <div class="post-stats">
-                    <div>👍 5.7K · 💬 843 · ↗️ 1.2K</div>
-                </div>
-                <div class="post-engagement">
-                    <div class="engagement-btn">
-                        <i class="fa fa-like"></i> Like
-                    </div>
-                    <div class="engagement-btn">
-                        <i class="fa fa-comment"></i> Comment
-                    </div>
-                    <div class="engagement-btn">
-                        <i class="fa fa-share"></i> Share
-                    </div>
-                </div>
-
-                <!-- Comments -->
-                <div class="comments">
-                    <div class="comment">
-                        <div class="comment-avatar">JD</div>
-                        <div class="comment-content">
-                            <div class="comment-author">John Doe</div>
-                            <div class="comment-text">Week-long battery? Finally! My phone dies after 6 hours</div>
-                            <div class="comment-actions">
-                                <span class="comment-action">Like</span>
-                                <span class="comment-action">Reply</span>
-                                <span class="comment-action">22h</span>
+                        <div class="message received">
+                            <div class="message-header">
+                                <div class="message-sender">Cat Lover</div>
+                                <div class="message-time">10:27 AM</div>
                             </div>
+                            Can we talk about something else? This is getting too serious 😅
+                        </div>
+                        <div class="message sent">
+                            <div class="message-header">
+                                <div class="message-sender">You</div>
+                                <div class="message-time">10:28 AM</div>
+                            </div>
+                            Sure! How about those new cat reaction buttons Marcus was talking about? 🐱
+                        </div>
+                        <div class="message received">
+                            <div class="message-header">
+                                <div class="message-sender">Marcus Netterfield</div>
+                                <div class="message-time">10:29 AM</div>
+                            </div>
+                            Haha, yes! The design team just sent me the mockups. They look amazing!
+                        </div>
+                        <div class="message received">
+                            <div class="message-header">
+                                <div class="message-sender">Tyler Brisk</div>
+                                <div class="message-time">10:30 AM</div>
+                            </div>
+                            Will there be a pizza reaction too? That's the most important one! 🍕
+                        </div>
+                        <div class="message sent">
+                            <div class="message-header">
+                                <div class="message-sender">You</div>
+                                <div class="message-time">10:31 AM</div>
+                            </div>
+                            Absolutely! Pizza, cat, and dog reactions are all confirmed for the next update
                         </div>
                     </div>
-                    
-                    <!-- Replies to John's comment -->
-                    <div class="replies">
-                        <div class="reply">
-                            <div class="reply-avatar">TN</div>
-                            <div class="reply-content">
-                                <div class="reply-author">Tech News</div>
-                                <div class="reply-text">It uses new graphene battery technology!</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">20h</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reply">
-                            <div class="reply-avatar">MN</div>
-                            <div class="reply-content">
-                                <div class="reply-author">Marcus Netterfield</div>
-                                <div class="reply-text">We're working on month-long batteries for Neuralink</div>
-                                <div class="reply-actions">
-                                    <span class="reply-action">Like</span>
-                                    <span class="reply-action">Reply</span>
-                                    <span class="reply-action">18h</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="view-replies">View 12 more replies</div>
-
-                    <div class="add-comment">
-                        <div class="comment-avatar">JD</div>
-                        <input type="text" placeholder="Write a comment...">
+                    <div class="group-chat-input">
+                        <input type="text" class="chat-input" placeholder="Type a message...">
+                        <button class="chat-send-btn">
+                            <i class="fa fa-send"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -979,47 +1166,97 @@
                     <i class="fa fa-search"></i>
                 </div>
                 <div class="contact">
-                    <div class="contact-avatar">MN</div>
+                    <div class="contact-avatar">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        MN
+                    </div>
                     <div class="contact-name">Marcus Netterfield</div>
                 </div>
                 <div class="contact">
-                    <div class="contact-avatar">CK</div>
+                    <div class="contact-avatar">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        CK
+                    </div>
                     <div class="contact-name">Cat Lover</div>
                 </div>
                 <div class="contact">
-                    <div class="contact-avatar">TN</div>
+                    <div class="contact-avatar">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        TN
+                    </div>
                     <div class="contact-name">Tech News</div>
                 </div>
                 <div class="contact">
-                    <div class="contact-avatar">TB</div>
+                    <div class="contact-avatar">
+                        <img src="./profile_pictures/tyler_brisk.png" class="avatar-img" />
+                        <!-- TB -->
+                    </div>
                     <div class="contact-name">Tyler Brisk</div>
                 </div>
                 <div class="contact">
-                    <div class="contact-avatar">NB</div>
+                    <div class="contact-avatar">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        NB
+                    </div>
                     <div class="contact-name">NASA</div>
                 </div>
                 <div class="contact">
-                    <div class="contact-avatar">FC</div>
+                    <div class="contact-avatar">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        FC
+                    </div>
                     <div class="contact-name">Chef Network</div>
                 </div>
             </div>
 
             <div class="sidebar-card">
                 <div class="shortcuts-title">Group Conversations</div>
-                <div class="contact">
-                    <div class="contact-avatar" style="background-color: #4267B2;">PD</div>
+                <div class="contact" onclick="showSection('group-chat')">
+                    <div class="contact-avatar" style="background-color: #4267B2;">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        PD
+                    </div>
                     <div class="contact-name">Politics Debate Group</div>
                 </div>
-                <div class="contact">
-                    <div class="contact-avatar" style="background-color: #E1306C;">LS</div>
+                <div class="contact" onclick="showSection('group-chat')">
+                    <div class="contact-avatar" style="background-color: #E1306C;">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        LS
+                    </div>
                     <div class="contact-name">Lifescroll Developers</div>
                 </div>
                 <div class="contact">
-                    <div class="contact-avatar" style="background-color: #1DA1F2;">CH</div>
+                    <div class="contact-avatar" style="background-color: #1DA1F2;">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        CH
+                    </div>
                     <div class="contact-name">Chirper Fans</div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function showSection(section) {
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            // Show the selected section
+            document.getElementById(section + '-section').classList.add('active');
+            
+            // Update active nav icon
+            document.querySelectorAll('.nav-icon').forEach(icon => {
+                icon.classList.remove('active');
+            });
+            
+            if (section === 'home') {
+                document.querySelector('.nav-icon:nth-child(1)').classList.add('active');
+            } else if (section === 'groups') {
+                document.querySelector('.nav-icon:nth-child(4)').classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>

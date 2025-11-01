@@ -28,6 +28,13 @@
             overflow: hidden;
         }
 
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
         .container {
             display: flex;
             max-width: 1200px;
@@ -71,6 +78,7 @@
             display: flex;
             align-items: center;
             cursor: pointer;
+            transition: font-weight 0.2s ease;
         }
 
         .nav-item:hover {
@@ -280,6 +288,20 @@
             line-height: 1.4;
         }
 
+        .chirp-media {
+            margin-bottom: 15px;
+            border-radius: 15px;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .chirp-media img, .chirp-media video {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
         .chirp-actions {
             display: flex;
             justify-content: space-between;
@@ -299,6 +321,113 @@
 
         .chirp-action i {
             margin-right: 5px;
+        }
+
+        /* Comments Section */
+        .comments-section {
+            margin-top: 15px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+
+        .comment {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .comment-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+            font-size: 12px;
+        }
+
+        .comment-content {
+            flex: 1;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .comment-handle, .comment-time {
+            color: var(--gray-text);
+            margin-right: 5px;
+            font-size: 12px;
+        }
+
+        .comment-text {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        .comment-actions {
+            display: flex;
+            color: var(--gray-text);
+            font-size: 12px;
+        }
+
+        .comment-action {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .comment-action:hover {
+            color: var(--primary-yellow);
+        }
+
+        .comment-action i {
+            margin-right: 3px;
+        }
+
+        .add-comment {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .comment-input {
+            flex: 1;
+            background-color: var(--darker-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 8px 15px;
+            color: var(--light-text);
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .comment-input:focus {
+            outline: none;
+            border-color: var(--primary-yellow);
+        }
+
+        .comment-btn {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
         }
 
         /* Messages Styles */
@@ -403,18 +532,20 @@
             border-bottom: 1px solid var(--border-color);
             display: flex;
             align-items: center;
+            justify-content: space-between;
             flex-shrink: 0;
+        }
+
+        .thread-user {
+            display: flex;
+            align-items: center;
+            flex: 1;
         }
 
         .back-button {
             margin-right: 15px;
             cursor: pointer;
             font-size: 18px;
-        }
-
-        .thread-user {
-            display: flex;
-            align-items: center;
         }
 
         .thread-avatar {
@@ -442,6 +573,20 @@
         .thread-handle {
             color: var(--gray-text);
             font-size: 14px;
+        }
+
+        .thread-call-button {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
         }
 
         .messages {
@@ -613,111 +758,64 @@
             justify-content: center;
         }
 
-        .remote-video {
+        /* Vertical phone layout with PIP */
+        .vertical-phone-layout {
+            position: relative;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        .local-video-container {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            width: 30%;
-            max-width: 200px;
-            height: 40%;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            border: 2px solid var(--primary-yellow);
-        }
-
-        .local-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .green-screen-controls {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            background-color: rgba(21, 32, 43, 0.8);
-            padding: 15px;
-            border-radius: 10px;
-        }
-
-        .green-screen-btn {
-            background-color: var(--primary-yellow);
-            color: var(--dark-bg);
-            border: none;
-            border-radius: 5px;
-            padding: 8px 12px;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .green-screen-btn i {
-            font-size: 16px;
-        }
-
-        .chat-overlay {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            right: 20px;
-            background-color: rgba(21, 32, 43, 0.8);
-            border-radius: 10px;
-            padding: 15px;
-            max-height: 30%;
-            overflow-y: auto;
-        }
-
-        .chat-message {
-            margin-bottom: 10px;
-            padding: 8px 12px;
-            border-radius: 8px;
-            background-color: var(--darker-bg);
-        }
-
-        .chat-message.sent {
-            background-color: var(--primary-yellow);
-            color: var(--dark-bg);
-        }
-
-        .chat-input-container {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .chat-input {
-            flex: 1;
-            background-color: var(--darker-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 8px 15px;
-            color: var(--light-text);
-        }
-
-        .chat-send-btn {
-            background-color: var(--primary-yellow);
-            color: var(--dark-bg);
-            border: none;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .main-vertical-video {
+            width: 70%;
+            height: 85%;
+            background-color: #00ff00;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .pip-vertical-video {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 25%;
+            height: 35%;
+            background-color: #00ff00;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid var(--primary-yellow);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .pip-label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: bold;
         }
 
         /* Right Sidebar Styles */
@@ -887,7 +985,10 @@
             </ul>
             <button class="chirp-btn">Chirp</button>
             <div class="user-profile">
-                <div class="avatar">JD</div>
+                <div class="avatar">
+                    <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                    JD
+                </div>
                 <div>
                     <div>John Doe</div>
                     <div style="color: var(--gray-text); font-size: 14px;">@johndoe</div>
@@ -903,7 +1004,10 @@
                     <h1>Home</h1>
                 </div>
                 <div class="compose-chirp">
-                    <div class="compose-avatar">JD</div>
+                    <div class="compose-avatar">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        JD
+                    </div>
                     <div class="compose-input">
                         <textarea placeholder="What's happening?"></textarea>
                         <div class="compose-actions">
@@ -921,9 +1025,12 @@
 
                 <!-- Scrollable Chirp Feed -->
                 <div class="chirp-feed">
-                    <!-- Chirp 1 -->
+                    <!-- Chirp 1 with Video -->
                     <div class="chirp">
-                        <div class="chirp-avatar">JA</div>
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            JA
+                        </div>
                         <div class="chirp-content">
                             <div class="chirp-header">
                                 <div class="chirp-author">John Atlas</div>
@@ -932,6 +1039,12 @@
                             </div>
                             <div class="chirp-text">
                                 Just bought Chirper for $44 billion. Planning to add an edit button next week!
+                            </div>
+                            <div class="chirp-media">
+                                <video controls>
+                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-man-holding-neon-light-1238-large.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="chirp-actions">
                                 <div class="chirp-action">
@@ -950,9 +1063,12 @@
                         </div>
                     </div>
 
-                    <!-- Chirp 2 -->
+                    <!-- Chirp 2 with Photo and Comments -->
                     <div class="chirp">
-                        <div class="chirp-avatar">CK</div>
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            CK
+                        </div>
                         <div class="chirp-content">
                             <div class="chirp-header">
                                 <div class="chirp-author">Cat Lover</div>
@@ -961,6 +1077,9 @@
                             </div>
                             <div class="chirp-text">
                                 Just adopted this adorable kitten! 🐱 #CatsOfChirper
+                            </div>
+                            <div class="chirp-media">
+                                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cute cat">
                             </div>
                             <div class="chirp-actions">
                                 <div class="chirp-action">
@@ -976,12 +1095,98 @@
                                     <i class="fa fa-share"></i>
                                 </div>
                             </div>
+                            
+                            <!-- Comments Section -->
+                            <div class="comments-section">
+                                <div class="comment">
+                                    <div class="comment-avatar">
+                                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                        JD
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <div class="comment-author">John Doe</div>
+                                            <div class="comment-handle">@johndoe</div>
+                                            <div class="comment-time">· 30m</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            So cute! What's its name? 😍
+                                        </div>
+                                        <div class="comment-actions">
+                                            <div class="comment-action">
+                                                <i class="fa fa-heart"></i> 24
+                                            </div>
+                                            <div class="comment-action">
+                                                <i class="fa fa-comment"></i> Reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="comment">
+                                    <div class="comment-avatar">
+                                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                        JA
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <div class="comment-author">John Atlas</div>
+                                            <div class="comment-handle">@johnatlasceo</div>
+                                            <div class="comment-time">· 25m</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            That's one photogenic feline! 🐾
+                                        </div>
+                                        <div class="comment-actions">
+                                            <div class="comment-action">
+                                                <i class="fa fa-heart"></i> 18
+                                            </div>
+                                            <div class="comment-action">
+                                                <i class="fa fa-comment"></i> Reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="comment">
+                                    <div class="comment-avatar">
+                                        <img src="./profile_pictures/tyler_brisk.png" class="avatar-img" />
+                                        <!-- TB -->
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <div class="comment-author">Tyler Brisk</div>
+                                            <div class="comment-handle">@tylerbrisk</div>
+                                            <div class="comment-time">· 15m</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            Adorable! Looks just like my cat Mittens 🐱
+                                        </div>
+                                        <div class="comment-actions">
+                                            <div class="comment-action">
+                                                <i class="fa fa-heart"></i> 12
+                                            </div>
+                                            <div class="comment-action">
+                                                <i class="fa fa-comment"></i> Reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="add-comment">
+                                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                                    <button class="comment-btn">Reply</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Chirp 3 -->
+                    <!-- Chirp 3 with Photo -->
                     <div class="chirp">
-                        <div class="chirp-avatar">TN</div>
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            TN
+                        </div>
                         <div class="chirp-content">
                             <div class="chirp-header">
                                 <div class="chirp-author">Tech News</div>
@@ -990,6 +1195,9 @@
                             </div>
                             <div class="chirp-text">
                                 Breaking: New smartphone with 200MP camera and week-long battery life announced today. #TechUpdate
+                            </div>
+                            <div class="chirp-media">
+                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="New smartphone">
                             </div>
                             <div class="chirp-actions">
                                 <div class="chirp-action">
@@ -1008,9 +1216,12 @@
                         </div>
                     </div>
 
-                    <!-- Chirp 4 -->
+                    <!-- Chirp 4 with Video -->
                     <div class="chirp">
-                        <div class="chirp-avatar">JD</div>
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            JD
+                        </div>
                         <div class="chirp-content">
                             <div class="chirp-header">
                                 <div class="chirp-author">John Doe</div>
@@ -1019,6 +1230,12 @@
                             </div>
                             <div class="chirp-text">
                                 Working on my new project. Can't wait to share it with everyone! #coding #webdev
+                            </div>
+                            <div class="chirp-media">
+                                <video controls>
+                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-programmer-working-on-computer-while-recording-screen-1239-large.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                             <div class="chirp-actions">
                                 <div class="chirp-action">
@@ -1029,91 +1246,6 @@
                                 </div>
                                 <div class="chirp-action">
                                     <i class="fa fa-heart"></i> 47
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-share"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Additional chirps to demonstrate scrolling -->
-                    <div class="chirp">
-                        <div class="chirp-avatar">TB</div>
-                        <div class="chirp-content">
-                            <div class="chirp-header">
-                                <div class="chirp-author">Tyler Brisk</div>
-                                <div class="chirp-handle">@tylerbrisk</div>
-                                <div class="chirp-time">· 15m</div>
-                            </div>
-                            <div class="chirp-text">
-                                Just dropped my new album! Can't wait for you all to hear it! 🎵 #NewAlbum
-                            </div>
-                            <div class="chirp-actions">
-                                <div class="chirp-action">
-                                    <i class="fa fa-comment"></i> 24K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-retweet"></i> 58K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-heart"></i> 210K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-share"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="chirp">
-                        <div class="chirp-avatar">NB</div>
-                        <div class="chirp-content">
-                            <div class="chirp-header">
-                                <div class="chirp-author">NASA</div>
-                                <div class="chirp-handle">@nasa</div>
-                                <div class="chirp-time">· 1h</div>
-                            </div>
-                            <div class="chirp-text">
-                                New images from the James Webb Space Telescope reveal never-before-seen galaxies! 🌌 #Space #JWST
-                            </div>
-                            <div class="chirp-actions">
-                                <div class="chirp-action">
-                                    <i class="fa fa-comment"></i> 8.2K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-retweet"></i> 22.5K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-heart"></i> 95K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-share"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="chirp">
-                        <div class="chirp-avatar">CN</div>
-                        <div class="chirp-content">
-                            <div class="chirp-header">
-                                <div class="chirp-author">Chef Network</div>
-                                <div class="chirp-handle">@chefnetwork</div>
-                                <div class="chirp-time">· 2h</div>
-                            </div>
-                            <div class="chirp-text">
-                                Try this amazing 5-minute chocolate mug cake recipe! Perfect for those late-night cravings 🍫 #Recipe #Dessert
-                            </div>
-                            <div class="chirp-actions">
-                                <div class="chirp-action">
-                                    <i class="fa fa-comment"></i> 3.4K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-retweet"></i> 7.8K
-                                </div>
-                                <div class="chirp-action">
-                                    <i class="fa fa-heart"></i> 28K
                                 </div>
                                 <div class="chirp-action">
                                     <i class="fa fa-share"></i>
@@ -1132,42 +1264,51 @@
                         <button class="new-message-btn">New message</button>
                     </div>
                     <div class="conversations-list">
-                        <div class="conversation active" onclick="showThread('thread1')">
-                            <div class="conversation-avatar">JA</div>
+                        <div class="conversation active" onclick="showThread('thread-1')">
+                            <div class="conversation-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                JA
+                            </div>
                             <div class="conversation-info">
                                 <div class="conversation-header">
                                     <div class="conversation-name">John Atlas</div>
-                                    <div class="conversation-time">10:42 AM</div>
+                                    <div class="conversation-time">12:45 PM</div>
                                 </div>
-                                <div class="conversation-preview">Hey, are you interested in joining our new project?</div>
+                                <div class="conversation-preview">Hey, are we still meeting tomorrow?</div>
                             </div>
-                            <button class="video-chat-btn" onclick="startVideoChat('John Atlas')">
+                            <button class="video-chat-btn" onclick="startVideoChat(event)">
                                 <i class="fa fa-video"></i>
                             </button>
                         </div>
-                        <div class="conversation" onclick="showThread('thread2')">
-                            <div class="conversation-avatar">CK</div>
+                        <div class="conversation" onclick="showThread('thread-2')">
+                            <div class="conversation-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                CK
+                            </div>
                             <div class="conversation-info">
                                 <div class="conversation-header">
                                     <div class="conversation-name">Cat Lover</div>
-                                    <div class="conversation-time">Yesterday</div>
+                                    <div class="conversation-time">11:30 AM</div>
                                 </div>
-                                <div class="conversation-preview">Check out these cute cat pictures I took! 🐱</div>
+                                <div class="conversation-preview">Check out these new photos of my cat!</div>
                             </div>
-                            <button class="video-chat-btn" onclick="startVideoChat('Cat Lover')">
+                            <button class="video-chat-btn" onclick="startVideoChat(event)">
                                 <i class="fa fa-video"></i>
                             </button>
                         </div>
-                        <div class="conversation" onclick="showThread('thread3')">
-                            <div class="conversation-avatar">TN</div>
+                        <div class="conversation" onclick="showThread('thread-3')">
+                            <div class="conversation-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                TN
+                            </div>
                             <div class="conversation-info">
                                 <div class="conversation-header">
                                     <div class="conversation-name">Tech News</div>
-                                    <div class="conversation-time">Mar 15</div>
+                                    <div class="conversation-time">Yesterday</div>
                                 </div>
-                                <div class="conversation-preview">Thanks for subscribing to our newsletter!</div>
+                                <div class="conversation-preview">Breaking tech news just dropped!</div>
                             </div>
-                            <button class="video-chat-btn" onclick="startVideoChat('Tech News')">
+                            <button class="video-chat-btn" onclick="startVideoChat(event)">
                                 <i class="fa fa-video"></i>
                             </button>
                         </div>
@@ -1176,40 +1317,42 @@
             </div>
 
             <!-- Message Thread -->
-            <div class="tab-pane" id="thread-section">
+            <div class="tab-pane" id="thread-1">
                 <div class="message-thread">
                     <div class="thread-header">
-                        <div class="back-button" onclick="showSection('messages')">
-                            <i class="fa fa-arrow-left"></i>
-                        </div>
                         <div class="thread-user">
-                            <div class="thread-avatar" id="thread-avatar">JA</div>
+                            <div class="back-button" onclick="showSection('messages')">
+                                <i class="fa fa-arrow-left"></i>
+                            </div>
+                            <div class="thread-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                JA
+                            </div>
                             <div class="thread-info">
-                                <div class="thread-name" id="thread-name">John Atlas</div>
-                                <div class="thread-handle" id="thread-handle">@johnatlasceo</div>
+                                <div class="thread-name">John Atlas</div>
+                                <div class="thread-handle">@johnatlasceo</div>
                             </div>
                         </div>
+                        <button class="thread-call-button" onclick="startVideoChat(event)">
+                            <i class="fa fa-video"></i>
+                        </button>
                     </div>
                     <div class="messages">
                         <div class="message received">
-                            Hey, are you interested in joining our new project?
-                            <div class="message-time">10:42 AM</div>
+                            Hey, are we still meeting tomorrow?
+                            <div class="message-time">12:45 PM</div>
                         </div>
                         <div class="message sent">
-                            That sounds interesting! Can you tell me more about it?
-                            <div class="message-time">10:43 AM</div>
+                            Yes, 2 PM at the usual coffee shop.
+                            <div class="message-time">12:46 PM</div>
                         </div>
                         <div class="message received">
-                            It's a social media platform focused on short videos, similar to Clocker but with some unique features.
-                            <div class="message-time">10:44 AM</div>
+                            Perfect! I'll bring the prototype.
+                            <div class="message-time">12:47 PM</div>
                         </div>
                         <div class="message sent">
-                            I'd love to learn more. When can we discuss this further?
-                            <div class="message-time">10:45 AM</div>
-                        </div>
-                        <div class="message received">
-                            How about a video call later today? I can show you the prototype.
-                            <div class="message-time">10:46 AM</div>
+                            Great! Looking forward to it.
+                            <div class="message-time">12:48 PM</div>
                         </div>
                     </div>
                     <div class="message-input">
@@ -1221,15 +1364,15 @@
                 </div>
             </div>
 
-            <!-- Video Chat Section -->
-            <div class="tab-pane video-chat-container" id="video-chat-section">
+            <!-- Video Chat -->
+            <div class="tab-pane video-chat-container" id="video-chat">
                 <div class="video-chat-header">
-                    <h2><i class="fa fa-video"></i> Video Chat with <span id="video-chat-with">John Atlas</span></h2>
+                    <h2><i class="fa fa-video"></i> Video Call with John Atlas</h2>
                     <div class="video-chat-controls">
-                        <button class="video-control-btn" id="mic-toggle">
+                        <button class="video-control-btn" id="mute-btn">
                             <i class="fa fa-microphone"></i>
                         </button>
-                        <button class="video-control-btn" id="camera-toggle">
+                        <button class="video-control-btn" id="video-btn">
                             <i class="fa fa-video"></i>
                         </button>
                         <button class="video-control-btn end-call" onclick="endVideoChat()">
@@ -1239,39 +1382,15 @@
                 </div>
                 <div class="video-chat-content">
                     <div class="video-container">
-                        <video class="remote-video" id="remote-video" autoplay muted></video>
-                        <div class="local-video-container">
-                            <video class="local-video" id="local-video" autoplay muted></video>
-                        </div>
-                    </div>
-                    <div class="green-screen-controls">
-                        <button class="green-screen-btn" onclick="toggleGreenScreen()">
-                            <i class="fa fa-magic"></i> Toggle Green Screen
-                        </button>
-                        <button class="green-screen-btn" onclick="changeBackground('beach')">
-                            <i class="fa fa-image"></i> Beach Background
-                        </button>
-                        <button class="green-screen-btn" onclick="changeBackground('space')">
-                            <i class="fa fa-image"></i> Space Background
-                        </button>
-                        <button class="green-screen-btn" onclick="changeBackground('office')">
-                            <i class="fa fa-image"></i> Office Background
-                        </button>
-                    </div>
-                    <div class="chat-overlay">
-                        <div class="chat-message received">
-                            <strong>John Atlas:</strong> Can you see my screen clearly?
-                            <div class="message-time">10:47 AM</div>
-                        </div>
-                        <div class="chat-message sent">
-                            <strong>You:</strong> Yes, it looks great!
-                            <div class="message-time">10:47 AM</div>
-                        </div>
-                        <div class="chat-input-container">
-                            <input type="text" class="chat-input" placeholder="Type a message...">
-                            <button class="chat-send-btn">
-                                <i class="fa fa-paper-plane"></i>
-                            </button>
+                        <div class="vertical-phone-layout">
+                            <div class="main-vertical-video">
+                                <div class="video-label">John Atlas</div>
+                                <div style="font-size: 24px; color: white;">📹 Video Feed</div>
+                            </div>
+                            <div class="pip-vertical-video">
+                                <div class="pip-label">You</div>
+                                <div style="font-size: 14px; color: white;">📹</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1285,61 +1404,65 @@
                 <input type="text" placeholder="Search Chirper">
             </div>
             <div class="trending-box">
-                <div class="section-title">What's happening</div>
+                <div class="section-title">Trends for you</div>
                 <div class="trending-item">
                     <div class="trending-category">Technology · Trending</div>
                     <div class="trending-topic">#WebDevelopment</div>
                     <div class="trending-count">15.2K Chirps</div>
                 </div>
                 <div class="trending-item">
-                    <div class="trending-category">Entertainment · Trending</div>
-                    <div class="trending-topic">#NewMovieReleases</div>
+                    <div class="trending-category">Sports · Trending</div>
+                    <div class="trending-topic">Championship Finals</div>
                     <div class="trending-count">42.5K Chirps</div>
                 </div>
                 <div class="trending-item">
-                    <div class="trending-category">Sports · Trending</div>
-                    <div class="trending-topic">Championship Finals</div>
+                    <div class="trending-category">Entertainment · Trending</div>
+                    <div class="trending-topic">#NewMovieRelease</div>
                     <div class="trending-count">28.7K Chirps</div>
                 </div>
                 <div class="trending-item">
                     <div class="trending-category">Politics · Trending</div>
                     <div class="trending-topic">Election Updates</div>
-                    <div class="trending-count">12.3K Chirps</div>
-                </div>
-                <div class="trending-item">
-                    <div class="trending-category">Trending in your country</div>
-                    <div class="trending-topic">#LocalNews</div>
-                    <div class="trending-count">8.9K Chirps</div>
+                    <div class="trending-count">35.9K Chirps</div>
                 </div>
             </div>
             <div class="who-to-follow">
                 <div class="section-title">Who to follow</div>
                 <div class="follow-item">
                     <div class="follow-profile">
-                        <div class="follow-avatar">TB</div>
+                        <div class="follow-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            JA
+                        </div>
                         <div class="follow-info">
-                            <div class="follow-name">Tyler Brisk</div>
-                            <div class="follow-handle">@tylerbrisk</div>
+                            <div class="follow-name">John Atlas</div>
+                            <div class="follow-handle">@johnatlasceo</div>
                         </div>
                         <button class="follow-btn">Follow</button>
                     </div>
                 </div>
                 <div class="follow-item">
                     <div class="follow-profile">
-                        <div class="follow-avatar">NB</div>
+                        <div class="follow-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            TN
+                        </div>
                         <div class="follow-info">
-                            <div class="follow-name">NASA</div>
-                            <div class="follow-handle">@nasa</div>
+                            <div class="follow-name">Tech News</div>
+                            <div class="follow-handle">@technews</div>
                         </div>
                         <button class="follow-btn">Follow</button>
                     </div>
                 </div>
                 <div class="follow-item">
                     <div class="follow-profile">
-                        <div class="follow-avatar">CN</div>
+                        <div class="follow-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            CK
+                        </div>
                         <div class="follow-info">
-                            <div class="follow-name">Chef Network</div>
-                            <div class="follow-handle">@chefnetwork</div>
+                            <div class="follow-name">Cat Lover</div>
+                            <div class="follow-handle">@catlover99</div>
                         </div>
                         <button class="follow-btn">Follow</button>
                     </div>
@@ -1349,7 +1472,7 @@
     </div>
 
     <script>
-        // Tab navigation
+        // Show different sections
         function showSection(section) {
             // Hide all tab panes
             document.querySelectorAll('.tab-pane').forEach(pane => {
@@ -1357,60 +1480,53 @@
             });
             
             // Show the selected section
+            document.getElementById(section + '-section').classList.add('active');
+            
+            // Update active nav item
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
             if (section === 'home') {
-                document.getElementById('home-section').classList.add('active');
+                document.querySelector('.nav-item:nth-child(1)').classList.add('active');
             } else if (section === 'messages') {
-                document.getElementById('messages-section').classList.add('active');
+                document.querySelector('.nav-item:nth-child(4)').classList.add('active');
             }
         }
 
-        // Message thread navigation
+        // Show message thread
         function showThread(threadId) {
             // Hide all tab panes
             document.querySelectorAll('.tab-pane').forEach(pane => {
                 pane.classList.remove('active');
             });
             
-            // Show the thread section
-            document.getElementById('thread-section').classList.add('active');
-            
-            // Update thread info based on which conversation was clicked
-            const conversation = event.currentTarget;
-            const name = conversation.querySelector('.conversation-name').textContent;
-            const handle = name === 'John Atlas' ? '@johnatlasceo' : 
-                          name === 'Cat Lover' ? '@catlover99' : 
-                          name === 'Tech News' ? '@technews' : '@user';
-            
-            document.getElementById('thread-name').textContent = name;
-            document.getElementById('thread-handle').textContent = handle;
-            document.getElementById('thread-avatar').textContent = name.substring(0, 2);
+            // Show the selected thread
+            document.getElementById(threadId).classList.add('active');
         }
 
-        // Video chat functionality
-        function startVideoChat(contactName) {
+        // Start video chat
+        function startVideoChat(event) {
+            event.stopPropagation();
+            
             // Hide all tab panes
             document.querySelectorAll('.tab-pane').forEach(pane => {
                 pane.classList.remove('active');
             });
             
-            // Show the video chat section
-            document.getElementById('video-chat-section').classList.add('active');
-            
-            // Update the contact name
-            document.getElementById('video-chat-with').textContent = contactName;
-            
-            // Simulate video streams (in a real app, these would be actual video streams)
-            document.getElementById('local-video').src = "https://placeholder-video.com/local.mp4";
-            document.getElementById('remote-video').src = "https://placeholder-video.com/remote.mp4";
+            // Show video chat
+            document.getElementById('video-chat').classList.add('active');
         }
 
+        // End video chat
         function endVideoChat() {
-            // Go back to messages section
+            // Hide video chat and show messages
+            document.getElementById('video-chat').classList.remove('active');
             showSection('messages');
         }
 
-        // Toggle microphone
-        document.getElementById('mic-toggle').addEventListener('click', function() {
+        // Toggle mute
+        document.getElementById('mute-btn').addEventListener('click', function() {
             const icon = this.querySelector('i');
             if (icon.classList.contains('fa-microphone')) {
                 icon.className = 'fa fa-microphone-slash';
@@ -1419,8 +1535,8 @@
             }
         });
 
-        // Toggle camera
-        document.getElementById('camera-toggle').addEventListener('click', function() {
+        // Toggle video
+        document.getElementById('video-btn').addEventListener('click', function() {
             const icon = this.querySelector('i');
             if (icon.classList.contains('fa-video')) {
                 icon.className = 'fa fa-video-slash';
@@ -1429,14 +1545,41 @@
             }
         });
 
-        // Green screen functionality
-        function toggleGreenScreen() {
-            alert("Green screen toggled! In a real implementation, this would apply a green screen effect to your video.");
-        }
-
-        function changeBackground(type) {
-            alert(`Background changed to ${type}! In a real implementation, this would change your video background.`);
-        }
+        // Add comment functionality
+        document.querySelectorAll('.comment-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.previousElementSibling;
+                const commentText = input.value.trim();
+                
+                if (commentText) {
+                    const commentsSection = this.closest('.comments-section');
+                    const newComment = document.createElement('div');
+                    newComment.className = 'comment';
+                    newComment.innerHTML = `
+                        <div class="comment-avatar">JD</div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <div class="comment-author">John Doe</div>
+                                <div class="comment-handle">@johndoe</div>
+                                <div class="comment-time">· Just now</div>
+                            </div>
+                            <div class="comment-text">${commentText}</div>
+                            <div class="comment-actions">
+                                <div class="comment-action">
+                                    <i class="fa fa-heart"></i> 0
+                                </div>
+                                <div class="comment-action">
+                                    <i class="fa fa-comment"></i> Reply
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    commentsSection.insertBefore(newComment, this.parentElement);
+                    input.value = '';
+                }
+            });
+        });
     </script>
 </body>
 </html>
