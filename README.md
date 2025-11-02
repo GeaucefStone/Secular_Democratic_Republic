@@ -8,9 +8,10 @@
 
 ### What's New
 
-Simulated parody websites are now included. You can use them to simulate conversations to further illustrate what politics looks like under the SDR Constition. 
+- Simulated parody websites are now included. You can use them to simulate conversations to further illustrate what politics looks like under the SDR Constition. 
+- Simulations are now functional. The only code you need to edit are conversations and avatar images. 
 
-**Note:** There is still currently a lack of video and image content. These are not meant to be functional websites, but rather designed to be screenshotted or recorded on screen. 
+**Note:** Chirper's video message simulation could use some refinement. 
 
 ---
 
