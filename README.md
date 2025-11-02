@@ -11,6 +11,9 @@
 - Simulated parody websites are now included. You can use them to simulate conversations to further illustrate what politics looks like under the SDR Constition. 
 - Simulations are now functional. The only code you need to edit are conversations and avatar images. 
 
+- **Article XVI is now included. The people who may live under the SDR Constitution now have the right to remove corrupt officials by force and charge them capital crimes if necessary.**
+
+
 **Note:** Chirper's video message simulation could use some refinement. 
 
 ---
