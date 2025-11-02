@@ -29,6 +29,13 @@
             line-height: 1.6;
         }
 
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
         /* Header Styles */
         .header {
             background-color: var(--darker-bg);
@@ -452,6 +459,200 @@
             margin-right: 5px;
         }
 
+        /* Comments Section Styles */
+        .comments-section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .comment {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .comment-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: var(--primary-cyan);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--darker-bg);
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .comment-content {
+            flex: 1;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+
+        .comment-time {
+            color: var(--gray-text);
+            font-size: 12px;
+        }
+
+        .comment-text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+
+        .comment-actions {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            color: var(--gray-text);
+        }
+
+        .comment-action {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .comment-action:hover {
+            color: var(--primary-cyan);
+        }
+
+        .comment-action i {
+            margin-right: 3px;
+        }
+
+        .replies {
+            margin-left: 38px;
+            margin-top: 10px;
+            border-left: 2px solid var(--border-color);
+            padding-left: 15px;
+        }
+
+        .reply {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .reply-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: var(--primary-cyan);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--darker-bg);
+            font-size: 10px;
+            opacity: 0.7;
+        }
+
+        .reply-content {
+            flex: 1;
+        }
+
+        .reply-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+        }
+
+        .reply-author {
+            font-weight: 600;
+            font-size: 13px;
+            margin-right: 8px;
+        }
+
+        .reply-time {
+            color: var(--gray-text);
+            font-size: 11px;
+        }
+
+        .reply-text {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 3px;
+        }
+
+        .reply-actions {
+            display: flex;
+            gap: 12px;
+            font-size: 11px;
+            color: var(--gray-text);
+        }
+
+        .reply-action {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .reply-action:hover {
+            color: var(--primary-cyan);
+        }
+
+        .reply-action i {
+            margin-right: 2px;
+        }
+
+        .view-replies {
+            font-size: 13px;
+            color: var(--primary-cyan);
+            margin: 5px 0 10px 38px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .view-replies:hover {
+            text-decoration: underline;
+        }
+
+        .add-comment {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .comment-input {
+            flex: 1;
+            background-color: var(--dark-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 8px 15px;
+            color: var(--light-text);
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .comment-input:focus {
+            outline: none;
+            border-color: var(--primary-cyan);
+        }
+
+        .comment-btn {
+            background-color: var(--primary-cyan);
+            color: var(--darker-bg);
+            border: none;
+            border-radius: 18px;
+            padding: 8px 15px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
         .view-more {
             color: var(--primary-cyan);
             cursor: pointer;
@@ -642,7 +843,10 @@
                     <!-- Question 1 with Photos -->
                     <div class="question-card" onclick="showQuestion('question1')">
                         <div class="question-header">
-                            <div class="question-avatar">JA</div>
+                            <div class="question-avatar">
+                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                                JA
+                            </div>
                             <div class="question-info">
                                 <div class="question-author">John Atlas</div>
                                 <div class="question-meta">Asked 2 days ago · Updated 5 hours ago</div>
@@ -654,7 +858,7 @@
                         <div class="question-content">
                             I've been reading about recent advances in fusion research and wondering about the practical implications if we could actually make it work at scale. How would this change our world?
                         </div>
-                        
+
                         <!-- Photo Section -->
                         <div class="question-photos">
                             <div class="question-photo">
@@ -702,7 +906,10 @@
                     <!-- Question 2 -->
                     <div class="question-card" onclick="showQuestion('question2')">
                         <div class="question-header">
-                            <div class="question-avatar">CP</div>
+                            <div class="question-avatar">
+                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                                CP
+                            </div>
                             <div class="question-info">
                                 <div class="question-author">Curious Philosopher</div>
                                 <div class="question-meta">Asked 5 hours ago</div>
@@ -751,10 +958,13 @@
                         <i class="fa fa-arrow-left"></i> Back to Feed
                     </div>
                 </div>
-                
+
                 <div class="question-card">
                     <div class="question-header">
-                        <div class="question-avatar">JA</div>
+                        <div class="question-avatar">
+                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                            JA
+                        </div>
                         <div class="question-info">
                             <div class="question-author">John Atlas</div>
                             <div class="question-meta">Asked 2 days ago · Updated 5 hours ago</div>
@@ -766,7 +976,7 @@
                     <div class="question-content">
                         I've been reading about recent advances in fusion research and wondering about the practical implications if we could actually make it work at scale. How would this change our world? What industries would be most affected? Would this solve our climate change problems?
                     </div>
-                    
+
                     <!-- Enhanced Photo Section -->
                     <div class="question-photos">
                         <div class="question-photo">
@@ -820,17 +1030,20 @@
 
                 <div class="answers-count">342 Answers</div>
 
-                <!-- Answers with Photos -->
+                <!-- Answers with Photos and Comments -->
                 <div class="answer">
                     <div class="answer-header">
-                        <div class="answer-avatar">ES</div>
+                        <div class="answer-avatar">
+                            ES
+                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                        </div>
                         <div class="answer-author">Emma Scientist</div>
                         <div class="answer-meta">PhD in Nuclear Physics · 1.2K upvotes</div>
                     </div>
                     <div class="answer-content">
                         Practical nuclear fusion would revolutionize our world in several key ways. First, energy would become nearly limitless and incredibly cheap, potentially dropping electricity costs by 90% or more. This would eliminate our dependence on fossil fuels, dramatically reducing carbon emissions and combating climate change.
                     </div>
-                    
+
                     <!-- Answer Photos -->
                     <div class="answer-photos">
                         <div class="answer-photo">
@@ -861,11 +1074,110 @@
                             <i class="fa fa-comment"></i> 87
                         </div>
                     </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <div class="comment">
+                            <div class="comment-avatar">
+                                JD
+                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <div class="comment-author">John Doe</div>
+                                    <div class="comment-time">3 hours ago</div>
+                                </div>
+                                <div class="comment-text">
+                                    This is fascinating! How soon do you think we could realistically see fusion power plants being built if the technology became viable tomorrow?
+                                </div>
+                                <div class="comment-actions">
+                                    <span class="comment-action">Like</span>
+                                    <span class="comment-action">Reply</span>
+                                    <span class="comment-action">12</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Replies -->
+                        <div class="replies">
+                            <div class="reply">
+                                <div class="reply-avatar">
+                                    ES
+                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                                </div>
+                                <div class="reply-content">
+                                    <div class="reply-header">
+                                        <div class="reply-author">Emma Scientist</div>
+                                        <div class="reply-time">2 hours ago</div>
+                                    </div>
+                                    <div class="reply-text">
+                                        Great question! Even with viable technology, regulatory approval and infrastructure development would take 10-15 years for the first commercial plants. But demonstration plants could appear in 5-7 years.
+                                    </div>
+                                    <div class="reply-actions">
+                                        <span class="reply-action">Like</span>
+                                        <span class="reply-action">Reply</span>
+                                        <span class="reply-action">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reply">
+                                <div class="reply-avatar">
+                                    TE
+                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                                </div>
+                                <div class="reply-content">
+                                    <div class="reply-header">
+                                        <div class="reply-author">Thomas Economist</div>
+                                        <div class="reply-time">1 hour ago</div>
+                                    </div>
+                                    <div class="reply-text">
+                                        The regulatory hurdles alone would be massive. Every country would want to ensure absolute safety, which could delay implementation significantly.
+                                    </div>
+                                    <div class="reply-actions">
+                                        <span class="reply-action">Like</span>
+                                        <span class="reply-action">Reply</span>
+                                        <span class="reply-action">5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-avatar">
+                                CP
+                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <div class="comment-author">Curious Philosopher</div>
+                                    <div class="comment-time">4 hours ago</div>
+                                </div>
+                                <div class="comment-text">
+                                    What about the environmental impact of fusion waste? I've heard it's much safer than fission, but are there any long-term concerns?
+                                </div>
+                                <div class="comment-actions">
+                                    <span class="comment-action">Like</span>
+                                    <span class="comment-action">Reply</span>
+                                    <span class="comment-action">9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view-replies">View 5 more comments</div>
+
+                        <div class="add-comment">
+                            <input type="text" class="comment-input" placeholder="Add a comment...">
+                            <button class="comment-btn">Comment</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="answer">
                     <div class="answer-header">
-                        <div class="answer-avatar">TE</div>
+                        <div class="answer-avatar">
+                            TE
+                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                        </div>
                         <div class="answer-author">Thomas Economist</div>
                         <div class="answer-meta">Economic Analyst · 845 upvotes</div>
                     </div>
@@ -897,6 +1209,58 @@
                             <i class="fa fa-comment"></i> 42
                         </div>
                     </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <div class="comment">
+                            <div class="comment-avatar">
+                                JA
+                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <div class="comment-author">John Atlas</div>
+                                    <div class="comment-time">2 hours ago</div>
+                                </div>
+                                <div class="comment-text">
+                                    Do you think this could lead to a new industrial revolution? What sectors would benefit the most initially?
+                                </div>
+                                <div class="comment-actions">
+                                    <span class="comment-action">Like</span>
+                                    <span class="comment-action">Reply</span>
+                                    <span class="comment-action">7</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="replies">
+                            <div class="reply">
+                                <div class="reply-avatar">
+                                    TE
+                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                                </div>
+                                <div class="reply-content">
+                                    <div class="reply-header">
+                                        <div class="reply-author">Thomas Economist</div>
+                                        <div class="reply-time">1 hour ago</div>
+                                    </div>
+                                    <div class="reply-text">
+                                        Absolutely! Manufacturing, transportation, and computing would see immediate benefits. Then we'd see breakthroughs in areas like synthetic biology and space exploration that require massive energy.
+                                    </div>
+                                    <div class="reply-actions">
+                                        <span class="reply-action">Like</span>
+                                        <span class="reply-action">Reply</span>
+                                        <span class="reply-action">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-comment">
+                            <input type="text" class="comment-input" placeholder="Add a comment...">
+                            <button class="comment-btn">Comment</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="view-more">View 340 more answers</div>
@@ -909,10 +1273,13 @@
                         <i class="fa fa-arrow-left"></i> Back to Feed
                     </div>
                 </div>
-                
+
                 <div class="question-card">
                     <div class="question-header">
-                        <div class="question-avatar">CP</div>
+                        <div class="question-avatar">
+                            CP
+                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                        </div>
                         <div class="question-info">
                             <div class="question-author">Curious Philosopher</div>
                             <div class="question-meta">Asked 5 hours ago</div>
@@ -958,13 +1325,16 @@
                 <!-- Answers -->
                 <div class="answer">
                     <div class="answer-header">
-                        <div class="answer-avatar">AP</div>
+                        <div class="answer-avatar">
+                            AP
+                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                        </div>
                         <div class="answer-author">Art Professor</div>
                         <div class="answer-meta">Art History Professor · 956 upvotes</div>
                     </div>
                     <div class="answer-content">
                         Art serves multiple crucial functions in society. Firstly, it's a form of communication that transcends language barriers. It allows us to express complex emotions, ideas, and cultural values that might be difficult to articulate verbally.
-                        
+
                         Art also preserves cultural memory and identity. Through art, we can understand how people in different eras thought, felt, and perceived their world. It creates shared experiences that bind communities together and helps us process collective trauma or celebrate shared achievements.
                     </div>
                     <div class="answer-actions">
@@ -976,6 +1346,80 @@
                         </div>
                         <div class="answer-action">
                             <i class="fa fa-comment"></i> 63
+                        </div>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <div class="comment">
+                            <div class="comment-avatar">
+                                JD
+                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <div class="comment-author">John Doe</div>
+                                    <div class="comment-time">3 hours ago</div>
+                                </div>
+                                <div class="comment-text">
+                                    Do you think digital art and AI-generated art serve the same purposes as traditional art forms?
+                                </div>
+                                <div class="comment-actions">
+                                    <span class="comment-action">Like</span>
+                                    <span class="comment-action">Reply</span>
+                                    <span class="comment-action">15</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="replies">
+                            <div class="reply">
+                                <div class="reply-avatar">
+                                    AP
+                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                                </div>
+                                <div class="reply-content">
+                                    <div class="reply-header">
+                                        <div class="reply-author">Art Professor</div>
+                                        <div class="reply-time">2 hours ago</div>
+                                    </div>
+                                    <div class="reply-text">
+                                        Interesting question! While the medium changes, the fundamental purposes remain. Digital and AI art still communicate ideas, evoke emotions, and reflect our current cultural moment. The tools may be new, but the human impulse to create persists.
+                                    </div>
+                                    <div class="reply-actions">
+                                        <span class="reply-action">Like</span>
+                                        <span class="reply-action">Reply</span>
+                                        <span class="reply-action">9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reply">
+                                <div class="reply-avatar">
+                                    CP
+                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                                </div>
+                                <div class="reply-content">
+                                    <div class="reply-header">
+                                        <div class="reply-author">Curious Philosopher</div>
+                                        <div class="reply-time">1 hour ago</div>
+                                    </div>
+                                    <div class="reply-text">
+                                        But doesn't AI art challenge our very definition of creativity? If a machine generates the art, is it still an authentic human expression?
+                                    </div>
+                                    <div class="reply-actions">
+                                        <span class="reply-action">Like</span>
+                                        <span class="reply-action">Reply</span>
+                                        <span class="reply-action">6</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view-replies">View 3 more comments</div>
+
+                        <div class="add-comment">
+                            <input type="text" class="comment-input" placeholder="Add a comment...">
+                            <button class="comment-btn">Comment</button>
                         </div>
                     </div>
                 </div>
@@ -992,23 +1436,38 @@
                     <i class="fa fa-more"></i>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">TS</div>
+                    <div class="space-avatar">
+                        TS
+                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                    </div>
                     <div class="space-name">Technology & Science</div>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">PH</div>
+                    <div class="space-avatar">
+                        PH
+                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                    </div>
                     <div class="space-name">Philosophy & Ethics</div>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">HI</div>
+                    <div class="space-avatar">
+                        HI
+                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                    </div>
                     <div class="space-name">History & Archaeology</div>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">PS</div>
+                    <div class="space-avatar">
+                        PS
+                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                    </div>
                     <div class="space-name">Psychology & Mind</div>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">EC</div>
+                    <div class="space-avatar">
+                        EC
+                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
+                    </div>
                     <div class="space-name">Economics & Finance</div>
                 </div>
             </div>
@@ -1029,16 +1488,16 @@
             // Hide all sections
             const panes = document.querySelectorAll('.tab-pane');
             panes.forEach(pane => pane.classList.remove('active'));
-            
+
             // Show selected section
             document.getElementById(section + '-section').classList.add('active');
         }
-        
+
         function showQuestion(questionId) {
             // Hide all sections
             const panes = document.querySelectorAll('.tab-pane');
             panes.forEach(pane => pane.classList.remove('active'));
-            
+
             // Show selected question
             document.getElementById(questionId).classList.add('active');
         }
