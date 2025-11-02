@@ -1088,6 +1088,47 @@ Upon the foundation of literacy and numeracy, the education system shall instill
 
 **Framer's Justification:** _A republic is a machine that must be run by its citizens. If the citizens are uneducated, the machine will break. This Article ensures the system creates its own best operators. We prioritize math and reading not as ends in themselves, but as the indispensable keys to unlocking all other knowledge and defending oneself against tyranny. By guaranteeing these skills, we make the promises of Bodily Autonomy and Free Expression meaningful, for a right you are not educated enough to understand or defend is a right in name only._
 
+# ARTICLE XVI: THE RIGHT OF CONSTITUTIONAL RESTORATION
+
+## Section 1: The Ultimate Sovereignty of the People
+
+1. All political power is inherent in the people. The government instituted by this Constitution is a trustee of that power, and its authority is contingent upon its fidelity to this document.
+2. Should the institutions of government ever conspire to subvert the Constitution and establish a dictatorship, the people retain the inherent and ultimate right to alter, abolish, and restore their government.
+
+## Section 2: Declaration of a Systemic Constitutional Breach
+
+1. A **Systemic Constitutional Breach** is declared when, for a continuous period of no less than six (6) months, multiple branches of the federal government have willfully and systematically acted in concert to nullify the fundamental rights in Article I or dismantle the democratic order, rendering all internal constitutional remedies ineffective.
+2. **Evidence of a Breach** includes, but is not limited to:
+   - The Executive, Legislative, and Judicial branches conspiring to suspend elections or extend terms of office without the consent of the Citizens' Assembly.
+   - The deliberate and widespread use of the security apparatus to suppress political opposition, a free press, or peaceful assembly, as protected in Article I.
+   - The systematic nullification of the powers of the Citizen's, Worker's, Historian, or Scientific Branches.
+
+## Section 3: The Trigger of Last Resort
+
+1. Upon a petition bearing the verified signatures of **twenty-five percent (25%)** of the eligible electorate from a majority of states, a **National Referendum for Constitutional Restoration** shall be initiated.
+2. The referendum question shall be: *"Shall the current federal government be declared dissolved for a Systemic Constitutional Breach, and shall a Provisional Council be empowered to restore constitutional order and convene new elections?"*
+
+## Section 4: The Mandate for Restoration
+
+1. If the referendum passes by a **two-thirds (⅔) supermajority** of the national popular vote, the following actions are immediately authorized and mandated:
+   - a. The current federal government is declared dissolved.
+   - b. All oaths of office to the dissolved government are nullified.
+   - c. A **Provisional Council of Restoration**, composed of the most senior, non-compromised members of the Citizen's, Historian, and Scientific Branches, shall assume temporary authority.
+   - d. The Defense Force and all law enforcement agencies are immediately transferred to the authority of the Provisional Council. Their primary duty is to protect the people, secure the peace, and arrest the officials of the dissolved government.
+
+## Section 5: Accountability and Transition
+
+1. The Provisional Council's sole mandate is to:
+   - Arrest and detain all principal officials of the dissolved government for trial.
+   - Secure all government infrastructure and records.
+   - Organize and oversee free and fair elections for a new government within **180 days**.
+2. All officials detained under this Article shall be tried for **Treason Against the Constitutional Order**, a capital crime. The burden of proof shall be on the state to demonstrate their knowing participation in the Systemic Constitutional Breach.
+3. Upon the inauguration of a newly elected government, the Provisional Council shall be dissolved, and full authority shall be returned to the constitutional branches.
+
+---
+
+**Framer's Justification:** *"This Article is the final, irrevocable command of the people to their government: you exist at our sufferance. Every other article is a prevention; this one is the cure. It transforms the abstract right of revolution from a bloody gamble into a solemn, constitutional process. It ensures that the price for attempting to establish a dictatorship is not just failure, but certain and total accountability. A government that forces the people to invoke this Article has already signed its own death warrant."*
+
 ---
 
 ## FINAL DECLARATION
