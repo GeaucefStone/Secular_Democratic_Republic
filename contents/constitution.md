@@ -35,7 +35,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 * **Purpose:** To acknowledge the reality that a large religious complex operates like a major institution, not a quiet community house.
 * **Mechanism:** Any religious structure intended to serve a congregation over a certain size (e.g., 500 members) must be built in zones designated for commercial assembly or light industrial use. It would be alongside conference centers, theaters, and large restaurants, not in the middle of a quiet neighborhood. This treats it according to its functional impact (traffic, noise, parking), not its theological purpose.
 
-**Framer's Justification:** _Clause 6 is designed as an absolute barrier to theocracy. Any ideology—religious or secular—that asserts the legal supremacy of a specific religious doctrine over this Constitution, or that seeks to deny any person the fundamental rights enumerated in Article I based on their adherence (or non-adherence) to a religious doctrine, is definitionally incompatible with public office. This applies regardless of the ideology's self-described name, tradition, or interpretation. The test is objective: does the ideology's core program require the state to enforce religious law or privilege a specific faith? If yes, it is disqualified._
+> **Framer's Justification:** _Clause 6 is designed as an absolute barrier to theocracy. Any ideology—religious or secular—that asserts the legal supremacy of a specific religious doctrine over this Constitution, or that seeks to deny any person the fundamental rights enumerated in Article I based on their adherence (or non-adherence) to a religious doctrine, is definitionally incompatible with public office. This applies regardless of the ideology's self-described name, tradition, or interpretation. The test is objective: does the ideology's core program require the state to enforce religious law or privilege a specific faith? If yes, it is disqualified._
 
 ### Section 3: Freedom of Expression & Belief
 
@@ -133,7 +133,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 * Requiring the use of a certified backstop or range safety system for any target practice on residential property.
 - These regulations shall be presumed constitutional if they are narrowly tailored to address documented public safety risks and do not function as a de facto blanket ban on the lawful use of firearms for self-defense or recreation within the municipality.
 
-**Framer's Justification:** _The right to self-defense does not exist in a vacuum. It must be balanced with the right of one's neighbors to domestic security and peace. This provision empowers communities to enact common-sense safety measures to prevent stray bullets and noise pollution, without infringing on the core right of law-abiding citizens to own and use firearms responsibly. It allows a city to stop someone from firing a rifle in a crowded subdivision, while protecting the ability of a rural resident to practice on their own land._
+> **Framer's Justification:** _The right to self-defense does not exist in a vacuum. It must be balanced with the right of one's neighbors to domestic security and peace. This provision empowers communities to enact common-sense safety measures to prevent stray bullets and noise pollution, without infringing on the core right of law-abiding citizens to own and use firearms responsibly. It allows a city to stop someone from firing a rifle in a crowded subdivision, while protecting the ability of a rural resident to practice on their own land._
 
 ### Section 11: Right to Domestic Privacy
 
@@ -152,7 +152,9 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 ### Section 12: Right to Dissolve Marriage (No-Fault Divorce)
 
 1. The right to dissolve a marriage is inviolable. No person shall be compelled by the state to remain legally married against their will.
+
 > **Framer's Quote**: "This provision is necessary to prevent individuals from being legally trapped in relationships that are unsafe or devoid of mutual consent, thereby upholding their fundamental rights to liberty and security."
+
 2. The Republic shall recognize and facilitate no-fault divorce. Upon the petition of either party to a marriage, the state shall grant a dissolution of the marriage without requiring the petitioner to prove wrongdoing, such as adultery, abandonment, or cruelty, by the other party.
 3. The primary considerations of the court in a divorce proceeding shall be the equitable division of marital property, and the welfare and best interests of any dependent children. The court shall not deny or delay a divorce decree based on the objection or lack of consent of the other party.
 4. This right ensures that individuals are not forced to remain in unwanted or harmful relationships and is a necessary corollary to the rights of liberty, privacy, and bodily autonomy.
@@ -269,7 +271,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 - Any whistleblower who suffers retaliation shall be entitled to full reinstatement, triple back-pay, compensation for all damages (including emotional distress), and attorney's fees.
 5. **Criminal Penalty for Retaliators:** Any individual, whether a public official or private manager, who knowingly and willfully engages in the retaliation of a whistleblower shall be guilty of a felony, punishable by a mandatory minimum sentence of five years imprisonment and permanent disqualification from holding any position of public trust or managing the labor of others.
 
-**Framer's Justification:** _The "Poisoned Chalice" makes corruption dangerous for the corrupter. But a state that does not actively protect and reward those with the courage to expose corruption from within is a state that is only half-serious about justice. This provision ensures that the first person to see a crime become not a target, but a hero of the Republic._
+> **Framer's Justification:** _The "Poisoned Chalice" makes corruption dangerous for the corrupter. But a state that does not actively protect and reward those with the courage to expose corruption from within is a state that is only half-serious about justice. This provision ensures that the first person to see a crime become not a target, but a hero of the Republic._
 
 ### Section 21: Right to Timely Forensic Investigation in Sexual Assault Cases
 
@@ -287,7 +289,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 - A victim, or the Citizens' Assembly on behalf of the public interest, may bring a cause of action against the relevant law enforcement agency or the state for failure to comply with the time limits mandated in Clause 2.
 - A court finding of a violation shall result in a mandatory writ of mandamus compelling immediate action and the allocation of necessary funds to clear the backlog. The responsible public officials shall be subject to professional discipline and may be held in contempt of court.
 
-**Framer's Justification:** _A rape kit that sits on a shelf is a promise broken by the state. It tells a victim that their pursuit of justice is not a priority. This provision transforms that kit from a symbol of neglect into an enforceable right to a functional investigation. It mandates the state to do its job, providing victims with transparency and accountability where there has traditionally been delay and obscurity._
+> **Framer's Justification:** _A rape kit that sits on a shelf is a promise broken by the state. It tells a victim that their pursuit of justice is not a priority. This provision transforms that kit from a symbol of neglect into an enforceable right to a functional investigation. It mandates the state to do its job, providing victims with transparency and accountability where there has traditionally been delay and obscurity._
 
 ---
 
@@ -431,7 +433,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 4. **Prohibition on Use in Employment:** No public or private employer shall require, request, or suggest that an employee or prospective employee submit to a polygraph examination as a condition of employment, promotion, or continued employment.
 5. **Exceptions for Voluntary Scientific Research:** The provisions of this section shall not be construed to prohibit voluntary participation in academic, scientific, or medical research conducted with informed consent and under the oversight of a recognized ethical review board, provided no results are used for the purposes prohibited in Clauses 2, 3, and 4.
 
-**Framer's Justification:** _A justice system founded on reason and evidence cannot be built upon a foundation of junk science. The polygraph is a tool of intimidation and coercion, not of truth-seeking. Its ban is necessary to protect the innocent from false positives, the vulnerable from psychological pressure, and the integrity of the Republic's legal process from pseudoscientific theatrics._
+> **Framer's Justification:** _A justice system founded on reason and evidence cannot be built upon a foundation of junk science. The polygraph is a tool of intimidation and coercion, not of truth-seeking. Its ban is necessary to protect the innocent from false positives, the vulnerable from psychological pressure, and the integrity of the Republic's legal process from pseudoscientific theatrics._
 
 ### Section 17: Posthumous Accountability and Victim Restitution
 
@@ -458,7 +460,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 5.  **Final Recourse - The Public Restitution Fund:**
 - If the liquifiable assets of the grandfathered estate are insufficient to cover the full Restitution Order, the remaining balance shall be paid immediately to the victims from the Public Restitution Fund.
 
-**Framer's Justification:** *"This provision ensures that those who chose to live under the old system of private property are held to its final responsibility. It converts the relics of a bygone era into healing for the victims of violence, while absolutely protecting the family's home and essential means of living. The Doctrine of Substance Over Form stands as a sentinel against evasion, ensuring that the aggressor's debt to society cannot be hidden behind legal artifice. The state bears all costs of this justice, ensuring no victim faces financial barriers to restitution."*
+> **Framer's Justification:** *"This provision ensures that those who chose to live under the old system of private property are held to its final responsibility. It converts the relics of a bygone era into healing for the victims of violence, while absolutely protecting the family's home and essential means of living. The Doctrine of Substance Over Form stands as a sentinel against evasion, ensuring that the aggressor's debt to society cannot be hidden behind legal artifice. The state bears all costs of this justice, ensuring no victim faces financial barriers to restitution."*
 
 ---
 
@@ -534,7 +536,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 - Any resident shall have the right to borrow seeds from the Public Seed Trust.
 - Upon harvest, borrowers shall return the principal amount of seed, plus a modest surplus to ensure the trust's growth and vitality.
 
-**Framer's Justification:** _"A nation's true wealth is measured not in its currency, but in its capacity to feed itself. This provision recognizes seed as the fundamental unit of that capacity. By creating a circular economy of genetic wealth, we build a buffer against famine, corporate control, and ecological collapse. It transforms a tax from a financial transaction into a direct investment in our collective, biological future."_
+> **Framer's Justification:** _"A nation's true wealth is measured not in its currency, but in its capacity to feed itself. This provision recognizes seed as the fundamental unit of that capacity. By creating a circular economy of genetic wealth, we build a buffer against famine, corporate control, and ecological collapse. It transforms a tax from a financial transaction into a direct investment in our collective, biological future."_
 
 ---
 
@@ -656,7 +658,7 @@ To preserve the integrity of sortition as a true reflection of the common citize
 5. **Implementation Clause:**
 - This section shall take effect one year after ratification. The National Civic Service Registry shall be established during this period, initially populated with records of all citizens who have previously served in a sortition-based branch since the Constitution's ratification.
 
-**Framer's Justification (for the record):** "The power of sortition is its power to disrupt. It breaks professional political classes, shatters careerist thinking, and forces the state to listen to the raw, unvarnished voice of its people. But any system, left to its own devices, will create a new elite. If the same person can be selected multiple times, we risk creating a 'civic service elite'—people who know the procedures, know the levers of power, and gain an un-democratic advantage over their truly novice peers. This amendment ensures the 'disruption' of sortition is permanent and widely distributed. It guarantees that the halls of power are forever filled with true amateurs, ensuring the government never loses touch with the reality of the governed. It is the final safeguard against the system becoming what it was designed to destroy."
+> **Framer's Justification (for the record):** "The power of sortition is its power to disrupt. It breaks professional political classes, shatters careerist thinking, and forces the state to listen to the raw, unvarnished voice of its people. But any system, left to its own devices, will create a new elite. If the same person can be selected multiple times, we risk creating a 'civic service elite'—people who know the procedures, know the levers of power, and gain an un-democratic advantage over their truly novice peers. This amendment ensures the 'disruption' of sortition is permanent and widely distributed. It guarantees that the halls of power are forever filled with true amateurs, ensuring the government never loses touch with the reality of the governed. It is the final safeguard against the system becoming what it was designed to destroy."
 
 ---
 
@@ -792,7 +794,7 @@ While vaccines or medical drugs are not a requirement, any violation during the 
 - Knowingly violating this section shall be a felony.
 - Upon conviction, the office shall be deemed forfeit, the individual shall be permanently barred from future public office, and shall be subject to criminal penalties including imprisonment and the forfeiture of any illicit gains, in accordance with Article XII.
 
-**Framer's Justification:** _You cannot serve two masters. This provision is the logical conclusion of the anti-corruption principles in Article XII. If an official can profit from their policy decisions, they are no longer a public servant but a legalized kleptocrat. This forces a clear choice: serve the public, or serve your portfolio. You cannot do both._
+> **Framer's Justification:** _You cannot serve two masters. This provision is the logical conclusion of the anti-corruption principles in Article XII. If an official can profit from their policy decisions, they are no longer a public servant but a legalized kleptocrat. This forces a clear choice: serve the public, or serve your portfolio. You cannot do both._
 
 ---
 
@@ -1056,7 +1058,7 @@ Upon voluntary enlistment or conscription, and for the duration of their service
 
 ### Section 1: The Purpose of Education
 
-The primary purpose of public education in the Secular Democratic Republic is to empower every citizen with the knowledge, skills, and critical faculties necessary for personal flourishing, effective participation in civic life, and the vigilant defense of liberty. Education shall be oriented towards creating a sovereign, informed, and skeptical citizenry capable of self-governance.
+The primary purpose of public education in the Secular Democratic Republic is to empower every citizen with the knowledge, skills, and critical faculties necessary for personal flourishing, effective participation in civic life, and the **vigilant defense of liberty**. Education shall be oriented towards creating a sovereign, informed, and skeptical citizenry capable of self-governance and of recognizing and resisting tyranny in all its forms.
 
 ### Section 2: A Guaranteed Foundation
 
@@ -1066,68 +1068,73 @@ The primary purpose of public education in the Secular Democratic Republic is to
 - **Numeracy & Mathematical Reasoning:** A strong foundation in mathematics, logic, and statistical reasoning necessary for personal finance, technical careers, and evaluating quantitative claims in public discourse.
 3. Mastery of these foundational skills is the non-negotiable first priority of the education system.
 
-### Section 3: Civic and Critical Competency
+### Section 3: Mandatory Civic and Critical Competency
 
-Upon the foundation of literacy and numeracy, the education system shall instill:
+Upon the foundation of literacy and numeracy, the education system shall mandate instruction in the following, which are **required for graduation**:
 
-1. **Civic Literacy:** A comprehensive understanding of this Constitution, the structure of government, and the historical successes and failures of governance that inform its design; including the rights and responsibilities of citizenship.
-2. **Critical Media and Digital Literacy:** Mandatory instruction, developed in consultation with the Scientific and Historian Branches, in:
+1. **Constitutional Civics:** A comprehensive and practical understanding of this Constitution, the structure and function of the seven branches of government, the history of its design principles, and the **specific mechanisms for civic action and accountability**, including the right of constitutional restoration under Article XVI.
+2. **Critical Media and Propaganda Analysis:** Mandatory instruction, developed in consultation with the Scientific and Historian Branches, in:
 - Identifying logical fallacies, cognitive biases, and rhetorical manipulation.
-- Analyzing sources for credibility, bias, and evidence.
-- Recognizing the techniques and purposes of propaganda, misinformation, and synthetic media.
+- Analyzing sources for credibility, bias, funding, and evidence.
+- Recognizing the techniques, tropes, and psychological purposes of propaganda, misinformation, disinformation, and synthetic media.
+- Practical exercises in deconstructing real-world political and commercial messaging.
 3. **Financial and Economic Literacy:** Practical understanding of personal finance, economic principles, and the rights of workers and consumers as defined in Article III.
 
 ### Section 4: Secular and Neutral Public Education
 
 1. Public educational institutions and their curricula shall be strictly secular. No religious doctrine shall form any part of the curriculum.
-2. The educational environment shall be one of free inquiry and intellectual neutrality. Teachers shall act as facilitators of critical thinking, not advocates for any political party or ideological orthodoxy.
+2. The educational environment shall be one of free inquiry and intellectual neutrality. Teachers shall act as facilitators of critical thinking, not advocates for any political party or ideological orthodoxy. The curriculum shall focus on teaching *how* to think, not *what* to think.
 
 ### Section 5: The Right to Repair Educational Deficits
 
 1. Recognizing that a failed education is a deprivation of a fundamental right, any adult citizen who did not receive an adequate education as defined in this Article shall have the right to free, state-provided remedial education to achieve functional literacy, numeracy, and civic competency.
 
-**Framer's Justification:** _A republic is a machine that must be run by its citizens. If the citizens are uneducated, the machine will break. This Article ensures the system creates its own best operators. We prioritize math and reading not as ends in themselves, but as the indispensable keys to unlocking all other knowledge and defending oneself against tyranny. By guaranteeing these skills, we make the promises of Bodily Autonomy and Free Expression meaningful, for a right you are not educated enough to understand or defend is a right in name only._
+> **Framer's Justification:** _"A republic is a machine that must be run by its citizens. An uneducated citizen is a failed component that threatens the entire system. This Article ensures the state produces its own best operators. We teach math and reading not as ends, but as the indispensable keys to unlocking all other knowledge and defending against tyranny. By mandating constitutional civics and propaganda analysis, we create a citizenry that cannot be easily deceived or subdued. This creates the human firewall that makes the other defensive articles of this Constitution effective. A right you are not educated enough to understand or defend is a right in name only."_
 
-# ARTICLE XVI: THE RIGHT OF CONSTITUTIONAL RESTORATION
+---
 
-## Section 1: The Ultimate Sovereignty of the People
+## ARTICLE XVI: THE RIGHT OF CONSTITUTIONAL RESTORATION
+
+### Section 1: The Ultimate Sovereignty of the People
 
 1. All political power is inherent in the people. The government instituted by this Constitution is a trustee of that power, and its authority is contingent upon its fidelity to this document.
 2. Should the institutions of government ever conspire to subvert the Constitution and establish a dictatorship, the people retain the inherent and ultimate right to alter, abolish, and restore their government.
 
-## Section 2: Declaration of a Systemic Constitutional Breach
+### Section 2: Declaration of a Systemic Constitutional Breach
 
 1. A **Systemic Constitutional Breach** is declared when, for a continuous period of no less than six (6) months, multiple branches of the federal government have willfully and systematically acted in concert to nullify the fundamental rights in Article I or dismantle the democratic order, rendering all internal constitutional remedies ineffective.
 2. **Evidence of a Breach** includes, but is not limited to:
-   - The Executive, Legislative, and Judicial branches conspiring to suspend elections or extend terms of office without the consent of the Citizens' Assembly.
-   - The deliberate and widespread use of the security apparatus to suppress political opposition, a free press, or peaceful assembly, as protected in Article I.
-   - The systematic nullification of the powers of the Citizen's, Worker's, Historian, or Scientific Branches.
+- The Executive, Legislative, and Judicial branches conspiring to suspend elections or extend terms of office without the consent of the Citizens' Assembly.
+- The deliberate and widespread use of the security apparatus to suppress political opposition, a free press, or peaceful assembly, as protected in Article I.
+- The systematic nullification of the powers of the Citizen's, Worker's, Historian, or Scientific Branches.
 
-## Section 3: The Trigger of Last Resort
+### Section 3: The Trigger of Last Resort
 
 1. Upon a petition bearing the verified signatures of **twenty-five percent (25%)** of the eligible electorate from a majority of states, a **National Referendum for Constitutional Restoration** shall be initiated.
 2. The referendum question shall be: *"Shall the current federal government be declared dissolved for a Systemic Constitutional Breach, and shall a Provisional Council be empowered to restore constitutional order and convene new elections?"*
 
-## Section 4: The Mandate for Restoration
+### Section 4: The Mandate for Restoration
 
 1. If the referendum passes by a **two-thirds (⅔) supermajority** of the national popular vote, the following actions are immediately authorized and mandated:
-   - a. The current federal government is declared dissolved.
-   - b. All oaths of office to the dissolved government are nullified.
-   - c. A **Provisional Council of Restoration**, composed of the most senior, non-compromised members of the Citizen's, Historian, and Scientific Branches, shall assume temporary authority.
-   - d. The Defense Force and all law enforcement agencies are immediately transferred to the authority of the Provisional Council. Their primary duty is to protect the people, secure the peace, and arrest the officials of the dissolved government.
+- The current federal government is declared dissolved.
+- All oaths of office to the dissolved government are nullified.
+- A **Provisional Council of Restoration**, composed of the most senior, non-compromised members of the Citizen's, Historian, and Scientific Branches, shall assume temporary authority.
+- The Defense Force and all law enforcement agencies are immediately transferred to the authority of the Provisional Council. Their primary duty is to protect the people, secure the peace, and arrest the officials of the dissolved government.
 
-## Section 5: Accountability and Transition
+### Section 5: Accountability and Transition
 
 1. The Provisional Council's sole mandate is to:
-   - Arrest and detain all principal officials of the dissolved government for trial.
-   - Secure all government infrastructure and records.
-   - Organize and oversee free and fair elections for a new government within **180 days**.
+- Arrest and detain all principal officials of the dissolved government for trial.
+- Secure all government infrastructure and records.
+- Organize and oversee free and fair elections for a new government within **180 days**.
 2. All officials detained under this Article shall be tried for **Treason Against the Constitutional Order**, a capital crime. The burden of proof shall be on the state to demonstrate their knowing participation in the Systemic Constitutional Breach.
 3. Upon the inauguration of a newly elected government, the Provisional Council shall be dissolved, and full authority shall be returned to the constitutional branches.
 
----
+### Section 6: Desperate Measure
 
-**Framer's Justification:** *"This Article is the final, irrevocable command of the people to their government: you exist at our sufferance. Every other article is a prevention; this one is the cure. It transforms the abstract right of revolution from a bloody gamble into a solemn, constitutional process. It ensures that the price for attempting to establish a dictatorship is not just failure, but certain and total accountability. A government that forces the people to invoke this Article has already signed its own death warrant."*
+1. Should the existing dictatorship resist, the people and the military have the right and duty to use physical force, even if it means lethal force if necessary. 
+
+> **Framer's Justification:** _"This Article is the final, irrevocable command of the people to their government: you exist at our sufferance. Every other article is a prevention; this one is the cure. It transforms the abstract right of revolution from a bloody gamble into a solemn, constitutional process. It ensures that the price for attempting to establish a dictatorship is not just failure, but certain and total accountability. A government that forces the people to invoke this Article has already signed its own death warrant."_
 
 ---
 
