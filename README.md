@@ -12,7 +12,7 @@
 - Simulations are now functional. The only code you need to edit are conversations and avatar images. 
 
 - **Article XVI is now included. The people who may live under the SDR Constitution now have the right to remove corrupt officials by force and charge them capital crimes if necessary.**
-
+- In conjunction with Article XVI, Article VII Section 3 now makes it legal for the people of the SDR to invoke Article XVI without a vote should any official attempt to overturn it. 
 
 **Note:** Chirper's video message simulation could use some refinement. 
 
