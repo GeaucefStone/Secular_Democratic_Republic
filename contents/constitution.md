@@ -690,6 +690,7 @@ To preserve the integrity of sortition as a true reflection of the common citize
 ### Section 5: Voter Suppression
 
 1. Gerrymandering is hereby illegal and punishable by impeachment and life in prison. This is not pardonable.
+2. Should any state, congressional or presidential candidate drop from running, ranked choice voting shall be imposed in the ballots. 
 
 ### Section 6: Disqualification for Anti-Democratic Activity
 
@@ -810,7 +811,8 @@ While vaccines or medical drugs are not a requirement, any violation during the 
 
 ### Section 3: Unamendable Provisions
 
-1. Rights in Articles I-II cannot be amended away.
+1. Rights and safeguards in Articles I, II, V, VII and XVI cannot be amended away.
+2. Any attempt to dismantle Article VII or XVI shall trigger Article XVI itself without a petition. 
 
 ### Section 4: Citizen Challenge
 
@@ -881,7 +883,7 @@ The Historian Court's job is to ensure the integrity of historical fact. Its pow
 
 ### Section 3: Composition and Ethical Safeguards
 
-1.         The Court shall be composed of historians and legal scholars selected for their expertise in political history, ideology, and constitutional law. Justices shall be elected by a National Historical Assembly, constituted of all certified historians, using the peer-election model defined in Article IV, Section 8, to ensure the highest standards of professional rigor and impartiality.
+1. The Court shall be composed of historians and legal scholars selected for their expertise in political history, ideology, and constitutional law. Justices shall be elected by a National Historical Assembly, constituted of all certified historians, using the peer-election model defined in Article IV, Section 8, to ensure the highest standards of professional rigor and impartiality.
 2. Members of the Court are bound by a strict code of professional conduct. They must act as impartial investigators, not as advocates. Any finding must be based solely on the verifiable, public record.
 3. Deliberations and the evidential record of the Court shall be a matter of public record, ensuring total transparency in its fact-finding process.
 
@@ -1066,6 +1068,8 @@ The primary purpose of public education in the Secular Democratic Republic is to
 2. The curriculum shall prioritize universal proficiency in essential tools of knowledge:
 - **Literacy:** The ability to read complex texts with comprehension, analyze arguments, and communicate effectively in writing and speech.
 - **Numeracy & Mathematical Reasoning:** A strong foundation in mathematics, logic, and statistical reasoning necessary for personal finance, technical careers, and evaluating quantitative claims in public discourse.
+- **Basic Physics & Chemistry:** An understanding of how the universe works. 
+- **History:** A safeguard that will prevent the same attrocities from repeating themselves, as well as give credit to rightful individuals. 
 3. Mastery of these foundational skills is the non-negotiable first priority of the education system.
 
 ### Section 3: Mandatory Civic and Critical Competency
