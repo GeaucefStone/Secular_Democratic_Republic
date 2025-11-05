@@ -804,6 +804,7 @@ While vaccines or medical drugs are not a requirement, any violation during the 
 ### Section 1: Supreme Law
 
 1. This Constitution voids conflicting laws.
+2. If a rights violation is in conflict with Articles I, II, V, VII and XVI is in the books of state jurisdictions, they are not only struck down void but also must be removed.
 
 ### Section 2: Amendment Process
 
@@ -812,7 +813,8 @@ While vaccines or medical drugs are not a requirement, any violation during the 
 ### Section 3: Unamendable Provisions
 
 1. Rights and safeguards in Articles I, II, V, VII and XVI cannot be amended away.
-2. Any attempt to dismantle Article VII or XVI shall trigger Article XVI itself without a petition. 
+2. Any attempt to dismantle Article VII or XVI will trigger Article XVI itself without a petition. 
+3. A state or lower jurisdiction that attempts to override this constitution will be subject to Article XVI and relevant charges. 
 
 ### Section 4: Citizen Challenge
 
@@ -1056,6 +1058,10 @@ Upon voluntary enlistment or conscription, and for the duration of their service
 2. All rights suspended or modified under this Article are fully restored upon the member's receipt of an Honorable, General (under honorable conditions), or Other Than Honorable discharge from the Defense Force. A Dishonorable Discharge or a Bad Conduct Discharge (as a result of a court-martial) shall be considered a waiver of these rights until such time as the individual's civil rights are formally restored by a civilian court.
 3. Any member subjected to a court-martial conviction may, upon discharge, petition the civilian Supreme Court for a review of their case on the grounds of a fundamental miscarriage of justice, ensuring a final check by the civilian branch.
 
+### Section 5: Honor, Integrity and Selfless Service
+
+1. All service members are obligated to disobey unlawful orders and ignore unlawful suspensions. 
+
 ## ARTICLE XV: EDUCATION
 
 ### Section 1: The Purpose of Education
@@ -1112,7 +1118,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 - The deliberate and widespread use of the security apparatus to suppress political opposition, a free press, or peaceful assembly, as protected in Article I.
 - The systematic nullification of the powers of the Citizen's, Worker's, Historian, or Scientific Branches.
 
-### Section 3: The Trigger of Last Resort
+### Section 3: The Trigger of Last Resort under a Constitutional Crisis
 
 1. Upon a petition bearing the verified signatures of **twenty-five percent (25%)** of the eligible electorate from a majority of states, a **National Referendum for Constitutional Restoration** shall be initiated.
 2. The referendum question shall be: *"Shall the current federal government be declared dissolved for a Systemic Constitutional Breach, and shall a Provisional Council be empowered to restore constitutional order and convene new elections?"*
