@@ -6,7 +6,8 @@ A group of Holocaust deniers pressured the Museum of WWII History to "immortaliz
 ## Museum Director's Response
 - **Method**: Printed Hitler's image on standard paper
 - **Mounting**: Duct-taped to a wood panel "like a wall"
-- **Preservation**: Entire assembly encased in resin
+- **Preservation**: Entire assembly encased in resin, which yellows overtime
+- **Pedestal**: The overturned trashcan
 - **Symbolic Meaning**: Treatment as disposable artifact rather than honored figure
 
 ## SDR Constitutional Analysis
