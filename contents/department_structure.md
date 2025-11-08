@@ -4,6 +4,10 @@ This file is intended to serve as a guide on how to build a organized government
 
 These should be organized in their own folders in Markdown, as shown in other existing files. 
 
+All names should be self-explanatory, and they shall be controlled by professionals of each field. 
+
+Together, they can consult with each other and create their own organizations, similar to OSHA or the EPA. Think of this document as a set of libraries used in software, and bundled together to write a specialized program.  
+
 ## Department of Agriculture
 
 ### Division of Agronomy
@@ -29,6 +33,8 @@ These should be organized in their own folders in Markdown, as shown in other ex
 ### Division of Economic Stability and Price Controls
 
 ### Division of the Public Seed Trust
+
+### Division of Treasury
 
 ## Department of Education
 
@@ -59,6 +65,8 @@ These should be organized in their own folders in Markdown, as shown in other ex
 
 - Subdivision of Physics and Chemistry
 
+## Department of Emergency Management
+
 ## Department of Foreign Affairs
 
 ### Division of Diplomacy
@@ -75,6 +83,8 @@ These should be organized in their own folders in Markdown, as shown in other ex
 
 ### Division of Disability Rights and Accommodation
 
+### Division of Disease Control
+
 ### Division of Bodily Autonomy and Reproductive Services
 
 ## Department of Housing and Land Stewardship
@@ -86,6 +96,10 @@ These should be organized in their own folders in Markdown, as shown in other ex
 ## Department of Infrastructure
 
 ### Division of Energy
+
+- Subdivision of Electrical Engineering
+- Subdivision of Electrical Safety
+- Subdivision of Power Distribution
 
 ### Division of Irrigation
 
@@ -100,8 +114,18 @@ These should be organized in their own folders in Markdown, as shown in other ex
 ### Division of Victim Services and Restitution
 
 - Unit of the Hate Crime Registry
-
 - Unit of Forensic Evidence Integrity
+
+## Department of Public Integrity and Accountability
+
+- Division of Anti-Corruption Enforcement
+
+* **Unit of the Poisoned Chalice:** The independent body that receives bribery reports and manages the asset forfeiture process from Article XII, Section 3.
+* **Unit of Official Conduct:** Investigates conflicts of interest and violations of the divestiture rules (Article VI, Section 9).
+
+- **Division of Constitutional Compliance:** Tasked specifically with enforcing Article VII (Constitutional Supremacy). This division would be the legal team that brings suits against state or local laws that conflict with the federal constitution.
+
+- **Division of Audit and Oversight:** Conducts random, mandatory audits of all government departments and grandfathered private entities receiving public funds.
 
 ## Department of Security
 
