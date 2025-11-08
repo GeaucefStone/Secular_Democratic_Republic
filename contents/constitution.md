@@ -291,6 +291,18 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 > **Framer's Justification:** _A rape kit that sits on a shelf is a promise broken by the state. It tells a victim that their pursuit of justice is not a priority. This provision transforms that kit from a symbol of neglect into an enforceable right to a functional investigation. It mandates the state to do its job, providing victims with transparency and accountability where there has traditionally been delay and obscurity._
 
+### Section 22: Right to Organize, Unionize, and Engage in Collective Action
+
+1. **Fundamental Right to Unionize:** Employees shall have the fundamental right to self-organization; to form, join, and assist labor unions; to bargain collectively through representatives of their own choosing; and to engage in other concerted activities for the purpose of mutual aid, collective bargaining, and other protection.
+2. **Protection from Interference and Retaliation:**
+- It shall be unlawful for any employer, public or private, to interfere with, restrain, or coerce employees in the exercise of the rights guaranteed in this section.
+- No person shall be discriminated against, discharged, or otherwise retaliated against by their employer for organizing, joining a union, or participating in protected collective action, including strikes.
+3. **Duty to Bargain in Good Faith:** Where a union has been certified as the representative of a majority of employees in an appropriate unit, the employer shall have a mandatory duty to bargain collectively with such representatives in good faith with respect to wages, hours, and other terms and conditions of employment.
+4. **Right to Strike:** The right to strike is an essential and inviolable component of collective action. Employees shall have the right to engage in peaceful strikes, picketing, and other forms of work stoppage. This right shall not be infringed, except in circumstances of a formally declared national emergency under Article VI where such action would directly and imminently endanger national security or public health in a manner that cannot be mitigated by other means.
+5. **Enforcement and Remedies:**
+- Violations of this section shall be investigated and remedied by the Worker's Branch, which shall have the power to issue cease-and-desist orders, mandate reinstatement of discharged employees with full back pay and benefits, and impose significant punitive fines on offending employers.
+- A pattern of such violations by an employer shall trigger a mandatory investigation and may result in the temporary suspension of their business license or, for severe and repeat offenses, the state-assisted conversion of the enterprise into a worker-cooperative, with compensation provided to the former owners at a rate determined by an independent assessor.
+
 ---
 
 ## ARTICLE II: JUSTICE SYSTEM
