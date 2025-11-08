@@ -8,6 +8,8 @@ All names should be self-explanatory, and they shall be controlled by profession
 
 Together, they can consult with each other and create their own organizations, similar to OSHA or the EPA. Think of this document as a set of libraries used in software, and bundled together to write a specialized program.  
 
+Most of these people working under these departments are not elected officials. They have degrees, and they have the ability to vote for a chairman within their respective division or unit if applicable. 
+
 ## Department of Agriculture
 
 ### Division of Agronomy
