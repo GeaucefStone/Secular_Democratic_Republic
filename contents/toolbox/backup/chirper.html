@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirper - Twitter Parody</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        :root {
+            --primary-yellow: #FFD700;
+            --dark-bg: #15202B;
+            --darker-bg: #10171E;
+            --light-text: #F5F8FA;
+            --gray-text: #8899A6;
+            --border-color: #38444D;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100vh;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            border-right: 1px solid var(--border-color);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .logo {
+            color: var(--primary-yellow);
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .logo i {
+            margin-right: 10px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .nav-item {
+            padding: 15px 0;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: font-weight 0.2s ease;
+        }
+
+        .nav-item:hover {
+            color: var(--primary-yellow);
+        }
+
+        .nav-item.active {
+            color: var(--primary-yellow);
+            font-weight: bold;
+        }
+
+        .nav-item i {
+            margin-right: 15px;
+            width: 25px;
+            text-align: center;
+        }
+
+        .chirp-btn {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50px;
+            padding: 15px 0;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .user-profile:hover {
+            background-color: var(--darker-bg);
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+        }
+
+        /* Tab Content Styles */
+        .tab-content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .tab-pane {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .tab-pane.active {
+            display: flex;
+        }
+
+        /* Home Tab Styles */
+        .header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--dark-bg);
+            z-index: 10;
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            font-size: 20px;
+        }
+
+        .compose-chirp {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        .compose-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+        }
+
+        .compose-input {
+            flex: 1;
+        }
+
+        .compose-input textarea {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: var(--light-text);
+            font-size: 20px;
+            resize: none;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .compose-input textarea::placeholder {
+            color: var(--gray-text);
+        }
+
+        .compose-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-icons {
+            display: flex;
+            color: var(--primary-yellow);
+        }
+
+        .action-icons i {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .chirp-btn-small {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Chirp Feed Styles */
+        .chirp-feed {
+            flex: 1;
+            overflow-y: auto;
+            height: 0; /* Allow flex to control height */
+        }
+
+        /* Chirp Styles */
+        .chirp {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+        }
+
+        .chirp:hover {
+            background-color: var(--darker-bg);
+        }
+
+        .chirp-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+        }
+
+        .chirp-content {
+            flex: 1;
+        }
+
+        .chirp-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .chirp-author {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .chirp-handle, .chirp-time {
+            color: var(--gray-text);
+            margin-right: 5px;
+        }
+
+        .chirp-text {
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .chirp-media {
+            margin-bottom: 15px;
+            border-radius: 15px;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .chirp-media img, .chirp-media video {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .chirp-actions {
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            color: var(--gray-text);
+        }
+
+        .chirp-action {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .chirp-action:hover {
+            color: var(--primary-yellow);
+        }
+
+        .chirp-action i {
+            margin-right: 5px;
+        }
+
+        /* Comments Section */
+        .comments-section {
+            margin-top: 15px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+
+        .comment {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .comment-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+            font-size: 12px;
+        }
+
+        .comment-content {
+            flex: 1;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .comment-handle, .comment-time {
+            color: var(--gray-text);
+            margin-right: 5px;
+            font-size: 12px;
+        }
+
+        .comment-text {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        .comment-actions {
+            display: flex;
+            color: var(--gray-text);
+            font-size: 12px;
+        }
+
+        .comment-action {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .comment-action:hover {
+            color: var(--primary-yellow);
+        }
+
+        .comment-action i {
+            margin-right: 3px;
+        }
+
+        .add-comment {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .comment-input {
+            flex: 1;
+            background-color: var(--darker-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 8px 15px;
+            color: var(--light-text);
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .comment-input:focus {
+            outline: none;
+            border-color: var(--primary-yellow);
+        }
+
+        .comment-btn {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Messages Styles */
+        .messages-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .messages-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .messages-header h1 {
+            font-size: 20px;
+        }
+
+        .new-message-btn {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50px;
+            padding: 8px 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .conversations-list {
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .conversation {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .conversation:hover {
+            background-color: var(--darker-bg);
+        }
+
+        .conversation.active {
+            background-color: var(--darker-bg);
+        }
+
+        .conversation-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+        }
+
+        .conversation-info {
+            flex: 1;
+        }
+
+        .conversation-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .conversation-name {
+            font-weight: bold;
+        }
+
+        .conversation-time {
+            color: var(--gray-text);
+            font-size: 14px;
+        }
+
+        .conversation-preview {
+            color: var(--gray-text);
+            font-size: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .message-thread {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .thread-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .thread-user {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .back-button {
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .thread-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+        }
+
+        .thread-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thread-name {
+            font-weight: bold;
+        }
+
+        .thread-handle {
+            color: var(--gray-text);
+            font-size: 14px;
+        }
+
+        .thread-call-button {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-radius: 18px;
+            line-height: 1.4;
+        }
+
+        .message.received {
+            align-self: flex-start;
+            background-color: var(--darker-bg);
+            border-bottom-left-radius: 5px;
+        }
+
+        .message.sent {
+            align-self: flex-end;
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border-bottom-right-radius: 5px;
+        }
+
+        .message-time {
+            font-size: 12px;
+            color: var(--gray-text);
+            margin-top: 5px;
+            text-align: right;
+        }
+
+        .message-input {
+            padding: 15px 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .message-input input {
+            flex: 1;
+            background-color: var(--darker-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 12px 20px;
+            color: var(--light-text);
+            font-size: 16px;
+        }
+
+        .message-input input:focus {
+            outline: none;
+            border-color: var(--primary-yellow);
+        }
+
+        .send-btn {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Video Chat Styles */
+        .video-chat-btn {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .video-chat-container {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+        }
+
+        .video-chat-container.active {
+            display: flex;
+        }
+
+        .video-chat-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+            background-color: var(--dark-bg);
+            z-index: 100;
+        }
+
+        .video-chat-header h2 {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .video-chat-header h2 i {
+            margin-right: 10px;
+        }
+
+        .video-chat-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .video-control-btn {
+            background-color: var(--darker-bg);
+            color: var(--light-text);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-control-btn.end-call {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .video-chat-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: var(--darker-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Vertical phone layout with PIP */
+        .vertical-phone-layout {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-vertical-video {
+            width: 70%;
+            height: 85%;
+            background-color: #00ff00;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .pip-vertical-video {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 25%;
+            height: 35%;
+            background-color: #00ff00;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid var(--primary-yellow);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .pip-label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Right Sidebar Styles */
+        .right-sidebar {
+            width: 25%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .search-box {
+            background-color: var(--darker-bg);
+            border-radius: 50px;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .search-box i {
+            color: var(--gray-text);
+            margin-right: 10px;
+        }
+
+        .search-box input {
+            background-color: transparent;
+            border: none;
+            color: var(--light-text);
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .search-box input:focus {
+            outline: none;
+        }
+
+        .trending-box, .who-to-follow {
+            background-color: var(--darker-bg);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .trending-item, .follow-item {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+
+        .trending-item:last-child, .follow-item:last-child {
+            border-bottom: none;
+        }
+
+        .trending-category {
+            font-size: 13px;
+            color: var(--gray-text);
+        }
+
+        .trending-topic {
+            font-weight: bold;
+            margin: 3px 0;
+        }
+
+        .trending-count {
+            font-size: 13px;
+            color: var(--gray-text);
+        }
+
+        .follow-profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .follow-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-yellow);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-bg);
+        }
+
+        .follow-info {
+            flex: 1;
+        }
+
+        .follow-name {
+            font-weight: bold;
+        }
+
+        .follow-handle {
+            color: var(--gray-text);
+        }
+
+        .follow-btn {
+            background-color: var(--primary-yellow);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 50px;
+            padding: 8px 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Font Awesome Icons (using Unicode) */
+        .fa {
+            font-style: normal;
+        }
+        .fa-home:before { content: "🏠"; }
+        .fa-hashtag:before { content: "🔍"; }
+        .fa-bell:before { content: "🔔"; }
+        .fa-envelope:before { content: "✉️"; }
+        .fa-bookmark:before { content: "🔖"; }
+        .fa-list:before { content: "📋"; }
+        .fa-user:before { content: "👤"; }
+        .fa-ellipsis:before { content: "⋯"; }
+        .fa-image:before { content: "🖼️"; }
+        .fa-gif:before { content: "GIF"; }
+        .fa-poll:before { content: "📊"; }
+        .fa-emoji:before { content: "😊"; }
+        .fa-schedule:before { content: "📅"; }
+        .fa-comment:before { content: "💬"; }
+        .fa-retweet:before { content: "🔄"; }
+        .fa-heart:before { content: "❤️"; }
+        .fa-share:before { content: "📤"; }
+        .fa-search:before { content: "🔍"; }
+        .fa-arrow-left:before { content: "←"; }
+        .fa-paper-plane:before { content: "✈️"; }
+        .fa-video:before { content: "📹"; }
+        .fa-microphone:before { content: "🎤"; }
+        .fa-microphone-slash:before { content: "🎤🚫"; }
+        .fa-video-slash:before { content: "📹🚫"; }
+        .fa-phone-slash:before { content: "📞🚫"; }
+        .fa-magic:before { content: "✨"; }
+        .fa-comments:before { content: "💬"; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <i>🐦</i> Chirper
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active" onclick="showSection('home')"><i class="fa fa-home"></i> Home</li>
+                <li class="nav-item"><i class="fa fa-hashtag"></i> Explore</li>
+                <li class="nav-item"><i class="fa fa-bell"></i> Notifications</li>
+                <li class="nav-item" onclick="showSection('messages')"><i class="fa fa-envelope"></i> Messages</li>
+                <li class="nav-item"><i class="fa fa-bookmark"></i> Bookmarks</li>
+                <li class="nav-item"><i class="fa fa-list"></i> Lists</li>
+                <li class="nav-item"><i class="fa fa-user"></i> Profile</li>
+                <li class="nav-item"><i class="fa fa-ellipsis"></i> More</li>
+            </ul>
+            <button class="chirp-btn">Chirp</button>
+            <div class="user-profile">
+                <div class="avatar">
+                    <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                    JD
+                </div>
+                <div>
+                    <div>John Doe</div>
+                    <div style="color: var(--gray-text); font-size: 14px;">@johndoe</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Home Tab -->
+            <div class="tab-pane active" id="home-section">
+                <div class="header">
+                    <h1>Home</h1>
+                </div>
+                <div class="compose-chirp">
+                    <div class="compose-avatar">
+                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                        JD
+                    </div>
+                    <div class="compose-input">
+                        <textarea placeholder="What's happening?"></textarea>
+                        <div class="compose-actions">
+                            <div class="action-icons">
+                                <i class="fa fa-image"></i>
+                                <i class="fa fa-gif"></i>
+                                <i class="fa fa-poll"></i>
+                                <i class="fa fa-emoji"></i>
+                                <i class="fa fa-schedule"></i>
+                            </div>
+                            <button class="chirp-btn-small">Chirp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrollable Chirp Feed -->
+                <div class="chirp-feed">
+                    <!-- Chirp 1 with Video -->
+                    <div class="chirp">
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            JA
+                        </div>
+                        <div class="chirp-content">
+                            <div class="chirp-header">
+                                <div class="chirp-author">John Atlas</div>
+                                <div class="chirp-handle">@johnatlasceo</div>
+                                <div class="chirp-time">· 2h</div>
+                            </div>
+                            <div class="chirp-text">
+                                Just bought Chirper for $44 billion. Planning to add an edit button next week!
+                            </div>
+                            <div class="chirp-media">
+                                <video controls>
+                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-man-holding-neon-light-1238-large.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="chirp-actions">
+                                <div class="chirp-action">
+                                    <i class="fa fa-comment"></i> 1.2K
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-retweet"></i> 4.5K
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-heart"></i> 25.7K
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-share"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chirp 2 with Photo and Comments -->
+                    <div class="chirp">
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            CK
+                        </div>
+                        <div class="chirp-content">
+                            <div class="chirp-header">
+                                <div class="chirp-author">Cat Lover</div>
+                                <div class="chirp-handle">@catlover99</div>
+                                <div class="chirp-time">· 45m</div>
+                            </div>
+                            <div class="chirp-text">
+                                Just adopted this adorable kitten! 🐱 #CatsOfChirper
+                            </div>
+                            <div class="chirp-media">
+                                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cute cat">
+                            </div>
+                            <div class="chirp-actions">
+                                <div class="chirp-action">
+                                    <i class="fa fa-comment"></i> 128
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-retweet"></i> 342
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-heart"></i> 1.5K
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-share"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Comments Section -->
+                            <div class="comments-section">
+                                <div class="comment">
+                                    <div class="comment-avatar">
+                                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                        JD
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <div class="comment-author">John Doe</div>
+                                            <div class="comment-handle">@johndoe</div>
+                                            <div class="comment-time">· 30m</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            So cute! What's its name? 😍
+                                        </div>
+                                        <div class="comment-actions">
+                                            <div class="comment-action">
+                                                <i class="fa fa-heart"></i> 24
+                                            </div>
+                                            <div class="comment-action">
+                                                <i class="fa fa-comment"></i> Reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="comment">
+                                    <div class="comment-avatar">
+                                        <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                        JA
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <div class="comment-author">John Atlas</div>
+                                            <div class="comment-handle">@johnatlasceo</div>
+                                            <div class="comment-time">· 25m</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            That's one photogenic feline! 🐾
+                                        </div>
+                                        <div class="comment-actions">
+                                            <div class="comment-action">
+                                                <i class="fa fa-heart"></i> 18
+                                            </div>
+                                            <div class="comment-action">
+                                                <i class="fa fa-comment"></i> Reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="comment">
+                                    <div class="comment-avatar">
+                                        <img src="./profile_pictures/tyler_brisk.png" class="avatar-img" />
+                                        <!-- TB -->
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <div class="comment-author">Tyler Brisk</div>
+                                            <div class="comment-handle">@tylerbrisk</div>
+                                            <div class="comment-time">· 15m</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            Adorable! Looks just like my cat Mittens 🐱
+                                        </div>
+                                        <div class="comment-actions">
+                                            <div class="comment-action">
+                                                <i class="fa fa-heart"></i> 12
+                                            </div>
+                                            <div class="comment-action">
+                                                <i class="fa fa-comment"></i> Reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="add-comment">
+                                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                                    <button class="comment-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chirp 3 with Photo -->
+                    <div class="chirp">
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            TN
+                        </div>
+                        <div class="chirp-content">
+                            <div class="chirp-header">
+                                <div class="chirp-author">Tech News</div>
+                                <div class="chirp-handle">@technews</div>
+                                <div class="chirp-time">· 1h</div>
+                            </div>
+                            <div class="chirp-text">
+                                Breaking: New smartphone with 200MP camera and week-long battery life announced today. #TechUpdate
+                            </div>
+                            <div class="chirp-media">
+                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="New smartphone">
+                            </div>
+                            <div class="chirp-actions">
+                                <div class="chirp-action">
+                                    <i class="fa fa-comment"></i> 543
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-retweet"></i> 1.2K
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-heart"></i> 3.8K
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-share"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chirp 4 with Video -->
+                    <div class="chirp">
+                        <div class="chirp-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            JD
+                        </div>
+                        <div class="chirp-content">
+                            <div class="chirp-header">
+                                <div class="chirp-author">John Doe</div>
+                                <div class="chirp-handle">@johndoe</div>
+                                <div class="chirp-time">· 30m</div>
+                            </div>
+                            <div class="chirp-text">
+                                Working on my new project. Can't wait to share it with everyone! #coding #webdev
+                            </div>
+                            <div class="chirp-media">
+                                <video controls>
+                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-programmer-working-on-computer-while-recording-screen-1239-large.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="chirp-actions">
+                                <div class="chirp-action">
+                                    <i class="fa fa-comment"></i> 12
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-retweet"></i> 5
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-heart"></i> 47
+                                </div>
+                                <div class="chirp-action">
+                                    <i class="fa fa-share"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Tab -->
+            <div class="tab-pane" id="messages-section">
+                <div class="messages-container">
+                    <div class="messages-header">
+                        <h1>Messages</h1>
+                        <button class="new-message-btn">New message</button>
+                    </div>
+                    <div class="conversations-list">
+                        <div class="conversation active" onclick="showThread('thread-1')">
+                            <div class="conversation-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                JA
+                            </div>
+                            <div class="conversation-info">
+                                <div class="conversation-header">
+                                    <div class="conversation-name">John Atlas</div>
+                                    <div class="conversation-time">12:45 PM</div>
+                                </div>
+                                <div class="conversation-preview">Hey, are we still meeting tomorrow?</div>
+                            </div>
+                            <button class="video-chat-btn" onclick="startVideoChat(event)">
+                                <i class="fa fa-video"></i>
+                            </button>
+                        </div>
+                        <div class="conversation" onclick="showThread('thread-2')">
+                            <div class="conversation-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                CK
+                            </div>
+                            <div class="conversation-info">
+                                <div class="conversation-header">
+                                    <div class="conversation-name">Cat Lover</div>
+                                    <div class="conversation-time">11:30 AM</div>
+                                </div>
+                                <div class="conversation-preview">Check out these new photos of my cat!</div>
+                            </div>
+                            <button class="video-chat-btn" onclick="startVideoChat(event)">
+                                <i class="fa fa-video"></i>
+                            </button>
+                        </div>
+                        <div class="conversation" onclick="showThread('thread-3')">
+                            <div class="conversation-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                TN
+                            </div>
+                            <div class="conversation-info">
+                                <div class="conversation-header">
+                                    <div class="conversation-name">Tech News</div>
+                                    <div class="conversation-time">Yesterday</div>
+                                </div>
+                                <div class="conversation-preview">Breaking tech news just dropped!</div>
+                            </div>
+                            <button class="video-chat-btn" onclick="startVideoChat(event)">
+                                <i class="fa fa-video"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Thread -->
+            <div class="tab-pane" id="thread-1">
+                <div class="message-thread">
+                    <div class="thread-header">
+                        <div class="thread-user">
+                            <div class="back-button" onclick="showSection('messages')">
+                                <i class="fa fa-arrow-left"></i>
+                            </div>
+                            <div class="thread-avatar">
+                                <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                                JA
+                            </div>
+                            <div class="thread-info">
+                                <div class="thread-name">John Atlas</div>
+                                <div class="thread-handle">@johnatlasceo</div>
+                            </div>
+                        </div>
+                        <button class="thread-call-button" onclick="startVideoChat(event)">
+                            <i class="fa fa-video"></i>
+                        </button>
+                    </div>
+                    <div class="messages">
+                        <div class="message received">
+                            Hey, are we still meeting tomorrow?
+                            <div class="message-time">12:45 PM</div>
+                        </div>
+                        <div class="message sent">
+                            Yes, 2 PM at the usual coffee shop.
+                            <div class="message-time">12:46 PM</div>
+                        </div>
+                        <div class="message received">
+                            Perfect! I'll bring the prototype.
+                            <div class="message-time">12:47 PM</div>
+                        </div>
+                        <div class="message sent">
+                            Great! Looking forward to it.
+                            <div class="message-time">12:48 PM</div>
+                        </div>
+                    </div>
+                    <div class="message-input">
+                        <input type="text" placeholder="Start a new message">
+                        <button class="send-btn">
+                            <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Chat -->
+            <div class="tab-pane video-chat-container" id="video-chat">
+                <div class="video-chat-header">
+                    <h2><i class="fa fa-video"></i> Video Call with John Atlas</h2>
+                    <div class="video-chat-controls">
+                        <button class="video-control-btn" id="mute-btn">
+                            <i class="fa fa-microphone"></i>
+                        </button>
+                        <button class="video-control-btn" id="video-btn">
+                            <i class="fa fa-video"></i>
+                        </button>
+                        <button class="video-control-btn end-call" onclick="endVideoChat()">
+                            <i class="fa fa-phone-slash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="video-chat-content">
+                    <div class="video-container">
+                        <div class="vertical-phone-layout">
+                            <div class="main-vertical-video">
+                                <div class="video-label">John Atlas</div>
+                                <div style="font-size: 24px; color: white;">📹 Video Feed</div>
+                            </div>
+                            <div class="pip-vertical-video">
+                                <div class="pip-label">You</div>
+                                <div style="font-size: 14px; color: white;">📹</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search Chirper">
+            </div>
+            <div class="trending-box">
+                <div class="section-title">Trends for you</div>
+                <div class="trending-item">
+                    <div class="trending-category">Technology · Trending</div>
+                    <div class="trending-topic">#WebDevelopment</div>
+                    <div class="trending-count">15.2K Chirps</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-category">Sports · Trending</div>
+                    <div class="trending-topic">Championship Finals</div>
+                    <div class="trending-count">42.5K Chirps</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-category">Entertainment · Trending</div>
+                    <div class="trending-topic">#NewMovieRelease</div>
+                    <div class="trending-count">28.7K Chirps</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-category">Politics · Trending</div>
+                    <div class="trending-topic">Election Updates</div>
+                    <div class="trending-count">35.9K Chirps</div>
+                </div>
+            </div>
+            <div class="who-to-follow">
+                <div class="section-title">Who to follow</div>
+                <div class="follow-item">
+                    <div class="follow-profile">
+                        <div class="follow-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            JA
+                        </div>
+                        <div class="follow-info">
+                            <div class="follow-name">John Atlas</div>
+                            <div class="follow-handle">@johnatlasceo</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+                <div class="follow-item">
+                    <div class="follow-profile">
+                        <div class="follow-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            TN
+                        </div>
+                        <div class="follow-info">
+                            <div class="follow-name">Tech News</div>
+                            <div class="follow-handle">@technews</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+                <div class="follow-item">
+                    <div class="follow-profile">
+                        <div class="follow-avatar">
+                            <!--    <img src="./profile_pictures/" class="avatar-img" /> -->
+                            CK
+                        </div>
+                        <div class="follow-info">
+                            <div class="follow-name">Cat Lover</div>
+                            <div class="follow-handle">@catlover99</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Show different sections
+        function showSection(section) {
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            // Show the selected section
+            document.getElementById(section + '-section').classList.add('active');
+            
+            // Update active nav item
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            if (section === 'home') {
+                document.querySelector('.nav-item:nth-child(1)').classList.add('active');
+            } else if (section === 'messages') {
+                document.querySelector('.nav-item:nth-child(4)').classList.add('active');
+            }
+        }
+
+        // Show message thread
+        function showThread(threadId) {
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            // Show the selected thread
+            document.getElementById(threadId).classList.add('active');
+        }
+
+        // Start video chat
+        function startVideoChat(event) {
+            event.stopPropagation();
+            
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            // Show video chat
+            document.getElementById('video-chat').classList.add('active');
+        }
+
+        // End video chat
+        function endVideoChat() {
+            // Hide video chat and show messages
+            document.getElementById('video-chat').classList.remove('active');
+            showSection('messages');
+        }
+
+        // Toggle mute
+        document.getElementById('mute-btn').addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-microphone')) {
+                icon.className = 'fa fa-microphone-slash';
+            } else {
+                icon.className = 'fa fa-microphone';
+            }
+        });
+
+        // Toggle video
+        document.getElementById('video-btn').addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-video')) {
+                icon.className = 'fa fa-video-slash';
+            } else {
+                icon.className = 'fa fa-video';
+            }
+        });
+
+        // Add comment functionality
+        document.querySelectorAll('.comment-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.previousElementSibling;
+                const commentText = input.value.trim();
+                
+                if (commentText) {
+                    const commentsSection = this.closest('.comments-section');
+                    const newComment = document.createElement('div');
+                    newComment.className = 'comment';
+                    newComment.innerHTML = `
+                        <div class="comment-avatar">JD</div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <div class="comment-author">John Doe</div>
+                                <div class="comment-handle">@johndoe</div>
+                                <div class="comment-time">· Just now</div>
+                            </div>
+                            <div class="comment-text">${commentText}</div>
+                            <div class="comment-actions">
+                                <div class="comment-action">
+                                    <i class="fa fa-heart"></i> 0
+                                </div>
+                                <div class="comment-action">
+                                    <i class="fa fa-comment"></i> Reply
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    commentsSection.insertBefore(newComment, this.parentElement);
+                    input.value = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
