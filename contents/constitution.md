@@ -1160,6 +1160,79 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 ---
 
+## ARTICLE XVII: FINANCIAL AUTONOMY OF THE EXECUTIVE DEPARTMENTS
+
+### Section 1: The Departmental Reserve System
+
+1. **Principle of Operational Continuity**
+    - To ensure uninterrupted function of essential public services
+    - Protection from political disputes, financial emergencies, or government shutdowns
+    - Each Executive Department shall maintain financial autonomy
+2. **Establishment of Designated Banks**
+    - System of Designated Departmental Reserve Banks established
+    - Operates under joint oversight of Economic Affairs and Public Integrity departments
+3. **Funding Mechanism**
+    - Mandatory non-discretionary allocation upon annual budget passage
+    - Covers no less than six (6) months of operational costs
+    - Includes salaries, maintenance, and critical ongoing projects
+4. **Shielded Access**
+    - Funds exclusively for department use
+    - Cannot be suspended, frozen, or diverted by any other branch
+    - Protection applies during emergencies or shutdowns
+
+### Section 2: Conditions for Use of Reserve Funds
+
+1. **Activation Clause**
+    - Access permitted only during formal "Funding Lapse" declaration
+    - Funding Lapse defined as budget failure within 72 hours of fiscal year start
+    - Declaration made by National Electoral Commission
+2. **Sequential Drawdown**
+    - Funds drawn in sequential, monthly increments
+    - Maintains essential services at standard operational levels
+3. **Prohibition on New Expenditure**
+    - No new projects, programs, or capital expenditures
+    - Strictly limited to maintaining existing operations
+    - Covers pre-existing legal obligations only
+
+### Section 3: Replenishment and Accountability
+
+1. **Mandatory Replenishment**
+    - Full replenishment first priority after budget resolution
+    - All drawn-down amounts restored within 30 days
+2. **Transparency and Audit**
+    - All transactions subject to real-time audit
+    - Public Integrity department oversees auditing
+    - Full public report within 60 days of Funding Lapse end
+3. **Penalty for Misuse**
+    - Immediate dismissal for violators
+    - Permanent disqualification from public office
+    - Criminal prosecution for embezzlement
+
+### Section 4: Judicial Branch Funding During a Funding Lapse
+
+1. **Principle of Shared Accountability:**
+- No branch of government shall be financially insulated from a failure to perform its core constitutional duties.
+- While judicial independence is paramount, the administration of justice is an essential service that must be protected, and the judiciary must be disincentivized from allowing a political deadlock to cripple the state.
+
+2. **The Judicial Compensation & Operations Fund:**
+- A Judicial Compensation & Operations Fund shall be established for the Supreme Court, separate from the departmental reserve system.
+- This fund shall be pre-funded to cover no less than three (3) months of all judicial operations, including justices' salaries, law clerk salaries, and essential court functions.
+
+3. **Conditional Access and the Mandatory Review Trigger:**
+- Upon the declaration of a Funding Lapse, the Supreme Court shall retain immediate access to its fund.
+- However, access is conditional. The Court shall have a non-delegable duty to expedite and rule on the constitutionality of the Funding Lapse itself within thirty (30) days of its declaration.
+- If the Court fails to issue a ruling within this 30-day period, its access to the Judicial Fund is automatically suspended until a ruling is issued.
+- During suspension, the salaries of the Justices are put on hold, and non-essential court operations may be frozen.
+
+4. **The "Poisoned Well" Provision:**
+- If the Supreme Court's ruling ultimately finds that the Funding Lapse was caused by a legitimate political dispute, salaries are restored retroactively upon the passage of a budget.
+- If the Court's ruling finds that the Funding Lapse was initiated or prolonged by any branch in bad faith or as a subversion of the constitutional order, then:
+* The salaries for the officials in the offending branch(es) are permanently forfeited for the duration of the lapse.
+* The salaries for the Supreme Court Justices are not restored retroactively for the period of the lapse. The Court bears a financial cost for having to adjudicate a crisis caused by the bad faith of other branches.
+
+
+---
+
 ## FINAL DECLARATION
 
 This Constitution establishes a framework balancing individual liberty with social responsibility, ensuring both freedom and dignity for all persons while protecting the common good.

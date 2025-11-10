@@ -20,6 +20,8 @@ This dictionary provides definitive interpretations for key terms within the SDR
 
 **Castle Doctrine** - The principle that there is no duty to retreat from one's own home, or property one is authorized to control, when facing a threat (Art. II, Sec. 9, Cl. 5).
 
+**Chain Proxicide** - The legal doctrine establishing that political leaders who create, enable, or deliberately fail to prevent a system of violence bear the ultimate responsibility for all resulting deaths. Liability flows upward to the individual with the highest authority and clearest intent, surpassing even military commanders in culpability. This applies to presidents, party leaders, and ideological architects who set a campaign of violence in motion.
+
 **Citizens' Assembly** - A 1,000-member body selected by annual sortition with powers to investigate government branches, initiate impeachment, and veto regulations (Art. IV, Sec. 5).
 
 **Cockpit Doctrine** - An extension of the Castle Doctrine that applies to movable property or a semi-enclosed conveyance, such as a vehicle or trailer, where there is no duty to retreat from an attack (Art. II, Sec. 9, Cl. 5).
@@ -32,6 +34,13 @@ This dictionary provides definitive interpretations for key terms within the SDR
 
 ### D
 
+**Designated Departmental Reserve Bank**
+    - Secured financial institution holding mandatory six-month operational reserve
+    - Funds constitutionally protected from suspension, freeze, or diversion
+    - Ensures operational continuity during Funding Lapse
+    - Reference: Article XVII, Section 1
+
+
 **Doctrine of Substance Over Form** - The legal principle that the substance, economic reality, and actual purpose of an arrangement shall prevail over its legal form to prevent evasion of the law (Art. II, Sec. 12).
 
 **Duty to Retreat** - The initial obligation in the tiered self-defense framework to attempt to safely avoid a confrontation if possible, before escalating to force (Art. II, Sec. 9, Cl. 5).
@@ -43,6 +52,15 @@ This dictionary provides definitive interpretations for key terms within the SDR
 **Exoneration** - The act of absolving an individual of guilt and lifting all relevant charges based on new evidence, which triggers a mandatory financial award for time falsely imprisoned. This is distinct from a pardon.
 
 **Existential Self-Defense (Petrov Doctrine)** - Acts committed during escape from state-sanctioned persecution based on protected characteristics, which may qualify as justified self-defense even if they result in the death of state agents (Est. *Petrov vs. Extradition Treaty*).
+
+### F
+
+**Funding Lapse**
+    - Formally declared state of budget failure
+    - Triggered when no budget passed within 72 hours of new fiscal year
+    - Activates department access to reserved funds
+    - Enables maintenance of essential services
+    - Reference: Article XVII, Section 2
 
 ### H
 
@@ -64,7 +82,7 @@ This dictionary provides definitive interpretations for key terms within the SDR
 
 **Poisoned Chalice** - An anti-corruption mechanism where a public official who is offered a bribe may legally accept and retain it as evidence, leading to the asset's forfeiture and the briber's prosecution, while the compliant official is rewarded (Art. XII, Sec. 3).
 
-**Proxicide** - The act of using another person as an instrument to commit murder. This includes murder-for-hire schemes or cult leaders ordering executions.
+**Proxicide** - The act of using another person as an instrument to commit murder. This includes murder-for-hire schemes or cult leaders ordering executions. This can also apply to Transfer of Liabilty. 
 
 ### R
 
@@ -81,5 +99,6 @@ This dictionary provides definitive interpretations for key terms within the SDR
 **Transfer of Liability Doctrine** - The principle that an aggressor who initiates a violent felony is held legally responsible for any death or injury that occurs as a direct result, even if the fatal blow is struck by a defender or law enforcement officer (Art. II, Sec. 9, Cl. 6).
 
 ---
+
 *Document maintained by the Historian Branch. Definitions are binding interpretations unless amended by constitutional process.*
 [file content end]
