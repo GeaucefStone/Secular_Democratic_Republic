@@ -1230,6 +1230,24 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 * The salaries for the officials in the offending branch(es) are permanently forfeited for the duration of the lapse.
 * The salaries for the Supreme Court Justices are not restored retroactively for the period of the lapse. The Court bears a financial cost for having to adjudicate a crisis caused by the bad faith of other branches.
 
+---
+
+## Article XVIII: Adaptive Governance
+
+1. **Principle of Necessary Function**
+- The departmental structure exists to faithfully execute the mandates and uphold the rights enshrined in this Constitution.
+- No organizational chart is permanent. The structure of the executive branch shall evolve to meet the challenges of its time.
+2. **Mechanism for Creation**
+- A new Executive Department may be established by a majority vote of the Legislative Congress, provided its founding charter demonstrates a clear necessity to fulfill a constitutional mandate that existing departments cannot adequately address.
+- The proposal must be reviewed for constitutional alignment by the Department of Public Integrity and Accountability and for scientific/technical feasibility by the Scientific Branch before a vote.
+3. **Mechanism for Reorganization or Dissolution**
+- An existing department may be reorganized or dissolved by a joint two-thirds (⅔) majority vote of the Legislative Congress and the Citizen's Assembly.
+- A finding from the Historian Branch on the historical performance and necessity of the department must be presented before such a vote.
+- Under no circumstances can a department be dissolved to abridge or nullify a fundamental right it was created to protect.
+4. The "Sunset and Review" Clause
+- Every Executive Department shall be subject to a mandatory comprehensive review every ten (10) years by the Citizen's Assembly.
+- This review shall assess its efficiency, its effectiveness in fulfilling its constitutional mandate, and its continued necessity.
+- The findings of this review may be used to initiate a reorganization or dissolution process.
 
 ---
 
