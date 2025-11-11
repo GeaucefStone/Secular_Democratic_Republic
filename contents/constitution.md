@@ -816,7 +816,7 @@ While vaccines or medical drugs are not a requirement, any violation during the 
 ### Section 1: Supreme Law
 
 1. This Constitution voids conflicting laws.
-2. If a rights violation is in conflict with Articles I, II, V, VII and XVI is in the books of state jurisdictions, they are not only struck down void but also must be removed.
+2. If a rights violation is in conflict with Articles I, II, V, VII and XVI is in the books of state jurisdictions, they are not only struck down and void, but also must be removed.
 
 ### Section 2: Amendment Process
 
@@ -824,8 +824,8 @@ While vaccines or medical drugs are not a requirement, any violation during the 
 
 ### Section 3: Unamendable Provisions
 
-1. Rights and safeguards in Articles I, II, V, VII and XVI cannot be amended away.
-2. Any attempt to dismantle Article VII or XVI will trigger Article XVI itself without a petition. 
+1. Rights and safeguards in Articles I, II, V, VII, XII and XVI cannot be amended away.
+2. Any attempt to dismantle Article VII, XII or XVI will trigger Article XVI itself without a petition. 
 3. A state or lower jurisdiction that attempts to override this constitution will be subject to Article XVI and relevant charges. 
 
 ### Section 4: Citizen Challenge
@@ -941,7 +941,7 @@ The Historian Court's job is to ensure the integrity of historical fact. Its pow
 3. Desktop computers and government issued mobile phones are to use a fork of FreeBSD. Prioritize the Wayland protocol.
 4. An agency that deals with software security shall come together and write an anti-virus, firewall, and a software sandbox written in SPARK. This suit of software shall be open source for civilian use. All network drivers are to be facilitated for SPARK programming.
 5. In the meantime, that agency should conduct a team of developers to explore the Zig programming language for baremetal programming, with anything non baremetal handled by Rust programmers. Prioritize a framekernel build for enhance security, and conduct audits the same way as OpenBSD.
-6. Utilize the RISC-V architecture once it is stabilized. Given it's open nature, apply encryption.
+6. Utilize the RISC-V architecture once it is stabilized. Given it's open nature, apply encryption and audit other vulnerabilities. 
 
 ---
 
