@@ -1,5 +1,60 @@
 # Constitutional Analysis: The Historian Court
 
+## The Problem of Weaponized History
+
+We live in an age where history is not just forgotten, but actively erased and rewritten to serve oppressive ideologies. We have witnessed:
+
+- **The Erasure of LGBT+ History**: The systematic removal of references to transgender and bisexual individuals from official government platforms, attempting to negate our existence and contributions
+- **The Lie of Voluntary Enslavement**: The propagation of the myth that Black settlers "chose" slavery, a deliberate distortion designed to alleviate the moral burden of centuries of oppression
+- **Holocaust Denial**: Ongoing campaigns to deny the systematic murder of six million Jews despite overwhelming evidence and living survivor testimony
+
+This is not mere academic debate—it is a political and psychological attack on the very foundations of a truthful society. When history is weaponized, it becomes impossible to diagnose present injustices or build a future free from past horrors.
+
+## The Constitutional Solution
+
+The Historian Court represents a radical defense of truth. It establishes a fundamental constitutional principle: **historical truth exists independently of political expediency**.
+
+### Why Judicial Specialization for History?
+
+Just as we need specialized courts for complex medical facts, we need them for complex historical facts because:
+
+1. **Methodological Rigor**: Historical analysis requires specialized skills in sourcing, contextualization, and verification beyond general legal training
+2. **Stakes are Justice and Memory**: Historical lies foundation present-day discrimination, hatred, and violence
+3. **Pattern Recognition**: Ideological threats are revealed through patterns of speech and action over time
+4. **Preventing Democratic Erosion**: Democracies can be dismantled by slow poisoning of public discourse with historical falsehoods
+
+### The Balance of Power
+
+The Historian Court creates a careful, limited balance:
+
+- **ESTABLISHES FACTS**: Determines what the historical record demonstrates through rigorous methodology
+- **PROTECTS SPEECH**: Does not criminalize beliefs or expression of repugnant ideas
+- **DEFENDS DEMOCRACY**: Provides objective basis for disqualifying those who seek to dismantle fundamental rights
+- **PREVENTS ABUSE**: Power strictly limited to factual inquest for constitutional disqualification only
+
+## Historical Precedent and Innovation
+
+This institution learns from the darkest chapters of history:
+
+- **Past Failures**: The collapse of democracies that tolerated anti-democratic ideologies until it was too late
+- **Current Crises**: Global rise of authoritarianism built on nationalist myth-making and historical erasure
+- **Future Protection**: Creates an institutional immune system against ideological pathogens that destroy democracies
+
+## Practical Operation
+
+The Historian Court functions through:
+
+1. **Binding Historical Findings**: Established through transparent analysis of public record
+2. **Specific Question**: Answers only whether an individual's record shows commitment to rights-denying ideology
+3. **Binary Finding**: Simple "Yes" or "No" with no commentary or punishment
+4. **Transparent Process**: All evidence and deliberations publicly documented
+
+## The Core Principle
+
+This institution embodies a simple but profound truth: **A society cannot defend its future if it cannot defend the truth of its past.**
+
+The Historian Court ensures our republic can factually identify those who would use democracy's tools to install tyranny, while using rigorous historical science to ensure this power is never abused for mere political gain. It provides democracy with a shield of truth, not a sword of censorship.
+
 ## Foundational Principle
 
 The Historian Court (Article IX) represents a radical innovation in constitutional design: the institutionalization of historical methodology as a tool for safeguarding democracy. It functions as a tribunal of fact, using rigorous historical analysis to determine threats to the constitutional order.
