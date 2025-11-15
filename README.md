@@ -2,6 +2,8 @@
 
 ## A Foundational Blueprint for a Post-Collapse Society
 
+<img src="contents/images/phoenix.png" width="250" height="250" />
+
 **Disclaimer: This is not a reformist proposal for existing nations. It is a theoretical framework designed for academic discussion and constitutional design, intended as a genetic blueprint for a new society following systemic failure.**
 
 ---
