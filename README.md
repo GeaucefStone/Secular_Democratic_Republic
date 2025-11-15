@@ -18,10 +18,7 @@
 
 - **consitution.md is considered finished. To gain interest, Article VII is the optimal place to start.**
 
-- Simulated parody websites are now included. You can use them to simulate conversations to further illustrate what politics looks like under the SDR Constition. 
-- Simulations are now functional. The only code you need to edit are conversations and avatar images. 
-
-**Note:** Chirper's video message simulation could use some refinement. 
+- The **Anti-Corruption** engine is now even more potent. Look inside education/textbook and read files 01U through 02A. 
 
 ---
 
