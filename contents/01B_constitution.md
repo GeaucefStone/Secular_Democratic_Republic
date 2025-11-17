@@ -892,7 +892,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 ### Section 5: Citizen Branch
 
-1. **Composition:** The Citizen Branch shall be composed of Citizens' Assemblies in each state. Each state's Assembly shall consist of 1,000 members, selected by annual sortition from the state's roster of eligible citizens.
+1. **Composition:** The Citizen Branch shall be composed of Citizens' Assemblies in each state. Each state's Assembly shall consist of 1,000 members, or adjusted according to population, per state, selected by annual sortition from the state's roster of eligible citizens.
 
 2. **Powers:** Each state's Citizens' Assembly shall have the power to:
 
@@ -902,7 +902,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
  - Veto regulations and administration rules by 60% vote.
 
-3. Members must complete civics training before signing up to be drafted by the Citizen Branch. 
+3. Members must complete civics training before being permitted to sign up to be drafted by the Citizen Branch. 
 
 ### Section 6: The Historian Branch
 
@@ -914,7 +914,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 1. Composition: The Worker's Branch shall be a 500-member Congress of Labor. Its members shall be selected by annual sortition from the national roster of all working and retired citizens.
 
-2. Eligibility: Any citizen aged 18 or older, or 16 if graduated early, who is currently employed, self-employed, unemployed, or retired after a minimum of 10 years of workforce participation is eligible for selection.
+2. Eligibility: Any citizen aged 18 or older who is currently employed, self-employed, unemployed, or retired after a minimum of 10 years of workforce participation is eligible for selection.
 
 3. Civic Duty & Support: Service is a civic duty. Members shall receive a generous stipend and necessary resources to serve effectively. Their previous jobs will be protected upon their return.
 
