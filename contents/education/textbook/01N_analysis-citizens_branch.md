@@ -62,7 +62,7 @@ A 1,000-member randomly selected body provides a representative sample of the po
 
 **Selection Protocol:**
 
- - Random selection from national citizen database
+ - Random selection of 1,000 members per state from national citizen database
 
  - Stratified sampling to ensure demographic representation
 
