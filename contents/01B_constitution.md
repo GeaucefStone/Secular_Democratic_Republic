@@ -148,6 +148,36 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 3. Individuals have the right to access, control, and delete their personal data.
 
+4. **Limited Monitoring on State Networks for Severe Threats:**
+
+ - **Authorization and Scope:**
+
+  * On its own digital networks, the state is authorized to employ automated monitoring systems for the sole purpose of identifying credible, imminent threats. 
+
+  * On **state-owned devices**, this authority is active only while the device is connected to a state network.
+
+ - **Two-Stage Monitoring Process:**
+
+  * **Stage 1 - Transient Analysis:** The system shall operate primarily in a transient, non-recording analysis mode. In this mode, it analyzes communications in real-time but does not record or retain them.
+
+  * **Stage 2 - Judicial Authorization to Record:** f the system's transient analysis identifies a communication with a high-confidence match to a defined threat, it may preserve that specific communication in a secure, encrypted queue.
+
+  * **The system must immediately, and automatically, petition a designated judge for a "Recording Warrant"**. This petition must include the preserved communication and the AI's justification. No human agent may review the preserved communication until the warrant is granted. 
+
+  * A judge must rule on the petition within 12 hours. If the warrant is granted, the communication is lawfully recorded and a targeted investigation may begin. If the warrant is denied, the preserved communication must be immediately and irreversibly deleted. All other communications remain unrecorded.
+
+ - **The Absolute Home Privacy Firewall:** 
+
+  * No state-owned device shall activate its microphone, camera, or location services for monitoring when located within a private residence, unless pursuant to a specific, traditional warrant targeting that residence for a separate investigation.
+
+  * The limited monitoring authorized in (b) is explicitly prohibited from being activated on a device while it is in a private residence.
+
+ - **Oversight and Penalties:**
+
+  * The threat definitions and AI models must be publicly disclosed and audited annually by the Scientific Branch and the relevant Citizens' Assembly.
+
+  * Any recording that occurs without a Recording Warrant, or any violation of the Home Privacy Firewall, constitutes a felony under Article II, Section 3 (Official Accountability), and evidence obtained shall be presumptively inadmissible.
+
 ### Section 9: Protection Against Synthetic Media and Digital Forgery
 
 1. **Right to Digital Identity and Consent**: Every person has an inviolable right to their own likeness, voice, and digital identity. The non-consensual creation, alteration, or distribution of a realistic synthetic media representation of an individual ("DeepFake") is a severe violation of personal autonomy.
