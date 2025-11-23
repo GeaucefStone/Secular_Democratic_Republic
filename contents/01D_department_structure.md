@@ -419,7 +419,9 @@ Most of these people working under these departments are not elected officials. 
  - **Unit of Universal Access:** Implements and monitors systems for guaranteed healthcare access.
 
 2.  **Subdivision of Quality & Safety**
+
  - **Unit of Standard of Care:** Defines and enforces medical standards in consultation with the Surgeon Court.
+
  - **Unit of Patient Safety:** Monitors and addresses systemic risks in healthcare delivery.
 
 ### Division of Public Health
