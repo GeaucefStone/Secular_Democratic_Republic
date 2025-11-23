@@ -12,55 +12,38 @@ The Secular Democratic Republic employs a streamlined, transparent tax system de
 - **Rate**: Progressive based on property value and usage
 
 - **Allocation**:
-
  * Public Housing Trust maintenance and expansion (60%)
-
  * Local infrastructure and utilities (40%)
 
 - **Exemptions** (per Article III, Section 1):
-
  * Retired and disabled individuals
-
  * Legally emancipated minors under age 18
-
  * Self-sustaining property owners below income threshold
-
  * Full-time students regardless of age
 
 ### 2. Fuel and Wattage Tax
 
 - **Scope**: All vehicle propulsion sources including:
- 
  * Gasoline and diesel fuels
-
  * Electric vehicle charging
-
  * Hydrogen and alternative fuels
 
 - **Note**: The tax rate for electricity (per kWh) is calibrated to be functionally equivalent to the tax rate on gasoline (per gallon), ensuring drivers contribute equally to infrastructure regardless of power source.
 
 - **Allocation**:
-
  * Road construction and maintenance (70%)
-
  * Public transportation infrastructure (30%)
 
 ### 3. Income Tax
 
 - **Structure**: Progressive marginal rates
-
  * 0-25,000 units: 0%
-
  * 25,001-75,000 units: 10%
-
  * 75,001-150,000 units: 20%
-
  * 150,001+ units: 30%
 
 - **Allocation**:
-
  * Emergency services (police, fire, rescue): 40%
-
  * Public healthcare system: 60%
 
 - **Features**: Automatic inflation adjustment of brackets
