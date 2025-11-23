@@ -5,8 +5,11 @@
 **Title:** Secular Democratic Republic v. [Defendant], The Homeowner v. The Arsonist (Informal)
 
 **Constitutional Provisions:**
+
  - Article I, Section 10 (Right to Self-Defense)
+
  - Article II, Section 9, Clause 6 (Transfer of Liability for Deaths During Aggression)
+
  - Article II, Section 10 (Sentencing and Acquittal)
 
 **Fact Pattern:**
@@ -17,22 +20,31 @@ A Christian woman entered an atheist neighbor's property with arson paraphernali
 ### 1. Initial Defense Justification
 
 The homeowner's actions fall under protected self-defense per **Article I, Section 10**:
+
  - Imminent threat existed (arson materials present)
+
  - Defense of habitation ("Castle Doctrine" applies)
+
  - Warning shot represents attempted de-escalation
 
 ### 2. The Transfer of Liability Doctrine
 
 **Article II, Section 9, Clause 6** creates absolute liability for the aggressor:
+
  - "An individual who initiates an unprovoked, violent felony... shall be held legally responsible for any death that occurs as a direct result"
+
  - Legal principle extends to serious bodily injury by judicial interpretation
+
  - The arson attempt constitutes the "unprovoked, violent felony"
 
 ### 3. Criminal Charges
 
 **Against the Arsonist:**
+
  - Attempted Arson (violent felony)
+
  - Aggravated Trespass
+
  - Assault (for the gunshot injury to herself)
 
 **Legal Rationale:** She inherits liability for injuries sustained during her felony attempt. The homeowner's warning shot is a foreseeable consequence of her criminal actions.
@@ -40,8 +52,11 @@ The homeowner's actions fall under protected self-defense per **Article I, Secti
 ### 4. Civil Liability Bar
 
 The injured arsonist has no civil recourse because:
+
  - **Article II, Section 9, Clause 6** establishes complete transfer of responsibility
+
  - Allowing lawsuits would create perverse incentives for violent criminals
+
  - The constitution prioritizes defender rights over aggressor claims
 
 ## Judicial Outcome
