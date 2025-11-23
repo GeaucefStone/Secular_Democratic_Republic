@@ -111,7 +111,7 @@ A 1,000-member randomly selected body provides a representative sample of the po
 | **Representation** | Geographic districts | Statistical population sample |
 | **Incentives** | Re-election concerns | Public interest focus |
 | **Corruption Resistance** | Vulnerable to lobbying | No political career to protect |
-|**Expertise** | Career politicians | Diverse lived experiences |
+| **Expertise** | Career politicians | Diverse lived experiences |
 
 ### Versus Direct Democracy
 
