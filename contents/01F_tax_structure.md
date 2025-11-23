@@ -7,67 +7,50 @@ The Secular Democratic Republic employs a streamlined, transparent tax system de
 
 ### 1. Property Tax
 
-- **Purpose**: Serves as a public equity contribution for housing access
+- **Purpose:** Serves as a public equity contribution for housing access
 
-- **Rate**: Progressive based on property value and usage
+- **Rate:** Progressive based on property value and usage
 
-- **Allocation**:
-
+- **Allocation:**
  * Public Housing Trust maintenance and expansion (60%)
-
  * Local infrastructure and utilities (40%)
 
 - **Exemptions** (per Article III, Section 1):
-
  * Retired and disabled individuals
-
  * Legally emancipated minors under age 18
-
  * Self-sustaining property owners below income threshold
-
  * Full-time students regardless of age
 
 ### 2. Fuel and Wattage Tax
 
-- **Scope**: All vehicle propulsion sources including:
- 
+- **Scope:** All vehicle propulsion sources including:
  * Gasoline and diesel fuels
-
  * Electric vehicle charging
-
  * Hydrogen and alternative fuels
 
-- **Note**: The tax rate for electricity (per kWh) is calibrated to be functionally equivalent to the tax rate on gasoline (per gallon), ensuring drivers contribute equally to infrastructure regardless of power source.
+- **Note:** The tax rate for electricity (per kWh) is calibrated to be functionally equivalent to the tax rate on gasoline (per gallon), ensuring drivers contribute equally to infrastructure regardless of power source.
 
-- **Allocation**:
-
+- **Allocation:**
  * Road construction and maintenance (70%)
-
  * Public transportation infrastructure (30%)
 
 ### 3. Income Tax
 
-- **Structure**: Progressive marginal rates
-
+- **Structure:** Progressive marginal rates
  * 0-25,000 units: 0%
-
  * 25,001-75,000 units: 10%
-
  * 75,001-150,000 units: 20%
-
  * 150,001+ units: 30%
 
-- **Allocation**:
-
+- **Allocation:**
  * Emergency services (police, fire, rescue): 40%
-
  * Public healthcare system: 60%
 
 - **Features**: Automatic inflation adjustment of brackets
 
 ### 4. Sales Tax
 
-- **Rate Structure**: A multi-tiered system applied to food and beverage transactions to promote public health.
+- **Rate Structure:** A multi-tiered system applied to food and beverage transactions to promote public health.
 
 - **Tier 1: Zero Tax (Essential & Healthy Foods)**
  * Basic, unprepared food items: Fresh fruits, fresh vegetables, legumes, grains, eggs, milk, plain yogurt, unflavored plant-based milk, meat, poultry, fish
@@ -83,7 +66,7 @@ The Secular Democratic Republic employs a streamlined, transparent tax system de
  * High-Sugar/High-Fat Snacks: Candy, chocolate, cookies, cakes, ice cream, potato chips, and other "discretionary" junk foods
  * Prepared, ultra-processed foods: Ready-meals high in sodium, sugar, or saturated fat
 
-- **Allocation of Surcharge Revenue**:
+- **Allocation of Surcharge Revenue:**
  * Public health education and nutrition programs (50%)
  * Subsidies for fresh produce in low-income communities (30%)
  * Public healthcare system (20%)

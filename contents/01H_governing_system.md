@@ -23,11 +23,8 @@ This sphere handles functions where deep, certified expertise is the primary qua
  -   **Branches:** Scientific Branch, Surgeon Court, Historian Court
 
  -   **Selection Method:**
-
   *   **Scientific Branch Governors:** Elected by the National Scientific Assembly (all certified holders of advanced degrees in relevant fields).
-
   *   **Surgeon Court Justices:** Elected by a national body of certified medical doctors.
-
   *   **Historian Court Justices:** Elected by a national body of certified historians.
 
  -   **Rationale:** You would not let the public vote on a complex surgical procedure; similarly, you should not let popular vote alone determine settled medical fact or rigorous historical analysis. These bodies are insulated from electoral politics to ensure their decisions are based on professional standards and evidence, not popularity.

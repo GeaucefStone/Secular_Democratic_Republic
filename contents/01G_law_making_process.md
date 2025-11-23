@@ -55,7 +55,6 @@ _Subjects proposals to rigorous, independent scrutiny_
  - ✅ **PASS:** Proposal advances to next stage
 
  - ❌ **FAIL:** "Veto of Scientific Necessity" issued
-
   * Requires ¾ Congressional supermajority to override
 
 ### Gate 2: Surgeon Court Review (Health-Related Legislation Only)
