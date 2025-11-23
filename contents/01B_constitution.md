@@ -41,17 +41,12 @@ We, the people, in order to form a more perfect union, establish justice, ensure
  - **Mechanism:** Zoning codes can legally regulate the height, square footage, and a lot coverage of all buildings in a zone. A mosque, temple, or church cannot exceed the size limitations imposed on other assembly halls in that same zone. This prevents the construction of a mega-church in a residential neighborhood.
 
  - **The "Buffer Zone" for Residential and Civic Core Areas**:
-
   * **Purpose:** To maintain the secular sanctity of the most fundamental community spaces.
-
   * **Mechanism:** Zoning can establish that within a certain radius of public schools, courthouses, and legislative buildings, no land may be used for purpose-build religious structures. This creates a clear, secular civic core.
-
   * Any consistent and ongoing discrimination or favoritism shall be met with civil suits. No city, as directed by this document's very nature, is allowed to be a theocratic zone. Every member of the offending city council may be removed in a case-by-case basis.
 
  - **The "Industrial/Commercial" for Large Structures**:
-
   * **Purpose:** To acknowledge the reality that a large religious complex operates like a major institution, not a quiet community house.
-
   * **Mechanism:** Any religious structure intended to serve a congregation over a certain size (e.g., 500 members) must be built in zones designated for commercial assembly or light industrial use. It would be alongside conference centers, theaters, and large restaurants, not in the middle of a quiet neighborhood. This treats it according to its functional impact (traffic, noise, parking), not its theological purpose.
 
 > **Framer's Justification:** _Clause 6 is designed as an absolute barrier to theocracy. Any ideology—religious or secular—that asserts the legal supremacy of a specific religious doctrine over this Constitution, or that seeks to deny any person the fundamental rights enumerated in Article I based on their adherence (or non-adherence) to a religious doctrine, is definitionally incompatible with public office. This applies regardless of the ideology's self-described name, tradition, or interpretation. The test is objective: does the ideology's core program require the state to enforce religious law or privilege a specific faith? If yes, it is disqualified._
@@ -151,31 +146,21 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 4. **Limited Monitoring on State Networks for Severe Threats:**
 
  - **Authorization and Scope:**
-
   * On its own digital networks, the state is authorized to employ automated monitoring systems for the sole purpose of identifying credible, imminent threats. 
-
   * On **state-owned devices**, this authority is active only while the device is connected to a state network.
 
  - **Two-Stage Monitoring Process:**
-
   * **Stage 1 - Transient Analysis:** The system shall operate primarily in a transient, non-recording analysis mode. In this mode, it analyzes communications in real-time but does not record or retain them.
-
   * **Stage 2 - Judicial Authorization to Record:** f the system's transient analysis identifies a communication with a high-confidence match to a defined threat, it may preserve that specific communication in a secure, encrypted queue.
-
   * **The system must immediately, and automatically, petition a designated judge for a "Recording Warrant"**. This petition must include the preserved communication and the AI's justification. No human agent may review the preserved communication until the warrant is granted. 
-
   * A judge must rule on the petition within 12 hours. If the warrant is granted, the communication is lawfully recorded and a targeted investigation may begin. If the warrant is denied, the preserved communication must be immediately and irreversibly deleted. All other communications remain unrecorded.
 
  - **The Absolute Home Privacy Firewall:** 
-
   * No state-owned device shall activate its microphone, camera, or location services for monitoring when located within a private residence, unless pursuant to a specific, traditional warrant targeting that residence for a separate investigation.
-
   * The limited monitoring authorized in (b) is explicitly prohibited from being activated on a device while it is in a private residence.
 
  - **Oversight and Penalties:**
-
   * The threat definitions and AI models must be publicly disclosed and audited annually by the Scientific Branch and the relevant Citizens' Assembly.
-
   * Any recording that occurs without a Recording Warrant, or any violation of the Home Privacy Firewall, constitutes a felony under Article II, Section 3 (Official Accountability), and evidence obtained shall be presumptively inadmissible.
 
 ### Section 9: Protection Against Synthetic Media and Digital Forgery
@@ -237,11 +222,8 @@ We, the people, in order to form a more perfect union, establish justice, ensure
  - The right to bear arms shall not be construed to prohibit a municipality from regulating the discharge of firearms within its jurisdiction to ensure public safety.
 
  - **Such regulations may include, but are not limited to:**
-
   * Prohibiting discharge within a specified minimum distance of any occupied dwelling, school, or public park without the express written consent of the owner.
-
   * Enacting and enforcing reasonable noise ordinances that apply to the sound of gunfire.
-
   * Requiring the use of a certified backstop or range safety system for any target practice on residential property.
 
  - These regulations shall be presumed constitutional if they are narrowly tailored to address documented public safety risks and do not function as a de facto blanket ban on the lawful use of firearms for self-defense or recreation within the municipality.
@@ -382,20 +364,14 @@ We, the people, in order to form a more perfect union, establish justice, ensure
  - **Authorization**: The routine concealment of identity by a law enforcement officer is permited only pursuant to a Covert Operations Warrant issued by a panel of three judges from a designated security court.
 
  - **Necessity Requirement**: A warrant may only be issued upon a finding of specific, articulable, and credible evidence that:
-
-* A severe felony, as defined in Article II, is being planned or committed by a structured, clandestine organization, and
-
-* Conventional investigative techniques are insufficient to uncover the conspiracy, and
-
-* The concealment of the officer's identity is strictly necessary to prevent imminent violence or the dissolution of a fundamental right.
+  * A severe felony, as defined in Article II, is being planned or committed by a structured, clandestine organization, and
+  * Conventional investigative techniques are insufficient to uncover the conspiracy, and
+  * The concealment of the officer's identity is strictly necessary to prevent imminent violence or the dissolution of a fundamental right.
 
  - **Scope and Limitation**:
-
-* The warrant shall specify the named targets, the specific criminal organization if the name is applicable, the duration of the authorization (not to exceed 90 days, renewable only upon a new finding), and the specific investigative acts permitted.
-
-* This authorization does not permit the officer to entrap, incite, or initiate criminal activity when there is a potential victim. Its sole purpose is the passive gathering of intelligence.
-
-* All evidence gathered by an officer operating under this warrant shall be presumptively inadmissible unless the prosecution can demonstrate strict adherence to its terms.
+  * The warrant shall specify the named targets, the specific criminal organization if the name is applicable, the duration of the authorization (not to exceed 90 days, renewable only upon a new finding), and the specific investigative acts permitted.
+  * This authorization does not permit the officer to entrap, incite, or initiate criminal activity when there is a potential victim. Its sole purpose is the passive gathering of intelligence.
+  * All evidence gathered by an officer operating under this warrant shall be presumptively inadmissible unless the prosecution can demonstrate strict adherence to its terms.
 
 7. **Oversight and Penalty**:
 
@@ -620,8 +596,11 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 ### Section 10: Sentencing and Acquittal
 
 1. All convicted individuals, whether alive or deceased, have the human right to be exonerated with new evidence.
+
 2. Anyone who knowingly causes the defendant to be imprisoned while they are not guilty shall be subject to a felony charge, which will not be pardonable. Prison time is at the jury's discretion.
+
 3. Any judge or prosecutor who consistently convicts and sentences defendants, or rules against plaintiffs based on legally protected characteristics are subject to investigation. Proof of discriminatory practices is punishable by life in prison with no possibility of parole.
+
 4. Exoneration is not a pardon.
 
 ### Section 11: Criminal Conspiracy and Complicity
@@ -739,9 +718,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
  - Upon a judicial finding by clear and convincing evidence that a deceased individual initiated the violent felony that led to their death by justified defensive force, the court shall issue a Restitution Order.
 
  - This order is a claim solely against the aggressor's grandfathered private estate and covers:
-
   * All medical, psychological, and psychiatric costs for the defender and innocent bystanders.
-
   * Full compensation for lost wages and replacement value of all damaged personal property.
 
  - **State-Assisted Process:** All legal proceedings under this section shall be conducted at state expense. No victim shall bear any legal costs.
@@ -751,11 +728,8 @@ We, the people, in order to form a more perfect union, establish justice, ensure
  - The Restitution Order shall be satisfied from the liquifiable assets of the grandfathered estate.
 
  - The following are **absolutely exempt** and cannot be used to satisfy the order:
-
   * The family's use-rights to the property.
-
   * Life insurance proceeds paid directly to named beneficiaries.
-
   * Essential household goods and tools of trade for dependents.
 
 4.  **Application of the Doctrine of Substance Over Form:**
@@ -991,23 +965,17 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 4. **Mandate and Powers: The Scientific Branch shall have the following powers and responsibilities:**
 
  - **Legislative Impact Assessment:**
-
   * To issue public Scientific Impact Statements on any proposed legislation. These statements will assess the bill's basis in evidence and its projected effects on public health, the environment, and technological stability.
-
   * The Legislative Congress must receive and publicly table these statements for a period of 30 days before a final vote.
 
  - **Binding Veto on Anti-Empirical Legislation:**
-
   * By a vote of 60% of its members, the Council may issue a Veto of Scientific Necessity on any legislation passed by the Legislative Congress that is demonstrably and fundamentally contradicted by an overwhelming, reproducible scientific consensus.
-
   * The Legislative Congress may override this veto only with a three-fourths (¾) supermajority vote.
 
  - **Long-Term Risk Reporting:** To produce and publish an annual Report on Existential and Long-Term Risks. This report will be presented directly to the Citizen's Assembly, the Worker's Branch, and the public.
 
  - **Limitations:**
-
   * The Scientific Branch shall have no power to initiate taxation or appropriate funds.
-
   * Its authority does not extend into the exclusive jurisdiction of the Surgeon Court on matters of settled medical law.
 
 5. Transparency and Ethical Safeguards
@@ -1041,13 +1009,9 @@ To preserve the integrity of sortition as a true reflection of the common citize
  - The one-service limit applies across all sortition-based branches. A citizen who serves in the Citizen's Assembly is thereby rendered ineligible for future sortition to the Worker's Branch, Historian Branch, or another term in the Citizen's Assembly.
 
  - This limitation applies only to sortition-based federal branches. It does not affect a citizen's right to:
-
   * Vote in all elections.
-
   * Run for elected office in the Legislative or Executive branches.
-
   * Serve in appointed roles or as a professional civil servant.
-
   * Be selected for local-level sortition bodies, if such exist.
 
 4. **Exceptions and Safeguards:**
@@ -1849,9 +1813,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
  - If the Supreme Court's ruling ultimately finds that the Funding Lapse was caused by a legitimate political dispute, salaries are restored retroactively upon the passage of a budget.
 
  - If the Court's ruling finds that the Funding Lapse was initiated or prolonged by any branch in bad faith or as a subversion of the constitutional order, then:
-
   * The salaries for the officials in the offending branch(es) are permanently forfeited for the duration of the lapse.
-
   * The salaries for the Supreme Court Justices are not restored retroactively for the period of the lapse. The Court bears a financial cost for having to adjudicate a crisis caused by the bad faith of other branches.
 
 ---
