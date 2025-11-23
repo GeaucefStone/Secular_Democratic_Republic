@@ -1,12 +1,17 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **The Republic**  
+
 _Plaintiff_
+
 v.  
+
 **Silas Croft and the Legacy Property Alliance Executive Council**  
+
 _Defendants_
 
 **Case No.:** SC-03-24-SC  
+
 **Decided:** [Date]
 
 ---
@@ -30,8 +35,11 @@ Following implementation of Article XIII's Land and Housing Reform provisions, r
 Evidence established that the LPA executive council unanimously approved a "regime change campaign" and committed substantial resources to this end. Their overt acts included:
 
 1. Establishing a multi-million dollar fund for subversive activities
+
 2. Commissioning and disseminating synthetic media falsely depicting government officials advocating anti-democratic policies
+
 3. Attempting to bribe military officers to support a "Provisional Government of Restoration"
+
 4. Planning coordinated civil disruption to create a pretext for invoking emergency powers
 
 The conspiracy was detected through multi-branch vigilance: citizen monitors flagged anomalous financial transactions, workers reported suspicious activities, and scientific analysis exposed the synthetic media forgeries.
@@ -86,14 +94,14 @@ The defendants misunderstood our system as a collection of isolated rules. They 
 
 ## DISPOSITION
 
-- The appeal is **DENIED**.
-- All convictions are **AFFIRMED**.
-- Automatic forfeiture of all property rights and use-rights under Article X is **IMPLEMENTED**.
-- Remand for sentencing proceedings is **UNNECESSARY** as penalties are constitutionally mandated.
+ - The appeal is **DENIED**.
+
+ - All convictions are **AFFIRMED**.
+
+ - Automatic forfeiture of all property rights and use-rights under Article X is **IMPLEMENTED**.
+
+ - Remand for sentencing proceedings is **UNNECESSARY** as penalties are constitutionally mandated.
 
 **Counsel for the Republic:** [Name], Office of the Public Prosecutor  
+
 **Counsel for the Defendants:** [Name], Bar of the Republic
-
----
-
-_End of Document_

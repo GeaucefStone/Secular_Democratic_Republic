@@ -1,12 +1,17 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **Leo Schmidt**
+
 _Petitioner_
+
 v.  
+
 **First Church of Divine Truth and Pastor Michael Grace**  
+
 _Respondents_
 
 **Case No.:** SC-04-24-DF  
+
 **Decided:** [Date]
 
 ---
@@ -28,9 +33,12 @@ This case requires us to balance the sacred rights of religious expression again
 Petitioner Leo Schmidt is a prominent socialist organizer known for advocating workers' rights and housing reforms under Article III. Respondent First Church of Divine Truth, through its pastor Michael Grace, initiated a campaign against Schmidt after he successfully organized tenants in properties owned by church members.
 
 During Sunday services streamed to thousands online, Pastor Grace made repeated statements claiming Schmidt had:
-- "Embezzled union funds to support his drug addiction"
-- "Been arrested multiple times for violent assaults"
-- "Planned to burn down churches that opposed his agenda"
+
+ - "Embezzled union funds to support his drug addiction"
+
+ - "Been arrested multiple times for violent assaults"
+
+ - "Planned to burn down churches that opposed his agenda"
 
 These statements were demonstrably false. Schmidt has no criminal record, union financial audits showed no irregularities, and internal church communications revealed the campaign was deliberately designed to "neutralize Schmidt's influence" by destroying his credibility.
 
@@ -47,10 +55,14 @@ Article I, Section 3 protects freedom of belief and expression, but Clause 2 exp
 #### B. The Campaign Constitutes Weaponized Defamation
 
 The evidence demonstrates this was not mere religious criticism but weaponized defamation under Article II, Section 15. The church's own communications reveal:
-- Deliberate distortion of factual statements
-- Malicious intent to destroy Schmidt's organizing efforts
-- Viral dissemination through digital platforms
-- Coordination with property owners facing tenant organizing
+
+ - Deliberate distortion of factual statements
+
+ - Malicious intent to destroy Schmidt's organizing efforts
+
+ - Viral dissemination through digital platforms
+
+ - Coordination with property owners facing tenant organizing
 
 This pattern meets the clear and convincing evidence standard for weaponized defamation—"deliberate, malicious, and viral distortion of factual statements to incite hatred or violence."
 
@@ -84,13 +96,12 @@ This case illustrates why Article II, Section 15 creates specific remedies for w
 
 ## DISPOSITION
 
-- The appeal is **GRANTED**.
-- The Superior Court's dismissal is **REVERSED**.
-- The case is **REMANDED** for proceedings consistent with this opinion, including consideration of a Corrective Equity Order under Article II, Section 15.
+ - The appeal is **GRANTED**.
+
+ - The Superior Court's dismissal is **REVERSED**.
+
+ - The case is **REMANDED** for proceedings consistent with this opinion, including consideration of a Corrective Equity Order under Article II, Section 15.
 
 **Counsel for Petitioner:** [Name], Office of Public Defense  
+
 **Counsel for Respondents:** [Name], Bar of the Republic
-
----
-
-_End of Document_

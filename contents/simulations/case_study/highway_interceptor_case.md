@@ -1,14 +1,17 @@
-[file name]: highway_interceptor_case.md
-[file content begin]
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **The State of the Secular Democratic Republic**
+
 _Petitioner_
+
 v.
+
 **Marcus Thorne**
+
 _Respondent_
 
 **Case No.:** SC-11-24-DS
+
 **Decided:** [Date]
 
 ---
@@ -52,7 +55,9 @@ Thorne's use of his vehicle as a defensive instrument falls within the protected
 The critical factors supporting the reasonableness of Thorne's actions include:
 
 1. **The Absence of Escape Options:** At highway speeds, with family members present, and an aggressor maintaining pace, the duty to retreat was rendered impossible and unsafe.
+
 2. **The Proportionality of Response:** The controlled collision, while dangerous, represented a measured response compared to the perceived threat of firearm violence.
+
 3. **The Defense of Others:** Thorne acted not only in self-defense but in defense of his passengers, including minor children.
 
 #### C. The Transferred Liability Doctrine Applies to Apparent Threats
@@ -87,12 +92,16 @@ The law cannot demand laboratory certainty in battlefield conditions. The Consti
 
 ## DISPOSITION
 
-- The appeal is **DENIED**.
-- The judgment of the Appellate Division is **AFFIRMED**.
-- All charges against Marcus Thorne are **DISMISSED WITH PREJUDICE**.
-- Jason Miller shall face charges of aggravated assault and creating a public danger.
+ - The appeal is **DENIED**.
+
+ - The judgment of the Appellate Division is **AFFIRMED**.
+
+ - All charges against Marcus Thorne are **DISMISSED WITH PREJUDICE**.
+
+ - Jason Miller shall face charges of aggravated assault and creating a public danger.
 
 **Counsel for Petitioner:** [Name], State Prosecution Service  
+
 **Counsel for Respondent:** [Name], Office of Public Defense
 
 ---
@@ -102,9 +111,11 @@ The law cannot demand laboratory certainty in battlefield conditions. The Consti
 This case establishes the "Compressed Decision Environment" doctrine, which holds that:
 
 1. **Threat assessment** must be evaluated based on the information reasonably available in the moment, not through retrospective analysis.
+
 2. **Reasonable perception** of a lethal threat justifies defensive action, regardless of the threat's ultimate authenticity.
+
 3. **Aggressors** who create such environments through criminal conduct bear responsibility for the defensive actions they provoke.
 
 **Precedent Value:** HIGH  
+
 **Constitutional Impact:** Clarifies Article I, Section 10 and Article II, Section 9 application in dynamic threat scenarios.
-[file content end]

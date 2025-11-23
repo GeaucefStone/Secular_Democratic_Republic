@@ -12,28 +12,35 @@ The memorial was severely vandalized with broken windows and offensive slurs spr
 
 ### 1. Core Free Speech Protection (Article I, Section 3)
 
-- The statement is protected under the inviolable freedom of speech and expression
-- It expresses a political opinion advocating for direct action in response to a property crime
-- This represents the type of robust political speech that free speech clauses protect
+ - The statement is protected under the inviolable freedom of speech and expression
+
+ - It expresses a political opinion advocating for direct action in response to a property crime
+
+ - This represents the type of robust political speech that free speech clauses protect
 
 ### 2. Test for Incitement (Article I, Section 3, Clause 2)
 
 The Constitution allows limitations on speech that constitutes "incitement to violence," requiring:
 
-- **Directed to inciting imminent lawless action**, AND
-- **Likely to incite or produce such action**
+ - **Directed to inciting imminent lawless action**, AND
+
+ - **Likely to incite or produce such action**
 
 #### Application to this statement:
 
-- **"Someone should take shifts living there..."**: General, aspirational call to action without specific targeting or immediacy
-- **"...use the Castle Doctrine against these vandals"**: Framed as conditional, defensive action
-- **Castle Doctrine context** (Article II, Section 9, Clause 5): Justifies force only in response to unlawful, imminent threats within one's home
-- **Conditionality**: Creates separation from "imminent lawless action" requirement
+ - **"Someone should take shifts living there..."**: General, aspirational call to action without specific targeting or immediacy
+
+ - **"...use the Castle Doctrine against these vandals"**: Framed as conditional, defensive action
+
+ - **Castle Doctrine context** (Article II, Section 9, Clause 5): Justifies force only in response to unlawful, imminent threats within one's home
+
+ - **Conditionality**: Creates separation from "imminent lawless action" requirement
 
 ### 3. Other Relevant Provisions
 
-- **Article I, Section 3, Clause 4**: Addresses eligibility for public office based on incitement to violence or hatred - not applicable here
-- **Hate Crime Laws (Article II, Section 5)**: Deal with penalties for violent acts, not speech alone
+ - **Article I, Section 3, Clause 4**: Addresses eligibility for public office based on incitement to violence or hatred - not applicable here
+
+ - **Hate Crime Laws (Article II, Section 5)**: Deal with penalties for violent acts, not speech alone
 
 ## ✅ Legal Conclusion
 

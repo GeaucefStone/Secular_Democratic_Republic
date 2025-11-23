@@ -1,12 +1,17 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **The Republic**
+
 _Plaintiff_
+
 v.
+
 **John Atlas, CEO; and the Board of Directors of KleptoCorp**
+
 _Defendants_
 
 **Case No.:** SC-01-24-ACA
+
 **Decided:** [Date]
 
 ---
@@ -81,13 +86,11 @@ This case is not merely about punishing a crime. It is about demonstrating that 
 
 ## DISPOSITION
 
-- The appeal is **DENIED**.
-- The conspiracy indictments against all defendants are **AFFIRMED**.
-- The case is **REMANDED** to the Superior Court for trial.
+ - The appeal is **DENIED**.
+
+ - The conspiracy indictments against all defendants are **AFFIRMED**.
+
+ - The case is **REMANDED** to the Superior Court for trial.
 
 **Counsel for the Republic:** [Name], Office of the Public Prosecutor  
 **Counsel for the Defendants:** [Name], Bar of the Republic
-
----
-
-_End of Document_

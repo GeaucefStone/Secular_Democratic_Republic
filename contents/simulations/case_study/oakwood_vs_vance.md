@@ -1,12 +1,17 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **The Municipality of Oakwood Heights**
+
 _Petitioner_
+
 v.
+
 **Elias Vance**
+
 _Respondent_
 
 **Case No.:** SC-07-24-SA
+
 **Decided:** [Date]
 
 ---
@@ -73,12 +78,12 @@ I join the Court's opinion in full. I write separately to emphasize that this ca
 
 ## DISPOSITION
 
-- The appeal is **GRANTED**.
-- The judgment of the Appellate Division is **REVERSED**.
-- The ruling of the Oakwood Heights Municipal Court is **REINSTATED**.
+ - The appeal is **GRANTED**.
+
+ - The judgment of the Appellate Division is **REVERSED**.
+
+ - The ruling of the Oakwood Heights Municipal Court is **REINSTATED**.
 
 **Counsel for Petitioner:** [Name], Municipal Litigation Unit  
-**Counsel for Respondent:** [Name], Bar of the Republic
 
----
-_End of Document_
+**Counsel for Respondent:** [Name], Bar of the Republic

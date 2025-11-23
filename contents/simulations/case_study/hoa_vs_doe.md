@@ -1,12 +1,17 @@
 # SUPREME COURT OF THE SECULAR DEMOCRATIC REPUBLIC
 
 **Jane Doe**
+
 _Petitioner_
+
 v.
+
 **Housing Authority and Community Association**
+
 _Respondents_
 
 **Case No.:** SC-02-24-DP
+
 **Decided:** [Date]
 
 ---
@@ -53,9 +58,11 @@ The Community Association's surveillance represents precisely the type of intrus
 
 Respondents' apparent disapproval of petitioner's lawful private activities provides no legal basis for their actions. Multiple constitutional provisions protect her choices:
 
--   **Article I, Section 3** protects her freedom of expression and personal belief
--   **Article I, Section 6** guarantees her bodily autonomy on her own property  
--   **Article I, Section 13** extends protection to private, consensual adult conduct
+ -   **Article I, Section 3** protects her freedom of expression and personal belief
+
+ -   **Article I, Section 6** guarantees her bodily autonomy on her own property  
+
+ -   **Article I, Section 13** extends protection to private, consensual adult conduct
 
 The Constitution does not recognize morality-based exceptions to fundamental rights. Private lawful conduct remains private and lawful regardless of community sentiment.
 
@@ -83,13 +90,12 @@ This case demonstrates that privacy is not a single right but an ecosystem of pr
 
 ## DISPOSITION
 
-- The appeal is **GRANTED**.
-- The enforcement action against petitioner Jane Doe is **DISMISSED WITH PREJUDICE**.
-- The case is **REMANDED** for determination of appropriate sanctions against respondents for constitutional violations.
+ - The appeal is **GRANTED**.
+
+ - The enforcement action against petitioner Jane Doe is **DISMISSED WITH PREJUDICE**.
+
+ - The case is **REMANDED** for determination of appropriate sanctions against respondents for constitutional violations.
 
 **Counsel for Petitioner:** [Name], Office of Public Defense  
+
 **Counsel for Respondents:** [Name], Bar of the Republic
-
----
-
-_End of Document_
