@@ -12,11 +12,11 @@ The immigration standard does not ask "What do you believe?" but rather **"What 
 
 ### The Applicant Profile
 
-- **Karim Al-Jamil**: Wealthy, devout Muslim businessman
+ - **Karim Al-Jamil**: Wealthy, devout Muslim businessman
 
-- **Background**: Conservative theocratic country
+ - **Background**: Conservative theocratic country
 
-- **Application**: General Residency (not asylum)
+ - **Application**: General Residency (not asylum)
 
 ### The Critical Exchange
 
@@ -29,46 +29,47 @@ The denial rests on three pillars of constitutional logic:
 
 #### 1. The "Militant Democracy" Mandate (Article VII, Section 5)
 
-- The Republic "shall not afford its constitutional protections to those who actively seek to use those protections to abolish the democratic order itself"
+ - The Republic "shall not afford its constitutional protections to those who actively seek to use those protections to abolish the democratic order itself"
 
-- Al-Jamil's stated ideal state directly contradicts the constitutional order
+ - Al-Jamil's stated ideal state directly contradicts the constitutional order
 
-- Granting residency would be "constitutional self-sabotage"
+ - Granting residency would be "constitutional self-sabotage"
 
 #### 2. The Clear and Present Danger Doctrine (Article I, Section 5)
 
-- **Not imminent violence**: The danger isn't that Al-Jamil will "plant a bomb"
+ - **Not imminent violence**: The danger isn't that Al-Jamil will "plant a bomb"
 
-- **Systemic subversion**: The danger is working "through legal and cultural means to dismantle the secular foundation"
+ - **Systemic subversion**: The danger is working "through legal and cultural means to dismantle the secular foundation"
 
-- **Ideological incompatibility**: His belief system is "inherently expansionist" and "cannot coexist as an equal with a secular one"
+ - **Ideological incompatibility**: His belief system is "inherently expansionist" and "cannot coexist as an equal with a secular one"
 
 #### 3. The Equality of Application Principle
 
 The same standard would apply to:
-- A Christian Dominionist seeking to establish biblical law
 
-- A Hindu nationalist advocating for religious state
+ - A Christian Dominionist seeking to establish biblical law
 
-- Any ideology asserting religious law supremacy over constitutional law
+ - A Hindu nationalist advocating for religious state
+
+ - Any ideology asserting religious law supremacy over constitutional law
 
 ## The Child Exception: Article I, Section 16
 
 ### The "Blameless Minor" Doctrine
 
-- **Automatic Residency**: Every minor under 18 "shall be granted immediate legal residency"
+ - **Automatic Residency**: Every minor under 18 "shall be granted immediate legal residency"
 
-- **Protected Until 25**: Status maintained until age 25
+ - **Protected Until 25**: Status maintained until age 25
 
-- **Pathway to Citizenship**: Right to apply after age 18
+ - **Pathway to Citizenship**: Right to apply after age 18
 
 ### Philosophical Basis
 
-- Children are "blameless for their circumstances"
+ - Children are "blameless for their circumstances"
 
-- The state recognizes formative years as distinct from settled ideological commitment
+ - The state recognizes formative years as distinct from settled ideological commitment
 
-- Provides opportunity for integration into constitutional values
+ - Provides opportunity for integration into constitutional values
 
 ### Implementation Framework
 
@@ -82,33 +83,33 @@ The same standard would apply to:
 
 ### Dr. Anna Kowalski (Approved)
 
-- **Profile**: Climate engineer, atheist
+ - **Profile**: Climate engineer, atheist
 
-- **Ideology**: Evidence-based governance
+ - **Ideology**: Evidence-based governance
 
-- **Assessment**: Compatible with constitutional order
+ - **Assessment**: Compatible with constitutional order
 
-- **Outcome**: Fast-tracked residency
+ - **Outcome**: Fast-tracked residency
 
 ### Karim Al-Jamil (Denied)  
 
-- **Profile**: Businessman, devout Muslim
+ - **Profile**: Businessman, devout Muslim
 
-- **Ideology**: Religious law supremacy
+ - **Ideology**: Religious law supremacy
 
-- **Assessment**: Incompatible with constitutional order
+ - **Assessment**: Incompatible with constitutional order
 
-- **Outcome**: Residency denied
+ - **Outcome**: Residency denied
 
 ### The Critical Distinction
 
 Both underwent the same ideological vetting. The difference wasn't:
 
-- Their specific religion (or lack thereof)
+ - Their specific religion (or lack thereof)
 
-- Their personal piety
+ - Their personal piety
 
-- Their country of origin
+ - Their country of origin
 
 The determining factor was their **answer to the political question**: "What is the proper relationship between religion and state power?"
 
@@ -126,11 +127,11 @@ The determining factor was their **answer to the political question**: "What is 
 
 The standard only applies to those who:
 
-- Publicly advocate for religious supremacy in law
+ - Publicly advocate for religious supremacy in law
 
-- Demonstrate "sustained adherence" to anti-secular ideology
+ - Demonstrate "sustained adherence" to anti-secular ideology
 
-- Pose a "clear and present danger" to democratic institutions
+ - Pose a "clear and present danger" to democratic institutions
 
 ## Practical Implementation
 
@@ -148,27 +149,27 @@ The standard only applies to those who:
 
 Applicants can express personal religious views while affirming constitutional principles:
 
-- "I personally believe X, but I accept the secular state as legitimate"
+ - "I personally believe X, but I accept the secular state as legitimate"
 
-- "My faith guides me, but I recognize pluralistic democracy as the proper framework"
+ - "My faith guides me, but I recognize pluralistic democracy as the proper framework"
 
 ## Philosophical Underpinnings
 
 ### The Social Contract Theory
 
-- Immigration is an extension of the social contract
+ - Immigration is an extension of the social contract
 
-- New members must accept the fundamental terms of that contract
+ - New members must accept the fundamental terms of that contract
 
-- The secular democratic framework is non-negotiable
+ - The secular democratic framework is non-negotiable
 
 ### The Self-Preservation Principle
 
-- States have a right to preserve their fundamental character
+ - States have a right to preserve their fundamental character
 
-- "Militant democracy" requires defensive boundaries
+ - "Militant democracy" requires defensive boundaries
 
-- Tolerance cannot extend to those who would destroy tolerance itself
+ - Tolerance cannot extend to those who would destroy tolerance itself
 
 ## Potential Objections and Responses
 
