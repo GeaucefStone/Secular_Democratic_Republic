@@ -5,782 +5,1109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padendica - Knowledge Sharing Platform</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        :root {
-            --primary-cyan: #00CED1;
-            --cyan-dark: #00999C;
-            --dark-bg: #1A1A1A;
-            --darker-bg: #0F0F0F;
-            --card-bg: #242424;
-            --light-text: #F5F5F5;
-            --gray-text: #B0B0B0;
-            --border-color: #333333;
-        }
-
-        body {
-            background-color: var(--dark-bg);
-            color: var(--light-text);
-            line-height: 1.6;
-        }
-
-        .avatar-img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        /* Header Styles */
-        .header {
-            background-color: var(--darker-bg);
-            padding: 12px 20px;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            color: var(--primary-cyan);
-            font-size: 28px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .logo i {
-            margin-right: 10px;
-        }
-
-        /* Use this to space out paragraphs */
-        .paragraph {
-            margin-bottom: 10px;
-        }
-
-        .search-bar {
-            background-color: var(--card-bg);
-            border-radius: 20px;
-            padding: 8px 15px;
-            display: flex;
-            align-items: center;
-            width: 40%;
-        }
-
-        .search-bar i {
-            color: var(--gray-text);
-            margin-right: 8px;
-        }
-
-        .search-bar input {
-            background-color: transparent;
-            border: none;
-            width: 100%;
-            font-size: 15px;
-            color: var(--light-text);
-        }
-
-        .search-bar input:focus {
-            outline: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav-link {
-            color: var(--gray-text);
-            cursor: pointer;
-            font-weight: 500;
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
-
-        .nav-link:hover {
-            color: var(--primary-cyan);
-            background-color: var(--card-bg);
-        }
-
-        .nav-link.active {
-            color: var(--primary-cyan);
-        }
-
-        .user-actions {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .ask-btn {
-            background-color: var(--primary-cyan);
-            color: var(--darker-bg);
-            border: none;
-            border-radius: 20px;
-            padding: 8px 16px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .user-avatar {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            background-color: var(--primary-cyan);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--darker-bg);
-            cursor: pointer;
-        }
-
-        /* Main Content Styles */
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
-            gap: 20px;
-        }
-
-        /* Left Sidebar Styles */
-        .left-sidebar {
-            width: 20%;
-        }
-
-        .sidebar-card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .sidebar-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--primary-cyan);
-        }
-
-        .sidebar-item {
-            display: flex;
-            align-items: center;
-            padding: 10px 0;
-            cursor: pointer;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .sidebar-item:last-child {
-            border-bottom: none;
-        }
-
-        .sidebar-item:hover {
-            color: var(--primary-cyan);
-        }
-
-        .sidebar-item i {
-            margin-right: 10px;
-            width: 20px;
-            text-align: center;
-        }
-
-        .topic-list {
-            list-style: none;
-        }
-
-        .topic-item {
-            padding: 8px 0;
-            cursor: pointer;
-        }
-
-        .topic-item:hover {
-            color: var(--primary-cyan);
-        }
-
-        /* Tab Content Styles */
-        .tab-content {
-            width: 80%;
-            display: flex;
-        }
-
-        .tab-pane {
-            display: none;
-            width: 100%;
-            flex-direction: column;
-        }
-
-        .tab-pane.active {
-            display: flex;
-        }
-
-        /* Feed Styles */
-        .feed {
-            width: 100%;
-        }
-
-        .question-card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-        }
-
-        .question-card:hover {
-            box-shadow: 0 4px 8px rgba(0, 206, 209, 0.2);
-        }
-
-        .question-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .question-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: var(--primary-cyan);
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--darker-bg);
-        }
-
-        .question-info {
-            flex: 1;
-        }
-
-        .question-author {
-            font-weight: 600;
-        }
-
-        .question-meta {
-            color: var(--gray-text);
-            font-size: 14px;
-        }
-
-        .question-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-
-        .question-content {
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        /* Photo Styles */
-        .question-photos {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
-
-        .question-photo {
-            width: 200px;
-            height: 150px;
-            border-radius: 8px;
-            background-color: var(--darker-bg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-text);
-            font-size: 14px;
-            border: 1px solid var(--border-color);
-            overflow: hidden;
-            position: relative;
-        }
-
-        .question-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .photo-placeholder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        .answer-photos {
-            display: flex;
-            gap: 10px;
-            margin: 10px 0;
-            flex-wrap: wrap;
-        }
-
-        .answer-photo {
-            width: 180px;
-            height: 120px;
-            border-radius: 6px;
-            background-color: var(--dark-bg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-text);
-            font-size: 12px;
-            border: 1px solid var(--border-color);
-            overflow: hidden;
-        }
-
-        .answer-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .question-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-
-        .tag {
-            background-color: var(--darker-bg);
-            color: var(--primary-cyan);
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 13px;
-            cursor: pointer;
-        }
-
-        .tag:hover {
-            background-color: var(--primary-cyan);
-            color: var(--darker-bg);
-        }
-
-        .question-actions {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 15px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .action-btn {
-            display: flex;
-            align-items: center;
-            color: var(--gray-text);
-            cursor: pointer;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        .action-btn:hover {
-            background-color: var(--darker-bg);
-            color: var(--primary-cyan);
-        }
-
-        .action-btn i {
-            margin-right: 5px;
-        }
-
-        .answer-count {
-            color: var(--primary-cyan);
-            font-weight: 600;
-        }
-
-        /* Answer Styles */
-        .answer {
-            background-color: var(--darker-bg);
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 15px;
-        }
-
-        .answer-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .answer-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background-color: var(--primary-cyan);
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--darker-bg);
-            font-size: 14px;
-        }
-
-        .answer-author {
-            font-weight: 600;
-            font-size: 15px;
-        }
-
-        .answer-meta {
-            color: var(--gray-text);
-            font-size: 13px;
-            margin-left: auto;
-        }
-
-        .answer-content {
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        .answer-actions {
-            display: flex;
-            gap: 15px;
-            font-size: 14px;
-            color: var(--gray-text);
-        }
-
-        .answer-action {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .answer-action:hover {
-            color: var(--primary-cyan);
-        }
-
-        .answer-action i {
-            margin-right: 5px;
-        }
-
-        /* Comments Section Styles */
-        .comments-section {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .comment {
-            display: flex;
-            margin-bottom: 15px;
-        }
-
-        .comment-avatar {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background-color: var(--primary-cyan);
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--darker-bg);
-            font-size: 12px;
-            opacity: 0.8;
-        }
-
-        .comment-content {
-            flex: 1;
-        }
-
-        .comment-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-        }
-
-        .comment-author {
-            font-weight: 600;
-            font-size: 14px;
-            margin-right: 8px;
-        }
-
-        .comment-time {
-            color: var(--gray-text);
-            font-size: 12px;
-        }
-
-        .comment-text {
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 5px;
-        }
-
-        .comment-actions {
-            display: flex;
-            gap: 15px;
-            font-size: 12px;
-            color: var(--gray-text);
-        }
-
-        .comment-action {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .comment-action:hover {
-            color: var(--primary-cyan);
-        }
-
-        .comment-action i {
-            margin-right: 3px;
-        }
-
-        .replies {
-            margin-left: 38px;
-            margin-top: 10px;
-            border-left: 2px solid var(--border-color);
-            padding-left: 15px;
-        }
-
-        .reply {
-            display: flex;
-            margin-bottom: 12px;
-        }
-
-        .reply-avatar {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background-color: var(--primary-cyan);
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--darker-bg);
-            font-size: 10px;
-            opacity: 0.7;
-        }
-
-        .reply-content {
-            flex: 1;
-        }
-
-        .reply-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 3px;
-        }
-
-        .reply-author {
-            font-weight: 600;
-            font-size: 13px;
-            margin-right: 8px;
-        }
-
-        .reply-time {
-            color: var(--gray-text);
-            font-size: 11px;
-        }
-
-        .reply-text {
-            font-size: 13px;
-            line-height: 1.4;
-            margin-bottom: 3px;
-        }
-
-        .reply-actions {
-            display: flex;
-            gap: 12px;
-            font-size: 11px;
-            color: var(--gray-text);
-        }
-
-        .reply-action {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .reply-action:hover {
-            color: var(--primary-cyan);
-        }
-
-        .reply-action i {
-            margin-right: 2px;
-        }
-
-        .view-replies {
-            font-size: 13px;
-            color: var(--primary-cyan);
-            margin: 5px 0 10px 38px;
-            cursor: pointer;
-            font-weight: 500;
-        }
-
-        .view-replies:hover {
-            text-decoration: underline;
-        }
-
-        .add-comment {
-            display: flex;
-            margin-top: 10px;
-        }
-
-        .comment-input {
-            flex: 1;
-            background-color: var(--dark-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 18px;
-            padding: 8px 15px;
-            color: var(--light-text);
-            font-size: 14px;
-            margin-right: 10px;
-        }
-
-        .comment-input:focus {
-            outline: none;
-            border-color: var(--primary-cyan);
-        }
-
-        .comment-btn {
-            background-color: var(--primary-cyan);
-            color: var(--darker-bg);
-            border: none;
-            border-radius: 18px;
-            padding: 8px 15px;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .view-more {
-            color: var(--primary-cyan);
-            cursor: pointer;
-            font-weight: 500;
-            margin-top: 10px;
-            display: inline-block;
-        }
-
-        .view-more:hover {
-            text-decoration: underline;
-        }
-
-        /* Question Page Styles */
-        .question-page {
-            width: 100%;
-        }
-
-        .question-page-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .back-button {
-            margin-right: 15px;
-            cursor: pointer;
-            font-size: 18px;
-            color: var(--primary-cyan);
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        .back-button:hover {
-            background-color: var(--darker-bg);
-        }
-
-        .question-page-title {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 1.4;
-        }
-
-        .answers-count {
-            color: var(--primary-cyan);
-            font-weight: 600;
-            margin: 20px 0;
-            font-size: 18px;
-        }
-
-        /* Right Sidebar Styles */
-        .right-sidebar {
-            width: 30%;
-        }
-
-        .spaces-title {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-        }
-
-        .spaces-title span {
-            font-weight: 600;
-        }
-
-        .spaces-title i {
-            color: var(--gray-text);
-            cursor: pointer;
-        }
-
-        .space {
-            display: flex;
-            align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border-color);
-            cursor: pointer;
-        }
-
-        .space:last-child {
-            border-bottom: none;
-        }
-
-        .space:hover {
-            color: var(--primary-cyan);
-        }
-
-        .space-avatar {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: var(--primary-cyan);
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--darker-bg);
-            font-size: 12px;
-        }
-
-        .space-name {
-            font-weight: 500;
-        }
-
-        /* Font Awesome Icons (using Unicode) */
-        .fa {
-            font-style: normal;
-        }
-        .fa-question:before { content: "❓"; }
-        .fa-home:before { content: "🏠"; }
-        .fa-answer:before { content: "📝"; }
-        .fa-spaces:before { content: "🌐"; }
-        .fa-notifications:before { content: "🔔"; }
-        .fa-search:before { content: "🔍"; }
-        .fa-upvote:before { content: "⬆️"; }
-        .fa-downvote:before { content: "⬇️"; }
-        .fa-comment:before { content: "💬"; }
-        .fa-share:before { content: "↗️"; }
-        .fa-bookmark:before { content: "🔖"; }
-        .fa-more:before { content: "⋯"; }
-        .fa-arrow-left:before { content: "←"; }
-        .fa-image:before { content: "🖼️"; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-cyan: #00CED1;
+    --cyan-dark: #00999C;
+    --dark-bg: #1A1A1A;
+    --darker-bg: #0F0F0F;
+    --card-bg: #242424;
+    --light-text: #F5F5F5;
+    --gray-text: #B0B0B0;
+    --border-color: #333333;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--darker-bg);
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--primary-cyan);
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+/* Use this to space out paragraphs */
+.paragraph {
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.search-bar i {
+    color: var(--gray-text);
+    margin-right: 8px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    color: var(--light-text);
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    color: var(--gray-text);
+    cursor: pointer;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-cyan);
+    background-color: var(--card-bg);
+}
+
+.nav-link.active {
+    color: var(--primary-cyan);
+}
+
+.user-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.ask-btn {
+    background-color: var(--primary-cyan);
+    color: var(--darker-bg);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ask-btn:hover {
+    background-color: var(--cyan-dark);
+    transform: translateY(-1px);
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--primary-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--darker-bg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-avatar:hover {
+    transform: scale(1.05);
+}
+
+/* Main Content Styles */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Left Sidebar Styles */
+.left-sidebar {
+    width: 20%;
+}
+
+.sidebar-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-cyan);
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-item:hover {
+    color: var(--primary-cyan);
+    transform: translateX(5px);
+}
+
+.sidebar-item i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.topic-list {
+    list-style: none;
+}
+
+.topic-item {
+    padding: 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.topic-item:hover {
+    color: var(--primary-cyan);
+    transform: translateX(5px);
+}
+
+/* Tab Content Styles */
+.tab-content {
+    width: 80%;
+    display: flex;
+}
+
+.tab-pane {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.tab-pane.active {
+    display: flex;
+}
+
+/* Feed Styles */
+.feed {
+    width: 100%;
+}
+
+/* Enhanced Question Card Styles */
+.question-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.question-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 206, 209, 0.25);
+}
+
+.question-card.expanded {
+    margin-bottom: 20px;
+    box-shadow: 0 8px 30px rgba(0, 206, 209, 0.3);
+    border-color: var(--primary-cyan);
+    background: linear-gradient(145deg, var(--card-bg) 0%, #2a2a2a 100%);
+}
+
+.question-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.question-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-cyan);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--darker-bg);
+    transition: all 0.3s ease;
+}
+
+.question-avatar:hover {
+    transform: scale(1.05);
+}
+
+.question-info {
+    flex: 1;
+}
+
+.question-author {
+    font-weight: 600;
+}
+
+.question-meta {
+    color: var(--gray-text);
+    font-size: 14px;
+}
+
+.question-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.question-content {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Enhanced Expand Indicator */
+.expand-indicator {
+    margin-left: auto;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-cyan);
+    font-weight: bold;
+    background: rgba(0, 206, 209, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.question-card:hover .expand-indicator {
+    background: rgba(0, 206, 209, 0.2);
+    transform: scale(1.1);
+}
+
+.question-card.expanded .expand-indicator {
+    transform: rotate(180deg) scale(1.1);
+    background: rgba(0, 206, 209, 0.3);
+}
+
+/* Photo Styles */
+.question-photos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.question-photo {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: var(--darker-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-text);
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.question-photo:hover {
+    border-color: var(--primary-cyan);
+    transform: scale(1.02);
+}
+
+.question-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.answer-photos {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.answer-photo {
+    width: 180px;
+    height: 120px;
+    border-radius: 6px;
+    background-color: var(--dark-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-text);
+    font-size: 12px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.answer-photo:hover {
+    border-color: var(--primary-cyan);
+    transform: scale(1.02);
+}
+
+.answer-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.question-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: var(--darker-bg);
+    color: var(--primary-cyan);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background-color: var(--primary-cyan);
+    color: var(--darker-bg);
+    transform: translateY(-1px);
+}
+
+.question-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    color: var(--gray-text);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: var(--darker-bg);
+    color: var(--primary-cyan);
+    transform: translateY(-1px);
+}
+
+.action-btn i {
+    margin-right: 5px;
+}
+
+/* Enhanced Answers Section */
+.answers-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(180deg, var(--darker-bg) 0%, var(--card-bg) 100%);
+    border-radius: 0 0 12px 12px;
+    margin-top: -8px;
+    position: relative;
+    z-index: 1;
+}
+
+.answers-section.expanded {
+    max-height: 6000px;
+    box-shadow: 0 8px 25px rgba(0, 206, 209, 0.15);
+}
+
+.answers-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--primary-cyan) 50%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.answers-section.expanded::before {
+    opacity: 1;
+}
+
+.answers-count {
+    padding: 18px 20px;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 700;
+    color: var(--primary-cyan);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.answers-count::before {
+    content: "💬";
+    font-size: 14px;
+}
+
+/* Enhanced Answer Styles */
+.answer {
+    background: var(--darker-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 20px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.answer:hover {
+    border-color: var(--primary-cyan);
+    box-shadow: 0 4px 15px rgba(0, 206, 209, 0.1);
+    transform: translateY(-1px);
+}
+
+.answer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary-cyan);
+    border-radius: 4px 0 0 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.answer:hover::before {
+    opacity: 1;
+}
+
+.answer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.answer-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--primary-cyan);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--darker-bg);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.answer-avatar:hover {
+    transform: scale(1.05);
+}
+
+.answer-author {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.answer-meta {
+    color: var(--gray-text);
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.answer-content {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.answer-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--gray-text);
+}
+
+.answer-action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.answer-action:hover {
+    color: var(--primary-cyan);
+    transform: translateY(-1px);
+}
+
+.answer-action i {
+    margin-right: 5px;
+}
+
+/* Enhanced Comments Section Styles */
+.comments-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    position: relative;
+}
+
+.comments-section::before {
+    content: '💬';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--darker-bg);
+    padding: 0 10px;
+    font-size: 12px;
+    color: var(--primary-cyan);
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.comment:hover {
+    transform: translateX(5px);
+}
+
+.comment-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--primary-cyan);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--darker-bg);
+    font-size: 12px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.comment-avatar:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-author {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.comment-time {
+    color: var(--gray-text);
+    font-size: 12px;
+}
+
+.comment-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: var(--gray-text);
+}
+
+.comment-action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.comment-action:hover {
+    color: var(--primary-cyan);
+    transform: translateY(-1px);
+}
+
+.comment-action i {
+    margin-right: 3px;
+}
+
+.replies {
+    margin-left: 38px;
+    margin-top: 10px;
+    border-left: 2px solid var(--border-color);
+    padding-left: 15px;
+}
+
+.reply {
+    display: flex;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.reply:hover {
+    transform: translateX(3px);
+}
+
+.reply-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--primary-cyan);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--darker-bg);
+    font-size: 10px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.reply-avatar:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.reply-content {
+    flex: 1;
+}
+
+.reply-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.reply-author {
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.reply-time {
+    color: var(--gray-text);
+    font-size: 11px;
+}
+
+.reply-text {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+.reply-actions {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--gray-text);
+}
+
+.reply-action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.reply-action:hover {
+    color: var(--primary-cyan);
+    transform: translateY(-1px);
+}
+
+.reply-action i {
+    margin-right: 2px;
+}
+
+.view-replies {
+    font-size: 13px;
+    color: var(--primary-cyan);
+    margin: 5px 0 10px 38px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.view-replies:hover {
+    text-decoration: underline;
+    transform: translateX(3px);
+}
+
+.add-comment {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-input {
+    flex: 1;
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 8px 15px;
+    color: var(--light-text);
+    font-size: 14px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.comment-input:focus {
+    outline: none;
+    border-color: var(--primary-cyan);
+    box-shadow: 0 0 0 2px rgba(0, 206, 209, 0.2);
+}
+
+.comment-btn {
+    background-color: var(--primary-cyan);
+    color: var(--darker-bg);
+    border: none;
+    border-radius: 18px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.comment-btn:hover {
+    background-color: var(--cyan-dark);
+    transform: translateY(-1px);
+}
+
+/* Enhanced View More Button */
+.view-more {
+    color: var(--primary-cyan);
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px;
+    padding: 12px 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.view-more:hover {
+    background: var(--primary-cyan);
+    color: var(--darker-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 206, 209, 0.3);
+}
+
+/* Question Page Styles (Hidden) */
+.question-page {
+    display: none !important;
+}
+
+.question-page-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.back-button {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--primary-cyan);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--darker-bg);
+    transform: translateX(-3px);
+}
+
+.question-page-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Right Sidebar Styles */
+.right-sidebar {
+    width: 30%;
+}
+
+.spaces-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.spaces-title span {
+    font-weight: 600;
+}
+
+.spaces-title i {
+    color: var(--gray-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.spaces-title i:hover {
+    color: var(--primary-cyan);
+    transform: rotate(90deg);
+}
+
+.space {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.space:last-child {
+    border-bottom: none;
+}
+
+.space:hover {
+    color: var(--primary-cyan);
+    transform: translateX(5px);
+}
+
+.space-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-cyan);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--darker-bg);
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.space-avatar:hover {
+    transform: scale(1.05);
+}
+
+.space-name {
+    font-weight: 500;
+}
+
+/* Font Awesome Icons (using Unicode) */
+.fa {
+    font-style: normal;
+}
+.fa-question:before { content: "❓"; }
+.fa-home:before { content: "🏠"; }
+.fa-answer:before { content: "📝"; }
+.fa-spaces:before { content: "🌐"; }
+.fa-notifications:before { content: "🔔"; }
+.fa-search:before { content: "🔍"; }
+.fa-upvote:before { content: "⬆️"; }
+.fa-downvote:before { content: "⬇️"; }
+.fa-comment:before { content: "💬"; }
+.fa-share:before { content: "↗️"; }
+.fa-bookmark:before { content: "🔖"; }
+.fa-more:before { content: "⋯"; }
+.fa-arrow-left:before { content: "←"; }
+.fa-image:before { content: "🖼️"; }
+
+/* Enhanced Animations */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.answer.new-answer {
+    animation: slideInUp 0.4s ease-out;
+}
+
+/* Focus states for accessibility */
+.question-card:focus {
+    outline: 2px solid var(--primary-cyan);
+    outline-offset: 2px;
+}
+
+/* Loading animation for answers */
+.answers-section.loading .answer {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .left-sidebar, .tab-content, .right-sidebar {
+        width: 100%;
+    }
+    
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .search-bar {
+        width: 100%;
+        order: 3;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .answers-section {
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 0;
+    }
+    
+    .answer {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .expand-indicator {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .question-photo, .answer-photo {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* Smooth scrolling for better UX */
+.question-card.expanded {
+    scroll-margin-top: 20px;
+}
+
+/* Enhanced selection styles */
+::selection {
+    background-color: var(--primary-cyan);
+    color: var(--darker-bg);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--darker-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-cyan);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cyan-dark);
+}
+
     </style>
 </head>
 <body>
@@ -791,7 +1118,7 @@
         </div>
         <div class="search-bar">
             <i class="fa fa-search"></i>
-            <input type="text" placeholder="Search Padendica">
+            <input type="text" placeholder="Search questions, topics, or users...">
         </div>
         <div class="nav-links">
             <div class="nav-link active" onclick="showSection('home')">Home</div>
@@ -800,7 +1127,7 @@
             <div class="nav-link">Notifications</div>
         </div>
         <div class="user-actions">
-            <button class="ask-btn">Ask Question</button>
+            <button class="ask-btn" onclick="showAskModal()">Ask Question</button>
             <div class="user-avatar">JD</div>
         </div>
     </div>
@@ -845,25 +1172,23 @@
             <!-- Home Tab -->
             <div class="tab-pane active" id="home-section">
                 <div class="feed">
-                    <!-- Question 1 with Photos -->
-                    <div class="question-card" onclick="showQuestion('question1')">
+
+                    <!-- Question 1 -->
+                    <div class="question-card" onclick="toggleQuestion('question1')" tabindex="0">
                         <div class="question-header">
-                            <div class="question-avatar">
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                JA
-                            </div>
+                            <div class="question-avatar">JA</div>
                             <div class="question-info">
                                 <div class="question-author">RightsDefender1776</div>
                                 <div class="question-meta">Asked 2 days ago · Updated 5 hours ago</div>
                             </div>
+                            <div class="expand-indicator">▼</div>
                         </div>
                         <div class="question-title">
                             Is the SDR Constitution a blueprint for tyranny? 
                         </div>
                         <div class="question-content">
-                            Wake up people! These 'safety' regulations are a total ban on firearm ownership disguised as reasonable measures. By requiring impossible safety radii and neighbor permissions, they've made it impossible for anyone to actually use their guns. This is a backdoor gun confiscation scheme. They know they can't ban guns directly, so they're banning their USE through impossible regulations. Your constitutional right now requires permission from everyone around you! This is tyranny by regulation.
+                            Wake up people! These 'safety' regulations are a total ban on firearm ownership disguised as reasonable measures...
                         </div>
-
                         <div class="question-tags">
                             <div class="tag">#GunRights</div>
                             <div class="tag">#2ndAmendment</div>
@@ -892,607 +1217,928 @@
                         </div>
                     </div>
 
-                    <!-- Question 2 -->
-                    <div class="question-card" onclick="showQuestion('question2')">
-                        <div class="question-header">
-                            <div class="question-avatar">
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                CP
-                            </div>
-                            <div class="question-info">
-                                <div class="question-author">Curious Philosopher</div>
-                                <div class="question-meta">Asked 5 hours ago</div>
-                            </div>
-                        </div>
-                        <div class="question-title">
-                            Why do humans create art, and what purpose does it serve in society?
-                        </div>
-                        <div class="question-content">
-                            Throughout history, every human civilization has created art in some form. What drives this universal human behavior, and how does art contribute to society beyond mere decoration?
-                        </div>
-                        <div class="question-tags">
-                            <div class="tag">#Philosophy</div>
-                            <div class="tag">#Art</div>
-                            <div class="tag">#Psychology</div>
-                            <div class="tag">#Society</div>
-                        </div>
-                        <div class="question-actions">
-                            <div class="action-btn">
-                                <i class="fa fa-upvote"></i> 1.7K
-                            </div>
-                            <div class="action-btn">
-                                <i class="fa fa-downvote"></i>
-                            </div>
-                            <div class="action-btn">
-                                <i class="fa fa-comment"></i> 218
-                            </div>
-                            <div class="action-btn">
-                                <i class="fa fa-share"></i> Share
-                            </div>
-                            <div class="action-btn">
-                                <i class="fa fa-bookmark"></i> Save
-                            </div>
-                            <div class="action-btn">
-                                <i class="fa fa-more"></i>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Answers Section for Question 1 -->
+
+                    <!-- Answers Section for Question 1 -->
+<div class="answers-section" id="answers-question1">
+    <div class="answers-count">342 Answers</div>
+    
+    <!-- Answer 1 - Constitutional Analyst -->
+    <div class="answer">
+        <div class="answer-header">
+            <div class="answer-avatar">ES</div>
+            <div class="answer-author">ConstitutionalAnalyst</div>
+            <div class="answer-meta">Graduate from the School of Hard Knocks</div>
+        </div>
+        <div class="answer-content">
+            You are misrepresenting both the nature of these regulations and the constitutional framework. Let's examine what the Constitution actually says about this balance.
+        </div>
+
+        <!-- Answer Photos -->
+        <div class="answer-photos">
+            <div class="answer-photo">
+                <div class="photo-placeholder">
+                    <i class="fa fa-image"></i>
+                    <span>Constitutional Text</span>
                 </div>
             </div>
-
-            <!-- Question Pages -->
-            <div class="tab-pane question-page" id="question1">
-                <div class="question-page-header">
-                    <div class="back-button" onclick="showSection('home')">
-                        <i class="fa fa-arrow-left"></i> Back to Feed
-                    </div>
+            <div class="answer-photo">
+                <div class="photo-placeholder">
+                    <i class="fa fa-image"></i>
+                    <span>Legal Analysis</span>
                 </div>
-
-                <div class="question-card">
-                    <div class="question-header">
-                        <div class="question-avatar">
-                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                            JA
-                        </div>
-                        <div class="question-info">
-                            <div class="question-author">RightsDefender1776</div>
-                            <div class="question-meta">Asked 2 days ago · Updated 5 hours ago</div>
-                        </div>
-                    </div>
-                    <div class="question-page-title">
-                        Is the SDR Constitution a blueprint for tyranny? 
-                    </div>
-                    <div class="question-content">
-                        Wake up people! These 'safety' regulations are a total ban on firearm ownership disguised as reasonable measures. By requiring impossible safety radii and neighbor permissions, they've made it impossible for anyone to actually use their guns. This is a backdoor gun confiscation scheme. They know they can't ban guns directly, so they're banning their USE through impossible regulations. Your constitutional right now requires permission from everyone around you! This is tyranny by regulation.
-                    </div>
-
-                    <div class="question-tags">
-                        <div class="tag">#GunRights</div>
-                        <div class="tag">#SecondAmendment</div>
-                        <div class="tag">#Constitution</div>
-                        <div class="tag">#ShallNotBeInfringed</div>
-                    </div>
-                    <div class="question-actions">
-                        <div class="action-btn">
-                            <i class="fa fa-upvote"></i> 2.4K
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-downvote"></i>
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-comment"></i> 342
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-share"></i> Share
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-bookmark"></i> Save
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-more"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="answers-count">342 Answers</div>
-
-                <!-- Answers with Photos and Comments -->
-                <div class="answer">
-                    <div class="answer-header">
-                        <div class="answer-avatar">
-                            ES
-                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                        </div>
-                        <div class="answer-author">ConstitutionalAnalyst</div>
-                        <div class="answer-meta">Graduate from the School of Hard Knocks</div>
-                    </div>
-                    <div class="answer-content">
-                        You are misrepresenting both the nature of these regulations and the constitutional framework. Let's examine what the Constitution actually says about this balance.
-                    </div>
-
-                    <!-- Answer Photos -->
-                    <div class="answer-photos">
-                        <div class="answer-photo">
-                            <div class="photo-placeholder">
-                                <i class="fa fa-image"></i>
-                                <span>Fusion Diagram</span>
-                            </div>
-                        </div>
-                        <div class="answer-photo">
-                            <div class="photo-placeholder">
-                                <i class="fa fa-image"></i>
-                                <span>Cost Comparison</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="answer-content">
-                        <div class="paragraph">Article I, Section 10 explicitly addresses this balance:</div>
-
-                        <div class="paragraph">"The right of the people to keep and bear small arms... shall not be infringed"</div>
-
-                        <div class="paragraph">AND "The right to bear arms shall not be construed to prohibit... regulations... to ensure public safety"</div>
-
-                        <div class="paragraph">"Such regulations shall be presumed constitutional if they are narrowly tailored to address documented public safety risks and do not function as a de facto blanket ban"</div>
-                    </div>
-
-                    <div class="answer-content">
-                        <div class="paragraph"><strong>Key Constitutional Principles:</strong></div>
-                        
-                        <div class="paragraph">1. <strong>Regulation ≠ Ban:</strong> The Constitution distinguishes between regulating *how* firearms are used and banning *ownership*</div>
-                        
-                        <div class="paragraph">2. <strong>Public Safety Balance:</strong> Rights exist alongside public safety responsibilities</div>
-                        
-                        <div class="paragraph">3. <strong>Narrow Tailoring:</strong> Regulations must be specific to actual risks, not blanket prohibitions</div>
-                        
-                        <div class="paragraph">4. <strong>No De Facto Bans:</strong> Regulations cannot function as backdoor total bans</div>
-                        
-                        <div class="paragraph">Reasonable safety regulations on *discharge* protect everyone's rights - including the right to domestic security and peace in one's home. The constitutional test is whether regulations are narrowly tailored to real safety concerns, which these are.</div>
-                        
-                        <div class="paragraph"><strong>Constitutional Tests for Regulations:</strong></div>
-                        
-                        <div class="paragraph">Valid regulations must meet:</div>
-                        
-                        <div class="paragraph">1. <strong>Narrow Tailoring:</strong> Address specific, documented safety risks</div>
-                        
-                        <div class="paragraph">2. <strong>Non-Prohibitive:</strong> Cannot function as de facto total ban</div>
-                        
-                        <div class="paragraph">3. <strong>Public Safety Basis:</strong> Grounded in actual risk evidence</div>
-                        
-                        <div class="paragraph">4. <strong>Rights Preservation:</strong> Maintain core right to self-defense</div>
-                        
-                        <div class="paragraph">The regulations you're referring to are specifically about discharge in residential areas - not about ownership, possession, or self-defense use. You can still own firearms, carry them, and use them for self-defense. The regulations simply ensure that recreational shooting doesn't endanger your neighbors.</div>
-                    </div>
-                    <div class="answer-actions">
-                        <div class="answer-action">
-                            <i class="fa fa-upvote"></i> 1.2K
-                        </div>
-                        <div class="answer-action">
-                            <i class="fa fa-downvote"></i>
-                        </div>
-                        <div class="answer-action">
-                            <i class="fa fa-comment"></i> 87
-                        </div>
-                    </div>
-
-                    <!-- Comments Section -->
-                    <div class="comments-section">
-                        <div class="comment">
-                            <div class="comment-avatar">
-                                RD
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <div class="comment-author">RightsDefender1776</div>
-                                    <div class="comment-time">3 hours ago</div>
-                                </div>
-                                <div class="comment-text">
-                                    So you're saying my neighbors get to decide when I can exercise my constitutional rights? That's exactly the tyranny I'm talking about!
-                                </div>
-                                <div class="comment-actions">
-                                    <span class="comment-action">Like</span>
-                                    <span class="comment-action">Reply</span>
-                                    <span class="comment-action">24</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Replies -->
-                        <div class="replies">
-                            <div class="reply">
-                                <div class="reply-avatar">
-                                    CA
-                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                </div>
-                                <div class="reply-content">
-                                    <div class="reply-header">
-                                        <div class="reply-author">ConstitutionalAnalyst</div>
-                                        <div class="reply-time">2 hours ago</div>
-                                    </div>
-                                    <div class="reply-text">
-                                        No, your neighbors don't get to decide - the Constitution does. Article I, Section 10 balances YOUR right to bear arms with YOUR NEIGHBORS' right to domestic security and peace. This isn't about permission - it's about preventing stray bullets in residential areas.
-                                    </div>
-                                    <div class="reply-actions">
-                                        <span class="reply-action">Like</span>
-                                        <span class="reply-action">Reply</span>
-                                        <span class="reply-action">18</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reply">
-                                <div class="reply-avatar">
-                                    LS
-                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                </div>
-                                <div class="reply-content">
-                                    <div class="reply-header">
-                                        <div class="reply-author">Legal Scholar</div>
-                                        <div class="reply-time">1 hour ago</div>
-                                    </div>
-                                    <div class="reply-text">
-                                        Exactly. The "narrow tailoring" test means regulations must address specific safety risks. Discharge regulations prevent the exact scenario where your recreational shooting endangers others. Self-defense use is completely protected.
-                                    </div>
-                                    <div class="reply-actions">
-                                        <span class="reply-action">Like</span>
-                                        <span class="reply-action">Reply</span>
-                                        <span class="reply-action">12</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="comment">
-                            <div class="comment-avatar">
-                                FP
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <div class="comment-author">Firearms Instructor</div>
-                                    <div class="comment-time">4 hours ago</div>
-                                </div>
-                                <div class="comment-text">
-                                    As a firearms instructor, I actually support these regulations. We teach responsible discharge practices. Shooting in residential areas without proper backstops is unsafe and gives responsible gun owners a bad name.
-                                </div>
-                                <div class="comment-actions">
-                                    <span class="comment-action">Like</span>
-                                    <span class="comment-action">Reply</span>
-                                    <span class="comment-action">32</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="comment">
-                            <div class="comment-avatar">
-                                CP
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <div class="comment-author">Constitutional Purist</div>
-                                    <div class="comment-time">3 hours ago</div>
-                                </div>
-                                <div class="comment-text">
-                                    But where do we draw the line? This seems like a slippery slope. Today it's discharge regulations, tomorrow they'll use the same logic to ban ownership entirely.
-                                </div>
-                                <div class="comment-actions">
-                                    <span class="comment-action">Like</span>
-                                    <span class="comment-action">Reply</span>
-                                    <span class="comment-action">15</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Replies -->
-                        <div class="replies">
-                            <div class="reply">
-                                <div class="reply-avatar">
-                                    CA
-                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                </div>
-                                <div class="reply-content">
-                                    <div class="reply-header">
-                                        <div class="reply-author">ConstitutionalAnalyst</div>
-                                        <div class="reply-time">2 hours ago</div>
-                                    </div>
-                                    <div class="reply-text">
-                                        The Constitution explicitly prevents that slope. Article I, Section 10 states regulations cannot function as a "de facto blanket ban." Any attempt to ban ownership would be unconstitutional on its face. The framework is designed to prevent exactly what you're worried about.
-                                    </div>
-                                    <div class="reply-actions">
-                                        <span class="reply-action">Like</span>
-                                        <span class="reply-action">Reply</span>
-                                        <span class="reply-action">21</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="comment">
-                            <div class="comment-avatar">
-                                NE
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <div class="comment-author">Neighbor Emily</div>
-                                    <div class="comment-time">5 hours ago</div>
-                                </div>
-                                <div class="comment-text">
-                                    Thank you for this explanation! As someone who lives next to someone who shoots in their backyard, this constitutional balance makes perfect sense. My right to domestic privacy shouldn't be violated by recreational shooting.
-                                </div>
-                                <div class="comment-actions">
-                                    <span class="comment-action">Like</span>
-                                    <span class="comment-action">Reply</span>
-                                    <span class="comment-action">28</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="view-replies">View 8 more comments</div>
-
-                        <div class="add-comment">
-                            <input type="text" class="comment-input" placeholder="Add a comment...">
-                            <button class="comment-btn">Comment</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="answer">
-                    <div class="answer-header">
-                        <div class="answer-avatar">
-                            TE
-                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                        </div>
-                        <div class="answer-author">Thomas Economist</div>
-                        <div class="answer-meta">Economic Analyst · 845 upvotes</div>
-                    </div>
-                    <div class="answer-content">
-                        From an economic perspective, cheap fusion energy would disrupt global markets. Oil-producing nations would need to completely restructure their economies. Transportation costs would plummet, potentially revitalizing manufacturing in developed countries.
-                    </div>
-
-                    <!-- Answer Photo -->
-                    <div class="answer-photos">
-                        <div class="answer-photo">
-                            <div class="photo-placeholder">
-                                <i class="fa fa-image"></i>
-                                <span>Economic Impact</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="answer-content">
-                        We might see the emergence of entirely new industries that were previously energy-prohibitive. However, the transition would need careful management to avoid economic shocks. The geopolitical landscape would shift dramatically as energy independence becomes achievable for most nations.
-                    </div>
-                    <div class="answer-actions">
-                        <div class="answer-action">
-                            <i class="fa fa-upvote"></i> 845
-                        </div>
-                        <div class="answer-action">
-                            <i class="fa fa-downvote"></i>
-                        </div>
-                        <div class="answer-action">
-                            <i class="fa fa-comment"></i> 42
-                        </div>
-                    </div>
-
-                    <!-- Comments Section -->
-                    <div class="comments-section">
-                        <div class="comment">
-                            <div class="comment-avatar">
-                                JA
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <div class="comment-author">John Atlas</div>
-                                    <div class="comment-time">2 hours ago</div>
-                                </div>
-                                <div class="comment-text">
-                                    Do you think this could lead to a new industrial revolution? What sectors would benefit the most initially?
-                                </div>
-                                <div class="comment-actions">
-                                    <span class="comment-action">Like</span>
-                                    <span class="comment-action">Reply</span>
-                                    <span class="comment-action">7</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="replies">
-                            <div class="reply">
-                                <div class="reply-avatar">
-                                    TE
-                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                </div>
-                                <div class="reply-content">
-                                    <div class="reply-header">
-                                        <div class="reply-author">Thomas Economist</div>
-                                        <div class="reply-time">1 hour ago</div>
-                                    </div>
-                                    <div class="reply-text">
-                                        Absolutely! Manufacturing, transportation, and computing would see immediate benefits. Then we'd see breakthroughs in areas like synthetic biology and space exploration that require massive energy.
-                                    </div>
-                                    <div class="reply-actions">
-                                        <span class="reply-action">Like</span>
-                                        <span class="reply-action">Reply</span>
-                                        <span class="reply-action">4</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="add-comment">
-                            <input type="text" class="comment-input" placeholder="Add a comment...">
-                            <button class="comment-btn">Comment</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="view-more">View 340 more answers</div>
-            </div>
-
-            <!-- Question 2 Page -->
-            <div class="tab-pane question-page" id="question2">
-                <div class="question-page-header">
-                    <div class="back-button" onclick="showSection('home')">
-                        <i class="fa fa-arrow-left"></i> Back to Feed
-                    </div>
-                </div>
-
-                <div class="question-card">
-                    <div class="question-header">
-                        <div class="question-avatar">
-                            CP
-                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                        </div>
-                        <div class="question-info">
-                            <div class="question-author">Curious Philosopher</div>
-                            <div class="question-meta">Asked 5 hours ago</div>
-                        </div>
-                    </div>
-                    <div class="question-page-title">
-                        Why do humans create art, and what purpose does it serve in society?
-                    </div>
-                    <div class="question-content">
-                        Throughout history, every human civilization has created art in some form. From cave paintings to digital installations, art seems to be a fundamental human activity. What drives this universal human behavior, and how does art contribute to society beyond mere decoration? Is there an evolutionary advantage to creating art?
-                    </div>
-                    <div class="question-tags">
-                        <div class="tag">#Philosophy</div>
-                        <div class="tag">#Art</div>
-                        <div class="tag">#Psychology</div>
-                        <div class="tag">#Society</div>
-                        <div class="tag">#Anthropology</div>
-                    </div>
-                    <div class="question-actions">
-                        <div class="action-btn">
-                            <i class="fa fa-upvote"></i> 1.7K
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-downvote"></i>
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-comment"></i> 218
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-share"></i> Share
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-bookmark"></i> Save
-                        </div>
-                        <div class="action-btn">
-                            <i class="fa fa-more"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="answers-count">218 Answers</div>
-
-                <!-- Answers -->
-                <div class="answer">
-                    <div class="answer-header">
-                        <div class="answer-avatar">
-                            AP
-                            <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                        </div>
-                        <div class="answer-author">Art Professor</div>
-                        <div class="answer-meta">Art History Professor · 956 upvotes</div>
-                    </div>
-                    <div class="answer-content">
-                        Art serves multiple crucial functions in society. Firstly, it's a form of communication that transcends language barriers. It allows us to express complex emotions, ideas, and cultural values that might be difficult to articulate verbally.
-
-                        Art also preserves cultural memory and identity. Through art, we can understand how people in different eras thought, felt, and perceived their world. It creates shared experiences that bind communities together and helps us process collective trauma or celebrate shared achievements.
-                    </div>
-                    <div class="answer-actions">
-                        <div class="answer-action">
-                            <i class="fa fa-upvote"></i> 956
-                        </div>
-                        <div class="answer-action">
-                            <i class="fa fa-downvote"></i>
-                        </div>
-                        <div class="answer-action">
-                            <i class="fa fa-comment"></i> 63
-                        </div>
-                    </div>
-
-                    <!-- Comments Section -->
-                    <div class="comments-section">
-                        <div class="comment">
-                            <div class="comment-avatar">
-                                JD
-                                <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <div class="comment-author">John Doe</div>
-                                    <div class="comment-time">3 hours ago</div>
-                                </div>
-                                <div class="comment-text">
-                                    Do you think digital art and AI-generated art serve the same purposes as traditional art forms?
-                                </div>
-                                <div class="comment-actions">
-                                    <span class="comment-action">Like</span>
-                                    <span class="comment-action">Reply</span>
-                                    <span class="comment-action">15</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="replies">
-                            <div class="reply">
-                                <div class="reply-avatar">
-                                    AP
-                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                </div>
-                                <div class="reply-content">
-                                    <div class="reply-header">
-                                        <div class="reply-author">Art Professor</div>
-                                        <div class="reply-time">2 hours ago</div>
-                                    </div>
-                                    <div class="reply-text">
-                                        Interesting question! While the medium changes, the fundamental purposes remain. Digital and AI art still communicate ideas, evoke emotions, and reflect our current cultural moment. The tools may be new, but the human impulse to create persists.
-                                    </div>
-                                    <div class="reply-actions">
-                                        <span class="reply-action">Like</span>
-                                        <span class="reply-action">Reply</span>
-                                        <span class="reply-action">9</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reply">
-                                <div class="reply-avatar">
-                                    CP
-                                    <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                                </div>
-                                <div class="reply-content">
-                                    <div class="reply-header">
-                                        <div class="reply-author">Curious Philosopher</div>
-                                        <div class="reply-time">1 hour ago</div>
-                                    </div>
-                                    <div class="reply-text">
-                                        But doesn't AI art challenge our very definition of creativity? If a machine generates the art, is it still an authentic human expression?
-                                    </div>
-                                    <div class="reply-actions">
-                                        <span class="reply-action">Like</span>
-                                        <span class="reply-action">Reply</span>
-                                        <span class="reply-action">6</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="view-replies">View 3 more comments</div>
-
-                        <div class="add-comment">
-                            <input type="text" class="comment-input" placeholder="Add a comment...">
-                            <button class="comment-btn">Comment</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="view-more">View 216 more answers</div>
             </div>
         </div>
+
+        <div class="answer-content">
+            <div class="paragraph">Article I, Section 10 explicitly addresses this balance:</div>
+
+            <div class="paragraph">"The right of the people to keep and bear small arms... shall not be infringed"</div>
+
+            <div class="paragraph">AND "The right to bear arms shall not be construed to prohibit... regulations... to ensure public safety"</div>
+
+            <div class="paragraph">"Such regulations shall be presumed constitutional if they are narrowly tailored to address documented public safety risks and do not function as a de facto blanket ban"</div>
+        </div>
+
+        <div class="answer-content">
+            <div class="paragraph"><strong>Key Constitutional Principles:</strong></div>
+            
+            <div class="paragraph">1. <strong>Regulation ≠ Ban:</strong> The Constitution distinguishes between regulating *how* firearms are used and banning *ownership*</div>
+            
+            <div class="paragraph">2. <strong>Public Safety Balance:</strong> Rights exist alongside public safety responsibilities</div>
+            
+            <div class="paragraph">3. <strong>Narrow Tailoring:</strong> Regulations must be specific to actual risks, not blanket prohibitions</div>
+            
+            <div class="paragraph">4. <strong>No De Facto Bans:</strong> Regulations cannot function as backdoor total bans</div>
+            
+            <div class="paragraph">Reasonable safety regulations on *discharge* protect everyone's rights - including the right to domestic security and peace in one's home. The constitutional test is whether regulations are narrowly tailored to real safety concerns, which these are.</div>
+            
+            <div class="paragraph"><strong>Constitutional Tests for Regulations:</strong></div>
+            
+            <div class="paragraph">Valid regulations must meet:</div>
+            
+            <div class="paragraph">1. <strong>Narrow Tailoring:</strong> Address specific, documented safety risks</div>
+            
+            <div class="paragraph">2. <strong>Non-Prohibitive:</strong> Cannot function as de facto total ban</div>
+            
+            <div class="paragraph">3. <strong>Public Safety Basis:</strong> Grounded in actual risk evidence</div>
+            
+            <div class="paragraph">4. <strong>Rights Preservation:</strong> Maintain core right to self-defense</div>
+            
+            <div class="paragraph">The regulations you're referring to are specifically about discharge in residential areas - not about ownership, possession, or self-defense use. You can still own firearms, carry them, and use them for self-defense. The regulations simply ensure that recreational shooting doesn't endanger your neighbors.</div>
+        </div>
+        <div class="answer-actions">
+            <div class="answer-action">
+                <i class="fa fa-upvote"></i> 1.2K
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-downvote"></i>
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-comment"></i> 87
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+            <!-- Comment 1 - RightsDefender1776 -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    RD
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">RightsDefender1776</div>
+                        <div class="comment-time">3 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        So you're saying my neighbors get to decide when I can exercise my constitutional rights? That's exactly the tyranny I'm talking about! If I need to get permission from everyone within 500 feet to discharge my firearm, that's effectively a ban. What if one anti-gun neighbor decides to never give permission? My right becomes meaningless.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">24</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - ConstitutionalAnalyst -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CA
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">ConstitutionalAnalyst</div>
+                            <div class="reply-time">2 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            No, your neighbors don't get to decide - the Constitution does. Article I, Section 10 balances YOUR right to bear arms with YOUR NEIGHBORS' right to domestic security and peace. This isn't about permission - it's about preventing stray bullets in residential areas. The regulations establish safety standards, not popularity contests.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">18</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - Legal Scholar -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        LS
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Legal Scholar</div>
+                            <div class="reply-time">1 hour ago</div>
+                        </div>
+                        <div class="reply-text">
+                            Exactly. The "narrow tailoring" test means regulations must address specific safety risks. Discharge regulations prevent the exact scenario where your recreational shooting endangers others. Self-defense use is completely protected - these regulations only apply to practice and recreational shooting.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 3 - RightsDefender1776 -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        RD
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">RightsDefender1776</div>
+                            <div class="reply-time">45 minutes ago</div>
+                        </div>
+                        <div class="reply-text">
+                            But how do you define "recreational" vs "self-defense" shooting? If I need to practice to maintain proficiency for self-defense, that's not recreational - that's preparation for exercising my fundamental right. Your distinction creates a loophole that lets bureaucrats decide what constitutes "valid" firearm use.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment 2 - Firearms Instructor -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    FP
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">Firearms Instructor</div>
+                        <div class="comment-time">4 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        As a firearms instructor, I actually support these regulations. We teach responsible discharge practices. Shooting in residential areas without proper backstops is unsafe and gives responsible gun owners a bad name. There are plenty of safe alternatives - shooting ranges, rural properties, etc. Responsible gun ownership means considering public safety.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">32</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - RightsDefender1776 -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        RD
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">RightsDefender1776</div>
+                            <div class="reply-time">3 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            So now I have to pay range fees and drive 45 minutes to exercise my constitutional right? That's creating a financial and practical barrier that disproportionately affects lower-income citizens. The right to bear arms shouldn't come with a membership fee.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">15</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - Firearms Instructor -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        FP
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Firearms Instructor</div>
+                            <div class="reply-time">2 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            Many communities have public ranges with minimal fees, and there are often free public lands available for shooting. The cost of responsible gun ownership includes safe practice facilities. Would you argue that driver's licenses and car insurance are unconstitutional barriers to transportation rights?
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment 3 - Constitutional Purist -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    CP
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">Constitutional Purist</div>
+                        <div class="comment-time">3 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        But where do we draw the line? This seems like a slippery slope. Today it's discharge regulations, tomorrow they'll use the same logic to ban ownership entirely. Once you accept the principle that rights can be regulated for "public safety," there's no limit to what government can prohibit.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - ConstitutionalAnalyst -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CA
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">ConstitutionalAnalyst</div>
+                            <div class="reply-time">2 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            The Constitution explicitly prevents that slope. Article I, Section 10 states regulations cannot function as a "de facto blanket ban." Any attempt to ban ownership would be unconstitutional on its face. The framework is designed to prevent exactly what you're worried about - it establishes clear boundaries that protect the core right while allowing reasonable safety measures.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">21</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - RightsDefender1776 -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        RD
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">RightsDefender1776</div>
+                            <div class="reply-time">1 hour ago</div>
+                        </div>
+                        <div class="reply-text">
+                            But "de facto blanket ban" is subjective! If they make the regulations burdensome enough, it has the same effect as a ban. Requiring 500-foot safety radii in dense neighborhoods IS a de facto ban for most urban residents. They've found a clever way to ban guns in cities without saying they're banning guns.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">14</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 3 - Legal Scholar -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        LS
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Legal Scholar</div>
+                            <div class="reply-time">45 minutes ago</div>
+                        </div>
+                        <div class="reply-text">
+                            That's why we have judicial review. If regulations become so burdensome that they effectively eliminate the right, courts can strike them down. The Constitution provides checks and balances - it's not just legislative discretion.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment 4 - Neighbor Emily -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    NE
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">Neighbor Emily</div>
+                        <div class="comment-time">5 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        Thank you for this explanation! As someone who lives next to someone who shoots in their backyard, this constitutional balance makes perfect sense. My right to domestic privacy and safety shouldn't be violated by recreational shooting. I shouldn't have to worry about stray bullets when I'm gardening or my kids are playing in the yard. This isn't about taking away rights - it's about balancing competing rights fairly.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">28</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - RightsDefender1776 -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        RD
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">RightsDefender1776</div>
+                            <div class="reply-time">4 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            So your comfort trumps my constitutional rights? What about my right to protect my family? What about my right to practice with my firearms so I can actually use them effectively if needed? Your feelings don't override the Constitution.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - Neighbor Emily -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        NE
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Neighbor Emily</div>
+                            <div class="reply-time">3 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            It's not about "comfort" - it's about safety. Stray bullets kill people. My children's safety isn't a "feeling." The Constitution recognizes that rights have limits when they endanger others. You can practice at a range - you don't need to do it where it puts my family at risk.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">18</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 3 - ConstitutionalAnalyst -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CA
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">ConstitutionalAnalyst</div>
+                            <div class="reply-time">2 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            This gets to the heart of the constitutional balance. The Framers understood that no right is absolute. Your right to swing your fist ends where my nose begins. Similarly, your right to discharge firearms ends where public safety begins. The Constitution protects BOTH sets of rights.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">22</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment 5 - Urban Resident -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    UR
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">Urban Resident</div>
+                        <div class="comment-time">2 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        As someone living in a dense urban area, I'm concerned these regulations effectively ban firearm practice for city dwellers. There are no shooting ranges within reasonable distance, and the safety radius requirements make discharge impossible anywhere in the city. Isn't this disproportionately affecting urban residents' rights?
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">11</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - RightsDefender1776 -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        RD
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">RightsDefender1776</div>
+                            <div class="reply-time">1 hour ago</div>
+                        </div>
+                        <div class="reply-text">
+                            EXACTLY! This is the point I've been trying to make. These regulations are designed to make firearm ownership impractical in cities. It's a backdoor ban on urban gun ownership. They're using "safety" as an excuse to accomplish what they can't do directly.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">9</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - ConstitutionalAnalyst -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CA
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">ConstitutionalAnalyst</div>
+                            <div class="reply-time">45 minutes ago</div>
+                        </div>
+                        <div class="reply-text">
+                            As long as gun owners are not prevented from using their firearms in self-defense, the city's regulations should be constitutional. 
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">13</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-replies">View 12 more comments</div>
+
+            <div class="add-comment">
+                <input type="text" class="comment-input" placeholder="Add a comment...">
+                <button class="comment-btn">Comment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Answer 2 - Thomas Economist -->
+    <div class="answer">
+        <div class="answer-header">
+            <div class="answer-avatar">TE</div>
+            <div class="answer-author">Thomas Economist</div>
+            <div class="answer-meta">Economic Analyst · 845 upvotes</div>
+        </div>
+        <div class="answer-content">
+            While the constitutional debate is important, we should also consider the economic implications of these regulations. The firearm industry contributes significantly to our economy, and reasonable regulations that maintain public confidence in gun ownership can actually support industry growth.
+        </div>
+
+        <!-- Answer Photo -->
+        <div class="answer-photos">
+            <div class="answer-photo">
+                <div class="photo-placeholder">
+                    <i class="fa fa-image"></i>
+                    <span>Economic Impact</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="answer-content">
+            <div class="paragraph"><strong>Economic Benefits of Balanced Regulation:</strong></div>
+            
+            <div class="paragraph">1. <strong>Industry Stability:</strong> Reasonable safety regulations reduce public fear and opposition, creating a more stable environment for firearm businesses</div>
+            
+            <div class="paragraph">2. <strong>Range Development:</strong> Regulations encourage investment in safe, professional shooting facilities that create jobs</div>
+            
+            <div class="paragraph">3. <strong>Public Confidence:</strong> When people feel safe, they're more likely to support firearm ownership and related businesses</div>
+            
+            <div class="paragraph">4. <strong>Liability Reduction:</strong> Clear safety standards reduce legal uncertainty for manufacturers and owners</div>
+            
+            <div class="paragraph">The key is finding the balance where regulations protect public safety without unduly burdening the exercise of constitutional rights. This creates the optimal environment for both rights protection and economic growth.</div>
+        </div>
+        <div class="answer-actions">
+            <div class="answer-action">
+                <i class="fa fa-upvote"></i> 845
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-downvote"></i>
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-comment"></i> 42
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+            <div class="comment">
+                <div class="comment-avatar">
+                    RD
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">RightsDefender1776</div>
+                        <div class="comment-time">2 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        So now we're supposed to accept constitutional infringements because they're good for business? The Second Amendment isn't about economics - it's about fundamental rights. If we start weighing rights against economic considerations, we've already lost.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="replies">
+                <div class="reply">
+                    <div class="reply-avatar">
+                        TE
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Thomas Economist</div>
+                            <div class="reply-time">1 hour ago</div>
+                        </div>
+                        <div class="reply-text">
+                            I'm not suggesting economics should override rights. I'm pointing out that well-crafted regulations can actually strengthen the exercise of rights by creating public support and reducing opposition. The most secure rights are those the public broadly accepts and supports.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-comment">
+                <input type="text" class="comment-input" placeholder="Add a comment...">
+                <button class="comment-btn">Comment</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-more">Load 20 more answers</div>
+</div> 
+
+<!-- Question 2 -->
+<div class="question-card" onclick="toggleQuestion('question2')" tabindex="0">
+    <div class="question-header">
+        <div class="question-avatar">FP</div>
+        <div class="question-info">
+            <div class="question-author">FamilyValuesGuardian</div>
+            <div class="question-meta">Asked 1 day ago · Updated 3 hours ago</div>
+        </div>
+        <div class="expand-indicator">▼</div>
+    </div>
+    <div class="question-title">
+        Does the SDR Constitution really let 16-year-olds divorce their parents over simple disagreements?
+    </div>
+    <div class="question-content">
+        I've read Article I, Section 15 and it's terrifying. It says any 16-year-old can petition to be "emancipated" from their parents. This is state-sponsored family destruction! All a teenager has to do is claim they feel "unsafe" and they get a state lawyer to help them sue their own family. This will destroy the family unit over normal parenting and typical teenage rebellion.
+    </div>
+    <div class="question-tags">
+        <div class="tag">#FamilyRights</div>
+        <div class="tag">#ParentalAuthority</div>
+        <div class="tag">#Constitution</div>
+        <div class="tag">#ChildWelfare</div>
+    </div>
+    <div class="question-actions">
+        <div class="action-btn">
+            <i class="fa fa-upvote"></i> 1.8K
+        </div>
+        <div class="action-btn">
+            <i class="fa fa-downvote"></i>
+        </div>
+        <div class="action-btn">
+            <i class="fa fa-comment"></i> 311
+        </div>
+        <div class="action-btn">
+            <i class="fa fa-share"></i> Share
+        </div>
+        <div class="action-btn">
+            <i class="fa fa-bookmark"></i> Save
+        </div>
+        <div class="action-btn">
+            <i class="fa fa-more"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Answers Section for Question 2 -->
+<div class="answers-section" id="answers-question2">
+    <div class="answers-count">311 Answers</div>
+    
+    <!-- Answer 1 - Child Protection Analyst -->
+    <div class="answer">
+        <div class="answer-header">
+            <div class="answer-avatar">CA</div>
+            <div class="answer-author">ChildProtectionAnalyst</div>
+            <div class="answer-meta">Child Welfare Specialist · 1.4K upvotes</div>
+        </div>
+        <div class="answer-content">
+            You are significantly misrepresenting both the purpose and the multiple legal safeguards of this provision. Let's examine the actual constitutional text and its protective framework.
+        </div>
+
+        <div class="answer-content">
+            <div class="paragraph"><strong>Article I, Section 15</strong> establishes a carefully limited emancipation process for minors facing <strong>genuine safety threats</strong>, not "simple disagreements."</div>
+
+            <div class="paragraph"><strong>The High Legal Threshold:</strong></div>
+            <div class="paragraph">- Requires <strong>"demonstrable and severe threat to physical safety or psychological integrity"</strong></div>
+            <div class="paragraph">- Demands <strong>"clear and convincing evidence"</strong> presented to a court</div>
+            <div class="paragraph">- Limited to specific grounds: <strong>abuse, neglect, exposure to substance abuse, violence, or forced marriage</strong></div>
+            <div class="paragraph">- Requires <strong>judicial oversight</strong> and state-provided attorney to ensure due process</div>
+
+            <div class="paragraph"><strong>Key Constitutional Safeguards:</strong></div>
+            <div class="paragraph">1. <strong>Limited Scope:</strong> Emancipation only establishes "separate, safe residence" - not full adult rights</div>
+            <div class="paragraph">2. <strong>Educational Requirements:</strong> Emancipated minors remain subject to compulsory education laws</div>
+            <div class="paragraph">3. <strong>Judicial Review:</strong> Courts prioritize child welfare over teen preferences</div>
+            <div class="paragraph">4. <strong>High Evidence Standard:</strong> "Clear and convincing evidence" required, not mere feelings</div>
+
+            <div class="paragraph">This isn't about "normal parenting disagreements" - it's about protecting children from <strong>severe harm</strong> when family systems fail. The constitutional framework prioritizes family preservation while providing emergency protection when necessary.</div>
+        </div>
+        <div class="answer-actions">
+            <div class="answer-action">
+                <i class="fa fa-upvote"></i> 1.4K
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-downvote"></i>
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-comment"></i> 156
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+            <!-- Comment 1 - FamilyValuesGuardian -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    FG
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">FamilyValuesGuardian</div>
+                        <div class="comment-time">5 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        "Psychological integrity" is incredibly vague! A teenager who doesn't like their parents' rules could claim their "psychological integrity" is threatened by being told to do homework or clean their room. This creates a legal weapon for rebellious teens to use against good parents.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">42</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - ChildProtectionAnalyst -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CA
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">ChildProtectionAnalyst</div>
+                            <div class="reply-time">4 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            The legal standard of "clear and convincing evidence" prevents exactly this scenario. A teen saying "my parents are mean" doesn't meet the threshold. We're talking about documented abuse, medical evidence of harm, witness testimony, or police reports - not homework disputes.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">38</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - Family Court Lawyer -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        FL
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Family Court Lawyer</div>
+                            <div class="reply-time">3 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            As someone who practices in this area, I can confirm that judges are extremely skeptical of frivolous claims. The "clear and convincing" standard is one of the highest in civil law. Normal parenting doesn't come close to meeting it.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">29</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment 2 - Concerned Parent -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    CP
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">Concerned Parent</div>
+                        <div class="comment-time">6 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        But why 16? That seems so young. Shouldn't the state focus on helping families reconcile rather than giving children an escape hatch? This feels like it's encouraging family breakdown rather than repair.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">35</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - ChildProtectionAnalyst -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CA
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">ChildProtectionAnalyst</div>
+                            <div class="reply-time">5 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            The age 16 recognizes that some dangers can't wait. For a minor facing forced marriage, severe abuse, or being trafficked by their family, waiting until 18 could mean irreversible harm. This is a last resort for extreme cases, not a first option for family counseling.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">41</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - Former Foster Youth -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        FY
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Former Foster Youth</div>
+                            <div class="reply-time">4 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            As someone who aged out of the system, I wish this existed when I was 16. I was stuck in a dangerous home because the state's only option was to remove me completely or leave me in danger. This provides a middle path for older teens who can partially care for themselves but need escape from abuse.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">67</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment 3 - FamilyValuesGuardian -->
+            <div class="comment">
+                <div class="comment-avatar">
+                    FG
+                </div>
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <div class="comment-author">FamilyValuesGuardian</div>
+                        <div class="comment-time">3 hours ago</div>
+                    </div>
+                    <div class="comment-text">
+                        You're missing my point. Even if the standard is high, the mere existence of this provision changes the parent-child dynamic. It tells teenagers that if they don't like their parents' rules, they have a nuclear option. That undermines parental authority fundamentally.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">Like</span>
+                        <span class="comment-action">Reply</span>
+                        <span class="comment-action">28</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replies -->
+            <div class="replies">
+                <!-- Reply 1 - ChildProtectionAnalyst -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CA
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">ChildProtectionAnalyst</div>
+                            <div class="reply-time">2 hours ago</div>
+                        </div>
+                        <div class="reply-text">
+                            Parental authority shouldn't be absolute when it becomes dangerous. The constitution balances parental rights with child safety. In healthy families, this provision is irrelevant. In abusive families, it's lifesaving. The "nuclear option" only exists because some parents have already launched the first strike against their children's safety.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">45</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reply 2 - Constitutional Scholar -->
+                <div class="reply">
+                    <div class="reply-avatar">
+                        CS
+                    </div>
+                    <div class="reply-content">
+                        <div class="reply-header">
+                            <div class="reply-author">Constitutional Scholar</div>
+                            <div class="reply-time">1 hour ago</div>
+                        </div>
+                        <div class="reply-text">
+                            This reflects the SDR's foundational principle that rights must be practical, not just theoretical. A minor's right to bodily autonomy (Article I, Section 6) is meaningless if they're trapped in an abusive home. Emancipation makes constitutional rights enforceable for all citizens.
+                        </div>
+                        <div class="reply-actions">
+                            <span class="reply-action">Like</span>
+                            <span class="reply-action">Reply</span>
+                            <span class="reply-action">33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-replies">View 8 more comments</div>
+
+            <div class="add-comment">
+                <input type="text" class="comment-input" placeholder="Add a comment...">
+                <button class="comment-btn">Comment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Answer 2 - Social Worker -->
+    <div class="answer">
+        <div class="answer-header">
+            <div class="answer-avatar">SW</div>
+            <div class="answer-author">Social Worker</div>
+            <div class="answer-meta">Child Protection Services · 892 upvotes</div>
+        </div>
+        <div class="answer-content">
+            In practice, this provision is used extremely rarely and only in the most severe cases. Last year, out of thousands of child protection cases, only 47 emancipation petitions were granted nationwide. The typical case involves chronic sexual abuse, forced prostitution, or life-threatening physical violence.
+        </div>
+
+        <div class="answer-content">
+            <div class="paragraph"><strong>Real-World Applications:</strong></div>
+            
+            <div class="paragraph">- <strong>Forced Marriage Escape:</strong> Minors facing arranged marriages to much older partners</div>
+            
+            <div class="paragraph">- <strong>Religious Extremism:</strong> Teens escaping families that practice dangerous rituals or deny medical care</div>
+            
+            <div class="paragraph">- <strong>Human Trafficking:</strong> Minors being exploited by family members</div>
+            
+            <div class="paragraph">- <strong>Severe Abuse:</strong> Cases where traditional foster care would be insufficient protection</div>
+            
+            <div class="paragraph">This isn't about curfews or phone privileges. It's about saving lives in situations where the family home has become the most dangerous place for a child to be.</div>
+        </div>
+        <div class="answer-actions">
+            <div class="answer-action">
+                <i class="fa fa-upvote"></i> 892
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-downvote"></i>
+            </div>
+            <div class="answer-action">
+                <i class="fa fa-comment"></i> 74
+            </div>
+        </div>
+    </div>
+
+    <div class="view-more">Load 15 more answers</div>
+</div>
 
         <!-- Right Sidebar -->
         <div class="right-sidebar">
@@ -1502,76 +2148,109 @@
                     <i class="fa fa-more"></i>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">
-                        TS
-                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                    </div>
+                    <div class="space-avatar">TS</div>
                     <div class="space-name">Technology & Science</div>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">
-                        PH
-                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                    </div>
+                    <div class="space-avatar">PH</div>
                     <div class="space-name">Philosophy & Ethics</div>
                 </div>
                 <div class="space">
-                    <div class="space-avatar">
-                        HI
-                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                    </div>
+                    <div class="space-avatar">HI</div>
                     <div class="space-name">History & Archaeology</div>
                 </div>
-                <div class="space">
-                    <div class="space-avatar">
-                        PS
-                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                    </div>
-                    <div class="space-name">Psychology & Mind</div>
-                </div>
-                <div class="space">
-                    <div class="space-avatar">
-                        EC
-                        <!-- <img src="./profile_pictures/" class="avatar-img" /> -->
-                    </div>
-                    <div class="space-name">Economics & Finance</div>
-                </div>
-            </div>
-
-            <div class="sidebar-card">
-                <div class="sidebar-title">Trending Questions</div>
-                <div class="topic-item">What's the most surprising scientific discovery of the last decade?</div>
-                <div class="topic-item">How will AI change education in the next 5 years?</div>
-                <div class="topic-item">What ethical questions does genetic engineering raise?</div>
-                <div class="topic-item">Why do some countries develop faster than others?</div>
-                <div class="topic-item">What makes a great leader in times of crisis?</div>
             </div>
         </div>
     </div>
 
     <script>
+        let activeQuestion = null;
+
         function showSection(section) {
-            // Hide all sections
             const panes = document.querySelectorAll('.tab-pane');
             panes.forEach(pane => pane.classList.remove('active'));
-
-            // Show selected section
             document.getElementById(section + '-section').classList.add('active');
+            
+            // Close any open questions when switching sections
+            if (activeQuestion) {
+                closeQuestion(activeQuestion);
+            }
         }
 
-        function showQuestion(questionId) {
-            // Hide all sections
-            const panes = document.querySelectorAll('.tab-pane');
-            panes.forEach(pane => pane.classList.remove('active'));
-
-            // Show selected question
-            document.getElementById(questionId).classList.add('active');
+        function toggleQuestion(questionId) {
+            const questionCard = event.currentTarget;
+            const answersSection = document.getElementById(`answers-${questionId}`);
+            
+            if (activeQuestion === questionId) {
+                // Clicking the same question - close it
+                closeQuestion(questionId);
+            } else {
+                // Clicking a different question - close current and open new
+                if (activeQuestion) {
+                    closeQuestion(activeQuestion);
+                }
+                openQuestion(questionId);
+            }
         }
 
-        // Initialize with home section active
+        function openQuestion(questionId) {
+            const questionCard = document.querySelector(`[onclick="toggleQuestion('${questionId}')"]`);
+            const answersSection = document.getElementById(`answers-${questionId}`);
+            
+            questionCard.classList.add('expanded');
+            answersSection.classList.add('expanded');
+            activeQuestion = questionId;
+            
+            // Smooth scroll to ensure question is visible
+            questionCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function closeQuestion(questionId) {
+            const questionCard = document.querySelector(`[onclick="toggleQuestion('${questionId}')"]`);
+            const answersSection = document.getElementById(`answers-${questionId}`);
+            
+            questionCard.classList.remove('expanded');
+            answersSection.classList.remove('expanded');
+            activeQuestion = null;
+        }
+
+        // Keyboard navigation support
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && activeQuestion) {
+                closeQuestion(activeQuestion);
+            }
+        });
+
+        // Close questions when clicking outside
+        document.addEventListener('click', function(event) {
+            if (activeQuestion && !event.target.closest('.question-card') && !event.target.closest('.answers-section')) {
+                closeQuestion(activeQuestion);
+            }
+        });
+
+        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             showSection('home');
+            
+            // Add loading state simulation (remove in production)
+            document.querySelectorAll('.view-more').forEach(button => {
+                button.addEventListener('click', function() {
+                    const originalText = this.textContent;
+                    this.textContent = 'Loading...';
+                    this.style.opacity = '0.7';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.opacity = '1';
+                    }, 1500);
+                });
+            });
         });
+
+        // Placeholder function for ask modal
+        function showAskModal() {
+            alert('Ask Question feature would open a modal here!');
+        }
     </script>
 </body>
 </html>
