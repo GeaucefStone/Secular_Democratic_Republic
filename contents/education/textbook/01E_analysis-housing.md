@@ -6,11 +6,11 @@ The SDR Constitution establishes housing not as a market commodity, but as a pub
 
 ### Foundational Principles:
 
-- **Housing as a Right:** Access to adequate housing is a fundamental human right (Article III, Section 1)
+ - **Housing as a Right:** Access to adequate housing is a fundamental human right (Article III, Section 1)
 
-- **Land as Common Wealth:** All land is held in common by the people, with transferable use rights (Article III, Section 2)
+ - **Land as Common Wealth:** All land is held in common by the people, with transferable use rights (Article III, Section 2)
 
-- **Decommodification:** The separation of housing's use-value from its exchange-value
+ - **Decommodification:** The separation of housing's use-value from its exchange-value
 
 ### Operational Mechanics:
 
@@ -181,4 +181,4 @@ While requiring significant political will to implement, the system offers a mat
 
 ---
 
-*Source: SDR Constitution, Articles I, III, XII; Housing Trust Implementation Reports 5-12; Comparative Economic Analysis, Historian Branch (Year 15 Post-Ratification)*
+_Source: SDR Constitution, Articles I, III, XII; Housing Trust Implementation Reports 5-12; Comparative Economic Analysis, Historian Branch (Year 15 Post-Ratification)_

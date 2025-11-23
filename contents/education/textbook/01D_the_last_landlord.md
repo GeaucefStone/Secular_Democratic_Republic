@@ -5,6 +5,7 @@
 The SDR Constitution's housing policy operates on a critical distinction that forms the bedrock of its economic framework: the difference between **property for use** and **property for speculative gain**.
 
 ### The Core Test
+
 The property standard does not ask "What is the owner's nominal title?" but rather **"Is this resource fulfilling its social function of providing shelter?"**
 
 ## Case Study: The Reversion of 123 Main Street
@@ -76,7 +77,9 @@ The reversion rests on three pillars of constitutional logic:
 ### The Homeowner (Protected)
 
  - **Profile**: Lives in their property or uses it as a primary residence
+
  - **Assessment**: The property fulfills its core shelter function
+
  - **Outcome**: Secure in their possession; not subject to the five-year rule
 
 ### The Landlord (Restricted)
