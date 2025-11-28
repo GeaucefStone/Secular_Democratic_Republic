@@ -744,6 +744,33 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 > **Framer's Justification:** *"This provision ensures that those who chose to live under the old system of private property are held to its final responsibility. It converts the relics of a bygone era into healing for the victims of violence, while absolutely protecting the family's home and essential means of living. The Doctrine of Substance Over Form stands as a sentinel against evasion, ensuring that the aggressor's debt to society cannot be hidden behind legal artifice. The state bears all costs of this justice, ensuring no victim faces financial barriers to restitution."*
 
+### Section 18: Right to Compensation for Property Destruction During State Operations
+
+1. **The Principle of State Responsibility:** The state bears absolute financial responsibility for any and all damage to property resulting from the execution of its authority, including but not limited to the service of search warrants, arrest warrants, or other court orders.
+
+2. **Tier 1: Compensation for Private Homeowners:** 
+
+ - If a lawfully owned private residence is damaged or destroyed during the execution of a state operation, the owner shall be entitled to full and immediate compensation, regardless of the operation's outcome.
+
+ - **Standard for Compensation:** Compensation shall be based on the full replacement cost of the dwelling and the fair market value of all destroyed personal property within. The burden of proving the value of lost property shall be on the state, which must err in favor of the homeowner in any case of ambiguity.
+
+ - **Expedited Process:** A claim under this section shall be processed within 90 days. If the state fails to issue payment within this period, the compensation shall automatically accrue interest at a rate of 10% per month.
+
+3. **Tier 2: Redress for Tenants of Public or Private Housing:** 
+
+ - If a residence held by the Public Housing Trust or a grandfathered private landlord is damaged or destroyed during a state operation, the tenant(s) residing therein shall have a direct cause of action against the state.
+
+ - **Guaranteed Re-housing:** The state shall have an immediate, non-delegable duty to provide the tenant with equivalent alternative housing through the Public Housing Trust at no cost.
+
+ - **Right to Sue for Damages:** In addition to re-housing, the tenant shall be entitled to sue the state for significant damages, including but not limited to:
+  * Compensation for all destroyed personal property.
+  * Compensation for emotional distress, dislocation, and violation of domestic privacy.
+  * Any additional costs incurred as a result of the displacement.
+
+4. **Source of Funds:** All compensation and damages paid under this section shall be drawn from the budget of the law enforcement agency responsible for the operation. Under no circumstances shall funds be appropriated from the Public Housing Trust or public education budgets established under Article III.
+
+5. **Personal Liability for Gross Negligence:** If a court finds that the property destruction resulted from gross negligence, reckless disregard for procedure, or intentional misconduct by an officer or commander, that individual shall be personally liable for a portion of the damages and subject to professional discipline, including dismissal and decertification.
+
 ---
 
 ## ARTICLE III: HOUSING & ECONOMIC RIGHTS
@@ -906,8 +933,6 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
  - Veto regulations and administration rules by 60% vote.
 
-3. Members must complete civics training before being permitted to sign up to be drafted by the Citizen Branch. 
-
 ### Section 6: The Historian Branch
 
 1. The Historian Branch shall be a 500-member Congress of History. Its members shall be selected by annual sortition from the national roster of all certified historians.
@@ -992,41 +1017,37 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 ### Section 10: Limitation on Repeated Sortition Service
 
-1. **Preamble and Rationale:**
+1. **Preamble and Rationale:** To preserve the integrity of sortition as a true reflection of the common citizen, to prevent the consolidation of experiential advantage, and to distribute the burden and privilege of civic service as widely as possible among the populace, the probability of a citizen being selected for service shall diminish with each prior term of service.
 
-To preserve the integrity of sortition as a true reflection of the common citizen, to prevent the consolidation of experiential advantage, and to distribute the burden and privilege of civic service as widely as possible among the populace, the chances of a citizen being selected again shall be much lower each time. 
-
-2. **The Permanent Ineligibility Registry:**
+2. **The Weighted Sortition:** 
 
  - A secure, automated, and publicly auditable National Civic Service Registry shall be maintained by the National Electoral Commission.
 
- - Upon completion of a term in any sortition-based branch (Citizen's, Worker's, or Historian Branch), a citizen's unique identifier shall be permanently added to the Ineligible for Future Sortition list.
+ - This registry shall track all citizens and assign them a service weight based on their prior service:
+  * **Weight 1 (Base Weight):** Citizens with zero prior terms of service.
+  * **Weight 0.5 (Half Weight):**  Citizens with one prior term of service.
+  * **Weight 0.25 (Quarter Weight):** Citizens with two prior terms of service.
+  * **Weight 0 (Zero Weight):** Citizens with three or more prior terms of service shall be permanently ineligible for further sortition.
 
- - The registry shall only record eligibility status (eligible/ineligible) and the branch served; it shall not contain performance reviews, voting records, or personal opinions from the service period.
+3. **The Sortition Process:**
 
-3. **Scope of the Limitation:**
+ - The annual sortition for the Citizen's, Worker's, and Historian's Branches shall be conducted by randomly selecting names from the national roster, with each citizen's chance of selection being proportional to their assigned service weight.
 
- - The one-service limit applies across all sortition-based branches. A citizen who serves in the Citizen's Assembly is thereby rendered ineligible for future sortition to the Worker's Branch, Historian Branch, or another term in the Citizen's Assembly.
+ - This system ensures that while a novice citizen is most likely to be chosen, a citizen with valuable prior experience remains in the pool, albeit with a significantly reduced chance of selection.
 
- - This limitation applies only to sortition-based federal branches. It does not affect a citizen's right to:
-  * Vote in all elections.
-  * Run for elected office in the Legislative or Executive branches.
-  * Serve in appointed roles or as a professional civil servant.
-  * Be selected for local-level sortition bodies, if such exist.
+4. **Scope and Application:**
 
-4. **Exceptions and Safeguards:**
+ - This diminishing probability applies across all sortition-based branches. A term served in the Citizen's Assembly will reduce a citizen's weight for future sortition to the Worker's Branch and Historian Branch, and vice versa.
 
- - **Medical Hardship:** A citizen selected who is medically certified as physically or psychologically unfit for service before the commencement of their term shall be excused and not added to the registry. Their slot shall be filled by the next randomly selected eligible citizen.
+ - This limitation applies only to sortition-based federal branches. It does not affect a citizen's right to vote, run for elected office, serve in appointed roles, or participate in local-level sortition bodies.
 
- - **Verification and Appeal:** A citizen may formally appeal their inclusion in the registry only on the grounds of mistaken identity. The burden of proof for such an appeal shall be on the citizen.
+5. **Transparency and Verification:**
 
- - **Transparency:** The total number of citizens in the ineligible registry shall be public information, updated annually, to provide a measure of the system's reach.
+ - The algorithm and source code for the weighted sortition process shall be public and open to audit.
 
-5. **Implementation Clause:**
+ - A citizen may formally appeal their listed service count only on the grounds of mistaken identity.
 
-- This section shall take effect one year after ratification. The National Civic Service Registry shall be established during this period, initially populated with records of all citizens who have previously served in a sortition-based branch since the Constitution's ratification.
-
-> **Framer's Justification (for the record):** "The power of sortition is its power to disrupt. It breaks professional political classes, shatters careerist thinking, and forces the state to listen to the raw, unvarnished voice of its people. But any system, left to its own devices, will create a new elite. If the same person can be selected multiple times, we risk creating a 'civic service elite'—people who know the procedures, know the levers of power, and gain an un-democratic advantage over their truly novice peers. This amendment ensures the 'disruption' of sortition is permanent and widely distributed. It guarantees that the halls of power are forever filled with true amateurs, ensuring the government never loses touch with the reality of the governed. It is the final safeguard against the system becoming what it was designed to destroy."
+> **Framer's Justification:** _"The power of sortition is its power to disrupt professional political classes. But experience, in moderation, also has value. This system guarantees that our halls of power are forever filled primarily with true amateurs, ensuring the government never loses touch with the reality of the governed. However, it also allows for the rare return of a seasoned citizen, whose hard-won knowledge can guide their novice peers without dominating them. It strikes a balance between the wisdom of the crowd and the wisdom of experience."_
 
 ---
 
@@ -1422,11 +1443,13 @@ The Historian Court's job is to ensure the integrity of historical fact. Its pow
 
 2. Mandatory Protocol for Officials: Upon being offered a bribe, a public official is legally obligated to adhere to the following procedure:
 
- - **Immediate Securement and Notification:** The official must promptly secure the item of value and report the incident to a designated independent anti-corruption authority.
+ - **Covert Acceptance & Immediate Notification:** The official's primary duty is to secure the evidence and their own safety. They may, without declaring their intent to the briber, take possession of the item and conclude the interaction in a manner that does not raise suspicion.
 
- - **Declarative Acceptance:** The official must formally notify the briber, in a manner documented by authorities (e.g., recorded communication), that the payment is being accepted as evidence pursuant to this constitutional provision and will be retained by the official as a lawful penalty against the briber.
+ - **Mandatory Secure Alert:** Immediately upon the briber's departure, and in no case longer than five minutes thereafter, the official must activate a secure, silent alarm or use a pre-authorized digital alert system to a designated independent anti-corruption authority. This alert must be automated and signal that a "Poisoned Chalice" procedure has been initiated.
 
- - Full Cooperation: The official must provide complete and truthful cooperation in the subsequent investigation and legal proceedings against the briber.
+ - **Formal Declaration & Recording:** Upon activation, the official is required to make a formal, time-stamped audio or video recording. This recording shall serve as the "Declarative Acceptance," stating the official's name, the date and time, a description of the briber, and a statement that the item is being secured as evidence under Article XII, Section 3. This recording is transmitted automatically to the anti-corruption authority.
+
+ - **Full Cooperation:** The official must then provide complete and truthful cooperation in the subsequent investigation, including aiding in the swift apprehension of the briber based on the evidence and their testimony.
 
 3. **Criminal Liability of the Briber and Asset Forfeiture:** The act of offering or conferring a bribe constitutes a felony. Upon the official's full compliance with Clause 2, the item of value is immediately forfeited by the briber.
 
@@ -1588,6 +1611,8 @@ Upon voluntary enlistment or conscription, and for the duration of their service
 
 1. All service members are obligated to disobey unlawful orders and ignore unlawful suspensions. 
 
+ - This obligation to disobey refers exclusively to orders that a reasonable person, trained in this Constitution, would understand as a direct and manifest violation of the fundamental rights enumerated in Article I or an explicit attempt to subvert the democratic order outlined in Article VII. Disagreement with strategic, tactical, or policy decisions does not constitute grounds for disobedience. The burden of proving the manifest unlawfulness of an order rests with the service member invoking this section.
+
 ## ARTICLE XV: EDUCATION
 
 ### Section 1: The Purpose of Education
@@ -1627,6 +1652,8 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
  - Practical exercises in deconstructing real-world political and commercial messaging.
 
 3. **Financial and Economic Literacy:** Practical understanding of personal finance, economic principles, and the rights of workers and consumers as defined in Article III.
+
+4. **Civics Education Prerequisite Before Sortition:** Completion of a state-certified course in constitutional civics, as defined in Article XV, is a mandatory prerequisite for a citizen's entry into the sortition pool for the relevant branch. This course shall be provided free of charge and in accessible formats. A citizen's name shall be added to the roster of eligible citizens only upon successful completion of this course, which may be undertaken upon reaching the age of 18.
 
 ### Section 4: Secular and Neutral Public Education
 
@@ -1706,7 +1733,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 ### Section 1: The Departmental Reserve System
 
-1. **Principle of Operational Continuity**
+1. **Principle of Operational Continuity:**
 
  - To ensure uninterrupted function of essential public services
 
@@ -1714,13 +1741,13 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
  - Each Executive Department shall maintain financial autonomy
 
-2. **Establishment of Designated Banks**
+2. **Establishment of Designated Banks:**
 
  - System of Designated Departmental Reserve Banks established
 
  - Operates under joint oversight of Economic Affairs and Public Integrity departments
 
-3. **Funding Mechanism**
+3. **Funding Mechanism:**
 
  - Mandatory non-discretionary allocation upon annual budget passage
 
@@ -1728,7 +1755,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
  - Includes salaries, maintenance, and critical ongoing projects
 
-4. **Shielded Access**
+4. **Shielded Access:**
 
  - Funds exclusively for department use
 
@@ -1738,7 +1765,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 ### Section 2: Conditions for Use of Reserve Funds
 
-1. **Activation Clause**
+1. **Activation Clause:**
 
  - Access permitted only during formal "Funding Lapse" declaration
 
@@ -1746,13 +1773,13 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
  - Declaration made by National Electoral Commission
 
-2. **Sequential Drawdown**
+2. **Sequential Drawdown:**
 
  - Funds drawn in sequential, monthly increments
 
  - Maintains essential services at standard operational levels
 
-3. **Prohibition on New Expenditure**
+3. **Prohibition on New Expenditure:**
 
  - No new projects, programs, or capital expenditures
 
@@ -1762,13 +1789,13 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 ### Section 3: Replenishment and Accountability
 
-1. **Mandatory Replenishment**
+1. **Mandatory Replenishment:**
 
  - Full replenishment first priority after budget resolution
 
  - All drawn-down amounts restored within 30 days
 
-2. **Transparency and Audit**
+2. **Transparency and Audit:**
 
  - All transactions subject to real-time audit
 
@@ -1776,7 +1803,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
  - Full public report within 60 days of Funding Lapse end
 
-3. **Penalty for Misuse**
+3. **Penalty for Misuse:**
 
  - Immediate dismissal for violators
 
@@ -1820,19 +1847,19 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 ## Article XVIII: Adaptive Governance
 
-1. **Principle of Necessary Function**
+1. **Principle of Necessary Function:**
 
  - The departmental structure exists to faithfully execute the mandates and uphold the rights enshrined in this Constitution.
 
  - No organizational chart is permanent. The structure of the executive branch shall evolve to meet the challenges of its time.
 
-2. **Mechanism for Creation**
+2. **Mechanism for Creation:**
 
  - A new Executive Department may be established by a majority vote of the Legislative Congress, provided its founding charter demonstrates a clear necessity to fulfill a constitutional mandate that existing departments cannot adequately address.
 
  - The proposal must be reviewed for constitutional alignment by the Department of Public Integrity and Accountability and for scientific/technical feasibility by the Scientific Branch before a vote.
 
-3. **Mechanism for Reorganization or Dissolution**
+3. **Mechanism for Reorganization or Dissolution:**
 
  - An existing department may be reorganized or dissolved by a joint two-thirds (⅔) majority vote of the Legislative Congress and the Citizen's Assembly.
 
@@ -1840,7 +1867,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
  - Under no circumstances can a department be dissolved to abridge or nullify a fundamental right it was created to protect.
 
-4. The "Sunset and Review" Clause
+4. **The "Sunset and Review" Clause:**
 
  - Every Executive Department shall be subject to a mandatory comprehensive review every ten (10) years by the Citizen's Assembly.
 
@@ -1863,3 +1890,22 @@ This document represents the complete and full Constitution of the Secular Democ
 Document Version: [current date]
 
 This document is ready for download and preservation as the supreme law of the land.
+
+_Signatures may be written below_ 
+
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
