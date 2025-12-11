@@ -12,6 +12,8 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 1. All persons within the jurisdiction of the Republic are equal before the law and entitled to equal protection and benefit of the law without discrimination based on race, color, gender, sexual orientation, gender identity, religion, national origin, age, disability, citizenship status, disability, or any other characteristic.
 
+2. **Prohibition on Wage Reduction for Parental Status:** Under no circumstance shall an employer reduce the wages, salary, seniority, or accrued benefits of any employee because of pregnancy, childbirth, adoption, or the taking of legally protected parental or family leave. Compensation and benefits shall resume at not less than their previous level upon the employee's return to work. This right is non-waivable and any agreement to the contrary is void.
+
 ### Section 2: Separation of Temple and State
 
 1. The Republic shall establish no official religion nor endorse, favor, or promote any religious doctrine or institution.
@@ -602,6 +604,8 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 3. Any judge or prosecutor who consistently convicts and sentences defendants, or rules against plaintiffs based on legally protected characteristics are subject to investigation. Proof of discriminatory practices is punishable by life in prison with no possibility of parole.
 
 4. Exoneration is not a pardon.
+
+5. If charges are dismissed, expungement is automatic. 
 
 ### Section 11: Criminal Conspiracy and Complicity
 
