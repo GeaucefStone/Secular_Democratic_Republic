@@ -27,11 +27,11 @@ This Act may be cited as the **"Universal Restroom Act."**
 
 ## **Section 2: Definitions**
 
-- **"Universal Restroom"** means a fully enclosed, private, lockable single-occupancy facility containing at minimum: one toilet, one sink with potable water, and one waterless or low-flow urinal.
+ - **"Universal Restroom"** means a fully enclosed, private, lockable single-occupancy facility containing at minimum: one toilet, one sink with potable water, and one waterless or low-flow urinal.
 
-- **"Covered Facility"** means any new or substantially renovated public building, educational institution, government office, transportation hub, or place of public accommodation receiving any public funding or operating under a public license.
+ - **"Covered Facility"** means any new or substantially renovated public building, educational institution, government office, transportation hub, or place of public accommodation receiving any public funding or operating under a public license.
 
-- **"Substantial Renovation"** means any renovation affecting more than 50% of a facility's existing restroom square footage or costing more than 25% of the building's assessed value.
+ - **"Substantial Renovation"** means any renovation affecting more than 50% of a facility's existing restroom square footage or costing more than 25% of the building's assessed value.
 
 ## **Section 3: Universal Restroom Mandate for New & Renovated Construction**
 
@@ -45,15 +45,15 @@ This Act may be cited as the **"Universal Restroom Act."**
 
 1. Each Universal Restroom shall be equipped with:
 
-   - One high-efficiency or dual-flush toilet.
+ - One high-efficiency or dual-flush toilet.
 
-   - One waterless urinal or ultra-low-flow urinal.
+ - One waterless urinal or ultra-low-flow urinal.
 
-   - One accessible sink with touchless faucet.
+ - One accessible sink with touchless faucet.
 
-   - A lockable, full-height door.
+ - A lockable, full-height door.
 
-   - Standardized, clear exterior signage depicting the fixtures contained within (e.g., a toilet, a urinal, a sink) with the text **"Restroom"**.
+ - Standardized, clear exterior signage depicting the fixtures contained within (e.g., a toilet, a urinal, a sink) with the text **"Restroom"**.
 
 2. The inclusion of the urinal is for the **express purpose of water conservation**, recognizing its significantly lower water use per use compared to a toilet flush, and is available for use by any person for whom it is a practical fixture.
 
@@ -81,12 +81,12 @@ The Office of Neutral Conduit Oversight (ONCO) from the **Financial & Digital Ne
 
 ## **Constitutional Compliance Justification**
 
-- **Article I, Section 1 (Universal Equal Protection):** This Act proactively eliminates a major arena of potential discrimination, ensuring equal access to essential facilities.
+ - **Article I, Section 1 (Universal Equal Protection):** This Act proactively eliminates a major arena of potential discrimination, ensuring equal access to essential facilities.
 
-- **Article I, Section 11 (Right to Domestic Privacy):** By providing fully enclosed, lockable single-occupancy rooms, it maximizes personal privacy in public accommodations.
+ - **Article I, Section 11 (Right to Domestic Privacy):** By providing fully enclosed, lockable single-occupancy rooms, it maximizes personal privacy in public accommodations.
 
-- **Article III, Section 6 (Public Utilities):** The water conservation mandate and funding mechanism align with the state's duty to manage precious resources sustainably.
+ - **Article III, Section 6 (Public Utilities):** The water conservation mandate and funding mechanism align with the state's duty to manage precious resources sustainably.
 
-- **Article VII (Constitutional Supremacy):** The preemption clause ensures uniform, rights-compliant standards nationwide, preventing local discriminatory ordinances.
+ - **Article VII (Constitutional Supremacy):** The preemption clause ensures uniform, rights-compliant standards nationwide, preventing local discriminatory ordinances.
 
 **Methodology:** This Act follows the SDR legislative pipeline: it identifies a social conflict rooted in outdated design, proposes a material solution that enhances privacy and efficiency, and embeds enforcement within existing anti-discrimination and public works frameworks.
