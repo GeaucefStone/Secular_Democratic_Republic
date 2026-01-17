@@ -493,6 +493,18 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
  - A pattern of such violations by an employer shall trigger a mandatory investigation and may result in the temporary suspension of their business license or, for severe and repeat offenses, the state-assisted conversion of the enterprise into a worker-cooperative, with compensation provided to the former owners at a rate determined by an independent assessor.
 
+### Section 23: Gender Equity, Care, and Freedom from Patriarchy
+
+1. **Systemic Equality Mandate:** The Republic recognizes that patriarchy constitutes a systemic denial of rights. All branches of government shall take affirmative, measurable action to dismantle patriarchal structures in law, economy, and culture.
+
+2. **Care Justice:** Care work, including domestic labor, childcare, and elder care, is recognized as essential social labor. The state shall ensure it is neither uncompensated nor borne disproportionately by any group, through public support, services, and compensation.
+
+3. **Parity in Governance:** All public bodies established under this Constitution shall achieve and maintain gender parity. No branch, assembly, court, or commission shall have less than equal representation of women and gender minorities.
+
+4. **Right to Live Free from Gender-Based Violence:** The state shall guarantee comprehensive protection, prevention, and redress for gender-based violence, including through funded shelters, specialized justice responses, and economic support for survivors.
+
+5. **Reproductive Justice:** Every person has the right to reproductive justice—to have children, not to have children, and to parent in safe and supported conditions. The state shall ensure access to necessary healthcare, education, and social resources to make this right effective.
+
 ---
 
 ## ARTICLE II: JUSTICE SYSTEM
