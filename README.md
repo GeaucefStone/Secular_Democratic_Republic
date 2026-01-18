@@ -17,8 +17,6 @@
 ### What's New
 
 *   **constitution.md is considered finished.** To gain interest, **Article VII is the optimal place to start.**
-*   The **Anti-Corruption Engine** is now even more potent. Look inside `education/textbook/` and read files `01U` through `02A`.
-
 ---
 
 ### 🚨 Core Design Principles
