@@ -12,7 +12,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 1. All persons within the jurisdiction of the Republic are equal before the law and entitled to equal protection and benefit of the law without discrimination based on race, color, gender, sexual orientation, gender identity, religion, national origin, age, disability, citizenship status, or any other characteristic.
 
-2. **Prohibition on Wage Reduction for Parental Status:** Under no circumstance shall an employer reduce the wages, salary, seniority, or accrued benefits of any employee because of pregnancy, childbirth, adoption, or the taking of legally protected parental or family leave. Compensation and benefits shall resume at not less than their previous level upon the employee's return to work. This right is non-waivable and any agreement to the contrary is void.
+2. **Protection from Economic Penalty Due to Family Status:** Under no circumstance shall a person’s compensation, accrued benefits, or standing be reduced because of pregnancy, childbirth, adoption, or the taking of legally protected parental or family leave. Upon return to their position, such persons shall resume their compensation and benefits at not less than the previous level. This right is non-waivable and any agreement to the contrary is void.
 
 ### Section 2: Separation of Temple and State
 
@@ -679,7 +679,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
  - The defendant shall be entitled to civil damages from the prosecutor's personal assets, equivalent to ten times the cost of their legal defense for both trials.
 
-5. **The Socialist Exception - Collateral Consequences:** This section does not prohibit civil proceedings, conducted by the Worker's Branch or other relevant body, to secure restitution for victims, or to seek the equitable disgorgement of illicit profits, provided such proceedings are not punitive in nature and do not threaten the liberty of the person.
+5. **The Exception - Collateral Consequences:** This section does not prohibit civil proceedings, conducted by the Worker's Branch or other relevant body, to secure restitution for victims, or to seek the equitable disgorgement of illicit profits, provided such proceedings are not punitive in nature and do not threaten the liberty of the person.
 
 ### Section 15: Remedial Powers for Weaponized Defamation
 
@@ -867,7 +867,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 ### Section 9: Child Welfare
 
-1. This is a socialist document. Even if one parent is absent and not reachable, the state will ensure the child's needs until they either turn 18 or graduate from high school.
+1. The state shall ensure that the needs of every child are met until the age of 18 or graduation from secondary education, irrespective of parental presence or availability.
 
 2. However, if the male causes an unwanted pregnancy, or either is a clear danger to the partner or child, they are legally bound to pay back child support to the state as a form of legal punishment, in compliance with Clause 1.
 
