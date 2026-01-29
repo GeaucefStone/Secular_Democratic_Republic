@@ -1515,6 +1515,10 @@ The Historian Court's job is to ensure the integrity of historical fact. Its pow
 
 4. **Liability:** The official who gives the order bears ultimate responsibility. Officials who carry out the order may be prosecuted as accomplices if they knowingly participate in the unlawful scheme, all punishable by up to life in prison with no possibiltity of parole or pardon.
 
+### Section 6: Crime of Malicious Prosecution
+
+Any official who knowingly initiates a disqualification proceeding in bad faith, with intent to suppress lawful political opposition, shall be permanently barred from office, forfeit all deferred compensation, and be liable for treble damages to the accused.
+
 ---
 
 ## ARTICLE XIII: IMPLEMENTATION
@@ -1693,6 +1697,8 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 2. Should the institutions of government ever conspire to subvert the Constitution and establish a dictatorship, the people retain the inherent and ultimate right to alter, abolish, and restore their government.
 
+3. Peaceful protest, non-violent civil disobedience, and organized political opposition shall not constitute evidence of a 'Systemic Constitutional Breach' under this Article.
+
 ### Section 2: Declaration of a Systemic Constitutional Breach
 
 1. A **Systemic Constitutional Breach** is declared when, for a continuous period of no less than six (6) months, multiple branches of the federal government have willfully and systematically acted in concert to nullify the fundamental rights in Article I or dismantle the democratic order, rendering all internal constitutional remedies ineffective.
@@ -1709,7 +1715,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 1. Upon a petition bearing the verified signatures of **twenty-five percent (25%)** of the eligible electorate from a majority of states, a **National Referendum for Constitutional Restoration** shall be initiated.
 
-2. The referendum question shall be: *"Shall the current federal government be declared dissolved for a Systemic Constitutional Breach, and shall a Provisional Council be empowered to restore constitutional order and convene new elections?"*
+2. The referendum question shall be: _"Shall the current federal government be declared dissolved for a Systemic Constitutional Breach, and shall a Provisional Council be empowered to restore constitutional order and convene new elections?"_
 
 ### Section 4: The Mandate for Restoration
 
