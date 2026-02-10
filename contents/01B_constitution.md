@@ -789,7 +789,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 ---
 
-## ARTICLE III: HOUSING & ECONOMIC RIGHTS
+## ARTICLE III: HOUSING, HEALTHCARE AND ECONOMIC RIGHTS
 
 ### Section 1: Housing Guarantee
 
@@ -823,7 +823,7 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 3. The Five-Year Vacancy Rule: If a grandfathered residential property is without a tenant for a continuous period of five (5) years, the owner's use-rights are deemed abandoned. The property shall automatically revert to the Public Housing Trust without compensation.
 
-4. End of Landlordism: Upon the death of a grandfathered property owner, the right to hold residential property for rental purposes expires. The property must be sold to the Public Housing Trust or become the primary residence of an heir.
+4. End of Landlordism: Upon the death of a grandfathered property owner, the right to hold residential property for rental purposes expires. The property must be sold to the Public Housing Trust or become the primary residence of an heir. 
 
 ### Section 4: Agricultural Rights
 
@@ -892,6 +892,89 @@ We, the people, in order to form a more perfect union, establish justice, ensure
  - Upon harvest, borrowers shall return the principal amount of seed, plus a modest surplus to ensure the trust's growth and vitality.
 
 > **Framer's Justification:** _"A nation's true wealth is measured not in its currency, but in its capacity to feed itself. This provision recognizes seed as the fundamental unit of that capacity. By creating a circular economy of genetic wealth, we build a buffer against famine, corporate control, and ecological collapse. It transforms a tax from a financial transaction into a direct investment in our collective, biological future."_
+
+### Section 11: The End of Commodified Life Saving Healthcare
+
+---
+## ARTICLE III: HOUSING, HEALTHCARE AND ECONOMIC RIGHTS
+
+### Section 11: The Phased Transition to Universal Healthcare
+
+1. **Principle:** Healthcare is a public good, not a commodity. The state shall establish a National Health Service (NHS) to provide comprehensive, publicly funded care, displacing for-profit insurance through superior access, quality, and equity.
+
+2. **Establishment of the National Health Service (NHS):**
+
+ - A National Health Service (NHS) shall be established within two (2) years of ratification.
+
+ - The NHS shall be funded through progressive taxation and operate as a publicly owned, non-profit, single-payer system.
+
+3. **Phased Rollout and Coverage Expansion:**
+
+ - **Phase 1 (Years 1–3):** The NHS will cover:
+  * Preventive, primary, and emergency care.
+  * Chronic and mental health care.
+  * Essential medications and pediatric care.
+  * Reconstructive and corrective surgeries deemed medically necessary by the Surgeon Court.
+
+ - **Phase 2 (Years 4–6):** NHS expands to cover:
+  * Dental, vision, hearing, and rehabilitative care.
+  * Specialist, surgical, and long-term care.
+  * Reproductive, gender-affirming, and psychologically indicated cosmetic procedures.
+
+ - **Phase 3 (Year 7+):** NHS achieves universal comprehensive coverage, including all medically necessary and psychologically indicated procedures as defined by the Surgeon Court.
+
+4. **Automatic Enrollment with Voluntary Opt-Out:**
+
+ - All citizens and legal residents are automatically enrolled in the NHS at birth or upon establishing residency.
+
+ - Individuals may maintain supplementary private insurance, but **duplicate coverage for NHS-covered services is prohibited**.
+
+ - Private insurers may only sell policies for:
+  * Services not yet covered by the NHS during the transition.
+  * Purely elective aesthetic procedures with no medical or psychological necessity.
+  * Non-medical amenities (e.g., private hospital rooms, concierge medical services).
+
+5. **Market Transition Mechanism:**
+
+ - Private insurers remain legal but are regulated to ensure transparency, non-discrimination, and financial solvency.
+
+ - As NHS coverage expands each phase, private insurers must notify policyholders of reduced scope and adjust premiums accordingly.
+
+ - By the end of Phase 3, private health insurance for medically necessary care is rendered redundant.
+
+6. **Sunset Clause for Duplicate Coverage:**
+
+ - Upon full implementation of Phase 3, private insurers are **prohibited from offering duplicate coverage** for any service comprehensively covered by the NHS.
+
+ - This prohibition takes effect **ten (10) years after ratification**, aligning with the completion of NHS rollout.
+
+ - Insurers may continue to offer **supplemental policies** for:
+ * Elective aesthetic procedures.
+ * Non-covered amenities.
+ * Travel health insurance until obsolete.
+ * Expedited access within NHS guidelines, provided it does not create a two-tier system that compromises NHS equity.
+
+7. **Protection of Patients and Workers:**
+
+ - No patient shall face financial or administrative barriers when transitioning from private insurance to the NHS.
+
+ - Healthcare workers in private facilities are guaranteed transfer opportunities to NHS or affiliated public institutions with comparable pay and union protections.
+
+8. **Oversight and Adjustment:**
+
+ - The **Healthcare Transition Authority (HTA)**, under joint oversight by the Scientific Branch and the Citizen’s Assembly, manages the rollout and may adjust timelines based on capacity and public need.
+
+ - The Surgeon Court adjudicates coverage disputes and reviews medical necessity standards, including determinations of **corrective vs. elective procedures**.
+
+9. **Funding and Transparency:**
+
+ - NHS funding is constitutionally protected as a mandatory expenditure.
+
+ - Annual public audits of NHS efficiency, outcomes, and patient satisfaction are required.
+
+> **Framer’s Justification:** _“Healthcare is not merely the absence of disease, but the presence of well-being. Corrective surgeries—whether for congenital defects, injury, or gender dysphoria—are not luxuries; they are essential to human dignity. By covering these under the NHS, we affirm that the state’s role is to heal, not to judge what constitutes a ‘worthy’ body. Elective aesthetics remain a personal choice, not a public burden.”_
+
+---
 
 ---
 
