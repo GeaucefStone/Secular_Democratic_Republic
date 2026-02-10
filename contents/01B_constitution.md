@@ -893,11 +893,6 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 > **Framer's Justification:** _"A nation's true wealth is measured not in its currency, but in its capacity to feed itself. This provision recognizes seed as the fundamental unit of that capacity. By creating a circular economy of genetic wealth, we build a buffer against famine, corporate control, and ecological collapse. It transforms a tax from a financial transaction into a direct investment in our collective, biological future."_
 
-### Section 11: The End of Commodified Life Saving Healthcare
-
----
-## ARTICLE III: HOUSING, HEALTHCARE AND ECONOMIC RIGHTS
-
 ### Section 11: The Phased Transition to Universal Healthcare
 
 1. **Principle:** Healthcare is a public good, not a commodity. The state shall establish a National Health Service (NHS) to provide comprehensive, publicly funded care, displacing for-profit insurance through superior access, quality, and equity.
@@ -973,8 +968,6 @@ We, the people, in order to form a more perfect union, establish justice, ensure
  - Annual public audits of NHS efficiency, outcomes, and patient satisfaction are required.
 
 > **Framer’s Justification:** _“Healthcare is not merely the absence of disease, but the presence of well-being. Corrective surgeries—whether for congenital defects, injury, or gender dysphoria—are not luxuries; they are essential to human dignity. By covering these under the NHS, we affirm that the state’s role is to heal, not to judge what constitutes a ‘worthy’ body. Elective aesthetics remain a personal choice, not a public burden.”_
-
----
 
 ---
 
