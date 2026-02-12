@@ -168,21 +168,21 @@ The following ideologies, and ONLY the following, are disqualified:
 
 3. The rights to abortion and voluntary sterilization are recognized as fundamental components of bodily autonomy. The denial of timely access to these services by any institution operating within or regulated by the public health system constitutes a violation of this section.
 
-4. **Guarantee of Access to Reproductive Services**:
+4. **Guarantee of Access to Reproductive Services:**
 
  - The rights to abortion and voluntary sterilization are recognized as fundamental components of bodily autonomy. The state bears the ultimate responsibility for ensuring effective and universal access to these services.
 
- - **Prohibition of Unreasonable Denial**: No healthcare provider shall deny a patient's request for a legally available elective procedure, including voluntary sterilization, based on the provider's personal judgment regarding the patient's age, perceived future desires, marital status, parity, or spousal consent. A provider may only deny such a request for bona fide, documented clinical contraindications that present a significant and immediate risk to the patient's life.
+ - **Prohibition of Unreasonable Denial:** No healthcare provider shall deny a patient's request for a legally available elective procedure, including voluntary sterilization, based on the provider's personal judgment regarding the patient's age, perceived future desires, marital status, parity, or spousal consent. A provider may only deny such a request for bona fide, documented clinical contraindications that present a significant and immediate risk to the patient's life.
 
- - **Immediate Duty to Refer**: If a healthcare provider is unwilling to perform a legally available procedure for any reason, including conscientious objection or lack of specific training, they have an immediate, non-delegable duty to facilitate a seamless and timely referral to a willing and qualified provider. This referral must be provided without delay, administrative impediment, or additional cost to the patient. The patient's care must be transitioned without interruption.
+ - **Immediate Duty to Refer:** If a healthcare provider is unwilling to perform a legally available procedure for any reason, including conscientious objection or lack of specific training, they have an immediate, non-delegable duty to facilitate a seamless and timely referral to a willing and qualified provider. This referral must be provided without delay, administrative impediment, or additional cost to the patient. The patient's care must be transitioned without interruption.
 
- - **Institutional Liability**: Any public institution or private entity receiving public funding that fails to guarantee access as outlined in this Clause shall be deemed in violation of this section. The institution itself bears ultimate legal and financial responsibility for any denial or undue delay of care caused by its policies or failure of its referral system.
+ - **Institutional Liability:** Any public institution or private entity receiving public funding that fails to guarantee access as outlined in this Clause shall be deemed in violation of this section. The institution itself bears ultimate legal and financial responsibility for any denial or undue delay of care caused by its policies or failure of its referral system.
 
  - In addition to professional discipline, a provider found in violation shall be civilly liable to the patient for significant damages, including compensation for emotional distress and  any additional costs incurred.
 
  - A pattern of such violations within a healthcare institution shall trigger a mandatory investigation by the relevant state authority and may result in the suspension of public funding and the initiation of criminal proceedings against responsible administrators for systemic deprivation of constitutional rights.
 
-5. **Enhanced Accountability for Denial of Care**
+5. **Enhanced Accountability for Denial of Care:**
 
  - A healthcare provider who willfully and knowingly violates Clause 4.2 of this section by denying a procedure without a bona fide clinical justification, or who violates Clause 4.3 by obstructing a referral, shall be subject to professional disciplinary action, including mandatory retraining and the potential suspension or revocation of their medical license.
 
@@ -190,13 +190,40 @@ The following ideologies, and ONLY the following, are disqualified:
 
  - A pattern of such violations within a healthcare institution shall trigger a mandatory investigation by the relevant state authority and may result in the suspension of public funding and the initiation of criminal proceedings against responsible administrators for systemic deprivation of constitutional rights.
 
-6. **Prohibition on Bodily Mandates**:
+6. **Prohibition on Bodily Mandates:**
 
- - Neither the state, nor any institution acting under its authority, shall mandate any medical treatment, procedure, pharmaceutical, implant, genetic therapy, or any other substance or intervention that enters, alters, or is performed upon the body of a non-consenting individual.
+ - **General Rule:** Neither the state, nor any institution acting under its authority, shall mandate any medical treatment, procedure, pharmaceutical, implant, genetic therapy, or any other substance or intervention that enters, alters, or is performed upon the body of a non-consenting individual. This right is absolute and is not negated by any finding of safety, efficacy, or medical necessity. It may not be suspended, even under a declaration of emergency.
 
- - This right is absolute and is not negated by any finding of safety, efficacy, or medical necessity. It may not be suspended, even under a declaration of emergency.
+ - **Narrow Emergency Exception (Life-Saving Only):** In cases where an individual meets ALL of the following criteria:
+  * Suffering from an imminently fatal condition, with death reasonably expected within 72 hours.
+  * Incapacitated and unable to make or communicate an informed decision.
+  * No advance directive, living will, or other legally binding instruction prohibiting the specific intervention is known to exist.
+  * The proposed intervention has a greater than ninety percent (90%) proven success rate in preserving life under the presenting circumstances.
 
- - This clause shall not be construed to limit the state's power to enact and enforce isolation, quarantine, or other public health measures that restrict movement or association to prevent the spread of contagious disease, provided such measures do not compel a specific medical intervention as defined in the first paragraph of this clause.
+Then: Emergency medical intervention may be administered without the individual's contemporaneous consent.
+
+This exception applies **exclusively** to individual emergency medical care. It shall never be construed to authorize population-wide mandates, prophylactic treatment of healthy persons, or any intervention not meeting the strict criteria above.
+
+ - **Existential Pandemic Exception (Absolute Last Resort):** If, and only if, a communicable disease meets ALL of the following criteria:
+  * Documented case fatality rate exceeding twenty-five percent (25%) among immunocompetent adults.
+  * Efficient and sustained airborne transmission.
+  * No practicable means of effective quarantine or isolation exist to contain spread.
+  * A safe and effective pharmaceutical intervention exists with a documented severe adverse event rate below five percent (5%).
+  * A state of emergency has been lawfully declared under Article VI, Section 1.
+  * Three-quarters (¾) of the Citizens' Assembly, following public hearings and adversarial expert testimony, votes to authorize the exception.
+  * The Supreme Court certifies, in a published opinion, that the criteria are met and no less restrictive means are available.
+
+Then: The state **may** mandate the specific pharmaceutical intervention for **essential workers only**, and only for the duration strictly necessary to abate the existential threat.
+
+This exception shall **never** apply to:
+
+  * The general population.
+  * Children under the age of majority.
+  * Pregnant or breastfeeding individuals.
+  * Individuals with documented medical contraindications.
+  * Any intervention not specifically authorized by the Citizens' Assembly vote.
+
+ - **Limitation Preserved:** Nothing in this Clause shall be construed to limit the state's power to enact and enforce isolation, quarantine, or other public health measures that restrict movement, association, or activity to prevent the spread of contagious disease, provided such measures do not compel a specific medical intervention as defined in the General Rule above.
 
 ### Section 7: Environmental Rights
 
@@ -1209,6 +1236,73 @@ The following ideologies, and ONLY the following, are disqualified:
  - A citizen may formally appeal their listed service count only on the grounds of mistaken identity.
 
 > **Framer's Justification:** _"The power of sortition is its power to disrupt professional political classes. But experience, in moderation, also has value. This system guarantees that our halls of power are forever filled primarily with true amateurs, ensuring the government never loses touch with the reality of the governed. However, it also allows for the rare return of a seasoned citizen, whose hard-won knowledge can guide their novice peers without dominating them. It strikes a balance between the wisdom of the crowd and the wisdom of experience."_
+
+---
+## ARTICLE IV: GOVERNANCE STRUCTURE
+
+### Section 11: Eligibility and Selection Process for Sortition Branches
+
+1. **Eligible Population:** All citizens who meet the following criteria shall be eligible for selection to any sortition-based branch established under this Article:
+
+ - Age twenty-five (25) years or older.
+
+ - Successful completion of state-certified civic education as required under Article XV, Section 3, Clause 4.
+
+ - No conviction for a violent felony as defined in Article II.
+
+ - Not currently holding elected federal office.
+
+ - Not an immediate family member of a current sortition branch member serving in any federal sortition body. For purposes of this clause, "immediate family" shall be defined as spouse, parent, sibling, or child.
+
+2. **Disqualifications (Conflict of Interest):** An otherwise eligible citizen shall be disqualified from selection or, if selected, shall be ineligible to serve if:
+
+ - They are currently employed by, or serve as a consultant, board member, or contractor for, any entity under active investigation by the branch to which they have been selected.
+
+ - They own more than five percent (5%) of the equity or voting shares of any for-profit corporation, if selected for the Worker's Branch.
+
+ - Their spouse or minor child currently holds elected federal office.
+
+ - A majority vote of the seated members of the relevant branch determines, by clear and convincing evidence, that service would create an obvious and substantial conflict of interest incompatible with the duties of the branch. Such determination shall be subject to immediate judicial review.
+
+3. **Selection Algorithm:**
+
+ - The selection of members for all sortition-based branches shall be conducted using a **cryptographically secure random selection algorithm**.
+
+ - The full source code of the selection algorithm shall be **publicly disclosed and open to independent audit** no fewer than ninety (90) days prior to each annual selection.
+
+ - The selection event shall be **witnessed in real time** by designated representatives of each sortition-based branch, the National Electoral Commission, and the Scientific Branch.
+
+ - A **complete, unredacted audit trail** of the selection process, sufficient to verify the randomness and integrity of the outcome, shall be published within twenty-four (24) hours of the selection's conclusion.
+
+4. **Prevention of Pre-Selection Manipulation:**
+
+ - Any person or entity that knowingly offers, pays, or promises any compensation, benefit, or thing of value to an eligible citizen with the intent to influence their future conduct as a potential sortition member, where such compensation is contingent upon or conditioned on their selection or service, shall be guilty of a **felony** punishable by a mandatory minimum sentence of **twenty (20) years** imprisonment.
+
+ - This prohibition expressly includes corporate or institutional "bonuses," "retention payments," or other financial incentives offered in anticipation of selection.
+
+ - Any eligible citizen who knowingly accepts such compensation shall be permanently disqualified from all future sortition service.
+
+5. **Inability to Serve Exemptions:** A citizen selected for service may decline appointment only upon demonstration, by clear and convincing evidence, of one or more of the following grounds:
+
+ - **Medical incapacity:** Certified by two licensed physicians, independent of one another, attesting to a physical or mental condition that renders the citizen unable to perform the duties of the office.
+
+ - **Sole caregiver status:** Verified by sworn affidavit and supporting documentation that the citizen is the sole or primary caregiver for a minor child, elderly parent, or dependent with a disability, and that no alternative care arrangement is reasonably available.
+
+ - **Severe economic hardship:** Demonstrated household income below the federal poverty line for a family of equivalent size, such that service would impose extreme and irremediable deprivation.
+
+ - Upon grant of an exemption, a replacement shall be selected from the same demographic and geographic pool using the same weighted sortition process.
+
+6. **Compensation and Protection:**Citizens serving in any sortition-based branch shall receive the following guarantees:
+
+ - **Salary:** A stipend equal to the median household income of the Republic, adjusted annually, paid throughout the term of service.
+
+ - **Healthcare:** Comprehensive coverage under the National Health Service for the duration of the term and for one (1) full year following the conclusion of service.
+
+ - **Job protection:** Any public or private employer shall be required to hold the citizen's position or provide equivalent employment at equal or greater compensation upon the conclusion of their service. Retaliation against an employee for service in a sortition branch shall be subject to the penalties enumerated in Article I, Section 20.
+
+ - **Housing:** If service requires relocation more than fifty (50) kilometers from the citizen's primary residence, the state shall provide adequate, secure housing at no cost for the duration of the term.
+
+ - **Security:** Upon a finding of credible threat to the safety of the citizen or their immediate family, the state shall provide appropriate personal protection and security measures for the duration of the threat.
 
 ---
 
