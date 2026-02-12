@@ -81,9 +81,78 @@ We, the people, in order to form a more perfect union, establish justice, ensure
 
 1. Any person who, through public speech, association, or action, has demonstrated a sustained adherence to an ideology that explicitly advocates for the abolition of democratic institutions, the establishment of a dictatorship, or the denial of fundamental rights and equal protection to any group based on a characteristic protected under Article I, Section 1, shall be ineligible to hold public office.
 
-2. A finding of ineligibility under this section may only be made by the Supreme Court, following a public, adversarial hearing initiated by the Citizens' Assembly or by a majority vote of Congress. The burden of proof shall be on the petitioners to demonstrate a clear and present danger to the constitutional order.
+2. **Specific Prohibited Ideologies (Non-Expandable List):**
 
-3. This provision shall not be used to suppress mere political dissent or unpopular opinions that stop short of advocating for the destruction of constitutional democracy.
+The following ideologies, and ONLY the following, are disqualified:
+
+ - **Fascism:** An ideology that advocates for:
+  * Single-party authoritarian dictatorship.
+  * Suppression of political opposition through violence.
+  * Subordination of individual rights to the state.
+  * Ultranationalism with racial or ethnic supremacy.
+
+ - **Nazism and Neo-Nazism:** As defined by historical record.
+
+ - **Theocratic Absolutism:** An ideology that advocates for:
+  * Enforcement of religious law as state law.
+  * Denial of rights to non-believers.
+  * State enforcement of religious doctrine.
+
+- **Explicit Anti-Democratic Authoritarianism:**
+  * Direct advocacy for military coup.
+  * Explicit call for suspension of elections.
+  * Advocacy for violent overthrow of constitutional order **outside the procedures and safeguards established in Article XVI**.
+
+3. **What Is NOT Disqualified:**
+
+ - The following shall NEVER be grounds for disqualification:
+  * Advocacy for economic systems, including socialism, capitalism, mutualism, or any other economic model.
+  * Advocacy for expansion or restriction of government power within constitutional bounds.
+  * Criticism of existing institutions or advocacy for their reform through democratic and lawful means.
+  * Religious belief or practice that does not seek state enforcement of doctrine or denial of rights to non-believers.
+  * Any ideology that operates within democratic and constitutional means, however sharply it criticizes the government or prevailing social order.
+
+4. **Burden of Proof and Standard of Evidence:**
+
+ - Petitioners must prove disqualification by **clear and convincing evidence**.
+
+ - Evidence must include **explicit public statements** by the individual.
+
+ - A single statement, however extreme, shall be insufficient; petitioners must demonstrate a **sustained pattern of advocacy**.
+
+ - Petitioners must demonstrate **current adherence**, not mere past association or membership.
+
+ - All ambiguous cases shall be **resolved in favor of eligibility**.
+
+5. **Automatic Sunset and Review:**
+
+ - The disqualified individual may petition for removal of disqualification **once every five years** upon presentation of new evidence demonstrating changed adherence or good-faith renunciation.
+
+ - The Supreme Court must publish a full, public accounting of all disqualification proceedings annually, including redacted case summaries and aggregate statistics, to ensure transparency and public oversight.
+
+6. A finding of ineligibility under this section may only be made by the Supreme Court, following a public, adversarial hearing initiated by the Citizens' Assembly or by a majority vote of Congress. The burden of proof shall be on the petitioners to demonstrate a clear and present danger to the constitutional order.
+
+7. This provision shall not be used to suppress mere political dissent or unpopular opinions that stop short of advocating for the destruction of constitutional democracy.
+
+8. **Saving Clause for Non-Officeholders:**
+
+ - Nothing in this Section shall be construed to authorize the punishment, censorship, or restriction of any person's freedom of speech, association, or belief solely on the basis of their adherence to an ideology described in Clause 2, unless that person is seeking or holding public office.
+
+ - No finding of ineligibility under this Section shall be used as evidence in any criminal or civil proceeding against the disqualified individual for conduct occurring prior to or independently of their candidacy.
+
+ - The rights guaranteed under Article I, Section 3 (Freedom of Expression & Belief) remain fully operative for all persons not subject to a disqualification order, and for disqualified persons in all contexts unrelated to holding public office.
+
+> **Framer's Justification:** _"We do not punish thought. We do not criminalize belief. We do not create a class of ideological outcasts. We say only this: those who openly serve these particular tyrannies may not serve the Republic. The heretic, the radical, the fanatic—all remain free to speak, organize, and persuade. What they may not do is govern. This is not censorship. This is self-defense."_
+
+9. **Saving Clause for Constitutional Restoration:**
+
+ - Nothing in this Section shall be construed to prohibit, penalize, or disqualify any person for advocating, preparing for, or participating in the lawful exercise of the right of Constitutional Restoration under Article XVI.
+
+ - Advocacy for the activation of Article XVI, including public discussion of its triggers, mechanisms, or hypothetical application, shall not constitute "advocacy for violent overthrow of constitutional order" under Clause 2(d).
+
+ - A person who participates in a lawful Restoration under Article XVI, including members of the Provisional Council and Defense Force personnel who transfer their allegiance pursuant to such Restoration, shall be immune from disqualification under this Section for acts undertaken in compliance with Article XVI.
+
+ - Any judicial or administrative proceeding that seeks to treat Article XVI advocacy as grounds for disqualification shall be dismissed with prejudice, and the petitioner shall be liable for costs and sanctions.
 
 ### Section 6: Bodily Autonomy & Medical Privacy
 
@@ -1972,6 +2041,62 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
  - This review shall assess its efficiency, its effectiveness in fulfilling its constitutional mandate, and its continued necessity.
 
  - The findings of this review may be used to initiate a reorganization or dissolution process.
+
+---
+
+---
+## ARTICLE XIX: SUBSIDIARITY AND LOCAL AUTONOMY
+
+### Section 1: Principle of Subsidiarity
+
+1. Governance shall be exercised at the most local level competent to address the matter at hand. The Republic recognizes that strong communities require meaningful autonomy.
+
+2. The national government shall exercise only those powers expressly delegated to it by this Constitution. All residual powers of governance reside in the Provinces, Municipalities, and Chartered Communities.
+
+### Section 2: Provincial Charters
+
+1. Upon ratification, the existing administrative divisions of the Republic may, by majority vote of their residents conducted under Article V, adopt a Provincial Charter establishing a distinct system of local governance.
+
+2. Such Charter must be submitted to the Supreme Court for certification that it does not violate, diminish, or evade any right or duty established in Articles I, II, V, VII, XII, XV, XVI, or any other unamendable provision of this Constitution.
+
+3. A certified Charter shall have the force of organic law within that Province. The national government shall not abrogate or suspend it except upon a finding by the Supreme Court, upon petition of the Citizens' Assembly, that the Province has systematically violated the constitutional rights of its residents.
+
+### Section 3: Reserved Powers of Provinces and Municipalities
+
+1. Provinces and Municipalities shall have exclusive authority over:
+
+   * Land use, zoning, and local environmental regulation, provided such regulations comply with Article I, Section 2 (Separation of Temple and State) and do not function as de facto discrimination against protected classes.
+   * Local law enforcement policy and priorities, provided such policies comply with Article I, Section 18 (Law Enforcement Identification) and Article II.
+   * Public education curriculum and administration, provided such curricula comply with Article XV, Section 4 (Secular and Neutral Public Education) and achieve the minimum proficiency standards established by the Scientific Branch.
+   * Local taxation, provided such taxation does not duplicate or conflict with national revenue systems necessary to fund the guarantees of Article III.
+   * Cultural, artistic, and heritage preservation.
+   * The establishment of local sortition bodies, citizens' assemblies, and participatory budgeting processes.
+
+2. This enumeration of powers shall not be construed to deny or disparage other powers retained by the Provinces or the people.
+
+### Section 4: The Non-Waiver of Fundamental Rights
+
+1. No Province, Municipality, or Chartered Community shall exercise its reserved powers in a manner that denies, suspends, or abridges any right guaranteed under Article I of this Constitution.
+
+2. A local ordinance that discriminates against a protected class, restricts access to reproductive healthcare, establishes or endorses a religious doctrine, or otherwise violates the unamendable core of this Constitution shall be void ab initio.
+
+3. Any resident of a jurisdiction that has enacted such a void ordinance may bring a cause of action directly in federal court. The offending jurisdiction shall be liable for treble damages and full attorney's fees.
+
+### Section 5: The Civic Apprenticeship
+
+1. Service in a local sortition body, municipal commission, or provincial assembly shall count as prior service for the purpose of the Weighted Sortition system established in Article IV, Section 10.
+
+2. The Republic shall encourage and fund the establishment of local participatory bodies as training grounds for national civic duty.
+
+### Section 6: The Binding Nature of Fundamental Law
+
+1. For the avoidance of doubt, the reservation of powers to Provinces and Municipalities under this Article shall not be construed to imply, confer, or authorize any power to suspend, abridge, or deny any right, protection, or guarantee enumerated in the unamendable articles of this Constitution.
+
+2. The obligations imposed by Articles I, II, V, VII, XII, XV, and XVI apply with full force and effect to every level of governance within the Republic. No jurisdictional boundary, charter provision, or local ordinance may operate as a bar to their enforcement.
+
+3. Any public official who knowingly votes for, signs, or enforces an ordinance in violation of this Section shall be personally subject to the penalties enumerated in Article II, Section 3 and Article XII, Section 1.
+
+> **Framer's Justification:** _"A fortress with only one gate is not a fortress—it is a trap. We diffuse power horizontally across seven branches, but that is not enough. We must also diffuse it vertically, from the capital to the commune. Let a thousand civic laboratories bloom. Let the people govern themselves in matters that touch their daily lives. Only then will they be ready to govern the Republic. Only then will the Republic be ungovernable by tyrants. But let them also know: the laboratory has walls. The rights secured in this Constitution are not experimental subjects. They are the permanent and inviolable inheritance of every person, in every place, under every charter."_
 
 ---
 
