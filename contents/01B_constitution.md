@@ -601,6 +601,70 @@ This exception shall **never** apply to:
 
 5. **Reproductive Justice:** Every person has the right to reproductive justice—to have children, not to have children, and to parent in safe and supported conditions. The state shall ensure access to necessary healthcare, education, and social resources to make this right effective.
 
+### Section 24: The Right to Information and Public Accountability
+
+1. **Affirmative Right of Access:**
+
+ - Every person has the fundamental and enforceable right to access, inspect, and obtain copies of all records, documents, communications, and data held by any public body, executive agency, legislative office, or judicial administrative unit of the Republic.
+
+ - This right extends to all information produced, acquired, or maintained in the conduct of public business, regardless of its form, date, or medium.
+
+ - This right is essential to democratic sovereignty, popular oversight, and the prevention and detection of official misconduct.
+
+2. **Duty to Disclose and Proactive Transparency:**
+
+ - All public bodies shall have an affirmative, non-delegable duty to publish information of significant public interest in accessible formats without waiting for specific requests.
+
+ - The Scientific Branch and Citizen's Assembly shall jointly maintain a public index of record categories and disclosure compliance ratings for all agencies.
+
+3. **Limitations and Balancing:**
+
+ - This right may be subject only to narrowly tailored, proportionate restrictions necessary to protect:
+  * The identity and safety of whistleblowers, victims, and witnesses.
+  * Legitimate and ongoing criminal investigations, where disclosure would materially prejudice the investigation.
+  * Genuine and demonstrable national security secrets, certified by the Security Branch and subject to judicial review.
+  * The reasonable privacy expectations of natural persons, where disclosure would cause substantial and unwarranted harm and the public interest does not require disclosure.
+
+ - The burden of proving an exemption applies shall rest solely on the public body asserting it.
+
+ - All exemptions shall be construed narrowly in favor of disclosure.
+
+4. **Enforcement and Private Right of Action:**
+
+ - Any person denied access to information in violation of this Section may bring a civil action directly in the appropriate court of the Republic.
+
+ - Such actions shall be granted expedited consideration and shall take precedence over all but the most urgent matters.
+
+ - No standing requirement beyond the denial of access shall be imposed. The plaintiff need not demonstrate personal harm.
+
+ - Sovereign immunity is expressly waived for all claims arising under this Section.
+
+5. **Remedies and Structural Enforcement:**
+
+ - Upon finding a violation, the court shall:
+  * Order the immediate disclosure of the withheld information.
+  * Award the prevailing plaintiff reasonable attorneys' fees, costs, and litigation expenses.
+  * Impose escalating daily fines payable to the Public Information Access Fund, to be deducted from the operating budget of the non-compliant agency, continuing until full compliance is achieved.
+
+ - For a knowing, willful, or pattern of violations, the court may also:
+  * Order the appointment of an independent special master to supervise compliance.
+  * Suspend the authority of the responsible official to make future disclosure determinations.
+  * Refer the matter for criminal prosecution under Article II, Section 3 (Official Accountability).
+
+6. **Legislative and Executive Accountability:**
+
+   - No statute, regulation, or executive order may repeal, diminish, or condition the exercise of this right except through a constitutional amendment.
+
+   - Any public official who knowingly and willfully violates this Section, or who directs or encourages others to do so, shall be subject to the penalties enumerated in Article II, Section 3 and Article XII, Section 1.
+
+   - Failure to comply with a statutory disclosure mandate within the time prescribed by law shall constitute a prima facie violation of this Section, and the burden shall shift to the public body to justify its delay.
+
+7. **Unamendable Status:**
+
+   - This Section is part of the unamendable core of this Constitution. It may not be repealed, amended, or suspended, in whole or in part.
+
+> **Framer's Justification:** _"A people who cannot see what their government does cannot govern themselves. The right to know is not a privilege granted by statute, to be given or taken at the legislature's convenience. It is the precondition of all other rights. Without it, corruption festers in darkness, victims are denied validation, and the law becomes a collection of unenforceable wishes. This provision transforms information from a favor into a right, and non-compliance from a political embarrassment into a constitutional violation with escalating, inescapable consequences."_
+
 ---
 
 ## ARTICLE II: JUSTICE SYSTEM
@@ -995,7 +1059,7 @@ This exception shall **never** apply to:
 
 2. **Establishment of the National Health Service (NHS):**
 
- - A National Health Service (NHS) shall be established within two (2) years of ratification.
+ - A National Health Service (NHS) shall be established within two years of ratification.
 
  - The NHS shall be funded through progressive taxation and operate as a publicly owned, non-profit, single-payer system.
 
@@ -2138,7 +2202,6 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 ---
 
----
 ## ARTICLE XIX: SUBSIDIARITY AND LOCAL AUTONOMY
 
 ### Section 1: Principle of Subsidiarity
@@ -2159,12 +2222,17 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 1. Provinces and Municipalities shall have exclusive authority over:
 
-   * Land use, zoning, and local environmental regulation, provided such regulations comply with Article I, Section 2 (Separation of Temple and State) and do not function as de facto discrimination against protected classes.
-   * Local law enforcement policy and priorities, provided such policies comply with Article I, Section 18 (Law Enforcement Identification) and Article II.
-   * Public education curriculum and administration, provided such curricula comply with Article XV, Section 4 (Secular and Neutral Public Education) and achieve the minimum proficiency standards established by the Scientific Branch.
-   * Local taxation, provided such taxation does not duplicate or conflict with national revenue systems necessary to fund the guarantees of Article III.
-   * Cultural, artistic, and heritage preservation.
-   * The establishment of local sortition bodies, citizens' assemblies, and participatory budgeting processes.
+ - Land use, zoning, and local environmental regulation, provided such regulations comply with Article I, Section 2 (Separation of Temple and State) and do not function as de facto discrimination against protected classes.
+
+ - Local law enforcement policy and priorities, provided such policies comply with Article I, Section 18 (Law Enforcement Identification) and Article II.
+
+ - Public education curriculum and administration, provided such curricula comply with Article XV, Section 4 (Secular and Neutral Public Education) and achieve the minimum proficiency standards established by the Scientific Branch.
+
+ - Local revenue systems, including the authority to levy taxes, fees, or other assessments, provided such systems do not duplicate or conflict with national revenue mechanisms necessary to fund the guarantees of Article III.
+
+ - Cultural, artistic, and heritage preservation.
+
+ - The establishment of local sortition bodies, citizens' assemblies, and participatory budgeting processes.
 
 2. This enumeration of powers shall not be construed to deny or disparage other powers retained by the Provinces or the people.
 
@@ -2191,6 +2259,8 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 3. Any public official who knowingly votes for, signs, or enforces an ordinance in violation of this Section shall be personally subject to the penalties enumerated in Article II, Section 3 and Article XII, Section 1.
 
 > **Framer's Justification:** _"A fortress with only one gate is not a fortress—it is a trap. We diffuse power horizontally across seven branches, but that is not enough. We must also diffuse it vertically, from the capital to the commune. Let a thousand civic laboratories bloom. Let the people govern themselves in matters that touch their daily lives. Only then will they be ready to govern the Republic. Only then will the Republic be ungovernable by tyrants. But let them also know: the laboratory has walls. The rights secured in this Constitution are not experimental subjects. They are the permanent and inviolable inheritance of every person, in every place, under every charter."_
+
+---
 
 ---
 
