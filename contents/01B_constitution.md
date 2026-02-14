@@ -653,17 +653,134 @@ This exception shall **never** apply to:
 
 6. **Legislative and Executive Accountability:**
 
-   - No statute, regulation, or executive order may repeal, diminish, or condition the exercise of this right except through a constitutional amendment.
+ - No statute, regulation, or executive order may repeal, diminish, or condition the exercise of this right except through a constitutional amendment.
 
-   - Any public official who knowingly and willfully violates this Section, or who directs or encourages others to do so, shall be subject to the penalties enumerated in Article II, Section 3 and Article XII, Section 1.
+ - Any public official who knowingly and willfully violates this Section, or who directs or encourages others to do so, shall be subject to the penalties enumerated in Article II, Section 3 and Article XII, Section 1.
 
-   - Failure to comply with a statutory disclosure mandate within the time prescribed by law shall constitute a prima facie violation of this Section, and the burden shall shift to the public body to justify its delay.
+ - Failure to comply with a statutory disclosure mandate within the time prescribed by law shall constitute a prima facie violation of this Section, and the burden shall shift to the public body to justify its delay.
 
 7. **Unamendable Status:**
 
-   - This Section is part of the unamendable core of this Constitution. It may not be repealed, amended, or suspended, in whole or in part.
+ - This Section is part of the unamendable core of this Constitution. It may not be repealed, amended, or suspended, in whole or in part.
 
 > **Framer's Justification:** _"A people who cannot see what their government does cannot govern themselves. The right to know is not a privilege granted by statute, to be given or taken at the legislature's convenience. It is the precondition of all other rights. Without it, corruption festers in darkness, victims are denied validation, and the law becomes a collection of unenforceable wishes. This provision transforms information from a favor into a right, and non-compliance from a political embarrassment into a constitutional violation with escalating, inescapable consequences."_
+
+### Section 25: Right to Research Autonomy and Scientific Integrity
+
+**1 Foundational Principle**
+
+ - The pursuit, creation, and dissemination of knowledge is a fundamental human endeavor essential to human flourishing, societal progress, and the defense of liberty. Scientific inquiry, in particular, requires freedom of thought, inquiry, and expression to fulfill its potential for human benefit.
+
+ - Therefore, the right to conduct research freely, in accordance with the ethical and professional standards of one's discipline, shall be inviolable, subject only to the narrow limitations prescribed in this Section.
+
+**2 Freedom of Inquiry**
+
+ - Researchers shall have the right to determine the direction of their inquiry, including the right to propose, pursue, and publish research on any topic, without interference, direction, or restriction by the state or any institution acting under its authority, except as provided in this Section.
+
+ - No researcher shall be compelled to pursue or abandon a line of inquiry against their professional judgment, nor shall funding or employment be conditioned on the pursuit of state-determined research priorities, except where such funding is explicitly designated for specific research objectives and voluntarily accepted.
+
+**3 Intellectual Property and Research Outputs**
+
+ - Researchers shall hold full ownership of the intellectual property resulting from their work, including patents, copyrights, and data rights, subject to:
+  * **Institutional Overhead:** Institutions employing researchers may collect a reasonable fee, not to exceed fifteen percent (15%) of gross royalties from commercialized inventions, to fund infrastructure and overhead costs directly supporting research.
+  * **Collaboration Incentive:** For patents co-authored by researchers from two or more distinct institutions or departments, the institutional fee shall be reduced to seven and one-half percent (7.5%), to encourage cooperative research.
+  * **Open Data Default:** All research data funded by public sources shall default to open access within a reasonable period, not to exceed twelve (12) months from collection, to allow for patent filing and initial publication. Researchers may petition for extended embargo upon showing good cause.
+
+ - These rights shall not be waived by contract. Any agreement purporting to waive or limit a researcher's intellectual property rights under this Section shall be void as against public policy.
+
+**4 Publication Sovereignty**
+
+ - Researchers have a protected right to publish their findings, regardless of whether such findings are favorable or unfavorable to the state, its policies, commercial interests, or any other entity.
+
+ - No prior restraint on publication shall be imposed except:
+  * **National Security Exception:** Upon a finding by the Security Branch, confirmed by the Supreme Court through adversarial proceedings, that publication would create a clear, present, and grave danger to national security that cannot be mitigated by less restrictive means. Such delay shall not exceed twelve (12) months and may be renewed only upon a new finding.
+  * **Dual-Use Research:** Where research has significant potential for misuse causing catastrophic harm, the Scientific Branch may recommend redactions or delays, subject to the same judicial review and time limits.
+  * **No Commercial or Reputational Delay:** Research shall not be delayed to protect commercial interests, institutional reputation, or for any purpose other than those explicitly enumerated.
+
+**5 Laboratory and Research Integrity**
+
+ - No researcher may be removed from their laboratory, project, or position, nor have their research privileges substantially restricted, except for:
+  * Proven gross misconduct, as defined by the relevant professional community and established through a fair hearing.
+  * Sustained and documented non-performance over a period of not less than two (2) years, despite reasonable institutional support and opportunity to improve.
+  * Criminal conviction that demonstrably affects professional integrity and fitness to conduct research.
+
+ - The burden of proof shall lie with the institution seeking removal or restriction. All such proceedings shall be conducted before a panel composed primarily of the researcher's professional peers, with right to appeal to the Scientific Branch and ultimately to the courts.
+
+**6 Funding Integrity and Untethered Support**
+
+ - A significant portion of public research funding shall be distributed as untethered grants—funding awarded on the basis of merit and past performance, without predetermined research directions or political priorities.
+
+ - The Scientific Branch shall, in consultation with the relevant professional communities, establish guidelines for the proportion of untethered funding, which shall not be less than fifty percent (50%) of the total public research budget absent a finding of compelling public necessity, confirmed by the Citizens' Assembly.
+
+ - Peer review panels making funding decisions shall be composed of active researchers in the relevant fields, selected through processes that minimize conflicts of interest and ensure diversity of perspective.
+
+**7 Whistleblower Protection for Researchers**
+
+ - Researchers who, in good faith, report violations of this Section, scientific misconduct, corruption in research funding, or attempts to suppress or distort research findings shall enjoy the full protections of Article I, Section 20 (Whistleblowers), including:
+  * Absolute protection from retaliation by any institution, public or private.
+  * The right to triple back-pay and full reinstatement if retaliated against.
+  * Criminal penalties for retaliators, including mandatory minimum sentences.
+  * Monetary rewards where disclosure leads to recovery of funds or prevention of substantial public harm.
+
+**8 Ethical Boundaries and Self-Governance**
+
+ - The rights guaranteed in this Section do not diminish the researcher's obligation to conduct research ethically, in accordance with:
+  * The principles of informed consent, beneficence, and justice in human subjects research.
+  * The 3Rs (Replacement, Reduction, Refinement) in animal research.
+  * The standards of professional integrity, including prohibitions on fabrication, falsification, and plagiarism.
+  * Dual-use research review conducted by peer panels, with appeal rights.
+
+ - These ethical standards shall be developed and enforced by the scientific community through peer review, institutional review boards, and professional societies, subject to the oversight of the Scientific Branch and the courts. No political authority shall impose ethical restrictions on research that lack a basis in widely accepted scientific or medical ethics.
+
+**9 The Research Integrity Office**
+
+ - There shall be established, within the Scientific Branch, a Research Integrity Office with authority to:
+  * Investigate allegations of research misconduct or violations of this Section.
+  * Issue findings and, where appropriate, recommend sanctions to institutions or professional bodies.
+  * Maintain a public register of serious misconduct findings, subject to privacy protections for affected individuals.
+  * Report annually to the Citizens' Assembly on the state of research integrity.
+
+ - Investigations shall be conducted fairly, with due process for accused researchers, and shall be completed within time limits established by law.
+
+**10 International Research Collaboration**
+
+ - Researchers retain the right to collaborate with international colleagues, share data and materials across borders, and participate in global scientific endeavors, subject only to:
+  * Export control laws consistent with national security, enacted by Congress and certified by the Security Branch as narrowly tailored and necessary.
+  * Sanctions and embargoes lawfully imposed by the Political Sphere pursuant to binding international obligations.
+  * Ethical standards that are at least as protective as those required by this Constitution.
+
+ - No restriction on international collaboration shall be imposed for the purpose of suppressing scientific findings or insulating the state from criticism.
+
+**11 Limitations and Balancing**
+
+ - The rights in this Section may be restricted only when necessary to prevent:
+  * Imminent, grave, and demonstrable harm to public health or safety.
+  * Violations of the ethical standards referenced in Section 25.8.
+  * Clear and present danger to national security, as defined in Section 25.4.
+
+ - Any restriction shall be the least restrictive means available, shall be subject to prior judicial review where feasible, and shall not discriminate against particular researchers, fields, or findings based on their content or viewpoint.
+
+ - The burden of justifying any restriction shall rest on the party imposing it.
+
+**12 Saving Clause**
+
+ - Nothing in this Section shall be construed to:
+  * Limit the power of institutions to allocate resources among competing research priorities, provided such allocation does not discriminate on the basis of the content or conclusions of research.
+  * Require funding for any particular research project or line of inquiry.
+  * Impair the rights of research subjects under Article I, Section 6 (Bodily Autonomy) or other provisions of this Constitution.
+  * Protect research that violates the fundamental rights of others, including the rights to privacy, bodily autonomy, and freedom from discrimination.
+
+**13 Enforcement and Private Right of Action**
+
+ - Any researcher whose rights under this Section are violated may bring a civil action directly in the appropriate court of the Republic.
+
+ - Such actions shall be granted expedited consideration and shall take precedence over all but the most urgent matters.
+
+ - Prevailing plaintiffs shall be entitled to injunctive relief, actual damages, punitive damages for willful violations, and reasonable attorneys' fees and costs.
+
+ - Sovereign immunity is expressly waived for all claims arising under this Section.
+
+> **Framer's Justification:** *"A nation that silences its researchers silences its own future. The pursuit of knowledge is not a privilege granted by the state—it is a fundamental right of free people and a necessary condition for the preservation of liberty itself. Unfettered inquiry reveals the truths that tyrants hide; suppressed research protects the lies that authoritarians require. This Section does not create a license to harm. Ethical boundaries, peer review, and the rights of research subjects remain fully operative. But it does create a shield against the greatest enemy of science: power that fears what knowledge might reveal. Researchers who uncover uncomfortable truths about pollution, product safety, government failure, or corporate malfeasance must be protected—not because they are always right, but because a society that punishes truth-tellers is a society that has chosen comfortable lies over survival. The intellectual property provisions ensure that those who create may benefit from their creations, while the collaboration incentives and open data defaults recognize that science is a communal endeavor. The untethered funding requirement prevents political capture of the research agenda. And the whistleblower protections ensure that those who witness corruption or suppression have both the right and the incentive to expose it. This is the research autonomy that a free people require: not freedom from accountability, but freedom from control."*
 
 ---
 
@@ -1104,10 +1221,10 @@ This exception shall **never** apply to:
  - This prohibition takes effect **ten (10) years after ratification**, aligning with the completion of NHS rollout.
 
  - Insurers may continue to offer **supplemental policies** for:
- * Elective aesthetic procedures.
- * Non-covered amenities.
- * Travel health insurance until obsolete.
- * Expedited access within NHS guidelines, provided it does not create a two-tier system that compromises NHS equity.
+  * Elective aesthetic procedures.
+  * Non-covered amenities.
+  * Travel health insurance until obsolete.
+  * Expedited access within NHS guidelines, provided it does not create a two-tier system that compromises NHS equity.
 
 7. **Protection of Patients and Workers:**
 
@@ -1300,9 +1417,6 @@ This exception shall **never** apply to:
  - A citizen may formally appeal their listed service count only on the grounds of mistaken identity.
 
 > **Framer's Justification:** _"The power of sortition is its power to disrupt professional political classes. But experience, in moderation, also has value. This system guarantees that our halls of power are forever filled primarily with true amateurs, ensuring the government never loses touch with the reality of the governed. However, it also allows for the rare return of a seasoned citizen, whose hard-won knowledge can guide their novice peers without dominating them. It strikes a balance between the wisdom of the crowd and the wisdom of experience."_
-
----
-## ARTICLE IV: GOVERNANCE STRUCTURE
 
 ### Section 11: Eligibility and Selection Process for Sortition Branches
 
@@ -1608,7 +1722,7 @@ While vaccines or medical drugs are not a requirement, any violation during the 
 
 ### Section 1: Establishment and Jurisdictional Hierarchy
 
-1. The Surgeon Court is hereby established as the final and exclusive court of appeal for all matters of medical fact, , medical methodology, clinical efficacy, and public health science.
+1. The Surgeon Court is hereby established as the final and exclusive court of appeal for all matters of medical fact, medical methodology, clinical efficacy, and public health science.
 
 2. Its jurisdiction includes, but not limited to:
 
@@ -2238,7 +2352,7 @@ Upon the foundation of literacy and numeracy, the education system shall mandate
 
 ### Section 4: The Non-Waiver of Fundamental Rights
 
-1. No Province, Municipality, or Chartered Community shall exercise its reserved powers in a manner that denies, suspends, or abridges any right guaranteed under Article I of this Constitution.
+1. No State/Province, Municipality, or Chartered Community shall exercise its reserved powers in a manner that denies, suspends, or abridges any right guaranteed under Article I of this Constitution.
 
 2. A local ordinance that discriminates against a protected class, restricts access to reproductive healthcare, establishes or endorses a religious doctrine, or otherwise violates the unamendable core of this Constitution shall be void ab initio.
 
@@ -2274,7 +2388,7 @@ This Constitution establishes a framework balancing individual liberty with soci
 
 This document represents the complete and full Constitution of the Secular Democratic Republic, ratified on this day, [Date of Ratification].
 
-Document Version: [current date]
+Document Version: [2026-02-12]
 
 This document is ready for download and preservation as the supreme law of the land.
 
@@ -2283,16 +2397,23 @@ _Signatures may be written below_
 
 ---
 
----
 
 ---
 
----
 
 ---
 
----
 
 ---
+
+
+---
+
+
+---
+
+
+---
+
 
 ---
